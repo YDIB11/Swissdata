@@ -1,5 +1,32 @@
-_site
-.sass-cache
-.jekyll-cache
+########################
+# Jekyll build output  #
+########################
+_site/
+
+########################
+# Jekyll / Sass cache  #
+########################
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
+
+########################
+# Ruby / Bundler       #
+########################
+vendor/
+.bundle/
+
+# Optional: ignore Gemfile.lock so you don't fight Ruby versions
+Gemfile.lock
+
+########################
+# OS / editor junk     #
+########################
+.DS_Store
+Thumbs.db
+*.log
+
+########################
+# Node (if you add it) #
+########################
+node_modules/

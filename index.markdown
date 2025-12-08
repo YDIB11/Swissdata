@@ -36,6 +36,10 @@ body {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
 }
 
+.footer {
+  display: none !important;
+}
+
 .navbar a.navbar-item,
 .navbar .navbar-item,
 .navbar a.navbar-item:visited {

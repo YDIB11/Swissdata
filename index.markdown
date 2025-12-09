@@ -755,7 +755,7 @@ a:hover {
           Code, notebooks and the full report are available on our GitHub repo:
         </p>
         <p>
-          <a href="https://github.com/USERNAME/REPO" target="_blank">
+          <a href="https://github.com/YDIB11/Swissdata" target="_blank">
             View project on GitHub
           </a>
         </p>

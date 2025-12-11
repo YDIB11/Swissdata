@@ -280,6 +280,10 @@ strong {
   padding: 0.95rem 1.4rem;
 }
 
+body > section.hero.is-primary {
+  display: none !important;
+}
+
 hr {
   border: none;
   border-top: 1px solid var(--border);
@@ -466,6 +470,56 @@ hr {
   color: var(--accent);
 }
 
+.sdx-formula-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sdx-formula-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  background: linear-gradient(140deg, rgba(93, 240, 255, 0.08), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.sdx-formula-card::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -30px;
+  right: -30px;
+  border-radius: 50%;
+  background: rgba(93, 240, 255, 0.18);
+  filter: blur(20px);
+}
+
+.sdx-formula-card h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-2);
+}
+
+.sdx-formula-card .formula {
+  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
+  font-size: 1rem;
+  margin: 0.45rem 0;
+  color: #f7f9ff;
+}
+
+.sdx-formula-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 .sdx-story-body {
   position: relative;
   line-height: 1.7;
@@ -574,37 +628,6 @@ hr {
   padding: 2.8rem;
 }
 
-.sdx-timeline {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-}
-
-.sdx-step {
-  position: relative;
-  padding: 1.2rem 1.1rem 1.1rem 1.1rem;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.02);
-  transition: transform 0.25s ease, border-color 0.25s ease;
-}
-
-.sdx-step .pill {
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
-.sdx-step h4 {
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-  color: #f7f9ff;
-  margin: 0.35rem 0;
-}
-
-.sdx-step:hover {
-  transform: translateY(-3px);
-  border-color: rgba(93, 240, 255, 0.35);
-}
-
 .sdx-case-grid {
   display: grid;
   gap: 1rem;
@@ -648,6 +671,65 @@ hr {
               radial-gradient(circle at 90% 10%, rgba(255, 196, 106, 0.12), transparent 45%),
               rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border);
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sdx-chart-block .flourish-embed {
+  width: 100% !important;
+  max-width: 100% !important;
+  border-radius: 12px;
+  position: relative;
+  display: block;
+}
+
+.sdx-chart-block .flourish-embed iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block;
+}
+
+.sdx-dual-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 0.3fr);
+  gap: 1.25rem;
+  margin-top: 1.2rem;
+  align-items: stretch;
+}
+
+.sdx-dual-panel .sdx-chart-block {
+  margin-top: 0;
+}
+
+.sdx-chart-note {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.6rem 1.4rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.sdx-chart-note h4 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #f7f9ff;
+}
+
+.sdx-chart-note p {
+  margin-top: 0.5rem;
+  color: var(--text);
+}
+
+.sdx-chart-note ul {
+  margin: 0.6rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.sdx-chart-note ul li {
+  margin-bottom: 0.35rem;
 }
 
 .sdx-toggle-group {
@@ -743,6 +825,56 @@ a:hover {
   }
 }
 </style>
+
+<!-- HERO / INTRO -->
+<section class="section sdx-section" id="intro">
+  <div class="container">
+    <div class="sdx-hero-panel" data-animate="scale">
+      <div class="sdx-hero-grid">
+        <div data-animate="fade-up">
+          <div class="sdx-pill"><span>Tech innovation - stock markets</span></div>
+          <h2 class="sdx-hero-title">Do markets recognize breakthroughs when they happen?</h2>
+          <p class="sdx-hero-body">
+            From the first iPhone to CUDA and the recent AI GPU wave, a handful of product
+            launches quietly changed how the world computes. In this data story we track those
+            moments directly in the tape and ask a simple question:
+            <strong>when a breakthrough is announced, does the market react in real time,
+            leak information beforehand, or only wake up much later?</strong>
+          </p>
+          <div class="sdx-hero-actions">
+            <a class="sdx-btn sdx-btn-primary" href="#cases">Jump to case studies</a>
+            <a class="sdx-btn sdx-btn-ghost" href="#pipeline">See the methodology</a>
+          </div>
+        </div>
+        <div class="sdx-hero-badge" data-animate="fade-up">
+          <h4>Innovation Footprints in Tech Stock Markets</h4>
+          <p class="sdx-hero-body">
+            We combine a curated calendar of major innovation events with decades of
+            daily OHLCV data to measure how quickly markets price technological progress.
+          </p>
+          <div class="sdx-hero-stats">
+            <div class="sdx-mini-stat">
+              <div class="label">Daily observations</div>
+              <div class="value">10k+</div>
+            </div>
+            <div class="sdx-mini-stat">
+              <div class="label">Tech &amp; biotech tickers</div>
+              <div class="value">100+</div>
+            </div>
+            <div class="sdx-mini-stat">
+              <div class="label">Innovation events</div>
+              <div class="value">50+</div>
+            </div>
+            <div class="sdx-mini-stat">
+              <div class="label">Event windows</div>
+              <div class="value">30&nbsp;days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- LONG-FORM INTRO /<!-- LONG-FORM INTRO / STORY -->
 <section class="section sdx-section alt" id="story">
@@ -871,18 +1003,18 @@ a:hover {
           </li>
         </ul>
         <p>
-          To build this exam, we start with a carefully curated calendar of
+          To build the exam, we start with a carefully curated calendar of
           innovation events: CUDA’s first release, major AI GPU launches like
           Tesla V100 and RTX 2080 Ti, the H100 and Blackwell announcements,
           the first iPhone, the App Store launch, Apple Pay, and other
           well-documented milestones in tech and biotech. For each of them,
-          we align the exact announcement timing to US trading days—after-close
-          news is anchored to the next day’s open—so we are grading the market
+          we align the exact announcement timing to US trading days (after-close
+          news is anchored to the next day’s open) so we are grading the market
           on the days when it actually had a chance to react.
         </p>
         <p>
-          On the data side, we work with decades of daily stock information—open,
-          high, low, close and volume—for US-listed technology and biotech
+          On the data side, we work with decades of daily stock information
+          (open, high, low, close and volume) for US-listed technology and biotech
           companies. We extend this history to the present using publicly available
           historical price feeds and enforce a consistent OHLCV structure across
           all tickers. Before we look at any event window, we run a battery of
@@ -909,8 +1041,8 @@ a:hover {
         </p>
         <p>
           First, we walk through a few iconic case studies where everyone already
-          knows the ending—NVIDIA in the AI era, the iPhone and the App Store
-          for Apple—and show how the price and volume behaved around those dates.
+          knows the ending (NVIDIA in the AI era, the iPhone and the App Store
+          for Apple) and show how the price and volume behaved around those dates.
           These are our front-row seats: if the market ever had a chance to show
           off its clairvoyance, it was here.
         </p>
@@ -933,7 +1065,7 @@ a:hover {
           Our aim is not to produce a secret trading strategy. It is to answer a more
           fundamental question: when we look at the tape around real innovations that
           changed how we compute, pay and build AI, does the stock market look like
-          a sharp, forward-looking judge of technology—or more like a distracted
+          a sharp, forward-looking judge of technology or more like a distracted
           student who only realizes what was on the exam after the results come out?
         </p>
       </div>
@@ -1028,53 +1160,46 @@ a:hover {
 <!-- PIPELINE / METHOD -->
 <section class="section sdx-section" id="pipeline">
   <div class="container">
-    <h2 class="title is-3">From raw OHLCV to innovation footprints</h2>
-    <div class="sdx-timeline">
-      <div class="sdx-step" data-animate="fade-up">
-        <div class="pill">Step 1</div>
-        <h4>Collect</h4>
-        <p class="is-small">
-          Load decades of daily OHLCV data from the course dataset and extend it to today
-          with Yahoo Finance. Build a compact CSV of innovation events with
-          <code>Ticker</code>, <code>Event_Date</code>, <code>Type</code>, and source links.
-        </p>
+    <h2 class="title is-3">The recipe behind every chart</h2>
+    <p>
+      No flowcharts here, just a simple ritual repeated for every innovation. We line up the event date with
+      clean OHLCV history, cut a window of trading days around it, and ask “what actually happened versus what
+      the market model predicted?” The ingredients below are the entire toolkit: once you see them, every plot
+      on this page becomes a remix of the same math.
+    </p>
+    <p>
+      Think of them as a mise en place. Returns tell us the daily heartbeat, log returns keep compounding honest,
+      cumulative returns reveal the story arc, volatility flags when the crowd panics, and volume pulses show
+      whether attention really piled in. Mix, compare pre vs. post, and you get the innovation footprint.
+      If you have never coded an event study, the cards below spell out exactly how to read each number.
+    </p>
+    <div class="sdx-formula-grid" style="margin-top:1.4rem;">
+      <div class="sdx-formula-card">
+        <h4>Return</h4>
+        <div class="formula">R<sub>t</sub> = (P<sub>t</sub> / P<sub>t-1</sub> − 1) × 100</div>
+        <p>Divide today’s price by yesterday’s, subtract one, and turn it into a percentage. Positive means the stock gained that day; negative means it slipped.</p>
       </div>
-      <div class="sdx-step" data-animate="fade-up">
-        <div class="pill">Step 2</div>
-        <h4>Align</h4>
-        <p class="is-small">
-          Map each event to the correct trading day (shifting after-close announcements
-          to the next day) and slice event windows, typically 30 days before to
-          30 days after the announcement.
-        </p>
+      <div class="sdx-formula-card">
+        <h4>Log return</h4>
+        <div class="formula">r<sub>t</sub> = ln(P<sub>t</sub> / P<sub>t-1</sub>) × 100</div>
+        <p>The natural log ratio of today’s price to yesterday’s. It stacks nicely across many days, so it is perfect when we want to add returns over long stretches.</p>
       </div>
-      <div class="sdx-step" data-animate="fade-up">
-        <div class="pill">Step 3</div>
-        <h4>Model</h4>
-        <p class="is-small">
-          Estimate a market model for each stock on a pre-event estimation window.
-          Compute daily returns, log returns, volatility and <strong>abnormal returns</strong>
-          relative to the predicted benchmark.
-        </p>
+      <div class="sdx-formula-card">
+        <h4>Cumulative return</h4>
+        <div class="formula">CR<sub>t</sub> = (P<sub>t</sub> / P<sub>0</sub> − 1) × 100</div>
+        <p>Compare the current price to the price on event day. This tells a simple story: buy on the announcement and hold for t days, did you gain or lose?</p>
       </div>
-      <div class="sdx-step" data-animate="fade-up">
-        <div class="pill">Step 4</div>
-        <h4>Aggregate &amp; compare</h4>
-        <p class="is-small">
-          Turn abnormal returns into cumulative returns (CAR), compare pre- and post-event
-          behavior, and group results by innovation type, firm size, sector and time period.
-        </p>
+      <div class="sdx-formula-card">
+        <h4>Volatility</h4>
+        <div class="formula">σ = std(R<sub>t</sub>)</div>
+        <p>Take the standard deviation of the daily returns in the window. Bigger values mean the ride was choppier, even if the average move was flat.</p>
+      </div>
+      <div class="sdx-formula-card">
+        <h4>Volume pulse</h4>
+        <div class="formula">ΔVol = avg(post) − avg(pre)</div>
+        <p>Average the trading volume before and after the event and look at the difference. Positive numbers tell us more shares changed hands once the news hit.</p>
       </div>
     </div>
-    <p class="sdx-note" style="margin-top:1.2rem;">
-      Under the hood we use standard formulas for percentage returns
-      <code>R<sub>t</sub> = (P<sub>t</sub> / P<sub>t-1</sub> - 1) × 100</code>,
-      log returns <code>r<sub>t</sub> = ln(P<sub>t</sub> / P<sub>t-1</sub>) × 100</code>,
-      cumulative returns
-      <code>CR<sub>t</sub> = (P<sub>t</sub> / P<sub>0</sub> - 1) × 100</code>,
-      volatility (standard deviation of returns), and volume changes
-      comparing pre- vs post-event average volume.
-    </p>
   </div>
 </section>
 
@@ -1261,8 +1386,40 @@ a:hover {
     <div class="sdx-chart-block" data-animate="fade-up">
       <div class="flourish-embed flourish-timeline" data-src="visualisation/26738865"></div>
       <div class="flourish-embed flourish-chart" data-src="visualisation/26723505" style="margin-top: 1.2rem;"></div>
-      <div class="flourish-embed flourish-hierarchy" data-src="visualisation/26702135" style="margin-top: 1.2rem; max-width: 900px; height: 520px; margin-left: auto; margin-right: auto;">
-        <noscript><img src="https://public.flourish.studio/visualisation/26702135/thumbnail" width="100%" alt="hierarchy visualization" /></noscript>
+      <div class="sdx-dual-panel" style="margin-top:1.2rem;">
+        <div class="sdx-chart-block">
+          <div class="flourish-embed flourish-chart" data-src="visualisation/26745064">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/26745064/thumbnail" width="100%" alt="chart visualization" /></noscript>
+          </div>
+        </div>
+        <div class="sdx-chart-note">
+          <h4>Innovation races</h4>
+          <p>This animated scoreboard shows eight NVIDIA catalysts and how their share prices behaved from 30 days before the headline to 30 days after it.</p>
+          <ul>
+            <li>Each colored line tracks a different launch or ecosystem shock.</li>
+            <li>The axes stay fixed, so you can compare the size and speed of each rally at a glance.</li>
+            <li>Toggle “Scores” versus “Ranks” to switch between raw performance and a simple leaderboard.</li>
+          </ul>
+          <p style="margin-top:0.8rem;">It is the quick pulse-check before diving into the deeper event windows further down the page.</p>
+        </div>
+      </div>
+      <div class="sdx-dual-panel" style="margin-top:1.2rem;">
+        <div class="sdx-chart-block">
+          <div class="flourish-embed flourish-hierarchy" data-src="visualisation/26702135" style="width: 100%; height: 520px;">
+            <noscript><img src="https://public.flourish.studio/visualisation/26702135/thumbnail" width="100%" alt="hierarchy visualization" /></noscript>
+          </div>
+        </div>
+        <div class="sdx-chart-note">
+          <h4>Supplier constellation</h4>
+          <p>The bubble map reveals which sectors cradle NVIDIA’s GPU engine. Larger circles mark bigger slices of the supply pie, while colors group related functions.</p>
+          <ul>
+            <li><strong>Yellow:</strong> ETF and broad equity exposure. These investors transmit NVIDIA shocks to the rest of the market.</li>
+            <li><strong>Blue/green:</strong> Infrastructure partners such as financial services, communication networks, and power utilities that keep data centers alive.</li>
+            <li><strong>Purple/pink:</strong> Precision manufacturers providing memory, substrates, cooling hardware, and other components.</li>
+          </ul>
+          <p style="margin-top:0.8rem;">Most innovation stories are systems stories. This map shows where the ripple travels once NVIDIA announces a new chip.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -1276,9 +1433,9 @@ a:hover {
       <div class="sdx-panel" data-animate="fade-up">
         <p><strong>Team:</strong> SwissDataExplorers</p>
         <ul class="sdx-list">
-          <li><strong>Rami</strong> — data pipelines, event study implementation, NVIDIA case study</li>
-          <li><strong>Teammate 1</strong> — event curation, Apple ecosystem timeline, documentation</li>
-          <li><strong>Teammate 2</strong> — visualization, narrative and website integration</li>
+          <li><strong>Rami</strong>: data pipelines, event study implementation, NVIDIA case study</li>
+          <li><strong>Teammate 1</strong>: event curation, Apple ecosystem timeline, documentation</li>
+          <li><strong>Teammate 2</strong>: visualization, narrative and website integration</li>
         </ul>
         <p>
           All code, notebooks and the full report are available on our GitHub repository:
@@ -1321,92 +1478,6 @@ a:hover {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const heroContainer = document.querySelector(".hero.is-primary .container");
-  if (heroContainer) {
-    const existingPill = heroContainer.querySelector(".hero-pill");
-    const titleNode = heroContainer.querySelector(".title");
-    if (!existingPill && titleNode) {
-      const pill = document.createElement("div");
-      pill.className = "hero-pill";
-      pill.textContent = "Innovation intelligence • Event-study research";
-      heroContainer.insertBefore(pill, titleNode);
-    }
-    if (!heroContainer.querySelector(".hero-head-actions")) {
-      const actions = document.createElement("div");
-      actions.className = "hero-head-actions";
-      actions.innerHTML = `
-        <a class="sdx-btn sdx-btn-primary" href="#cases">Explore case studies</a>
-        <a class="sdx-btn sdx-btn-ghost" href="#pipeline">See the workflow</a>
-      `;
-      heroContainer.appendChild(actions);
-    }
-  }
-
-  const heroBody = document.querySelector(".hero.is-primary .hero-body");
-  if (heroBody && !heroBody.querySelector("#heroChartBg")) {
-    const canvas = document.createElement("canvas");
-    canvas.id = "heroChartBg";
-    canvas.className = "hero-chart-bg";
-    canvas.height = 260;
-    heroBody.prepend(canvas);
-
-    const ctxHero = canvas.getContext("2d");
-    const heroLabels = ["-30d", "-25d", "-20d", "-15d", "-10d", "-5d", "0", "+5d", "+10d", "+15d", "+20d"];
-    const heroPrice = [92, 94, 91, 95, 99, 102, 107, 111, 115, 118, 122];
-    const heroVolume = [12, 15, 10, 16, 13, 18, 22, 19, 17, 20, 18];
-    const areaGradient = ctxHero.createLinearGradient(0, 0, 0, canvas.height);
-    areaGradient.addColorStop(0, "rgba(93, 240, 255, 0.35)");
-    areaGradient.addColorStop(1, "rgba(4, 17, 35, 0)");
-
-    new Chart(ctxHero, {
-      type: "line",
-      data: {
-        labels: heroLabels,
-        datasets: [
-          {
-            type: "bar",
-            data: heroVolume,
-            backgroundColor: "rgba(255, 196, 106, 0.25)",
-            borderRadius: 20,
-            barPercentage: 0.45,
-            categoryPercentage: 1,
-            order: 1
-          },
-          {
-            type: "line",
-            data: heroPrice,
-            borderColor: "#5df0ff",
-            borderWidth: 3,
-            fill: true,
-            backgroundColor: areaGradient,
-            tension: 0.38,
-            pointRadius: 0,
-            order: 2
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: { enabled: false }
-        },
-        scales: {
-          x: {
-            display: false,
-            grid: { display: false }
-          },
-          y: {
-            display: false,
-            grid: { display: false }
-          }
-        }
-      }
-    });
-  }
-
   const palette = {
     line: "#5df0ff",
     bar: "#ffc46a",

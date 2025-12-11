@@ -1204,6 +1204,7 @@ a:hover {
 </section>
 
 <!-- CASE STUDIES -->
+<!--
 <section class="section sdx-section" id="cases">
   <div class="container">
     <h2 class="title is-3">Headliner case studies: NVIDIA &amp; Apple</h2>
@@ -1258,7 +1259,6 @@ a:hover {
       </div>
     </div>
 
-    <!-- Static NVDA plots -->
     <div class="sdx-chart-block" data-animate="fade-up" style="margin-top:2rem;">
       <h3 style="font-family:'Space Grotesk',sans-serif; margin-bottom:0.6rem;">
         NVIDIA innovation windows
@@ -1268,7 +1268,6 @@ a:hover {
         Each panel is centered on the announcement day (vertical line), with pre- and
         post-event periods shaded.
       </p>
-      <!-- Replace src with the actual path to your 8-panel figure -->
       <img src="assets/nvidia_event_windows.png"
            alt="Eight NVIDIA innovation events with 30-day cumulative returns around each announcement."
            style="width:100%; border-radius:12px; margin-top:1rem;">
@@ -1283,7 +1282,6 @@ a:hover {
         marking the H100 launch, the public release of ChatGPT, and the Blackwell B200
         announcement. This is what an innovation wave looks like when it hits the market.
       </p>
-      <!-- Replace src with the actual path to your AI-era figure -->
       <img src="assets/nvidia_ai_era.png"
            alt="NVIDIA stock price and cumulative return since 2022 with key AI events highlighted."
            style="width:100%; border-radius:12px; margin-top:1rem;">
@@ -1291,6 +1289,7 @@ a:hover {
 
   </div>
 </section>
+-->
 
 <!-- HOW TO READ -->
 <section class="section sdx-section alt" id="how-to-read">
@@ -1404,22 +1403,22 @@ a:hover {
           <p style="margin-top:0.8rem;">It is the quick pulse-check before diving into the deeper event windows further down the page.</p>
         </div>
       </div>
-      <div class="sdx-dual-panel" style="margin-top:1.2rem;">
-        <div class="sdx-chart-block">
-          <div class="flourish-embed flourish-hierarchy" data-src="visualisation/26702135" style="width: 100%; height: 520px;">
-            <noscript><img src="https://public.flourish.studio/visualisation/26702135/thumbnail" width="100%" alt="hierarchy visualization" /></noscript>
-          </div>
+    </div>
+    <div class="sdx-dual-panel" data-animate="fade-up" style="margin-top:1.5rem;">
+      <div class="sdx-chart-block" style="margin-top:0;">
+        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/26702135" style="width: 100%; height: 520px;">
+          <noscript><img src="https://public.flourish.studio/visualisation/26702135/thumbnail" width="100%" alt="hierarchy visualization" /></noscript>
         </div>
-        <div class="sdx-chart-note">
-          <h4>Supplier constellation</h4>
-          <p>The bubble map reveals which sectors cradle NVIDIA’s GPU engine. Larger circles mark bigger slices of the supply pie, while colors group related functions.</p>
-          <ul>
-            <li><strong>Yellow:</strong> ETF and broad equity exposure. These investors transmit NVIDIA shocks to the rest of the market.</li>
-            <li><strong>Blue/green:</strong> Infrastructure partners such as financial services, communication networks, and power utilities that keep data centers alive.</li>
-            <li><strong>Purple/pink:</strong> Precision manufacturers providing memory, substrates, cooling hardware, and other components.</li>
-          </ul>
-          <p style="margin-top:0.8rem;">Most innovation stories are systems stories. This map shows where the ripple travels once NVIDIA announces a new chip.</p>
-        </div>
+      </div>
+      <div class="sdx-chart-note">
+        <h4>Supplier constellation</h4>
+        <p>The bubble map reveals which sectors cradle NVIDIA’s GPU engine. Larger circles mark bigger slices of the supply pie, while colors group related functions.</p>
+        <ul>
+          <li><strong>Yellow:</strong> ETF and broad equity exposure. These investors transmit NVIDIA shocks to the rest of the market.</li>
+          <li><strong>Blue/green:</strong> Infrastructure partners such as financial services, communication networks, and power utilities that keep data centers alive.</li>
+          <li><strong>Purple/pink:</strong> Precision manufacturers providing memory, substrates, cooling hardware, and other components.</li>
+        </ul>
+        <p style="margin-top:0.8rem;">Most innovation stories are systems stories. This map shows where the ripple travels once NVIDIA announces a new chip.</p>
       </div>
     </div>
   </div>

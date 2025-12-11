@@ -8,6 +8,14 @@ subtitle: "Innovation Footprints in Tech Stock Markets"
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<script>
+  // MathJax renders the inline LaTeX formulas used in the recipe cards.
+  window.MathJax = {
+    tex: { inlineMath: [["\\(", "\\)"], ["$", "$"]] },
+    options: { skipHtmlTags: ["script", "style", "noscript", "textarea"] }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
 :root {
@@ -1176,27 +1184,27 @@ a:hover {
     <div class="sdx-formula-grid" style="margin-top:1.4rem;">
       <div class="sdx-formula-card">
         <h4>Return</h4>
-        <div class="formula">R<sub>t</sub> = (P<sub>t</sub> / P<sub>t-1</sub> − 1) × 100</div>
+        <div class="formula">\( R_t = \left(\frac{P_t}{P_{t-1}} - 1\right) \times 100 \)</div>
         <p>Divide today’s price by yesterday’s, subtract one, and turn it into a percentage. Positive means the stock gained that day; negative means it slipped.</p>
       </div>
       <div class="sdx-formula-card">
         <h4>Log return</h4>
-        <div class="formula">r<sub>t</sub> = ln(P<sub>t</sub> / P<sub>t-1</sub>) × 100</div>
+        <div class="formula">\( r_t = \ln\!\left(\frac{P_t}{P_{t-1}}\right) \times 100 \)</div>
         <p>The natural log ratio of today’s price to yesterday’s. It stacks nicely across many days, so it is perfect when we want to add returns over long stretches.</p>
       </div>
       <div class="sdx-formula-card">
         <h4>Cumulative return</h4>
-        <div class="formula">CR<sub>t</sub> = (P<sub>t</sub> / P<sub>0</sub> − 1) × 100</div>
+        <div class="formula">\( CR_t = \left(\frac{P_t}{P_0} - 1\right) \times 100 \)</div>
         <p>Compare the current price to the price on event day. This tells a simple story: buy on the announcement and hold for t days, did you gain or lose?</p>
       </div>
       <div class="sdx-formula-card">
         <h4>Volatility</h4>
-        <div class="formula">σ = std(R<sub>t</sub>)</div>
+        <div class="formula">\( \sigma = \sqrt{\mathrm{Var}(R_t)} \)</div>
         <p>Take the standard deviation of the daily returns in the window. Bigger values mean the ride was choppier, even if the average move was flat.</p>
       </div>
       <div class="sdx-formula-card">
         <h4>Volume pulse</h4>
-        <div class="formula">ΔVol = avg(post) − avg(pre)</div>
+        <div class="formula">\( \Delta \mathrm{Vol} = \mathrm{avg}_{\text{post}} - \mathrm{avg}_{\text{pre}} \)</div>
         <p>Average the trading volume before and after the event and look at the difference. Positive numbers tell us more shares changed hands once the news hit.</p>
       </div>
     </div>

@@ -327,6 +327,77 @@ blockquote strong {
   color: #f7f9ff;
 }
 
+.sdx-hero-media {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  min-height: 380px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+  background: rgba(13, 16, 36, 0.72);
+}
+
+.sdx-hero-media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.04);
+  filter: saturate(1.05) contrast(1.05);
+}
+
+.sdx-hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(5, 8, 20, 0.22), rgba(5, 8, 20, 0.86) 66%);
+  z-index: 0;
+}
+
+.sdx-hero-media-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.sdx-hero-media-card {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(13, 16, 36, 0.78);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.32);
+  padding: 1.15rem 1.15rem 1.1rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.sdx-hero-media-card h4 {
+  margin: 0;
+  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #f7f9ff;
+}
+
+.sdx-hero-media-card p {
+  margin: 0.55rem 0 0;
+  color: var(--text);
+}
+
+.sdx-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+}
+
+.sdx-hero-media-card .sdx-note {
+  margin: 0.8rem 0 0;
+}
+
 .sdx-hero-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -481,6 +552,10 @@ blockquote strong {
   .sdx-dual-panel {
     grid-template-columns: 1fr;
   }
+
+  .sdx-hero-media {
+    min-height: 300px;
+  }
 }
 </style>
 
@@ -498,28 +573,22 @@ blockquote strong {
             <a class="sdx-btn sdx-btn-ghost" href="#case-files">Jump to chapters</a>
           </div>
         </div>
-        <div class="sdx-hero-badge" data-animate="fade-up">
-          <h4>Work in progress</h4>
-          <p class="sdx-hero-body">
-            This page is a narrative shell for an event-study project. Anywhere you see “PLACEHOLDER”, that’s an unfinished
-            analysis step to fill in later (plots, tables, or results).
-          </p>
-          <div class="sdx-hero-stats">
-            <div class="sdx-mini-stat">
-              <div class="label">Event window</div>
-              <div class="value">&plusmn;30&nbsp;days</div>
-            </div>
-            <div class="sdx-mini-stat">
-              <div class="label">Signals</div>
-              <div class="value">Returns</div>
-            </div>
-            <div class="sdx-mini-stat">
-              <div class="label">Signals</div>
-              <div class="value">Volume</div>
-            </div>
-            <div class="sdx-mini-stat">
-              <div class="label">Signals</div>
-              <div class="value">Volatility</div>
+        <div class="sdx-hero-media" data-animate="fade-up">
+          <img
+            class="sdx-hero-media-img"
+            src="{{ '/assets/img1.png' | relative_url }}"
+            alt="Abstract visualization for innovation footprints and markets">
+          <div class="sdx-hero-media-overlay">
+            <div class="sdx-hero-media-card">
+              <h4>Project snapshot</h4>
+              <p>Event-study narratives across Apple, NVIDIA, Tesla, AI, and biotech.</p>
+              <div class="sdx-hero-meta">
+                <span class="sdx-tag">&plusmn;30 trading days</span>
+                <span class="sdx-tag">Returns</span>
+                <span class="sdx-tag">Volume</span>
+                <span class="sdx-tag">Volatility</span>
+                <span class="sdx-tag">Spillovers</span>
+              </div>
             </div>
           </div>
         </div>
@@ -530,7 +599,7 @@ blockquote strong {
 
 <section class="section sdx-section alt" id="prologue">
   <div class="container">
-    <h2 class="title is-3">Prologue — The Problem with “Obvious” Innovation</h2>
+    <h2 class="title is-3">The Problem with “Obvious” Innovation</h2>
     <div class="sdx-panel" data-animate="fade-up">
       <p>Some innovations feel inevitable <em>in hindsight</em>.</p>
       <p>
@@ -560,13 +629,9 @@ blockquote strong {
         It’s to measure how markets <em>digest</em> innovation in real time.
       </p>
     </div>
-
-    <div class="sdx-chart-block sdx-placeholder" data-animate="fade-up">
-      <h3 class="title is-5">PLACEHOLDER: Timeline of All Events</h3>
-      <p class="sdx-note">Apple • NVIDIA • Tesla • AI • Biotech</p>
-      <p class="sdx-note">Instruction: insert a timeline graphic or featured image here.</p>
+    <div class="sdx-panel" data-animate="fade-up">
+      <div class="flourish-embed flourish-timeline" data-src="visualisation/26798005"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26798005/thumbnail" width="100%" alt="timeline visualization" /></noscript></div>
     </div>
-
   </div>
 </section>
 

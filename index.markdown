@@ -454,6 +454,61 @@ blockquote strong {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.sdx-formula-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+  margin-top: 1.1rem;
+}
+
+.sdx-formula-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  background: rgba(13, 16, 36, 0.78);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
+  position: relative;
+  overflow: hidden;
+}
+
+.sdx-formula-card::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: -35px;
+  right: -35px;
+  border-radius: 50%;
+  background: rgba(159, 176, 255, 0.12);
+  filter: blur(22px);
+}
+
+.sdx-formula-card h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-2);
+}
+
+.sdx-formula-card .formula {
+  margin-top: 0.55rem;
+  padding: 0.65rem 0.8rem;
+  border-radius: 14px;
+  background: rgba(5, 8, 20, 0.55);
+  border: 1px solid var(--border);
+  color: #f7f9ff;
+  text-align: center;
+  overflow-x: auto;
+  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
+}
+
+.sdx-formula-card p {
+  margin: 0.55rem 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 .sdx-list {
   padding-left: 1.1rem;
   margin: 0.6rem 0;
@@ -529,6 +584,10 @@ blockquote strong {
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.sdx-formula-block {
+  background: rgba(13, 16, 36, 0.82);
 }
 
 .sdx-placeholder {
@@ -712,7 +771,7 @@ blockquote strong {
       <div class="sdx-panel" data-animate="fade-up">
         <p>
           We construct an event calendar, align each event to the nearest trading day, and extract a window of
-          <strong>±30 days</strong> around each milestone.
+          <strong>&plusmn;30 days</strong> around each milestone.
         </p>
         <p>We compute:</p>
         <ul class="sdx-list">
@@ -727,15 +786,48 @@ blockquote strong {
         <ol class="sdx-list">
           <li><strong>Instant</strong> — a sudden jump.</li>
           <li><strong>Slow-burning</strong> — a delayed realization.</li>
-          <li><strong>Mirage</strong> — a spike that fades.</li>
+          <li><strong>Mirage</strong> - a spike that fades.</li>
         </ol>
       </div>
 
-      <div class="sdx-chart-block sdx-placeholder" data-animate="fade-up">
-        <h3 class="title is-5">PLACEHOLDER: Event Window Diagram</h3>
-        <p class="sdx-note">t = 0 at the innovation date</p>
-        <p class="sdx-note">Instruction: add an event-window diagram (±30 trading days) here.</p>
+      <div class="sdx-chart-block sdx-formula-block" data-animate="fade-up">
+        <h3 class="title is-5">Key formulas</h3>
+        <p class="sdx-note">The building blocks we compute inside each event window.</p>
+
+        <div class="sdx-formula-grid">
+          <div class="sdx-formula-card">
+            <h4>Return</h4>
+            <div class="formula">\( R_t = \left(\frac{P_t}{P_{t-1}} - 1\right) \times 100 \)</div>
+            <p>Divide today’s price by yesterday’s, subtract one, and turn it into a percentage. Positive means the stock gained that day; negative means it slipped.</p>
+          </div>
+          <div class="sdx-formula-card">
+            <h4>Log return</h4>
+            <div class="formula">\( r_t = \ln\!\left(\frac{P_t}{P_{t-1}}\right) \times 100 \)</div>
+            <p>The natural log ratio of today’s price to yesterday’s. It stacks nicely across many days, so it is perfect when we want to add returns over long stretches.</p>
+          </div>
+          <div class="sdx-formula-card">
+            <h4>Cumulative return</h4>
+            <div class="formula">\( CR_t = \left(\frac{P_t}{P_0} - 1\right) \times 100 \)</div>
+            <p>Compare the current price to the price on event day. This tells a simple story: buy on the announcement and hold for t days, did you gain or lose?</p>
+          </div>
+          <div class="sdx-formula-card">
+            <h4>Volatility</h4>
+            <div class="formula">\( \sigma = \sqrt{\mathrm{Var}(R_t)} \)</div>
+            <p>Take the standard deviation of the daily returns in the window. Bigger values mean the ride was choppier, even if the average move was flat.</p>
+          </div>
+          <div class="sdx-formula-card">
+            <h4>Volume pulse</h4>
+            <div class="formula">\( \Delta \mathrm{Vol} = \mathrm{avg}_{\text{post}} - \mathrm{avg}_{\text{pre}} \)</div>
+            <p>Average the trading volume before and after the event and look at the difference. Positive numbers tell us more shares changed hands once the news hit.</p>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="sdx-chart-block sdx-placeholder" data-animate="fade-up">
+      <h3 class="title is-5">PLACEHOLDER: Event Window Diagram</h3>
+      <p class="sdx-note">t = 0 at the innovation date</p>
+      <p class="sdx-note">Instruction: add an event-window diagram (&plusmn;30 trading days) here.</p>
     </div>
 
   </div>

@@ -30,6 +30,10 @@ subtitle: "Innovation Footprints in Tech Stock Markets"
   --text: #e8edff;
 }
 
+html {
+  background: var(--bg);
+}
+
 body {
   background: radial-gradient(circle at 20% 20%, #0f1a3d 0, transparent 30%),
               radial-gradient(circle at 80% 10%, #0c3650 0, transparent 24%),
@@ -273,7 +277,7 @@ strong {
   text-transform: uppercase;
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: rgba(222, 232, 255, 0.85);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(13, 16, 36, 0.55);
   margin-bottom: 0.8rem;
 }
 
@@ -300,7 +304,7 @@ hr {
 
 .sdx-hero-panel {
   margin-top: -60px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  background: linear-gradient(145deg, rgba(15, 21, 48, 0.9), rgba(13, 16, 36, 0.85));
   border: 1px solid var(--border);
   border-radius: 24px;
   padding: 2.5rem;
@@ -347,7 +351,7 @@ hr {
   padding: 0.4rem 0.85rem;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(13, 16, 36, 0.6);
   font-weight: 600;
   color: var(--muted);
   font-size: 0.9rem;
@@ -401,7 +405,7 @@ hr {
   gap: 1rem;
   padding: 1.4rem;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(13, 16, 36, 0.72);
   border: 1px solid var(--border);
 }
 
@@ -423,7 +427,7 @@ hr {
   border-radius: 12px;
   border: 1px solid var(--border);
   padding: 0.8rem 0.9rem;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(15, 21, 48, 0.65);
 }
 
 .sdx-mini-stat .label {
@@ -460,7 +464,7 @@ hr {
 
 .sdx-card,
 .sdx-panel {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(13, 16, 36, 0.72);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 1.5rem;
@@ -489,7 +493,7 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 16px;
   padding: 1rem 1.1rem;
-  background: linear-gradient(140deg, rgba(93, 240, 255, 0.08), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(140deg, rgba(93, 240, 255, 0.08), rgba(13, 16, 36, 0.72));
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
   position: relative;
   overflow: hidden;
@@ -589,7 +593,7 @@ hr {
 .sdx-feature-item {
   border-radius: 16px;
   padding: 1.25rem;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(13, 16, 36, 0.6);
   border: 1px solid var(--border);
 }
 
@@ -607,7 +611,7 @@ hr {
 .sdx-stat-card {
   border-radius: 14px;
   padding: 1.4rem 1.5rem;
-  background: linear-gradient(180deg, rgba(93, 240, 255, 0.06), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(180deg, rgba(93, 240, 255, 0.06), rgba(13, 16, 36, 0.62));
   border: 1px solid var(--border);
   text-align: left;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -630,7 +634,7 @@ hr {
 }
 
 .sdx-section.alt {
-  background: rgba(255, 255, 255, 0.01);
+  background: rgba(13, 16, 36, 0.55);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 2.8rem;
@@ -668,7 +672,7 @@ hr {
   border: 1px solid var(--border);
   color: var(--muted);
   font-size: 0.9rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(13, 16, 36, 0.55);
 }
 
 .sdx-chart-block {
@@ -677,7 +681,7 @@ hr {
   border-radius: 16px;
   background: radial-gradient(circle at 10% 20%, rgba(93, 240, 255, 0.08), transparent 55%),
               radial-gradient(circle at 90% 10%, rgba(255, 196, 106, 0.12), transparent 45%),
-              rgba(255, 255, 255, 0.03);
+              rgba(13, 16, 36, 0.7);
   border: 1px solid var(--border);
   position: relative;
   box-sizing: border-box;
@@ -711,7 +715,7 @@ hr {
 }
 
 .sdx-chart-note {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(13, 16, 36, 0.72);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.6rem 1.4rem;
@@ -750,7 +754,7 @@ hr {
   border-radius: 999px;
   padding: 0.55rem 1.1rem;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(13, 16, 36, 0.6);
   color: var(--text);
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -779,7 +783,7 @@ hr {
   padding: 1.5rem;
   border-radius: 16px;
   border: 1px solid var(--border);
-  background: linear-gradient(120deg, rgba(93, 240, 255, 0.08), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(120deg, rgba(93, 240, 255, 0.08), rgba(13, 16, 36, 0.62));
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -840,42 +844,42 @@ a:hover {
     <div class="sdx-hero-panel" data-animate="scale">
       <div class="sdx-hero-grid">
         <div data-animate="fade-up">
-          <div class="sdx-pill"><span>Tech innovation - stock markets</span></div>
-          <h2 class="sdx-hero-title">Do markets recognize breakthroughs when they happen?</h2>
+          <div class="sdx-pill"><span>Event studies &bull; innovation &bull; stock markets</span></div>
+          <h2 class="sdx-hero-title">Do markets price breakthroughs on impact?</h2>
           <p class="sdx-hero-body">
-            From the first iPhone to CUDA and the recent AI GPU wave, a handful of product
-            launches quietly changed how the world computes. In this data story we track those
-            moments directly in the tape and ask a simple question:
-            <strong>when a breakthrough is announced, does the market react in real time,
-            leak information beforehand, or only wake up much later?</strong>
+            Innovation shows up as dates you can point to: CUDA and the iPhone, Apple’s M1 transition,
+            and the GenAI shockwave of ChatGPT and GPT-4.
+            We align those moments with market data and ask one question:
+            <strong>does price move before the headline, on day 0, or only after the world catches up?</strong>
+            Biotech approvals are on the roadmap and come last.
           </p>
           <div class="sdx-hero-actions">
-            <a class="sdx-btn sdx-btn-primary" href="#cases">Jump to case studies</a>
+            <a class="sdx-btn sdx-btn-primary" href="#cases">Jump to event types</a>
             <a class="sdx-btn sdx-btn-ghost" href="#pipeline">See the methodology</a>
           </div>
         </div>
         <div class="sdx-hero-badge" data-animate="fade-up">
           <h4>Innovation Footprints in Tech Stock Markets</h4>
           <p class="sdx-hero-body">
-            We combine a curated calendar of major innovation events with decades of
-            daily OHLCV data to measure how quickly markets price technological progress.
+            We turn innovation headlines into a consistent event-study workflow (returns, volume, volatility, later: abnormal returns).
+            This site is a living draft: some sections are complete, others are explicit “add plot here” placeholders.
           </p>
           <div class="sdx-hero-stats">
             <div class="sdx-mini-stat">
-              <div class="label">Daily observations</div>
-              <div class="value">10k+</div>
+              <div class="label">Event types</div>
+              <div class="value">GPUs &bull; GenAI &bull; Apple &bull; Biotech</div>
             </div>
             <div class="sdx-mini-stat">
-              <div class="label">Tech &amp; biotech tickers</div>
-              <div class="value">100+</div>
+              <div class="label">Signals</div>
+              <div class="value">Returns &bull; Volume &bull; Volatility</div>
             </div>
             <div class="sdx-mini-stat">
-              <div class="label">Innovation events</div>
-              <div class="value">50+</div>
+              <div class="label">Window</div>
+              <div class="value">&plusmn;30&nbsp;days</div>
             </div>
             <div class="sdx-mini-stat">
-              <div class="label">Event windows</div>
-              <div class="value">30&nbsp;days</div>
+              <div class="label">Status</div>
+              <div class="value">In progress</div>
             </div>
           </div>
         </div>
@@ -891,11 +895,10 @@ a:hover {
       <div class="sdx-panel sdx-panel-summary" data-animate="fade-up">
         <h3 class="title is-5">In one paragraph</h3>
         <p>
-          We turn landmark tech innovations into “exam questions” for the stock market.
-          By aligning precise event dates with decades of daily price and volume data,
-          building market models and computing abnormal returns, we measure how quickly
-          markets recognize breakthroughs in GPUs, smartphones, app ecosystems and
-          fintech rails.
+          We treat landmark innovations as "exam questions" for financial markets. For each event, we anchor a
+          fixed window of trading days around the announcement and measure returns, volume, volatility, and
+          (later) abnormal returns relative to a benchmark. The story is organized by four event families:
+          GPUs, GenAI milestones, Apple product/silicon pivots, and (last) biotech approvals.
         </p>
         <hr>
         <h4 class="title is-6">What we test</h4>
@@ -906,8 +909,7 @@ a:hover {
           <li>Do reactions spill over to the broader <strong>ecosystem</strong>?</li>
         </ul>
         <p class="sdx-note">
-          The rest of the page walks through case studies (NVIDIA &amp; Apple) and
-          aggregate patterns built on this framework.
+          Status: work in progress — sections include explicit “add plot here” placeholders while the analysis is still being built.
         </p>
       </div>
 
@@ -1119,22 +1121,45 @@ a:hover {
 <section class="section sdx-section" id="numbers">
   <div class="container">
     <h2 class="title is-3">The scope at a glance</h2>
+    <p class="sdx-note">We separate what is implemented (pilot) from what is targeted (roadmap).</p>
+
+    <h3 class="title is-5" style="margin-top:1.2rem;">Current pilot (implemented)</h3>
     <div class="sdx-stats-row">
       <div class="sdx-stat-card" data-animate="fade-up">
-        <div class="label">Years of daily data</div>
-        <div class="value">1965–2025</div>
+        <div class="label">Tickers</div>
+        <div class="value">1 (pilot)</div>
       </div>
       <div class="sdx-stat-card" data-animate="fade-up">
-        <div class="label">Listed firms in universe</div>
+        <div class="label">Innovation events</div>
+        <div class="value">8</div>
+      </div>
+      <div class="sdx-stat-card" data-animate="fade-up">
+        <div class="label">Window length</div>
+        <div class="value">61 days</div>
+      </div>
+      <div class="sdx-stat-card" data-animate="fade-up">
+        <div class="label">Outputs</div>
+        <div class="value">Plots + exports</div>
+      </div>
+    </div>
+
+    <h3 class="title is-5" style="margin-top:1.4rem;">Target scope (in progress)</h3>
+    <div class="sdx-stats-row">
+      <div class="sdx-stat-card" data-animate="fade-up">
+        <div class="label">Horizon (target)</div>
+        <div class="value">1965-2025</div>
+      </div>
+      <div class="sdx-stat-card" data-animate="fade-up">
+        <div class="label">Tickers (target)</div>
         <div class="value">100+</div>
       </div>
       <div class="sdx-stat-card" data-animate="fade-up">
-        <div class="label">Curated innovation events</div>
-        <div class="value">50+</div>
+        <div class="label">Event families</div>
+        <div class="value">GPUs &bull; GenAI &bull; Apple &bull; Biotech</div>
       </div>
       <div class="sdx-stat-card" data-animate="fade-up">
-        <div class="label">Days per event window</div>
-        <div class="value">61</div>
+        <div class="label">Curated events (target)</div>
+        <div class="value">50+</div>
       </div>
     </div>
   </div>
@@ -1147,7 +1172,7 @@ a:hover {
     <p>
       For each major innovation, we build an <strong>event calendar</strong> with precise
       dates (and timing: pre-open, intraday, after-close). Around each event we create a
-      symmetric window of trading days and compare what actually happened to what a
+      symmetric window of trading days and (where appropriate) compare what actually happened to what a
       simple market model would have predicted.
     </p>
     <p style="margin-top:0.8rem;">
@@ -1160,7 +1185,7 @@ a:hover {
     </ul>
     <p>
       This is the classic event-study playbook applied to CUDA, the iPhone, the App Store,
-      Apple Pay, AI GPUs and more.
+      Apple Pay, AI GPUs, GenAI milestones, and biotech platform breakthroughs.
     </p>
   </div>
 </section>
@@ -1208,96 +1233,373 @@ a:hover {
         <p>Average the trading volume before and after the event and look at the difference. Positive numbers tell us more shares changed hands once the news hit.</p>
       </div>
     </div>
+
+    <div class="sdx-panel" data-animate="fade-up" style="margin-top:1.8rem;">
+      <p class="heading">Current implementation (pilot workflow)</p>
+      <p class="sdx-note">
+        Below is the workflow currently implemented for the first pilot and being generalized across all event families
+        (GPUs, GenAI, Apple, and biotech).
+      </p>
+      <ul class="sdx-list">
+        <li><strong>Predefine events:</strong> curate a dated innovation calendar for each family (e.g., CUDA, V100, RTX 2080 Ti, A100, Arm, H100, ChatGPT, Blackwell for the GPU set).</li>
+        <li><strong>Pull OHLCV:</strong> fetch full price/volume history (current source: yfinance) and normalize dates.</li>
+        <li><strong>Align dates:</strong> if an event date is not a trading day, shift to the next available session and tag relative time \(t\) with \(t=0\) on the event day.</li>
+        <li><strong>Compute footprints:</strong> daily returns, log returns, cumulative returns from \(t=0\), pre/post means, pre/post volatility, and pre/post volume plus % change.</li>
+        <li><strong>Export for visuals:</strong> save event-window tables and summary metrics for Plotly/Flourish and website figures.</li>
+        <li><!-- TODO: Add benchmark model + AR/CAR + statistical significance. --><strong>TODO:</strong> add abnormal returns (AR/CAR) vs a benchmark model + significance tests.</li>
+        <li><!-- TODO: Add overlap/confounder labeling (earnings, macro, leaks). --><strong>TODO:</strong> add overlap/confounder handling (earnings, macro, multi-day news).</li>
+      </ul>
+      <!-- TODO: Add a short paragraph on why we do not "discover" events automatically (measurement vs discovery). -->
+    </div>
   </div>
 </section>
 
-<!-- CASE STUDIES -->
-<!--
+<!-- CASE STUDIES / PILOTS -->
 <section class="section sdx-section" id="cases">
   <div class="container">
-    <h2 class="title is-3">Headliner case studies: NVIDIA &amp; Apple</h2>
+    <h2 class="title is-3">Event types (in progress)</h2>
     <p>
-      Before aggregating over dozens of firms, we zoom in on a few iconic stories.
-      NVIDIA’s AI GPU roadmap and Apple’s ecosystem launches give us a front-row view
-      of how markets digest truly transformative news.
+      This project is still under construction. It is organized around four event families:
+      GPUs, GenAI ecosystem milestones, Apple product/platform/silicon pivots, and (last) biotech approvals.
+      Each family below has an event list, the analysis goals, and explicit placeholders like:
+      <strong>“HERE add cumulative return plot for (this stock)”</strong>.
     </p>
-    <div class="sdx-case-grid" style="margin-top:1.4rem;">
-      <div class="sdx-case-card" data-animate="fade-up">
-        <div class="sdx-tag"><span>NVIDIA</span><span>Platform launch</span></div>
-        <h3>CUDA: when GPUs became general-purpose</h3>
-        <p>
-          On <strong>June 23, 2007</strong> NVIDIA launched CUDA, turning the GPU from a
-          graphics card into a programmable compute platform. Our 30-day window shows a
-          deep pre-event drawdown followed by a slow, hesitant recovery.
-        </p>
+
+    <div class="sdx-panel" data-animate="fade-up" style="margin-top:1.4rem;">
+      <p class="heading">What is done vs. what is planned</p>
+      <ul class="sdx-list">
+        <li><strong>Done (core pipeline):</strong> event-day alignment, window extraction, returns/volume/volatility metrics, and export-ready tables for visuals.</li>
+        <li><strong>In progress:</strong> benchmark-adjusted abnormal returns (AR/CAR), timing tags (pre-open/intraday/after-close), and robustness checks (overlaps/confounders).</li>
+        <li><strong>Planned:</strong> multi-ticker ecosystem spillovers and cross-family comparisons (biotech comes last).</li>
+      </ul>
+    </div>
+
+    <h3 class="title is-4" style="margin-top:2.4rem;">1) GPU platform &amp; hardware launches</h3>
+    <p class="sdx-note">
+      GPU “launch” dates are rarely clean. Announcements can happen at keynotes, in blog posts, or through staged embargoes;
+      availability may lag by weeks; and rumor cycles can leak information into the pre-window.
+      The goal here is not to claim one perfect date — it is to document what we treat as \(t=0\), then measure
+      pre-drift, day-0 reaction, and post-drift in a consistent way.
+    </p>
+
+    <div class="sdx-grid-cards" style="margin-top:1.2rem;">
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>Define \(t=0\)</h3>
         <ul class="sdx-list">
-          <li>Event type: <strong>Platform launch</strong></li>
-          <li>30-day cumulative return from event: <strong>+2.6%</strong></li>
-          <li>Pattern: pain before the breakthrough, modest relief after.</li>
+          <li><strong>Announcement vs availability:</strong> pick one and justify it.</li>
+          <li><strong>Timing:</strong> pre-open / intraday / after-close determines the tradable session.</li>
+          <li><strong>Alignment:</strong> if the date is not a trading day, shift to the next session.</li>
         </ul>
       </div>
-      <div class="sdx-case-card" data-animate="fade-up">
-        <div class="sdx-tag"><span>NVIDIA</span><span>AI GPUs</span></div>
-        <h3>Tesla V100 &amp; RTX 2080 Ti: AI goes mainstream</h3>
-        <p>
-          The <strong>Tesla V100</strong> (May 2017) brought Tensor Cores to data centers,
-          while the <strong>RTX 2080 Ti</strong> (August 2018) put real-time ray tracing
-          into gamers’ rigs. Both launches show clear positive momentum after the event,
-          with 30-day returns above <strong>+15%</strong> in some windows.
-        </p>
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>What to measure</h3>
         <ul class="sdx-list">
-          <li>Event type: <strong>Product launches</strong></li>
-          <li>Post-event behavior: strong, sustained rally.</li>
+          <li><strong>Anticipation:</strong> drift and volume build-up in \(t=-30..-1\).</li>
+          <li><strong>Impact:</strong> returns on day 0 / +1 and immediate volatility spikes.</li>
+          <li><strong>Under-reaction:</strong> drift in \(t=+2..+30\) after the headline.</li>
         </ul>
       </div>
-      <div class="sdx-case-card" data-animate="fade-up">
-        <div class="sdx-tag"><span>Apple</span><span>Device &amp; ecosystem</span></div>
-        <h3>iPhone, App Store, Apple Pay: building a platform</h3>
-        <p>
-          Apple’s story is a sequence: the <strong>iPhone</strong> launch in 2007,
-          the <strong>App Store</strong> opening in 2008, and
-          <strong>Apple Pay</strong> in 2014. Together they turn a device into a
-          network of developers and payments. Our event windows track whether the
-          market prices each step or only the long-run arc.
-        </p>
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>What to add here</h3>
         <ul class="sdx-list">
-          <li>Events: device, marketplace, and fintech launch.</li>
-          <li>Key question: does the market react more to the gadget or to the ecosystem?</li>
+          <li><strong>TODO:</strong> HERE add cumulative return windows for <em>(this stock)</em> around each GPU event.</li>
+          <li><strong>TODO:</strong> HERE add volume + volatility footprints for <em>(this stock)</em>.</li>
+          <li><strong>TODO:</strong> HERE add benchmark-adjusted AR/CAR + significance tests.</li>
         </ul>
       </div>
     </div>
 
-    <div class="sdx-chart-block" data-animate="fade-up" style="margin-top:2rem;">
+    <div class="sdx-panel" data-animate="fade-up" style="margin-top:1.2rem;">
+      <p class="heading">Reference event list (8)</p>
+      <ul class="sdx-list">
+        <li><strong>CUDA launch</strong> - June 23, 2007</li>
+        <li><strong>Tesla V100 launch</strong> - May 10, 2017</li>
+        <li><strong>RTX 2080 Ti launch</strong> - August 20, 2018</li>
+        <li><strong>A100 Ampere launch</strong> - May 14, 2020</li>
+        <li><strong>Arm acquisition announcement</strong> - September 13, 2020</li>
+        <li><strong>H100 Hopper launch</strong> - March 22, 2022</li>
+        <li><strong>ChatGPT / AI boom catalyst</strong> - November 30, 2022</li>
+        <li><strong>Blackwell B200 announcement</strong> - March 18, 2024</li>
+      </ul>
+      <!-- TODO: Add a small table with event timing (pre-open/intraday/after-close) once curated. -->
+    </div>
+
+    <div class="sdx-chart-block" data-animate="fade-up" style="margin-top:1.8rem;">
       <h3 style="font-family:'Space Grotesk',sans-serif; margin-bottom:0.6rem;">
-        NVIDIA innovation windows
+        HERE add cumulative return windows for (this stock)
       </h3>
       <p class="sdx-note">
-        Cumulative returns over a 30-day window around eight NVIDIA innovation events.
-        Each panel is centered on the announcement day (vertical line), with pre- and
-        post-event periods shaded.
+        Add a grid of cumulative returns in a symmetric window around each GPU event (e.g., \(t=-30..+30\)).
+        Mark \(t=0\) clearly and keep axes fixed so events are visually comparable.
       </p>
-      <img src="assets/nvidia_event_windows.png"
-           alt="Eight NVIDIA innovation events with 30-day cumulative returns around each announcement."
-           style="width:100%; border-radius:12px; margin-top:1rem;">
+      <!-- TODO: Replace this block with an embed or exported figure. -->
+      <!-- TODO: HERE add a second grid for volume and volatility footprints, event-aligned. -->
     </div>
 
-    <div class="sdx-chart-block" data-animate="fade-up" style="margin-top:2rem;">
+    <div class="sdx-chart-block" data-animate="fade-up" style="margin-top:1.8rem;">
       <h3 style="font-family:'Space Grotesk',sans-serif; margin-bottom:0.6rem;">
-        NVIDIA in the AI era
+        HERE add a long-horizon context view for (this stock)
       </h3>
       <p class="sdx-note">
-        NVIDIA stock price and cumulative return since early 2022, with vertical lines
-        marking the H100 launch, the public release of ChatGPT, and the Blackwell B200
-        announcement. This is what an innovation wave looks like when it hits the market.
+        Add a multi-year view (price + cumulative return) with vertical lines for the major events above.
+        Annotate obvious confounders (earnings, macro prints, overlapping news) so interpretation stays honest.
       </p>
-      <img src="assets/nvidia_ai_era.png"
-           alt="NVIDIA stock price and cumulative return since 2022 with key AI events highlighted."
-           style="width:100%; border-radius:12px; margin-top:1rem;">
+      <!-- TODO: Replace this block with an embed or exported figure. -->
     </div>
 
+    <h3 class="title is-4" style="margin-top:2.4rem;">Event deep dives (fill-here blocks)</h3>
+    <p class="sdx-note">
+      Each card below is intentionally unfinished. It’s a checklist for what to add per event once the analysis is finalized.
+    </p>
+
+    <div class="sdx-case-grid" style="margin-top:1.2rem;">
+      <div class="sdx-case-card" data-animate="fade-up">
+        <div class="sdx-tag"><span>NVIDIA</span><span>CUDA (2007)</span></div>
+        <h3>CUDA: platform launch</h3>
+        <ul class="sdx-list">
+          <li><!-- TODO: Insert 3-panel plot (price, daily returns, cumulative returns) for CUDA window. --><strong>TODO:</strong> add per-event 3-panel plot.</li>
+          <li><!-- TODO: Insert abnormal returns vs benchmark (AR, CAR). --><strong>TODO:</strong> add abnormal returns (AR/CAR) vs market model.</li>
+          <li><!-- TODO: Write a 3-sentence interpretation: pre-drift, day-0 jump, post-drift. --><strong>TODO:</strong> write interpretation (pre / day 0 / post).</li>
+        </ul>
+      </div>
+
+      <div class="sdx-case-card" data-animate="fade-up">
+        <div class="sdx-tag"><span>NVIDIA</span><span>V100 (2017)</span></div>
+        <h3>Tesla V100: AI hardware launch</h3>
+        <ul class="sdx-list">
+          <li><strong>TODO:</strong> add per-event plots (price/returns/cumulative returns).</li>
+          <li><strong>TODO:</strong> add volume pulse and volatility shift panels.</li>
+          <li><strong>TODO:</strong> document event timing + next trading-day alignment.</li>
+        </ul>
+      </div>
+
+      <div class="sdx-case-card" data-animate="fade-up">
+        <div class="sdx-tag"><span>NVIDIA</span><span>RTX 2080 Ti (2018)</span></div>
+        <h3>RTX 2080 Ti: consumer GPU breakthrough</h3>
+        <ul class="sdx-list">
+          <li><strong>TODO:</strong> add per-event plots and summary metrics table.</li>
+          <li><strong>TODO:</strong> check overlap with earnings/news cycle (confounders).</li>
+          <li><strong>TODO:</strong> compare “consumer launch” vs “datacenter launch” archetypes.</li>
+        </ul>
+      </div>
+
+      <div class="sdx-case-card" data-animate="fade-up">
+        <div class="sdx-tag"><span>NVIDIA</span><span>A100 (2020)</span></div>
+        <h3>A100: datacenter acceleration step</h3>
+        <ul class="sdx-list">
+          <li><strong>TODO:</strong> add AR/CAR vs benchmark (and robustness window sizes).</li>
+          <li><strong>TODO:</strong> add volume/volatility comparison pre vs post.</li>
+          <li><strong>TODO:</strong> note pandemic-era regime effects.</li>
+        </ul>
+      </div>
+
+      <div class="sdx-case-card" data-animate="fade-up">
+        <div class="sdx-tag"><span>NVIDIA</span><span>Arm (2020)</span></div>
+        <h3>Arm acquisition announcement: corporate shock</h3>
+        <ul class="sdx-list">
+          <li><strong>TODO:</strong> add CAR decomposition (day 0 vs drift).</li>
+          <li><strong>TODO:</strong> add peer/competitor spillover check (ARM ecosystem).</li>
+          <li><strong>TODO:</strong> flag regulatory timeline confounders.</li>
+        </ul>
+      </div>
+
+      <div class="sdx-case-card" data-animate="fade-up">
+        <div class="sdx-tag"><span>NVIDIA</span><span>H100 (2022)</span></div>
+        <h3>H100: AI training infrastructure launch</h3>
+        <ul class="sdx-list">
+          <li><strong>TODO:</strong> add per-event plots + benchmark-adjusted returns.</li>
+          <li><strong>TODO:</strong> add “supply chain” spillover plots (planned).</li>
+          <li><strong>TODO:</strong> clarify what counts as “launch” vs “availability”.</li>
+        </ul>
+      </div>
+
+      <div class="sdx-case-card" data-animate="fade-up">
+        <div class="sdx-tag"><span>Ecosystem</span><span>ChatGPT (2022)</span></div>
+        <h3>ChatGPT: ecosystem shock</h3>
+        <ul class="sdx-list">
+          <li><strong>TODO:</strong> justify why <em>(this stock)</em> is the "treated" firm (and define peers).</li>
+          <li><strong>TODO:</strong> add multi-ticker overlay (<em>(this stock)</em> + suppliers + hyperscalers).</li>
+          <li><strong>TODO:</strong> add discussion of diffuse/slow information diffusion.</li>
+        </ul>
+      </div>
+
+      <div class="sdx-case-card" data-animate="fade-up">
+        <div class="sdx-tag"><span>NVIDIA</span><span>Blackwell (2024)</span></div>
+        <h3>Blackwell B200: next-gen architecture announcement</h3>
+        <ul class="sdx-list">
+          <li><strong>TODO:</strong> add per-event plots + AR/CAR summary.</li>
+          <li><strong>TODO:</strong> compare with H100: does the market “learn”?</li>
+          <li><strong>TODO:</strong> add supplier constellation reaction (planned).</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="title is-4" style="margin-top:2.6rem;">2) GenAI ecosystem milestones</h3>
+    <p class="sdx-note">
+      GenAI events are not clean single-firm shocks. They spread across an ecosystem (model builders, cloud platforms,
+      chip suppliers, apps). The hard part is defining what we mean by “the market reaction”: one ticker, a basket,
+      or a spillover map.
+    </p>
+
+    <div class="sdx-grid-cards" style="margin-top:1.2rem;">
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>Define the ecosystem</h3>
+        <ul class="sdx-list">
+          <li><strong>Treated set:</strong> which tickers are direct beneficiaries?</li>
+          <li><strong>Spillover set:</strong> suppliers/partners/competitors that should react too.</li>
+          <li><strong>Benchmark:</strong> tech sector ETF vs broad market vs factor model.</li>
+        </ul>
+      </div>
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>Define \(t=0\)</h3>
+        <ul class="sdx-list">
+          <li><strong>Release vs announcement:</strong> public availability can matter more than press.</li>
+          <li><strong>Timing:</strong> after-close news often shows up on \(t=+1\).</li>
+          <li><strong>Leakage:</strong> rumors/teasers can create real pre-drift.</li>
+        </ul>
+      </div>
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>What to add here</h3>
+        <ul class="sdx-list">
+          <li><strong>TODO:</strong> HERE add cumulative return windows for <em>(each ecosystem stock)</em> around each GenAI event.</li>
+          <li><strong>TODO:</strong> HERE add treated-vs-spillover basket returns and compare.</li>
+          <li><strong>TODO:</strong> HERE add a spillover heatmap around \(t=0\) (correlation / abnormal returns).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sdx-panel" data-animate="fade-up" style="margin-top:1.2rem;">
+      <p class="heading">Reference event list (5)</p>
+      <ul class="sdx-list">
+        <li><strong>ChatGPT launch</strong> - November 30, 2022</li>
+        <li><strong>Meta LLaMA release</strong> - February 24, 2023</li>
+        <li><strong>GPT-4 release</strong> - March 14, 2023</li>
+        <li><strong>Microsoft Copilot announcement</strong> - March 16, 2023</li>
+        <li><strong>Google Bard launch</strong> - March 21, 2023</li>
+      </ul>
+      <!-- TODO: Add per-event timing tags and a short “why this date” citation for each. -->
+    </div>
+
+    <div class="sdx-chart-block" data-animate="fade-up" style="margin-top:1.8rem;">
+      <h3 style="font-family:'Space Grotesk',sans-serif; margin-bottom:0.6rem;">
+        HERE add GenAI ecosystem overlays (basket + spillovers)
+      </h3>
+      <p class="sdx-note">
+        Add (1) a treated-vs-spillover basket plot around each event and (2) one ecosystem heatmap view that shows
+        which tickers co-move most strongly in the event window.
+      </p>
+      <!-- TODO: Replace this block with an embed or exported figure. -->
+    </div>
+
+    <h3 class="title is-4" style="margin-top:2.6rem;">3) Apple product/platform/silicon pivots</h3>
+    <p class="sdx-note">
+      Apple events are famous for rumor cycles. That makes them perfect for testing anticipation (pre-drift), but it also
+      makes \(t=0\) ambiguous: keynote announcements, preorder opens, and first-day sales are different “information moments”.
+      This section treats that ambiguity as part of the analysis, not something to hide.
+    </p>
+
+    <div class="sdx-grid-cards" style="margin-top:1.2rem;">
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>Define \(t=0\)</h3>
+        <ul class="sdx-list">
+          <li><strong>Keynote vs release:</strong> decide which is “the event” (or test both).</li>
+          <li><strong>Timing:</strong> Apple keynotes often occur during market hours.</li>
+          <li><strong>Leakage:</strong> separate “expected refresh” from true surprise pivots.</li>
+        </ul>
+      </div>
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>What to measure</h3>
+        <ul class="sdx-list">
+          <li><strong>Anticipation:</strong> pre-window drift and volume.</li>
+          <li><strong>Impact:</strong> day-0/+1 reaction (announcement-day jump).</li>
+          <li><strong>Spillovers:</strong> suppliers/partners that should react alongside Apple.</li>
+        </ul>
+      </div>
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>What to add here</h3>
+        <ul class="sdx-list">
+          <li><strong>TODO:</strong> HERE add cumulative return windows for <em>(this stock)</em> around each Apple event.</li>
+          <li><strong>TODO:</strong> HERE add “announcement vs availability” sensitivity plots.</li>
+          <li><strong>TODO:</strong> HERE add supply-chain spillover plots (supplier basket).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sdx-panel" data-animate="fade-up" style="margin-top:1.2rem;">
+      <p class="heading">Reference event list (8)</p>
+      <ul class="sdx-list">
+        <li><strong>iPod launch</strong> - October 23, 2001</li>
+        <li><strong>iPhone launch</strong> - June 29, 2007</li>
+        <li><strong>iPad launch</strong> - April 3, 2010</li>
+        <li><strong>iPhone 5S with Touch ID</strong> - September 20, 2013</li>
+        <li><strong>Apple Watch launch</strong> - April 24, 2015</li>
+        <li><strong>AirPods launch</strong> - December 13, 2016</li>
+        <li><strong>M1 chip announcement</strong> - November 10, 2020</li>
+        <li><strong>Vision Pro announcement</strong> - June 5, 2023</li>
+      </ul>
+      <!-- TODO: Add timing tags and clarify which date is announcement vs first-availability per event. -->
+    </div>
+
+    <div class="sdx-chart-block" data-animate="fade-up" style="margin-top:1.8rem;">
+      <h3 style="font-family:'Space Grotesk',sans-serif; margin-bottom:0.6rem;">
+        HERE add Apple windows + supply-chain overlays
+      </h3>
+      <p class="sdx-note">
+        Add (1) a grid of cumulative return windows for the Apple events and (2) a companion panel that shows how
+        key suppliers/partners move in the same windows (spillover).
+      </p>
+      <!-- TODO: Replace this block with an embed or exported figure. -->
+    </div>
+
+    <h3 class="title is-4" style="margin-top:2.6rem;">4) Biotech approvals &amp; treatment breakthroughs (kept for the end)</h3>
+    <p class="sdx-note">
+      Biotech is last on purpose: these events are messy and confounder-heavy. Trial readouts, FDA decisions,
+      labeling changes, and reimbursement news can all hit the tape with different “information content”.
+      If we don’t define \(t=0\) and the benchmark cleanly, we will fool ourselves.
+    </p>
+
+    <div class="sdx-grid-cards" style="margin-top:1.2rem;">
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>Define \(t=0\)</h3>
+        <ul class="sdx-list">
+          <li><strong>Regulatory decisions:</strong> FDA approval dates are cleanest.</li>
+          <li><strong>Trial readouts:</strong> preprints/press releases can leak before “official” news.</li>
+          <li><strong>Availability:</strong> commercial launch may matter separately from approval.</li>
+        </ul>
+      </div>
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>What to measure</h3>
+        <ul class="sdx-list">
+          <li><strong>Impact:</strong> large day-0 moves are common — consider shorter windows too.</li>
+          <li><strong>Benchmarking:</strong> sector index/factor model matters more than in megacap tech.</li>
+          <li><strong>Confounders:</strong> competing trial news, safety signals, and policy headlines.</li>
+        </ul>
+      </div>
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>What to add here</h3>
+        <ul class="sdx-list">
+          <li><strong>TODO:</strong> HERE add cumulative return windows for <em>(this stock)</em> around each biotech event.</li>
+          <li><strong>TODO:</strong> HERE add AR/CAR vs a biotech benchmark and discuss confounders.</li>
+          <li><strong>TODO:</strong> HERE add a short “event definition” note with citations for every date.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sdx-panel" data-animate="fade-up" style="margin-top:1.2rem;">
+      <p class="heading">Reference event list (7)</p>
+      <ul class="sdx-list">
+        <li><strong>First mRNA vaccine (Comirnaty)</strong> - December 11, 2020</li>
+        <li><strong>Wegovy GLP-1 weight loss launch</strong> - June 4, 2021</li>
+        <li><strong>Paxlovid oral antiviral launch</strong> - December 22, 2021</li>
+        <li><strong>Mounjaro (Tirzepatide) launch</strong> - May 13, 2022</li>
+        <li><strong>Leqembi Alzheimer’s approval</strong> - January 6, 2023</li>
+        <li><strong>Zepbound obesity launch</strong> - November 8, 2023</li>
+        <li><strong>Casgevy CRISPR therapy</strong> - December 8, 2023</li>
+      </ul>
+      <!-- TODO: Decide the ticker universe (originator + competitors) and add it here. -->
+    </div>
   </div>
 </section>
--->
 
 <!-- HOW TO READ -->
 <section class="section sdx-section alt" id="how-to-read">
@@ -1340,10 +1642,10 @@ a:hover {
   <div class="container">
     <h2 class="title is-3">Typical reaction shapes around innovation events</h2>
     <p>
-      Not every announcement looks the same. Some behave like classic “platform
-      launches”, others like hardware hype cycles or broad ecosystem shocks.
-      The interactive chart below shows stylized average <strong>cumulative returns</strong>
-      for three archetypes over an 11-day window.
+      Not every announcement looks the same. Some behave like classic "platform
+      launches", others like hardware hype cycles or broad ecosystem shocks.
+      The interactive chart below is a <strong>placeholder sketch</strong> (hard-coded toy curves).
+      Once archetypes are finalized, we will replace this with averages computed from real event windows.
     </p>
     <div class="sdx-chart-block" data-animate="fade-up">
       <div class="sdx-toggle-group">
@@ -1353,8 +1655,7 @@ a:hover {
       </div>
       <canvas id="eventReactionChart" style="max-height: 380px; margin-top: 1rem;"></canvas>
       <p class="sdx-note">
-        These curves are schematic summaries based on our event windows; the static charts
-        above show the full event-level detail.
+        Placeholder only. <strong>TODO:</strong> compute archetype-average cumulative returns from the real event window dataset and replace the toy values.
       </p>
     </div>
   </div>
@@ -1368,7 +1669,7 @@ a:hover {
       Some events are expected (annual refresh cycles), others catch everyone off guard
       (a new AI architecture or a payment product out of nowhere). Below we sketch how
       the <em>surprise level</em> of an innovation relates to its average announcement-day
-      abnormal return, for different types of events.
+      abnormal return, for different types of events. This is currently a schematic placeholder.
     </p>
     <div class="sdx-chart-block" data-animate="fade-up">
       <div class="sdx-toggle-group">
@@ -1378,8 +1679,7 @@ a:hover {
       </div>
       <canvas id="surpriseChart" style="max-height: 320px; margin-top: 1rem;"></canvas>
       <p class="sdx-note">
-        In the full analysis, we quantify “surprise” using pre-event drift and volume,
-        then compare it to actual abnormal returns on day 0.
+        <strong>TODO:</strong> replace the toy bars with measured surprise proxies (pre-drift, pre-volume) and real day-0 abnormal returns.
       </p>
     </div>
   </div>
@@ -1389,7 +1689,7 @@ a:hover {
 <section class="section sdx-section" id="flourish">
   <div class="container">
     <h2 class="title is-3">Innovation timeline &amp; market overlays</h2>
-    <p>Interactive views for Nvidia.</p>
+    <p>Interactive views for the GPU pilot (currently NVIDIA).</p>
     <div class="sdx-chart-block" data-animate="fade-up">
       <div class="flourish-embed flourish-timeline" data-src="visualisation/26738865"></div>
       <div class="flourish-embed flourish-chart" data-src="visualisation/26723505" style="margin-top: 1.2rem;"></div>
@@ -1428,6 +1728,76 @@ a:hover {
         </ul>
         <p style="margin-top:0.8rem;">Most innovation stories are systems stories. This map shows where the ripple travels once NVIDIA announces a new chip.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINDINGS (PLACEHOLDER) -->
+<section class="section sdx-section alt" id="findings">
+  <div class="container">
+    <h2 class="title is-3">Findings (draft / fill-here)</h2>
+    <p class="sdx-note">
+      This is where the story should land: clear answers to the research questions above. It is intentionally unfinished
+      until the benchmark model and robustness checks are finalized.
+    </p>
+    <div class="sdx-grid-cards" style="margin-top:1.2rem;">
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>1) Pre-announcement drift</h3>
+        <ul class="sdx-list">
+          <li><strong>Goal:</strong> test whether prices/volume move before the “official” event day (anticipation or leakage).</li>
+          <li><!-- TODO: Add plot of cumulative returns for t=-30..-1 and distribution across events. --><strong>TODO:</strong> add pre-window cumulative return plots + summary stats.</li>
+          <li><!-- TODO: Add significance tests and multiple-comparisons note. --><strong>TODO:</strong> add significance tests + multiple-testing control.</li>
+        </ul>
+      </div>
+
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>2) Announcement-day reaction (day 0 / +1)</h3>
+        <ul class="sdx-list">
+          <li><strong>Goal:</strong> measure the immediate reaction once the headline is tradable (timing-aware).</li>
+          <li><!-- TODO: Add AR(0) and AR(+1) by event, with confidence intervals. --><strong>TODO:</strong> add AR(0), AR(+1), and confidence intervals.</li>
+          <li><!-- TODO: Separate after-close vs pre-open events. --><strong>TODO:</strong> split by event timing (after-close vs pre-open).</li>
+        </ul>
+      </div>
+
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>3) Post-event drift (under-reaction)</h3>
+        <ul class="sdx-list">
+          <li><strong>Goal:</strong> test whether the market keeps drifting after the headline (slow information diffusion).</li>
+          <li><!-- TODO: Add CAR(0, +30) and CAR(+2, +30) and compare. --><strong>TODO:</strong> add CAR summaries and compare immediate vs delayed components.</li>
+          <li><!-- TODO: Compare “platform” vs “product” vs “ecosystem” events. --><strong>TODO:</strong> compare drift by event archetype.</li>
+        </ul>
+      </div>
+
+      <div class="sdx-card" data-animate="fade-up">
+        <h3>4) Attention signals (volume &amp; volatility)</h3>
+        <ul class="sdx-list">
+          <li><strong>Goal:</strong> measure whether attention/uncertainty spikes around innovations, even when price barely moves.</li>
+          <li><!-- TODO: Add volume and volatility deltas, pre vs post. --><strong>TODO:</strong> add pre/post volume and volatility deltas for each event.</li>
+          <li><!-- TODO: Add spillover analysis for supplier/competitor sets. --><strong>TODO:</strong> add spillover plots (ecosystem tickers).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIMITATIONS / ROBUSTNESS (CHECKLIST) -->
+<section class="section sdx-section" id="robustness">
+  <div class="container">
+    <h2 class="title is-3">Limitations &amp; robustness (checklist)</h2>
+    <div class="sdx-panel" data-animate="fade-up" style="margin-top:1.2rem;">
+      <p class="heading">What can break an event study</p>
+      <ul class="sdx-list">
+        <li><strong>Confounders:</strong> earnings, guidance, macro prints, and multi-day news cycles near the event window.</li>
+        <li><strong>Date ambiguity:</strong> “announcement” vs “launch” vs “availability” vs “leak”.</li>
+        <li><strong>Overlapping events:</strong> clustered innovations can make attribution impossible without extra structure.</li>
+        <li><strong>Benchmark choice:</strong> market vs sector vs factor model changes what “abnormal” means.</li>
+        <li><strong>Selection bias:</strong> picking only famous successes inflates perceived footprints.</li>
+      </ul>
+      <ul class="sdx-list" style="margin-top:0.8rem;">
+        <li><!-- TODO: Add a robustness table per event: timing, overlap, confounders, benchmark used. --><strong>TODO:</strong> add a per-event robustness table (timing, overlaps, confounders, benchmark).</li>
+        <li><!-- TODO: Add a short ethics/disclaimer paragraph. --><strong>TODO:</strong> add ethics note + “not investment advice” disclaimer.</li>
+        <li><!-- TODO: Add references/data sources section with links. --><strong>TODO:</strong> add references + data sources (APIs, filings, press releases).</li>
+      </ul>
     </div>
   </div>
 </section>

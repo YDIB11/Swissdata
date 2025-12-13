@@ -43,8 +43,24 @@ body {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
 }
 
+/* Bulma sets titles to dark gray by default; override for our dark theme. */
+.content {
+  color: var(--text);
+}
+
+.content .title,
+.content .subtitle,
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: #f7f9ff;
+}
+
 strong {
-  color: #8cdcff;
+  color: var(--muted);
 }
 
 
@@ -131,7 +147,7 @@ strong {
 
 .navbar .navbar-item.is-active,
 .navbar .navbar-link.is-active {
-  color: var(--accent) !important;
+  color: var(--muted) !important;
 }
 
 .navbar .navbar-item.is-active::after,
@@ -479,7 +495,7 @@ hr {
 
 .sdx-panel .title.is-5,
 .sdx-panel .title.is-6 {
-  color: var(--accent);
+  color: var(--muted);
 }
 
 .sdx-formula-grid {
@@ -805,11 +821,11 @@ hr {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
 }
 a {
-  color: var(--accent);
+  color: var(--muted);
 }
 
 a:hover {
-  color: #7ef7ff;
+  color: #d9e2ff;
 }
 
 .sdx-highlight {
@@ -1162,6 +1178,7 @@ a:hover {
         <div class="value">50+</div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -1251,6 +1268,7 @@ a:hover {
       </ul>
       <!-- TODO: Add a short paragraph on why we do not "discover" events automatically (measurement vs discovery). -->
     </div>
+
   </div>
 </section>
 
@@ -1274,7 +1292,7 @@ a:hover {
       </ul>
     </div>
 
-    <h3 class="title is-4" style="margin-top:2.4rem;">1) GPU platform &amp; hardware launches</h3>
+    <h3 class="title is-4" style="margin-top:2.4rem;">1 GPU platform &amp; hardware launches</h3>
     <p class="sdx-note">
       GPU “launch” dates are rarely clean. Announcements can happen at keynotes, in blog posts, or through staged embargoes;
       availability may lag by weeks; and rumor cycles can leak information into the pre-window.
@@ -1598,6 +1616,7 @@ a:hover {
       </ul>
       <!-- TODO: Decide the ticker universe (originator + competitors) and add it here. -->
     </div>
+
   </div>
 </section>
 
@@ -1777,6 +1796,7 @@ a:hover {
         </ul>
       </div>
     </div>
+
   </div>
 </section>
 

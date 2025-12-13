@@ -466,7 +466,9 @@ blockquote strong {
 .sdx-case-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  margin-top: 1.25rem;
 }
 
 .sdx-case-card {
@@ -475,6 +477,28 @@ blockquote strong {
   background: linear-gradient(150deg, rgba(159, 176, 255, 0.08), rgba(255, 196, 106, 0.09));
   border: 1px solid var(--border);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.sdx-case-card .title {
+  margin: 0;
+}
+
+.sdx-case-card p {
+  margin: 0;
+}
+
+.sdx-case-card .sdx-note {
+  margin-top: auto;
+}
+
+.sdx-case-card-wide {
+  grid-column: 1 / -1;
 }
 
 .sdx-case-card:hover {
@@ -550,6 +574,10 @@ blockquote strong {
 @media (max-width: 980px) {
   .sdx-hero-grid,
   .sdx-dual-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .sdx-case-grid {
     grid-template-columns: 1fr;
   }
 
@@ -638,11 +666,11 @@ blockquote strong {
 <section class="section sdx-section" id="cast">
   <div class="container">
     <h2 class="title is-3">Act I — Meet the Cast</h2>
-    <p>Innovation does not come from one world — it comes from many:</p>
+    <p>Innovation does not come from one world, it comes from many:</p>
 
     <div class="sdx-case-grid">
       <div class="sdx-case-card" data-animate="fade-up">
-        <h3 class="title is-5">1. Consumer Tech (Apple)</h3>
+        <h3 class="title is-5">1. Consumer Tech (e.g., Apple)</h3>
         <p>
           Products that reshape everyday life:<br>
           the iPhone, iPad, Apple Watch, AirPods, Vision Pro, and the M1 chip.
@@ -651,24 +679,24 @@ blockquote strong {
       </div>
 
       <div class="sdx-case-card" data-animate="fade-up">
-        <h3 class="title is-5">2. Compute Platforms (NVIDIA)</h3>
+        <h3 class="title is-5">2. Compute Platforms (e.g., NVIDIA)</h3>
         <p>CUDA, V100, A100, H100, Blackwell — the engines of modern AI.</p>
         <p class="sdx-note">Here the question is: <strong>do markets detect a platform shift before the public does?</strong></p>
       </div>
 
       <div class="sdx-case-card" data-animate="fade-up">
-        <h3 class="title is-5">3. EVs &amp; Robotics (Tesla)</h3>
+        <h3 class="title is-5">3. EVs &amp; Robotics (e.g., Tesla)</h3>
         <p>Tesla innovates <em>live</em>: Model 3 lines, cracked Cybertruck windows, Battery Day, the Tesla Bot.</p>
         <p class="sdx-note">These events test whether markets respond to <strong>technology</strong> or <strong>theater</strong>.</p>
       </div>
 
       <div class="sdx-case-card" data-animate="fade-up">
-        <h3 class="title is-5">4. AI Shockwaves (OpenAI, Google, Meta, Microsoft)</h3>
+        <h3 class="title is-5">4. AI Shockwaves (e.g., OpenAI, Google, Meta, Microsoft)</h3>
         <p>ChatGPT, GPT‑4, LLaMA, Copilot, Bard — events that shift entire industries at once.</p>
       </div>
 
-      <div class="sdx-case-card" data-animate="fade-up">
-        <h3 class="title is-5">5. Biotech &amp; Health (mRNA, GLP‑1, CRISPR)</h3>
+      <div class="sdx-case-card sdx-case-card-wide" data-animate="fade-up">
+        <h3 class="title is-5">5. Biotech &amp; Health (e.g., mRNA, GLP‑1, CRISPR)</h3>
         <p>Here innovation is gated by regulation — which creates powerful, binary event days.</p>
       </div>
     </div>

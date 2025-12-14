@@ -919,7 +919,7 @@ Each event in this table represents a moment when _someone_ believed they were w
 
 <section class="section sdx-section alt" id="cast">
   <div class="container">
-    <h2 class="title is-3">Act I, Meet the Cast</h2>
+    <h2 class="title is-3">Act I - Meet the Cast</h2>
     <div class="sdx-panel" data-animate="fade-up">
       <p>
         Innovation doesn't wear a single costume. It arrives in many forms, each with its own personality, its own audience,
@@ -1164,7 +1164,7 @@ The GLP 1 story is particularly remarkable. Drugs like Wegovy and Mounjaro haven
 
 <section class="section sdx-section alt" id="method">
   <div class="container">
-    <h2 class="title is-3">Act II, The Detective Method</h2>
+    <h2 class="title is-3">Act II - The Detective Method</h2>
 
     <div class="sdx-panel" data-animate="fade-up">
       <h3 class="title is-4" style="margin-top:0;">The Event Study Method</h3>
@@ -1359,7 +1359,7 @@ Interpretation: high volume plus positive returns suggests informed enthusiasm. 
 
 <section class="section sdx-section alt" id="case-files">
   <div class="container">
-    <h2 class="title is-3">Act III, Case Files Across the Innovation Landscape</h2>
+    <h2 class="title is-3">Act III - Case Files Across the Innovation Landscape</h2>
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 The stage is set. You understand our method. Now comes the exciting part: **what did we actually find?**
 
@@ -1368,7 +1368,7 @@ Rather than marching through companies one by one, we've organized our findings 
 </div>
 
     <div class="sdx-panel" id="chapter-apple" data-animate="fade-up">
-      <h2 class="title is-4">Chapter 1, Apple: The Slow Recognition of Visible Innovation</h2>
+      <h2 class="title is-4">Chapter 1 - Apple: The Slow Recognition of Visible Innovation</h2>
       <div class="content" markdown="1">
 
 Apple's innovations are the most watched, most analyzed, most debated product launches on Earth. Millions tune in to keynotes. Thousands of articles appear within hours. Every financial analyst in tech has an opinion.
@@ -1391,7 +1391,17 @@ But then something remarkable happened. Over the next 30 days, as people actuall
 
 **30-day cumulative return: +30.98%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Apple iPod Launch cumulative return chart (apple_event_analysis.ipynb, Step 5 visualization).</p>
+<iframe
+  id="innovation-score-iframe"
+  src="{{ '/assets/ipod_launch_plotly_dark.html' | relative_url }}"
+  title="Innovation score explorer"
+  width="100%"
+  height="950"
+  frameborder="0"
+  scrolling="no"
+  style="display:block; border:0; overflow:hidden;"
+  loading="lazy"
+></iframe>
 
 The iPod story is the perfect example of what we call the **"Slow Burn"** pattern, an innovation that looks unremarkable on day one but proves transformative over time. The market's initial skepticism wasn't irrational; it was based on reasonable concerns about price and competition. But as more information emerged, early reviews, initial sales figures, the experience of actually using the device, the market gradually recognized what it had missed.
 
@@ -1450,6 +1460,8 @@ The M1 story shows that markets _can_ recognize platform shifts, it just takes t
 When we step back and look at all eight Apple events together, a striking pattern emerges:
 
 <iframe src="assets/apple_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
+
+<iframe src="assets/apple_plotly_05_30day_cumulative_returns.html" width="100%" height="600" frameborder="0"></iframe>
 
 | Event              | Day-0 Return | 30-Day Return | The Pattern                         |
 | ------------------ | ------------ | ------------- | ----------------------------------- |
@@ -1513,7 +1525,17 @@ The market's response was immediate and unmistakable:
 **Event day return: +17.83%**  
 **30-day return: +30.71%**
 
-<p class="sdx-note">PLACEHOLDER: Insert NVIDIA V100 Launch cumulative return chart (nvidia_event_analysis.ipynb, Step 5 visualization).</p>
+  <iframe
+  id="innovation-score-iframe"
+  src="{{ '/assets/tesla_v100_launch_plotly_dark.html' | relative_url }}"
+  title="Innovation score explorer"
+  width="100%"
+  height="1000"
+  frameborder="0"
+  scrolling="no"
+  style="display:block; border:0; overflow:hidden;"
+  loading="lazy"
+></iframe>
 
 This is what we call an **"Instant Footprint"**, immediate, sustained, unmistakable recognition. The market understood that NVIDIA had created the essential hardware for the AI revolution. No slow burn, no gradual awakening. The footprint was there on day one.
 
@@ -1542,6 +1564,7 @@ NVIDIA's ChatGPT-era rally didn't happen in November 2022. It happened over the 
 ### NVIDIA Event Summary: All 8 Events Compared
 
 <iframe src="assets/nvidia_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
+<iframe src="assets/tesla_plotly_05_30day_cumulative_returns.html" width="100%" height="800" frameborder="0"></iframe>
 
 | Event           | Day-0 Return | 30-Day Return | Pattern Type           |
 | --------------- | ------------ | ------------- | ---------------------- |
@@ -1562,7 +1585,7 @@ CUDA in 2007 was a solution looking for a problem. The V100 in 2017 was a soluti
 </div>
 
     <div class="sdx-panel" id="chapter-tesla" data-animate="fade-up">
-      <h2 class="title is-4">Chapter 3, Tesla: Hype, Skepticism, and Spectacle</h2>
+      <h2 class="title is-4">Chapter 3 - Tesla: Hype, Skepticism, and Spectacle</h2>
       <div class="content" markdown="1">
 
 Tesla defies easy categorization. It's not just a car company, it's a phenomenon, a cultural touchstone, a perpetual drama playing out in real-time across social media, financial news, and Elon Musk's Twitter feed.
@@ -1610,7 +1633,17 @@ The spectacle _worked_, not despite the failure, but perhaps because of it. The 
 Event day return: **+0.74%**. Surprisingly muted given the viral explosion.  
 30-day return: **+32.19%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Tesla Cybertruck Reveal cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
+  <iframe
+  id="innovation-score-iframe"
+  src="{{ '/assets/cybertruck_reveal_plotly_dark.html' | relative_url }}"
+  title="Innovation score explorer"
+  width="100%"
+  height="1000"
+  frameborder="0"
+  scrolling="no"
+  style="display:block; border:0; overflow:hidden;"
+  loading="lazy"
+></iframe>
 
 The Cybertruck reveal shows something important about Tesla's relationship with markets: **spectacle can create sustained momentum, even when the spectacle includes embarrassing failures.** The event generated attention, attention generated interest, interest generated reservations, reservations suggested demand, and demand supported stock price.
 
@@ -1639,6 +1672,8 @@ Battery Day wasn't a failure of innovation, Tesla announced genuinely important 
 
 <iframe src="assets/tesla_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
 
+<iframe src="assets/tesla_plotly_05_30day_cumulative_returns.html" width="100%" height="600" frameborder="0"></iframe>
+
 | Event                 | Day-0 Return | 30-Day Return | What Happened            |
 | --------------------- | ------------ | ------------- | ------------------------ |
 | Model S Deliveries    | +4.97%       | -16.34%       | Early enthusiasm fades   |
@@ -1658,7 +1693,7 @@ This reflects Tesla's unique position in markets: it's priced on **belief in the
 </div>
 
     <div class="sdx-panel" id="chapter-ai" data-animate="fade-up">
-      <h2 class="title is-4">Chapter 4, AI Industry: When Everything Moves Together</h2>
+      <h2 class="title is-4">Chapter 4 - AI Industry: When Everything Moves Together</h2>
       <div class="content" markdown="1">
 
 On November 30, 2022, the world changed. OpenAI released ChatGPT, and within weeks, the technology industry was scrambling to respond. Every earnings call mentioned AI. Every company published AI strategies. The entire sector was suddenly re-evaluated through the lens of artificial intelligence.
@@ -1811,7 +1846,7 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
 
 <section class="section sdx-section alt" id="archetypes">
   <div class="container">
-    <h2 class="title is-3">Act IV, The Three Archetypes of Market Recognition</h2>
+    <h2 class="title is-3">Act IV - The Three Archetypes of Market Recognition</h2>
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
@@ -1885,7 +1920,7 @@ The **Slow Burn** category, nearly 30% of events, is the most fascinating findin
 
 <section class="section sdx-section alt" id="what-prices">
   <div class="container">
-    <h2 class="title is-3">Act V, Building the Innovation Signature Framework</h2>
+    <h2 class="title is-3">Act V - Building the Innovation Signature Framework</h2>
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
@@ -1972,6 +2007,61 @@ For events with positive 30-day returns:
   </div>
 </section>
 
+<section class="section sdx-section alt" id="act-vi">
+  <div class="container">
+    <h2 class="title is-3">Act VI - Test Your Own Innovation</h2>
+
+    <div class="sdx-panel" data-animate="fade-up" markdown="1">
+
+We've built a framework. Now let's make it actionable.
+
+---
+
+## The Innovation Score Calculator
+
+For any innovation event, collect:
+
+- Event-day stock return
+- 30-day cumulative return
+- Pre-event volatility
+- Post-event volatility
+- Volume change percentage
+
+Then score:
+
+| Component        | Max Points |
+| ---------------- | ---------- |
+| Return magnitude | 30         |
+| Positive bonus   | 20         |
+| Momentum         | 15         |
+| Volatility       | 10         |
+| Volume           | 10         |
+| **Total**        | **85**     |
+
+---
+
+## Validation Results
+
+<p class="sdx-note">PLACEHOLDER: Insert out-of-sample validation results (data/innovation_patterns/out_of_sample_validation.png).</p>
+
+We tested our framework on **13 events** not used in building the model. It successfully identified the category for **11 of 13** test events.
+
+  <iframe
+  id="innovation-score-iframe"
+  src="{{ '/assets/innovation_score_explorer.html' | relative_url }}"
+  title="Innovation score explorer"
+  width="100%"
+  height="1400"
+  frameborder="0"
+  scrolling="no"
+  style="display:block; border:0; overflow:hidden;"
+  loading="lazy"
+></iframe>
+
+</div>
+  </div>
+</section>
+
 <section class="section sdx-section alt" id="ai-era">
   <div class="container">
     <h2 class="title is-3">The AI Era: A Special Section</h2>
@@ -2027,51 +2117,6 @@ The AI era didn't just create winners, it restructured the entire technology lan
   </div>
 </section>
 
-<section class="section sdx-section alt" id="act-vi">
-  <div class="container">
-    <h2 class="title is-3">Act VI, Test Your Own Innovation</h2>
-
-    <div class="sdx-panel" data-animate="fade-up" markdown="1">
-
-We've built a framework. Now let's make it actionable.
-
----
-
-## The Innovation Score Calculator
-
-For any innovation event, collect:
-
-- Event-day stock return
-- 30-day cumulative return
-- Pre-event volatility
-- Post-event volatility
-- Volume change percentage
-
-Then score:
-
-| Component        | Max Points |
-| ---------------- | ---------- |
-| Return magnitude | 30         |
-| Positive bonus   | 20         |
-| Momentum         | 15         |
-| Volatility       | 10         |
-| Volume           | 10         |
-| **Total**        | **85**     |
-
----
-
-## Validation Results
-
-<p class="sdx-note">PLACEHOLDER: Insert out-of-sample validation results (data/innovation_patterns/out_of_sample_validation.png).</p>
-
-We tested our framework on **13 events** not used in building the model. It successfully identified the category for **11 of 13** test events.
-
-<p class="sdx-note">PLACEHOLDER: Flourish - interactive Innovation Score Explorer.</p>
-</div>
-
-  </div>
-</section>
-
 <section class="section sdx-section alt" id="conclusion">
   <div class="container">
     <h2 class="title is-3">Conclusion, What the Market Really Prices</h2>
@@ -2111,18 +2156,6 @@ Tesla events show that spectacle can create short-term volatility without sustai
 ---
 
 ### The Final Insight
-
-<iframe
-  id="innovation-score-iframe"
-  src="{{ '/assets/innovation_score_explorer.html' | relative_url }}"
-  title="Innovation score explorer"
-  width="100%"
-  height="1100"
-  frameborder="0"
-  scrolling="no"
-  style="display:block; border:0; overflow:hidden;"
-  loading="lazy"
-></iframe>
 
 <p class="sdx-note">PLACEHOLDER: Insert Combined Framework visualization (data/pattern_07_combined_framework.png).</p>
 

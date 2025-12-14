@@ -10,7 +10,7 @@ subtitle: "Innovation Footprints in Tech Stock Markets"
 
 <script>
   window.MathJax = {
-    tex: { inlineMath: [["\\(", "\\)"], ["$", "$"]] },
+    tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["$$", "$$"], ["\\[", "\\]"]] },
     options: { skipHtmlTags: ["script", "style", "noscript", "textarea"] }
   };
 </script>
@@ -53,6 +53,11 @@ body {
 .content h4,
 .content h5,
 .content h6 {
+  color: #f7f9ff;
+}
+
+.title,
+.subtitle {
   color: #f7f9ff;
 }
 
@@ -500,9 +505,71 @@ blockquote strong {
 
 .sdx-formula-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.9rem;
   margin-top: 1.1rem;
+}
+
+.sdx-formula-grid.sdx-formula-grid-core .sdx-formula-card:last-child {
+  grid-column: 1 / -1;
+}
+
+.sdx-step-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.25rem;
+}
+
+.sdx-step-card {
+  border-radius: 16px;
+  padding: 1.2rem 1.25rem;
+  background: linear-gradient(150deg, rgba(159, 176, 255, 0.07), rgba(255, 196, 106, 0.08));
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  position: relative;
+  overflow: hidden;
+}
+
+.sdx-step-card::after {
+  content: "";
+  position: absolute;
+  inset: -40% -20% auto auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(159, 176, 255, 0.08);
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+.sdx-step-head {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.sdx-step-num {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(5, 8, 20, 0.55);
+  color: #f7f9ff;
+  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
+  font-weight: 700;
+}
+
+.sdx-step-card .title {
+  margin: 0;
+}
+
+.sdx-step-card p {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
 }
 
 .sdx-formula-card {
@@ -575,11 +642,22 @@ blockquote strong {
 }
 
 .sdx-case-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: stretch;
+  gap: 1rem;
   margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.sdx-case-grid + .sdx-panel {
+  margin-top: 1.25rem;
+}
+
+.sdx-case-grid .sdx-case-card {
+  flex: 1 1 280px;
+  max-width: 360px;
 }
 
 .sdx-case-card {
@@ -606,10 +684,12 @@ blockquote strong {
 
 .sdx-case-card .sdx-note {
   margin-top: auto;
+  margin-bottom: 0.2rem;
 }
 
 .sdx-case-card-wide {
-  grid-column: 1 / -1;
+  flex-basis: 100%;
+  max-width: 760px;
 }
 
 .sdx-case-card:hover {
@@ -692,8 +772,21 @@ blockquote strong {
     grid-template-columns: 1fr;
   }
 
-  .sdx-case-grid {
+  .sdx-formula-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sdx-step-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sdx-case-grid {
+    justify-content: stretch;
+    margin-bottom: 1.25rem;
+  }
+
+  .sdx-case-grid .sdx-case-card {
+    max-width: none;
   }
 
   .sdx-hero-media {
@@ -715,7 +808,7 @@ blockquote strong {
         <div data-animate="fade-up">
           <div class="sdx-pill"><span>Event studies &bull; innovation &bull; stock markets</span></div>
           <h1 class="sdx-hero-title">Innovation Footprints in Tech Stock Markets</h1>
-          <p class="sdx-hero-body"><em>Can Wall Street smell the future… or only read the headlines afterwards?</em></p>
+          <p class="sdx-hero-body"><em>Can Wall Street smell the future, or only read the headlines afterwards?</em></p>
           <div class="sdx-hero-actions">
             <a class="sdx-btn sdx-btn-primary" href="#prologue">Start the story</a>
             <a class="sdx-btn sdx-btn-ghost" href="#case-files">Jump to chapters</a>
@@ -747,7 +840,7 @@ blockquote strong {
 
 <section class="section sdx-section alt" id="prologue">
   <div class="container">
-    <h2 class="title is-3">Prologue, The Problem with “Obvious” Innovation</h2>
+    <h2 class="title is-3">Prologue, The Problem with "Obvious" Innovation</h2>
     <div class="sdx-panel" data-animate="fade-up">
       <p>
         There's a peculiar comfort in hindsight. Standing in 2024, we can look back at the last two decades and
@@ -789,7 +882,7 @@ blockquote strong {
         <li><strong>Sudden abnormal returns</strong>, moments when a stock moves far more than you'd expect based on normal market conditions.</li>
         <li><strong>Unusual trading volume</strong>, evidence that investors are paying attention and repositioning around the news.</li>
         <li><strong>Anticipation before the event</strong>, gradual drift in prices in the weeks before the announcement.</li>
-        <li><strong>Long, slow-burning revaluation</strong>, weak day‑0 reaction, followed by rising conviction over weeks.</li>
+        <li><strong>Long, slow-burning revaluation</strong>, weak day 0 reaction, followed by rising conviction over weeks.</li>
       </ul>
       <p>Our mission is to search for these footprints across two decades of innovation history.</p>
       <blockquote>
@@ -806,13 +899,13 @@ Before we dive into the data, let's set the stage with the full scope of our inv
 
 The breadth of our investigation is intentional. Innovation takes many forms, and we wanted to understand whether the market recognizes different types of breakthroughs in different ways. A consumer gadget like the iPod is visible to everyone, millions saw the keynote, tried the product, formed opinions. But a computing platform like CUDA is invisible to most people, even as it quietly enables everything from video games to self-driving cars to ChatGPT.
 
-| Domain            | Companies/Events                    | Time Period | Examples                                         |
-| ----------------- | ----------------------------------- | ----------- | ------------------------------------------------ |
-| Consumer Tech     | Apple (8 events)                    | 2001-2023   | iPod, iPhone, iPad, AirPods, M1 Chip, Vision Pro |
-| Compute Platforms | NVIDIA (8 events)                   | 2007-2024   | CUDA, V100, H100, Blackwell B200                 |
-| Electric Vehicles | Tesla (8 events)                    | 2012-2023   | Model S, Model 3, Cybertruck, Battery Day        |
-| AI Industry       | 25 Tech Companies (8 events)        | 2022-2024   | ChatGPT, GPT-4, Copilot, LLaMA                   |
-| Healthcare        | 25 Healthcare Companies (10 events) | 2020-2024   | mRNA vaccines, GLP-1 drugs, CRISPR therapy       |
+| Domain            | Companies/Events                        | Time Period | Examples                                         |
+| ----------------- | --------------------------------------- | ----------- | ------------------------------------------------ |
+| Consumer Tech     | Apple (8 events)                        | 2001-2023   | iPod, iPhone, iPad, AirPods, M1 Chip, Vision Pro |
+| Compute Platforms | NVIDIA (8 events)                       | 2007-2024   | CUDA, V100, H100, Blackwell B200                 |
+| Electric Vehicles | Tesla (8 events)                        | 2012-2023   | Model S, Model 3, Cybertruck, Battery Day        |
+| AI Industry       | Top 25 Tech Companies (8 events)        | 2022-2024   | ChatGPT, GPT-4, Copilot, LLaMA                   |
+| Healthcare        | Top 25 Healthcare Companies (10 events) | 2020-2024   | mRNA vaccines, GLP-1 drugs, CRISPR therapy       |
 
 Each event in this table represents a moment when _someone_ believed they were witnessing history. Our job is to determine whether Wall Street agreed, and when.
 
@@ -868,7 +961,7 @@ Each event in this table represents a moment when _someone_ believed they were w
         </p>
         <p class="sdx-note"><strong>Question:</strong> who captures the footprint when the "main" innovator isn't tradable?</p>
       </div>
-      <div class="sdx-case-card sdx-case-card-wide" data-animate="fade-up">
+      <div class="sdx-case-card" data-animate="fade-up">
         <h3 class="title is-5">5. Biotech &amp; Health (e.g., mRNA, GLP-1, CRISPR)</h3>
         <p>
           Innovation behind a regulatory gate. Uncertainty collapses when approval arrives.
@@ -894,16 +987,16 @@ The iPhone faced similar skepticism. "No physical keyboard," critics complained.
 
 We analyzed **eight landmark Apple events** spanning 22 years to understand how markets process highly visible consumer innovation:
 
-| Event | Date | What It Was | The Skeptic's Take |
-|-------|------|-------------|-------------------|
-| **iPod Launch** | Oct 23, 2001 | "1,000 songs in your pocket" | An overpriced MP3 player in a recession |
-| **iPhone Launch** | Jun 29, 2007 | Phone + iPod + Internet device | Too expensive, no keyboard, carrier locked |
-| **iPad Launch** | Apr 3, 2010 | A tablet computer | Just a bigger iPod Touch, no laptop replacement |
-| **iPhone 5S Touch ID** | Sep 20, 2013 | Fingerprint authentication | Nice feature, but not a selling point |
-| **Apple Watch Launch** | Apr 24, 2015 | A computer on your wrist | Another fitness tracker, battery won't last |
-| **AirPods Launch** | Dec 13, 2016 | Truly wireless earbuds | They look ridiculous, easy to lose |
-| **M1 Chip Announcement** | Nov 10, 2020 | Apple's own silicon | Can they really beat Intel? Risky bet |
-| **Vision Pro Announcement** | Jun 5, 2023 | Spatial computing headset | $3,500, no killer app, VR has failed before |
+| Event                       | Date         | What It Was                    | The Skeptic's Take                              |
+| --------------------------- | ------------ | ------------------------------ | ----------------------------------------------- |
+| **iPod Launch**             | Oct 23, 2001 | "1,000 songs in your pocket"   | An overpriced MP3 player in a recession         |
+| **iPhone Launch**           | Jun 29, 2007 | Phone + iPod + Internet device | Too expensive, no keyboard, carrier locked      |
+| **iPad Launch**             | Apr 3, 2010  | A tablet computer              | Just a bigger iPod Touch, no laptop replacement |
+| **iPhone 5S Touch ID**      | Sep 20, 2013 | Fingerprint authentication     | Nice feature, but not a selling point           |
+| **Apple Watch Launch**      | Apr 24, 2015 | A computer on your wrist       | Another fitness tracker, battery won't last     |
+| **AirPods Launch**          | Dec 13, 2016 | Truly wireless earbuds         | They look ridiculous, easy to lose              |
+| **M1 Chip Announcement**    | Nov 10, 2020 | Apple's own silicon            | Can they really beat Intel? Risky bet           |
+| **Vision Pro Announcement** | Jun 5, 2023  | Spatial computing headset      | $3,500, no killer app, VR has failed before     |
 
 Notice the pattern? The market, the media, and often the public were skeptical on day one. The iPhone was "overpriced." The AirPods looked "weird." The M1 seemed like a dangerous bet against decades of Intel partnership.
 
@@ -929,16 +1022,16 @@ NVIDIA's story spans three distinct eras. In the early 2000s, it was a gaming co
 
 Each transition was driven by specific product launches and platform innovations. We analyzed **eight NVIDIA milestones** that marked these pivotal moments:
 
-| Event | Date | The Innovation | Why It Mattered (In Hindsight) |
-|-------|------|---------------|------------------------------|
-| **CUDA Launch** | Jun 23, 2007 | GPU computing becomes programmable | Enabled the deep learning revolution a decade later |
-| **Tesla V100 Launch** | May 10, 2017 | First Tensor Cores for AI | Purpose built AI hardware changes the game |
-| **RTX 2080 Ti Launch** | Aug 20, 2018 | Real time ray tracing | New visual computing paradigm for games and beyond |
-| **A100 Ampere Launch** | May 14, 2020 | 20x AI performance leap | The engine that would power ChatGPT training |
-| **Arm Acquisition Attempt** | Sep 13, 2020 | $40B semiconductor empire bid | Audacious reach for chip industry dominance |
-| **H100 Hopper Launch** | Mar 22, 2022 | The AI training workhorse | Every AI lab in the world would want these |
-| **ChatGPT AI Boom** | Nov 30, 2022 | Demand explosion catalyst | The world suddenly needed NVIDIA GPUs |
-| **Blackwell B200** | Mar 18, 2024 | 208 billion transistor monster | Next generation of AI infrastructure |
+| Event                       | Date         | The Innovation                     | Why It Mattered (In Hindsight)                      |
+| --------------------------- | ------------ | ---------------------------------- | --------------------------------------------------- |
+| **CUDA Launch**             | Jun 23, 2007 | GPU computing becomes programmable | Enabled the deep learning revolution a decade later |
+| **Tesla V100 Launch**       | May 10, 2017 | First Tensor Cores for AI          | Purpose built AI hardware changes the game          |
+| **RTX 2080 Ti Launch**      | Aug 20, 2018 | Real time ray tracing              | New visual computing paradigm for games and beyond  |
+| **A100 Ampere Launch**      | May 14, 2020 | 20x AI performance leap            | The engine that would power ChatGPT training        |
+| **Arm Acquisition Attempt** | Sep 13, 2020 | $40B semiconductor empire bid      | Audacious reach for chip industry dominance         |
+| **H100 Hopper Launch**      | Mar 22, 2022 | The AI training workhorse          | Every AI lab in the world would want these          |
+| **ChatGPT AI Boom**         | Nov 30, 2022 | Demand explosion catalyst          | The world suddenly needed NVIDIA GPUs               |
+| **Blackwell B200**          | Mar 18, 2024 | 208 billion transistor monster     | Next generation of AI infrastructure                |
 
 The CUDA story is particularly instructive. In June 2007, NVIDIA announced that programmers could now write general purpose code that would run on graphics cards. At the time, this seemed like a niche feature, interesting to researchers, perhaps, but hardly earth shattering for the gaming focused company.
 
@@ -964,16 +1057,16 @@ This creates unique challenges for understanding market recognition. With Apple 
 
 We analyzed **eight Tesla moments** that capture this unique dynamic:
 
-| Event | Date | The Story | The Drama |
-|-------|------|----------|----------|
-| **Model S Deliveries Begin** | Jun 22, 2012 | Tesla proves it can ship | First real cars to real customers |
-| **Autopilot Announcement** | Oct 10, 2014 | From carmaker to autonomy play | Suddenly competing with Google |
-| **Model 3 Reveal** | Mar 31, 2016 | Mass market EV unveiled | 325,000 reservations in one week |
-| **Model 3 First Deliveries** | Jul 28, 2017 | Production finally begins | "Production hell" nightmares start |
-| **Cybertruck Reveal** | Nov 21, 2019 | Radical truck design | Broken windows, polarized reactions |
-| **Battery Day 4680 Cells** | Sep 22, 2020 | Revolutionary battery tech | Promises of 56% cheaper batteries |
-| **Tesla Bot Announcement** | Aug 19, 2021 | Humanoid robots | Dancing human in robot costume |
-| **Cybertruck Deliveries Begin** | Nov 30, 2023 | Four years of waiting ends | Finally in customer driveways |
+| Event                           | Date         | The Story                      | The Drama                           |
+| ------------------------------- | ------------ | ------------------------------ | ----------------------------------- |
+| **Model S Deliveries Begin**    | Jun 22, 2012 | Tesla proves it can ship       | First real cars to real customers   |
+| **Autopilot Announcement**      | Oct 10, 2014 | From carmaker to autonomy play | Suddenly competing with Google      |
+| **Model 3 Reveal**              | Mar 31, 2016 | Mass market EV unveiled        | 325,000 reservations in one week    |
+| **Model 3 First Deliveries**    | Jul 28, 2017 | Production finally begins      | "Production hell" nightmares start  |
+| **Cybertruck Reveal**           | Nov 21, 2019 | Radical truck design           | Broken windows, polarized reactions |
+| **Battery Day 4680 Cells**      | Sep 22, 2020 | Revolutionary battery tech     | Promises of 56% cheaper batteries   |
+| **Tesla Bot Announcement**      | Aug 19, 2021 | Humanoid robots                | Dancing human in robot costume      |
+| **Cybertruck Deliveries Begin** | Nov 30, 2023 | Four years of waiting ends     | Finally in customer driveways       |
 
 Tesla's relationship with expectations is complicated. The Model 3 reveal generated euphoria, but then came years of "production hell" as Tesla struggled to actually build the cars it had promised. Battery Day generated massive anticipation, but the actual announcements disappointed investors expecting even more dramatic breakthroughs.
 
@@ -1001,16 +1094,16 @@ This realization led us to analyze AI events differently than company specific i
 
 We analyzed **eight AI era events** that shaped the technology landscape:
 
-| Event | Date | What Happened | Expected Beneficiaries |
-|-------|------|--------------|----------------------|
-| **NVIDIA H100 Launch** | Mar 22, 2022 | Ultimate AI training GPU announced | NVDA, TSM, MU, AVGO |
-| **ChatGPT Launch** | Nov 30, 2022 | AI goes mainstream overnight | MSFT, NVDA, GOOGL |
-| **Meta LLaMA Release** | Feb 24, 2023 | Open source AI democratized | META, NVDA, AMD |
-| **GPT 4 Release** | Mar 14, 2023 | Major capability leap | MSFT, NVDA, PLTR |
-| **Microsoft Copilot** | Mar 16, 2023 | AI enters the workplace | MSFT, NVDA, CRM |
-| **Google Bard Launch** | Mar 21, 2023 | Google's AI response | GOOGL, NVDA, TSM |
-| **Vision Pro Announcement** | Jun 5, 2023 | Spatial computing arrives | AAPL, TSM, QCOM |
-| **NVIDIA Blackwell B200** | Mar 18, 2024 | Next gen AI chips | NVDA, TSM, AVGO, MU |
+| Event                       | Date         | What Happened                      | Expected Beneficiaries |
+| --------------------------- | ------------ | ---------------------------------- | ---------------------- |
+| **NVIDIA H100 Launch**      | Mar 22, 2022 | Ultimate AI training GPU announced | NVDA, TSM, MU, AVGO    |
+| **ChatGPT Launch**          | Nov 30, 2022 | AI goes mainstream overnight       | MSFT, NVDA, GOOGL      |
+| **Meta LLaMA Release**      | Feb 24, 2023 | Open source AI democratized        | META, NVDA, AMD        |
+| **GPT 4 Release**           | Mar 14, 2023 | Major capability leap              | MSFT, NVDA, PLTR       |
+| **Microsoft Copilot**       | Mar 16, 2023 | AI enters the workplace            | MSFT, NVDA, CRM        |
+| **Google Bard Launch**      | Mar 21, 2023 | Google's AI response               | GOOGL, NVDA, TSM       |
+| **Vision Pro Announcement** | Jun 5, 2023  | Spatial computing arrives          | AAPL, TSM, QCOM        |
+| **NVIDIA Blackwell B200**   | Mar 18, 2024 | Next gen AI chips                  | NVDA, TSM, AVGO, MU    |
 
 <p class="sdx-note">PLACEHOLDER: Insert the Top 25 Innovation Companies table (innovation_sector_event_analysis.ipynb, Step 1 output).</p>
 
@@ -1040,23 +1133,23 @@ We analyzed **ten healthcare breakthroughs** that represent different types of m
 
 **Drug and Treatment Innovations:**
 
-| Event | Date | The Stakes | The Promise |
-|-------|------|-----------|------------|
-| **First mRNA Vaccine (Comirnaty)** | Dec 11, 2020 | Revolutionary platform | New way to build vaccines forever |
-| **Wegovy GLP 1 Weight Loss** | Jun 4, 2021 | Obesity treatment | First true weight loss drug |
-| **Paxlovid Oral Antiviral** | Dec 22, 2021 | At home treatment | Turn COVID into a manageable disease |
-| **Mounjaro (Tirzepatide)** | May 13, 2022 | Diabetes breakthrough | Dual hormone approach changes outcomes |
-| **Leqembi Alzheimer's Approval** | Jan 6, 2023 | First disease slowing drug | Proof Alzheimer's can be treated |
-| **Zepbound Obesity Launch** | Nov 8, 2023 | Massive blockbuster potential | GLP 1 competition accelerates |
-| **Casgevy CRISPR Therapy** | Dec 8, 2023 | Gene editing becomes real | Cure genetic diseases at the source |
+| Event                              | Date         | The Stakes                    | The Promise                            |
+| ---------------------------------- | ------------ | ----------------------------- | -------------------------------------- |
+| **First mRNA Vaccine (Comirnaty)** | Dec 11, 2020 | Revolutionary platform        | New way to build vaccines forever      |
+| **Wegovy GLP 1 Weight Loss**       | Jun 4, 2021  | Obesity treatment             | First true weight loss drug            |
+| **Paxlovid Oral Antiviral**        | Dec 22, 2021 | At home treatment             | Turn COVID into a manageable disease   |
+| **Mounjaro (Tirzepatide)**         | May 13, 2022 | Diabetes breakthrough         | Dual hormone approach changes outcomes |
+| **Leqembi Alzheimer's Approval**   | Jan 6, 2023  | First disease slowing drug    | Proof Alzheimer's can be treated       |
+| **Zepbound Obesity Launch**        | Nov 8, 2023  | Massive blockbuster potential | GLP 1 competition accelerates          |
+| **Casgevy CRISPR Therapy**         | Dec 8, 2023  | Gene editing becomes real     | Cure genetic diseases at the source    |
 
 **Technology and AI Innovations:**
 
-| Event | Date | The Stakes | The Promise |
-|-------|------|-----------|------------|
-| **AlphaFold 2 Breakthrough** | Nov 30, 2020 | Protein folding solved | Accelerate drug discovery dramatically |
-| **GPT 4 Medical AI Release** | Mar 14, 2023 | Medical AI advances | Better diagnosis and imaging analysis |
-| **Da Vinci 5 Surgical Robot** | Mar 14, 2024 | Next gen robotic surgery | Precision surgery advances |
+| Event                         | Date         | The Stakes               | The Promise                            |
+| ----------------------------- | ------------ | ------------------------ | -------------------------------------- |
+| **AlphaFold 2 Breakthrough**  | Nov 30, 2020 | Protein folding solved   | Accelerate drug discovery dramatically |
+| **GPT 4 Medical AI Release**  | Mar 14, 2023 | Medical AI advances      | Better diagnosis and imaging analysis  |
+| **Da Vinci 5 Surgical Robot** | Mar 14, 2024 | Next gen robotic surgery | Precision surgery advances             |
 
 <p class="sdx-note">PLACEHOLDER: Insert the Top 25 Healthcare Companies table (healthcare_sector_event_analysis.ipynb, Step 1 output).</p>
 
@@ -1073,76 +1166,115 @@ The GLP 1 story is particularly remarkable. Drugs like Wegovy and Mounjaro haven
   <div class="container">
     <h2 class="title is-3">Act II, The Detective Method</h2>
 
-    <div class="sdx-dual-panel">
-      <div class="sdx-panel" data-animate="fade-up">
-        <p>
-          We've met our cast of innovations. Now let's talk about how we actually <strong>detect their footprints</strong> in
-          market data.
-        </p>
-        <p>
-          Before diving into results, you deserve to understand how we approached this investigation. What data did we use?
-          What calculations did we perform? What assumptions did we make? A good detective story explains the method, not just
-          the conclusions.
-        </p>
-        <hr>
-        <h3 class="title is-5" style="margin-top:0;">The Event Study Method</h3>
-        <p>
-          In academic finance, the standard way to measure whether an event mattered is called an <strong>event study</strong>.
-          The logic is simple: <strong>did the stock move more than we would expect, given everything else happening that
-          day?</strong>
-        </p>
-        <p>
-          Looking at the event day alone is rarely enough. Stocks move every day for countless reasons: the overall market may
-          rise, interest rates may shift, or competitors may release news. An event study focuses on the window around the
-          announcement to separate the signal from the noise.
-        </p>
-        <p><strong>Our approach follows three steps:</strong></p>
-        <ol class="sdx-list">
-          <li>
-            <strong>Define the event date.</strong> For some events this is crystal clear (Apple keynotes, FDA approvals). For
-            others (like ChatGPT), we pinpoint the moment the product becomes publicly available.
-          </li>
-          <li>
-            <strong>Extract a window around it.</strong> We collect price and volume for 30 trading days before and after the
-            event. This lets us see anticipation, the immediate reaction, and whether it lasts.
-          </li>
-          <li>
-            <strong>Calculate returns and look for anomalies.</strong> We compute daily returns, cumulative returns, volatility,
-            and volume change, then compare pre vs post behavior to infer market recognition.
-          </li>
-        </ol>
+    <div class="sdx-panel" data-animate="fade-up">
+      <h3 class="title is-4" style="margin-top:0;">The Event Study Method</h3>
+      <p>
+        We've met our cast of innovations. Now we need a way to detect, and measure, their footprints in market data.
+        In finance, the standard tool for this is an <strong>event study</strong>.
+      </p>
+      <p>
+        Looking at the event day alone is not enough. Stocks move for countless reasons, market drift, macro surprises,
+        competitor news. An event study focuses on the window around an announcement to separate signal from noise.
+      </p>
+      <p><strong>We run the same three-step workflow for every domain:</strong></p>
+
+      <div class="sdx-step-grid">
+        <div class="sdx-step-card" data-animate="fade-up">
+          <div class="sdx-step-head">
+            <div class="sdx-step-num">1</div>
+            <h4 class="title is-5">Pin the event day</h4>
+          </div>
+          <p>
+            Define the innovation date. If it lands on a weekend or holiday, shift to the next trading day.
+          </p>
+        </div>
+        <div class="sdx-step-card" data-animate="fade-up">
+          <div class="sdx-step-head">
+            <div class="sdx-step-num">2</div>
+            <h4 class="title is-5">Extract a window</h4>
+          </div>
+          <p>
+            Pull price and volume for 30 trading days before and after, so we can see anticipation, reaction, and digestion.
+          </p>
+        </div>
+        <div class="sdx-step-card" data-animate="fade-up">
+          <div class="sdx-step-head">
+            <div class="sdx-step-num">3</div>
+            <h4 class="title is-5">Measure the footprint</h4>
+          </div>
+          <p>
+            Compute returns, cumulative returns, volatility, and volume changes, then compare pre vs post behavior.
+          </p>
+        </div>
       </div>
 
-      <div class="sdx-chart-block sdx-formula-block" data-animate="fade-up">
-        <h3 class="title is-5">Key formulas</h3>
-        <p class="sdx-note">We explain each metric in plain English, then use it across every event window.</p>
+      <p class="sdx-note">
+        We reuse the same pipeline across domains. Only the ticker list and event calendar change.
+      </p>
+    </div>
 
-        <div class="sdx-formula-grid">
-          <div class="sdx-formula-card">
-            <h4>Return</h4>
-            <div class="formula">\( R_t = \left(\frac{P_t}{P_{t-1}} - 1\right) \times 100 \)</div>
-            <p>The daily percentage move. This is the basic unit behind every footprint.</p>
-          </div>
-          <div class="sdx-formula-card">
-            <h4>Log return</h4>
-            <div class="formula">\( r_t = \ln\!\left(\frac{P_t}{P_{t-1}}\right) \times 100 \)</div>
-            <p>A return measure that adds nicely over time, useful when aggregating moves across many days.</p>
-          </div>
-          <div class="sdx-formula-card">
-            <h4>Cumulative return</h4>
-            <div class="formula">\( CR_t = \left(\frac{P_t}{P_0} - 1\right) \times 100 \)</div>
-            <p>Our main proxy for recognition: buy on event day (t=0) and hold. Does the move stick?</p>
-          </div>
-          <div class="sdx-formula-card">
-            <h4>Volatility</h4>
-            <div class="formula">\( \sigma = \sqrt{\mathrm{Var}(R_t)} \)</div>
-            <p>Uncertainty proxy. Counterintuitively, real breakthroughs can reduce volatility once price discovery happens.</p>
-          </div>
-          <div class="sdx-formula-card">
-            <h4>Volume change</h4>
-            <div class="formula">\( VC = \left(\frac{\bar{V}_{post}}{\bar{V}_{pre}} - 1\right) \times 100 \)</div>
-            <p>Attention proxy: average volume after vs before. High volume plus positive returns suggests informed enthusiasm.</p>
-          </div>
+    <div class="sdx-chart-block sdx-placeholder" data-animate="fade-up">
+      <h3 class="title is-5">PLACEHOLDER: Event window diagram (t = -30 ... 0 ... +30)</h3>
+      <p class="sdx-note">
+        A 61 trading-day clip centered on the innovation day, designed to capture anticipation, immediate reaction, and
+        delayed repricing.
+      </p>
+      <ul class="sdx-list">
+        <li><strong>Pre-event (t = -30 to -1):</strong> drift if investors expected the news.</li>
+        <li><strong>Event day (t = 0):</strong> headlines, first reaction, immediate repricing.</li>
+        <li><strong>Post-event (t = +1 to +30):</strong> digestion, does the move stick or fade?</li>
+      </ul>
+    </div>
+
+    <div class="sdx-panel sdx-formula-block" data-animate="fade-up">
+      <h3 class="title is-4" style="margin-top:0;">Key formulas, the footprint checklist</h3>
+      <p>
+        These are the metrics we compute for every event window today. The panel below expands the same ideas with examples.
+      </p>
+
+      <h4 class="title is-5" style="margin-top:1.2rem;">Core metrics</h4>
+      <div class="sdx-formula-grid sdx-formula-grid-core">
+        <div class="sdx-formula-card">
+          <h4>Return</h4>
+          <div class="formula">\( R_t = \left(\frac{P_t}{P_{t-1}} - 1\right) \times 100 \)</div>
+          <p>The daily percentage move, the basic unit behind every footprint.</p>
+        </div>
+        <div class="sdx-formula-card">
+          <h4>Log return</h4>
+          <div class="formula">\( r_t = \ln\!\left(\frac{P_t}{P_{t-1}}\right) \times 100 \)</div>
+          <p>A return measure that stacks cleanly across days, useful for long windows.</p>
+        </div>
+        <div class="sdx-formula-card">
+          <h4>Cumulative return</h4>
+          <div class="formula">\( CR_t = \left(\frac{P_t}{P_0} - 1\right) \times 100 \)</div>
+          <p>The buy-and-hold story inside the window: buy on event day and hold for t days.</p>
+        </div>
+        <div class="sdx-formula-card">
+          <h4>Volatility</h4>
+          <div class="formula">\( \sigma = \sqrt{\mathrm{Var}(R_t)} \)</div>
+          <p>Uncertainty proxy. Breakthroughs can increase volatility, or reduce it once uncertainty collapses.</p>
+        </div>
+        <div class="sdx-formula-card">
+          <h4>Volume change</h4>
+          <div class="formula">\( VC = \left(\frac{\bar{V}_{post}}{\bar{V}_{pre}} - 1\right) \times 100 \)</div>
+          <p>Attention proxy, average volume after vs before, expressed as a percentage.</p>
+        </div>
+      </div>
+
+      <h4 class="title is-5" style="margin-top:1.4rem;">Planned extension, market-adjusted impact</h4>
+      <p class="sdx-note" style="margin-top:0.6rem;">
+        PLACEHOLDER: Add a benchmark (market index) and compute abnormal returns and CAR.
+      </p>
+      <div class="sdx-formula-grid sdx-formula-grid-addon">
+        <div class="sdx-formula-card">
+          <h4>Abnormal return</h4>
+          <div class="formula">\( AR_t = R_t - R_{m,t} \)</div>
+          <p>The event-day surprise after subtracting the market's move (a simple market-adjusted baseline).</p>
+        </div>
+        <div class="sdx-formula-card">
+          <h4>CAR</h4>
+          <div class="formula">\( CAR_{[a,b]} = \sum_{t=a}^{b} AR_t \)</div>
+          <p>Cumulative abnormal return, the footprint across the full window.</p>
         </div>
       </div>
     </div>
@@ -1152,37 +1284,50 @@ The GLP 1 story is particularly remarkable. Drugs like Wegovy and Mounjaro haven
 
 ### The Mathematics of Market Footprints
 
-Let's make the math accessible. We show the equations, then explain them in plain English.
+The checklist above is the compact version. This panel shows the exact math we compute in code, with plain-language interpretation.
 
-#### 1. Daily return, how much did the stock move?
+#### 1) Return and log return
 
 $$R_t = \left(\frac{P_t - P_{t-1}}{P_{t-1}}\right) \times 100$$
 
-In plain English: take today's close \(P_t\), subtract yesterday's close \(P_{t-1}\), divide by \(P_{t-1}\), and multiply by 100.
+Daily return is the percentage move from yesterday's close \(P\_{t-1}\) to today's close \(P_t\).
 
-Example: if Apple's stock closed at $150 yesterday and closes at $153 today, the daily return is:
+Log return is a closely related measure that adds cleanly across time:
+
+$$r_t = \ln\!\left(\frac{P_t}{P_{t-1}}\right) \times 100$$
+
+Example: if a stock closed at $150 yesterday and closes at $153 today, the daily return is:
 
 $$\frac{153 - 150}{150} \times 100 = 2\%$$
 
-#### 2. Cumulative return, the running total
+#### 2) Planned extension, abnormal return and CAR
+
+To isolate the event from the market's noise, we can add a market-adjusted baseline (next upgrade on our roadmap):
+
+$$AR_t = R_t - R_{m,t}$$
+
+Here, \(R\_{m,t}\) is the benchmark return (a broad market index) on the same day.
+We then sum abnormal returns across a window to get cumulative abnormal return:
+
+$$CAR_{[a,b]} = \sum_{t=a}^{b} AR_t$$
+
+Interpretation: positive CAR means the stock outperformed the market across the window, negative CAR means it underperformed.
+
+#### 3) Cumulative return (simple buy-and-hold)
+
+Sometimes the cleanest story is also the simplest: buy on event day and hold.
 
 $$CR_t = \left(\frac{P_t}{P_0} - 1\right) \times 100$$
 
-In plain English: compare the current price \(P_t\) to the price on event day \(P_0\). This is our primary measure of market recognition inside the event window.
-
-Example: if the stock was $100 on event day and is now $115:
-
-$$\frac{115}{100} - 1 = 0.15 = 15\%$$
-
-#### 3. Volatility, how uncertain was the market?
+#### 4) Volatility, how uncertain was the market?
 
 Volatility measures how wildly returns jump around. High volatility means investors disagree, so prices swing dramatically from day to day.
 
 $$\sigma = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(R_i - \bar{R})^2}$$
 
-Why this matters for innovation: true breakthroughs can reduce volatility after the announcement. Before an innovation, the market is uncertain. After a successful reveal, uncertainty can resolve through price discovery.
+For innovation, volatility can spike on surprise, then fall once uncertainty resolves through price discovery.
 
-#### 4. Volume change, how much attention did it get?
+#### 5) Volume change, how much attention did it get?
 
 Trading volume measures attention. When something important happens, more investors trade. They buy if they are excited, sell if they are skeptical, and reposition either way.
 
@@ -1195,27 +1340,17 @@ Interpretation: high volume plus positive returns suggests informed enthusiasm. 
 </div>
     </div>
 
-    <div class="sdx-chart-block sdx-placeholder" data-animate="fade-up">
-      <h3 class="title is-5">PLACEHOLDER: Event Window Diagram (t = -30 to +30)</h3>
-      <p class="sdx-note">A ~60 trading-day "movie" centered on the innovation day.</p>
-      <ul class="sdx-list">
-        <li><strong>Pre-event (t = -30 to -1):</strong> anticipation drift if "smart money" expected the announcement.</li>
-        <li><strong>Event day (t = 0):</strong> the first reaction, headlines, hot takes, and immediate repricing.</li>
-        <li><strong>Post-event (t = +1 to +30):</strong> the digestion phase, does the reaction stick or fade?</li>
-      </ul>
-    </div>
-
     <div class="sdx-panel" data-animate="fade-up">
       <h3 class="title is-4" style="margin-top:0;">From One Company to Many</h3>
       <p>
-        Single‑stock event studies make sense for Apple, NVIDIA, and Tesla. But for ecosystem shocks like ChatGPT, the point
-        isn’t one ticker, it’s the <em>breadth</em> of the reaction.
+        Single-stock event studies make sense for Apple, NVIDIA, and Tesla. For ecosystem shocks like ChatGPT, the point is not
+        one ticker. It is the <em>breadth</em> of the reaction.
       </p>
       <p>
         For AI and healthcare events, we track multiple companies simultaneously and measure how many finish the window
         positive, the <strong>Winner Ratio</strong>:
       </p>
-      <p class="sdx-note">\( \text{Winner Ratio} = \frac{\text{# companies with positive 30‑day return}}{\text{total companies}} \times 100 \)</p>
+      <p class="sdx-note">\( \text{Winner Ratio} = \frac{\text{# companies with positive 30-day return}}{\text{total companies}} \times 100 \)</p>
       <p class="sdx-note">High winner ratio = broad transformation; low winner ratio = selective winners and losers.</p>
     </div>
 
@@ -1239,8 +1374,6 @@ Rather than marching through companies one by one, we've organized our findings 
 Apple's innovations are the most watched, most analyzed, most debated product launches on Earth. Millions tune in to keynotes. Thousands of articles appear within hours. Every financial analyst in tech has an opinion.
 
 And yet, perhaps _because_ of all this attention, Apple innovations reveal something profound about how markets process information: **visibility doesn't guarantee understanding.**
-
-<iframe src="assets/apple_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
 
 ---
 
@@ -1316,11 +1449,11 @@ The M1 story shows that markets _can_ recognize platform shifts, it just takes t
 
 When we step back and look at all eight Apple events together, a striking pattern emerges:
 
-<p class="sdx-note">PLACEHOLDER: Insert Apple Events comparison chart (apple_event_analysis.ipynb, Step 7 visualization).</p>
+<iframe src="assets/apple_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
 
 | Event              | Day-0 Return | 30-Day Return | The Pattern                         |
 | ------------------ | ------------ | ------------- | ----------------------------------- |
-| iPod Launch        | -4.63%       | +30.98%       | 🔥 Classic slow burn                |
+| iPod Launch        | -4.63%       | +30.98%       | Classic slow burn                   |
 | iPhone Launch      | +1.23%       | +4.71%        | Muted, waiting for App Store        |
 | iPad Launch        | +1.07%       | +6.60%        | Quiet, steady adoption              |
 | iPhone 5S Touch ID | -1.04%       | +11.26%       | Security innovation rewarded        |
@@ -1346,8 +1479,6 @@ If Apple represents visible consumer innovation, products you can hold, use, sho
 You've probably never thought about NVIDIA while using ChatGPT. But tens of thousands of NVIDIA GPUs trained the model you're talking to. When a Tesla navigates traffic, NVIDIA chips process the camera feeds. When a pharmaceutical company uses AI to discover new drugs, NVIDIA hardware runs the calculations.
 
 This invisibility creates a fascinating market dynamic. **How do investors price innovations that most people can't see, touch, or directly experience?** The answer, it turns out, depends enormously on timing.
-
-<iframe src="assets/nvidia_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
 
 ---
 
@@ -1410,18 +1541,18 @@ NVIDIA's ChatGPT-era rally didn't happen in November 2022. It happened over the 
 
 ### NVIDIA Event Summary: All 8 Events Compared
 
-<p class="sdx-note">PLACEHOLDER: Insert NVIDIA Events comparison chart (nvidia_event_analysis.ipynb, Step 7 comparison visualization).</p>
+<iframe src="assets/nvidia_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
 
-| Event           | Day-0 Return | 30-Day Return | Pattern Type              |
-| --------------- | ------------ | ------------- | ------------------------- |
-| CUDA Launch     | -2.64%       | +2.61%        | 🐢 Decade-long slow burn  |
-| Tesla V100      | +17.83%      | +30.71%       | ⚡ Instant recognition    |
-| RTX 2080 Ti     | +1.23%       | +15.65%       | ✅ Strong innovation      |
-| A100 Ampere     | +3.22%       | +14.05%       | ✅ Datacenter bet pays    |
-| Arm Acquisition | +5.82%       | +2.09%        | 📉 Deal skepticism        |
-| H100 Hopper     | -0.79%       | -23.34%       | 📉 Bear market overwhelms |
-| ChatGPT Boom    | +8.24%       | -0.14%        | ⏳ Already priced in      |
-| Blackwell B200  | +0.70%       | -2.32%        | 📉 High expectations      |
+| Event           | Day-0 Return | 30-Day Return | Pattern Type           |
+| --------------- | ------------ | ------------- | ---------------------- |
+| CUDA Launch     | -2.64%       | +2.61%        | Decade-long slow burn  |
+| Tesla V100      | +17.83%      | +30.71%       | Instant recognition    |
+| RTX 2080 Ti     | +1.23%       | +15.65%       | Strong innovation      |
+| A100 Ampere     | +3.22%       | +14.05%       | Datacenter bet pays    |
+| Arm Acquisition | +5.82%       | +2.09%        | Deal skepticism        |
+| H100 Hopper     | -0.79%       | -23.34%       | Bear market overwhelms |
+| ChatGPT Boom    | +8.24%       | -0.14%        | Already priced in      |
+| Blackwell B200  | +0.70%       | -2.32%        | High expectations      |
 
 **The key insight:** NVIDIA's story reveals that **timing is everything** for infrastructure innovation. The same company can release equally important innovations and see completely different market responses, depending on whether the demand for that innovation is already visible.
 
@@ -1506,18 +1637,18 @@ Battery Day wasn't a failure of innovation, Tesla announced genuinely important 
 
 ### Tesla Event Summary: All 8 Events Compared
 
-<p class="sdx-note">PLACEHOLDER: Insert Tesla Events comparison chart (tesla_event_analysis.ipynb, Step 7 comparison visualization).</p>
+<iframe src="assets/tesla_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
 
-| Event                 | Day-0 Return | 30-Day Return | What Happened           |
-| --------------------- | ------------ | ------------- | ----------------------- |
-| Model S Deliveries    | +4.97%       | -16.34%       | Early enthusiasm fades  |
-| Autopilot             | -7.82%       | +2.48%        | Skepticism → acceptance |
-| Model 3 Reveal        | +1.27%       | -9.79%        | Production hell fears   |
-| Model 3 Deliveries    | +0.18%       | +8.54%        | Execution beats fears   |
-| Cybertruck Reveal     | +0.74%       | +32.19%       | 🔥 Viral &gt; rational  |
-| Battery Day           | -5.60%       | -0.08%        | Hype meets reality      |
-| Tesla Bot             | -2.25%       | +15.11%       | Skepticism → curiosity  |
-| Cybertruck Deliveries | -1.66%       | -8.40%        | Four years late         |
+| Event                 | Day-0 Return | 30-Day Return | What Happened            |
+| --------------------- | ------------ | ------------- | ------------------------ |
+| Model S Deliveries    | +4.97%       | -16.34%       | Early enthusiasm fades   |
+| Autopilot             | -7.82%       | +2.48%        | Skepticism to acceptance |
+| Model 3 Reveal        | +1.27%       | -9.79%        | Production hell fears    |
+| Model 3 Deliveries    | +0.18%       | +8.54%        | Execution beats fears    |
+| Cybertruck Reveal     | +0.74%       | +32.19%       | Viral over rational      |
+| Battery Day           | -5.60%       | -0.08%        | Hype meets reality       |
+| Tesla Bot             | -2.25%       | +15.11%       | Skepticism to curiosity  |
+| Cybertruck Deliveries | -1.66%       | -8.40%        | Four years late          |
 
 **The key insight:** Tesla events are **highly unpredictable**. The correlation between day-0 reactions and 30-day outcomes is essentially random, weaker than for Apple, weaker than for NVIDIA, close to zero.
 
@@ -1688,7 +1819,7 @@ After analyzing 42 innovation events across five domains, clear patterns emerge.
 
 ---
 
-### 1. The Instant Footprint ⚡
+### 1. The Instant Footprint
 
 Some innovations are recognized immediately and sustainably. The event-day return is strong and positive, and that strength continues through the 30-day window. The market sees the innovation, understands its value, and prices it accordingly.
 
@@ -1704,7 +1835,7 @@ Some innovations are recognized immediately and sustainably. The event-day retur
 
 ---
 
-### 2. The Slow Burn 🔥
+### 2. The Slow Burn
 
 Other innovations are initially dismissed or ignored, only to be recognized weeks later. The event-day return is weak or negative, but by day 30, the cumulative return is strongly positive. The market misses the significance at first, then gradually catches on.
 
@@ -1718,7 +1849,7 @@ Other innovations are initially dismissed or ignored, only to be recognized week
 
 ---
 
-### 3. The Mirage 🌊
+### 3. The Mirage
 
 Some events create immediate excitement that fades away. Strong initial reaction that reverses over the following weeks, leaving little or negative cumulative return. The market overreacts to spectacle or hype.
 
@@ -1739,7 +1870,7 @@ Some events create immediate excitement that fades away. Strong initial reaction
 Of 24 single-company events analyzed:
 
 - **Instant Winners** (+day, +30d): 37.5%
-- **Slow Burn** (-day, +30d): 29.2% ← The surprise finding!
+- **Slow Burn** (day 0, +30d): 29.2%, the surprise finding.
 - **Double Losers** (-day, -30d): 12.5%
 - **False Starts** (+day, -30d): 20.8%
 
@@ -1794,12 +1925,12 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
 
 ## Innovation Categories
 
-| Score  | Category             | Interpretation                          |
-| ------ | -------------------- | --------------------------------------- |
-| 60+    | 🌟 Transformative    | Clear, sustained market recognition     |
-| 40-59  | ✅ Strong Innovation | Solid recognition with some uncertainty |
-| 20-39  | 🔶 Moderate          | Mixed signals, partial recognition      |
-| &lt;20 | ❌ Weak/Negative     | Market rejected or ignored              |
+| Score    | Category          | Interpretation                          |
+| -------- | ----------------- | --------------------------------------- |
+| 60+      | Transformative    | Clear, sustained market recognition     |
+| 40-59    | Strong innovation | Solid recognition with some uncertainty |
+| 20-39    | Moderate          | Mixed signals, partial recognition      |
+| Under 20 | Weak/Negative     | Market rejected or ignored              |
 
 ---
 
@@ -1807,7 +1938,7 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
 
 <p class="sdx-note">PLACEHOLDER: Insert Innovation Signature Scores bar chart (data/pattern_06_innovation_scores.png).</p>
 
-### 🌟 Transformative Innovations (Score 60+):
+### Transformative innovations (Score 60+):
 
 | Event                  | Company | Score | 30-Day Return |
 | ---------------------- | ------- | ----- | ------------- |
@@ -1981,6 +2112,18 @@ Tesla events show that spectacle can create short-term volatility without sustai
 
 ### The Final Insight
 
+<iframe
+  id="innovation-score-iframe"
+  src="{{ '/assets/innovation_score_explorer.html' | relative_url }}"
+  title="Innovation score explorer"
+  width="100%"
+  height="1100"
+  frameborder="0"
+  scrolling="no"
+  style="display:block; border:0; overflow:hidden;"
+  loading="lazy"
+></iframe>
+
 <p class="sdx-note">PLACEHOLDER: Insert Combined Framework visualization (data/pattern_07_combined_framework.png).</p>
 
 Markets are not oracles. They don't see the future clearly. But they're not blind either.
@@ -2033,6 +2176,43 @@ document.addEventListener("DOMContentLoaded", function () {
     animated.forEach((el) => obs.observe(el));
   } else {
     animated.forEach((el) => el.classList.add("animate-in"));
+  }
+
+  const scoreIframe = document.getElementById("innovation-score-iframe");
+  if (scoreIframe) {
+    let resizeObserver;
+    const resizeScoreIframe = () => {
+      try {
+        const doc = scoreIframe.contentDocument || scoreIframe.contentWindow.document;
+        if (!doc) return;
+        const height = Math.max(
+          doc.documentElement ? doc.documentElement.scrollHeight : 0,
+          doc.body ? doc.body.scrollHeight : 0
+        );
+        if (height) scoreIframe.style.height = `${height}px`;
+      } catch (error) {
+        // Cross-origin, ignore.
+      }
+    };
+
+    scoreIframe.addEventListener("load", () => {
+      resizeScoreIframe();
+      try {
+        if ("ResizeObserver" in window) {
+          const doc = scoreIframe.contentDocument || scoreIframe.contentWindow.document;
+          if (doc && doc.documentElement) {
+            resizeObserver = new ResizeObserver(resizeScoreIframe);
+            resizeObserver.observe(doc.documentElement);
+          }
+        }
+      } catch (error) {
+        // Cross-origin or unsupported, ignore.
+      }
+      setTimeout(resizeScoreIframe, 300);
+      setTimeout(resizeScoreIframe, 1200);
+    });
+
+    window.addEventListener("resize", resizeScoreIframe);
   }
 });
 </script>

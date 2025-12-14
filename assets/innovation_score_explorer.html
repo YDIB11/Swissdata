@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔬 Innovation Score Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        :root {
+            --bg: #050814;
+            --panel: #0d1024;
+            --panel-alt: #0f1530;
+            --border: rgba(255, 255, 255, 0.08);
+            --accent: #ffc46a;
+            --muted: #9fb0ff;
+            --text: #e8edff;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        html { background: var(--bg); }
+        
+        body {
+            background: radial-gradient(circle at 20% 20%, #0f1a3d 0, transparent 30%),
+                        radial-gradient(circle at 80% 10%, #0c3650 0, transparent 24%),
+                        radial-gradient(circle at 40% 70%, #1b1645 0, transparent 24%),
+                        #050814;
+            color: var(--text);
+            font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container { max-width: 1300px; margin: 0 auto; }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 20px 0 30px;
+        }
+        .header h1 {
+            color: var(--accent);
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .header p {
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+        
+        /* Controls */
+        .controls {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+            background: var(--panel);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 25px;
+        }
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .control-group label {
+            color: var(--text);
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .control-group select,
+        .control-group input {
+            background: var(--panel-alt);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: inherit;
+            min-width: 220px;
+        }
+        .control-group select:focus,
+        .control-group input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(255, 196, 106, 0.2);
+        }
+        .control-group select option {
+            background: var(--panel);
+            color: var(--text);
+        }
+        
+        .btn {
+            background: var(--accent);
+            color: #050814;
+            border: none;
+            padding: 14px 36px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 196, 106, 0.3);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 196, 106, 0.4);
+        }
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        /* Main content */
+        .content {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .chart-panel {
+            flex: 2;
+            min-width: 600px;
+            background: var(--panel);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .score-panel {
+            flex: 1;
+            min-width: 300px;
+            background: var(--panel);
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+        }
+        
+        /* Score display */
+        .score-number {
+            font-size: 72px;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            transition: all 0.3s ease;
+        }
+        .score-label {
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .category-badge {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .category-badge span {
+            display: inline-block;
+            padding: 8px 24px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 13px;
+            color: #050814;
+        }
+        
+        .divider {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 15px 0;
+        }
+        
+        .metric {
+            margin: 12px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .metric-label {
+            color: var(--muted);
+        }
+        .metric-value {
+            font-weight: 600;
+        }
+        .positive { color: #4ade80; }
+        .negative { color: #f87171; }
+        
+        .score-breakdown {
+            margin-top: 15px;
+        }
+        .score-breakdown h4 {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .score-breakdown ul {
+            list-style: none;
+            padding: 0;
+        }
+        .score-breakdown li {
+            font-size: 12px;
+            margin: 6px 0;
+            padding-left: 12px;
+            position: relative;
+        }
+        .score-breakdown li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Loading state */
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            color: var(--muted);
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 15px;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Error state */
+        .error {
+            background: rgba(248, 113, 113, 0.1);
+            border: 1px solid rgba(248, 113, 113, 0.3);
+            color: #f87171;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        /* Suggestions */
+        .suggestions {
+            margin-top: 25px;
+            padding: 20px;
+            background: var(--panel);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        .suggestions h3 {
+            color: var(--accent);
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .suggestion-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .suggestion-btn {
+            background: var(--panel-alt);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s ease;
+            font-family: inherit;
+            font-size: 13px;
+        }
+        .suggestion-btn:hover {
+            border-color: var(--accent);
+            background: rgba(255, 196, 106, 0.1);
+        }
+        .suggestion-btn strong {
+            color: var(--accent);
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: var(--muted);
+            font-size: 13px;
+            opacity: 0.7;
+        }
+        
+        /* Responsive */
+        @media (max-width: 900px) {
+            .content { flex-direction: column; }
+            .chart-panel { min-width: 100%; }
+            .controls { flex-direction: column; align-items: stretch; }
+            .control-group select,
+            .control-group input { min-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔬 Innovation Score Explorer</h1>
+            <p>Select a company and date to analyze the innovation signature</p>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="ticker">📊 Select Company</label>
+                <select id="ticker">
+                    <optgroup label="🚀 Innovation Companies">
+                        <option value="AAPL">🚀 AAPL (Innovation)</option>
+<option value="ABNB">🚀 ABNB (Innovation)</option>
+<option value="ADBE">🚀 ADBE (Innovation)</option>
+<option value="AFRM">🚀 AFRM (Innovation)</option>
+<option value="AMAT">🚀 AMAT (Innovation)</option>
+<option value="AMD">🚀 AMD (Innovation)</option>
+<option value="AMZN">🚀 AMZN (Innovation)</option>
+<option value="ARM">🚀 ARM (Innovation)</option>
+<option value="ASML">🚀 ASML (Innovation)</option>
+<option value="AVGO">🚀 AVGO (Innovation)</option>
+<option value="COIN">🚀 COIN (Innovation)</option>
+<option value="CRM">🚀 CRM (Innovation)</option>
+<option value="CRSP">🚀 CRSP (Innovation)</option>
+<option value="CRWD">🚀 CRWD (Innovation)</option>
+<option value="DDOG">🚀 DDOG (Innovation)</option>
+<option value="GOOGL">🚀 GOOGL (Innovation)</option>
+<option value="IBM">🚀 IBM (Innovation)</option>
+<option value="INTC">🚀 INTC (Innovation)</option>
+<option value="LCID">🚀 LCID (Innovation)</option>
+<option value="LI">🚀 LI (Innovation)</option>
+<option value="LYFT">🚀 LYFT (Innovation)</option>
+<option value="MDB">🚀 MDB (Innovation)</option>
+<option value="META">🚀 META (Innovation)</option>
+<option value="MRNA">🚀 MRNA (Innovation)</option>
+<option value="MSFT">🚀 MSFT (Innovation)</option>
+<option value="MU">🚀 MU (Innovation)</option>
+<option value="NET">🚀 NET (Innovation)</option>
+<option value="NFLX">🚀 NFLX (Innovation)</option>
+<option value="NIO">🚀 NIO (Innovation)</option>
+<option value="NOW">🚀 NOW (Innovation)</option>
+<option value="NVDA">🚀 NVDA (Innovation)</option>
+<option value="ORCL">🚀 ORCL (Innovation)</option>
+<option value="PANW">🚀 PANW (Innovation)</option>
+<option value="PLTR">🚀 PLTR (Innovation)</option>
+<option value="PYPL">🚀 PYPL (Innovation)</option>
+<option value="QCOM">🚀 QCOM (Innovation)</option>
+<option value="RBLX">🚀 RBLX (Innovation)</option>
+<option value="RIVN">🚀 RIVN (Innovation)</option>
+<option value="RKLB">🚀 RKLB (Innovation)</option>
+<option value="SHOP">🚀 SHOP (Innovation)</option>
+<option value="SMCI">🚀 SMCI (Innovation)</option>
+<option value="SNOW">🚀 SNOW (Innovation)</option>
+<option value="SOFI">🚀 SOFI (Innovation)</option>
+<option value="SPOT">🚀 SPOT (Innovation)</option>
+<option value="SQ">🚀 SQ (Innovation)</option>
+<option value="TSLA">🚀 TSLA (Innovation)</option>
+<option value="TSM">🚀 TSM (Innovation)</option>
+<option value="U">🚀 U (Innovation)</option>
+<option value="UBER">🚀 UBER (Innovation)</option>
+<option value="XPEV">🚀 XPEV (Innovation)</option>
+<option value="ZS">🚀 ZS (Innovation)</option>
+                    </optgroup>
+                    <optgroup label="🏥 Healthcare Companies">
+                        <option value="A">🏥 A (Healthcare)</option>
+<option value="ABBV">🏥 ABBV (Healthcare)</option>
+<option value="ABT">🏥 ABT (Healthcare)</option>
+<option value="ALGN">🏥 ALGN (Healthcare)</option>
+<option value="ALNY">🏥 ALNY (Healthcare)</option>
+<option value="AMGN">🏥 AMGN (Healthcare)</option>
+<option value="AZN">🏥 AZN (Healthcare)</option>
+<option value="BAX">🏥 BAX (Healthcare)</option>
+<option value="BDX">🏥 BDX (Healthcare)</option>
+<option value="BEAM">🏥 BEAM (Healthcare)</option>
+<option value="BIIB">🏥 BIIB (Healthcare)</option>
+<option value="BMY">🏥 BMY (Healthcare)</option>
+<option value="BNTX">🏥 BNTX (Healthcare)</option>
+<option value="BSX">🏥 BSX (Healthcare)</option>
+<option value="CI">🏥 CI (Healthcare)</option>
+<option value="CNC">🏥 CNC (Healthcare)</option>
+<option value="CVS">🏥 CVS (Healthcare)</option>
+<option value="DHR">🏥 DHR (Healthcare)</option>
+<option value="DOCS">🏥 DOCS (Healthcare)</option>
+<option value="DXCM">🏥 DXCM (Healthcare)</option>
+<option value="EDIT">🏥 EDIT (Healthcare)</option>
+<option value="ELV">🏥 ELV (Healthcare)</option>
+<option value="EW">🏥 EW (Healthcare)</option>
+<option value="GILD">🏥 GILD (Healthcare)</option>
+<option value="GSK">🏥 GSK (Healthcare)</option>
+<option value="HCA">🏥 HCA (Healthcare)</option>
+<option value="HIMS">🏥 HIMS (Healthcare)</option>
+<option value="HOLX">🏥 HOLX (Healthcare)</option>
+<option value="HUM">🏥 HUM (Healthcare)</option>
+<option value="IDXX">🏥 IDXX (Healthcare)</option>
+<option value="ILMN">🏥 ILMN (Healthcare)</option>
+<option value="IQV">🏥 IQV (Healthcare)</option>
+<option value="ISRG">🏥 ISRG (Healthcare)</option>
+<option value="JNJ">🏥 JNJ (Healthcare)</option>
+<option value="LLY">🏥 LLY (Healthcare)</option>
+<option value="MDT">🏥 MDT (Healthcare)</option>
+<option value="MOH">🏥 MOH (Healthcare)</option>
+<option value="MRK">🏥 MRK (Healthcare)</option>
+<option value="MTD">🏥 MTD (Healthcare)</option>
+<option value="NTLA">🏥 NTLA (Healthcare)</option>
+<option value="NVO">🏥 NVO (Healthcare)</option>
+<option value="NVS">🏥 NVS (Healthcare)</option>
+<option value="PFE">🏥 PFE (Healthcare)</option>
+<option value="REGN">🏥 REGN (Healthcare)</option>
+<option value="RXRX">🏥 RXRX (Healthcare)</option>
+<option value="SNY">🏥 SNY (Healthcare)</option>
+<option value="SYK">🏥 SYK (Healthcare)</option>
+<option value="TAK">🏥 TAK (Healthcare)</option>
+<option value="TDOC">🏥 TDOC (Healthcare)</option>
+<option value="THC">🏥 THC (Healthcare)</option>
+<option value="TMO">🏥 TMO (Healthcare)</option>
+<option value="UHS">🏥 UHS (Healthcare)</option>
+<option value="UNH">🏥 UNH (Healthcare)</option>
+<option value="VEEV">🏥 VEEV (Healthcare)</option>
+<option value="VRTX">🏥 VRTX (Healthcare)</option>
+<option value="WST">🏥 WST (Healthcare)</option>
+<option value="ZBH">🏥 ZBH (Healthcare)</option>
+<option value="ZTS">🏥 ZTS (Healthcare)</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="date">📅 Event Date</label>
+                <input type="date" id="date" value="2023-05-24">
+            </div>
+            <button class="btn" id="analyzeBtn" onclick="analyzeEvent()">🚀 Analyze Event</button>
+        </div>
+        
+        <div class="content">
+            <div class="chart-panel">
+                <div id="chart">
+                    <div class="loading">
+                        <p>Select a company and date, then click "Analyze Event"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="score-panel">
+                <div id="scoreDisplay">
+                    <p class="score-number" style="color: var(--muted);">--</p>
+                    <p class="score-label">Innovation Score</p>
+                    <div class="category-badge">
+                        <span style="background: var(--muted);">Awaiting Analysis</span>
+                    </div>
+                    <hr class="divider">
+                    <div class="metric">
+                        <span class="metric-label">Company:</span>
+                        <span class="metric-value" style="color: var(--accent);">--</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Event Date:</span>
+                        <span class="metric-value">--</span>
+                    </div>
+                    <hr class="divider">
+                    <div class="metric">
+                        <span class="metric-label">30-Day Return:</span>
+                        <span class="metric-value">--</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Event Day Return:</span>
+                        <span class="metric-value">--</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Pre-Event Vol:</span>
+                        <span class="metric-value">--</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Post-Event Vol:</span>
+                        <span class="metric-value">--</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Volume Change:</span>
+                        <span class="metric-value">--</span>
+                    </div>
+                    <hr class="divider">
+                    <div class="score-breakdown">
+                        <h4>Score Breakdown:</h4>
+                        <ul>
+                            <li style="color: #4ade80;">60+ = Transformative</li>
+                            <li style="color: #60a5fa;">40-59 = Strong Innovation</li>
+                            <li style="color: #fbbf24;">20-39 = Moderate</li>
+                            <li style="color: #f87171;">&lt;20 = Weak/Negative</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="suggestions">
+            <h3>💡 Suggested Events to Explore</h3>
+            <div class="suggestion-grid">
+                <button class="suggestion-btn" onclick="loadSuggestion('NVDA', '1999-10-11')">
+                    <strong>NVDA</strong> • 1999-10-11<br><small>GeForce 256 (First "GPU")</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('AMD', '2017-06-20')">
+                    <strong>AMD</strong> • 2017-06-20<br><small>EPYC Datacenter Processor Launch</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('QCOM', '2021-11-29')">
+                    <strong>QCOM</strong> • 2021-11-29<br><small>Snapdragon 8 Gen 1 Announced</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('ASML', '2023-12-21')">
+                    <strong>ASML</strong> • 2023-12-21<br><small>First High-NA EUV to Intel</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('ARM', '2023-09-14')">
+                    <strong>ARM</strong> • 2023-09-14<br><small>IPO Debut on Nasdaq</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('MSFT', '2010-02-01')">
+                    <strong>MSFT</strong> • 2010-02-01<br><small>Windows Azure GA</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('GOOGL', '2015-11-09')">
+                    <strong>GOOGL</strong> • 2015-11-09<br><small>TensorFlow Open-Sourced</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('AMZN', '2014-11-13')">
+                    <strong>AMZN</strong> • 2014-11-13<br><small>AWS Lambda Introduced</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('META', '2024-04-18')">
+                    <strong>META</strong> • 2024-04-18<br><small>Llama 3 Released</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('ADBE', '2023-03-21')">
+                    <strong>ADBE</strong> • 2023-03-21<br><small>Adobe Firefly Unveiled</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('SNOW', '2020-09-16')">
+                    <strong>SNOW</strong> • 2020-09-16<br><small>IPO Day</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('PLTR', '2020-09-30')">
+                    <strong>PLTR</strong> • 2020-09-30<br><small>NYSE Trading Debut</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('NET', '2019-09-13')">
+                    <strong>NET</strong> • 2019-09-13<br><small>NYSE IPO</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('CRWD', '2019-06-12')">
+                    <strong>CRWD</strong> • 2019-06-12<br><small>Nasdaq IPO</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('VRTX', '2019-10-21')">
+                    <strong>VRTX</strong> • 2019-10-21<br><small>FDA Approves TRIKAFTA</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('ALNY', '2018-08-10')">
+                    <strong>ALNY</strong> • 2018-08-10<br><small>FDA Approves ONPATTRO (First RNAi)</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('AAPL', '2024-06-10')">
+                    <strong>AAPL</strong> • 2024-06-10<br><small>Apple Intelligence Launch</small>
+                </button>
+                <button class="suggestion-btn" onclick="loadSuggestion('AAPL', '2024-09-09')">
+                    <strong>AAPL</strong> • 2024-09-09<br><small>iPhone 16 Pro AI Features</small>
+                </button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>💡 Data fetched from Yahoo Finance. Innovation Score calculated based on 30-day returns, volatility, and volume patterns.</p>
+        </div>
+    </div>
+
+    <script>
+        // Colors for score categories
+        const SCORE_COLORS = {
+            transformative: '#4ade80',
+            strong: '#60a5fa',
+            moderate: '#fbbf24',
+            weak: '#f87171'
+        };
+        
+        // Load suggestion into form
+        function loadSuggestion(ticker, date) {
+            document.getElementById('ticker').value = ticker;
+            document.getElementById('date').value = date;
+            analyzeEvent();
+        }
+        
+        // Main analysis function
+        async function analyzeEvent() {
+            const ticker = document.getElementById('ticker').value;
+            const dateStr = document.getElementById('date').value;
+            const btn = document.getElementById('analyzeBtn');
+            
+            if (!ticker || !dateStr) {
+                alert('Please select a company and date');
+                return;
+            }
+            
+            // Show loading state
+            btn.disabled = true;
+            btn.textContent = '⏳ Loading...';
+            document.getElementById('chart').innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Fetching data for ${ticker}...</p>
+                </div>
+            `;
+            
+            try {
+                // Calculate date range (90 days before and after)
+                const eventDate = new Date(dateStr);
+                const startDate = new Date(eventDate);
+                startDate.setDate(startDate.getDate() - 90);
+                const endDate = new Date(eventDate);
+                endDate.setDate(endDate.getDate() + 90);
+                
+                // Format dates for Yahoo Finance
+                const period1 = Math.floor(startDate.getTime() / 1000);
+                const period2 = Math.floor(endDate.getTime() / 1000);
+                
+                // Fetch data from Yahoo Finance via CORS proxy
+                const url = `https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/${ticker}?period1=${period1}&period2=${period2}&interval=1d`;
+                
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                if (data.chart.error) {
+                    throw new Error(data.chart.error.description || 'Failed to fetch data');
+                }
+                
+                const result = data.chart.result[0];
+                const timestamps = result.timestamp;
+                const quotes = result.indicators.quote[0];
+                
+                // Process data
+                const stockData = timestamps.map((ts, i) => ({
+                    date: new Date(ts * 1000),
+                    close: quotes.close[i],
+                    volume: quotes.volume[i]
+                })).filter(d => d.close !== null);
+                
+                // Find event index
+                const eventTimestamp = eventDate.getTime();
+                let eventIdx = 0;
+                let minDiff = Infinity;
+                stockData.forEach((d, i) => {
+                    const diff = Math.abs(d.date.getTime() - eventTimestamp);
+                    if (diff < minDiff) {
+                        minDiff = diff;
+                        eventIdx = i;
+                    }
+                });
+                
+                // Extract window (30 days before and after)
+                const windowStart = Math.max(0, eventIdx - 30);
+                const windowEnd = Math.min(stockData.length - 1, eventIdx + 30);
+                const windowData = stockData.slice(windowStart, windowEnd + 1);
+                
+                // Add relative time and cumulative return
+                const eventClose = stockData[eventIdx].close;
+                windowData.forEach((d, i) => {
+                    d.t = i - (eventIdx - windowStart);
+                    d.cumReturn = ((d.close / eventClose) - 1) * 100;
+                    d.dailyReturn = i > 0 ? ((d.close / windowData[i-1].close) - 1) * 100 : 0;
+                });
+                
+                // Calculate innovation score
+                const preEvent = windowData.filter(d => d.t < 0);
+                const postEvent = windowData.filter(d => d.t > 0);
+                const eventDay = windowData.find(d => d.t === 0);
+                
+                const return30d = postEvent.length > 0 ? postEvent[postEvent.length - 1].cumReturn : 0;
+                const eventDayReturn = eventDay ? eventDay.dailyReturn : 0;
+                
+                // Volatility
+                const calcStd = arr => {
+                    if (arr.length < 2) return 0;
+                    const mean = arr.reduce((a, b) => a + b, 0) / arr.length;
+                    return Math.sqrt(arr.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / arr.length);
+                };
+                
+                const preVol = calcStd(preEvent.map(d => d.dailyReturn));
+                const postVol = calcStd(postEvent.map(d => d.dailyReturn));
+                
+                // Volume change
+                const preVolAvg = preEvent.reduce((sum, d) => sum + d.volume, 0) / preEvent.length || 1;
+                const postVolAvg = postEvent.reduce((sum, d) => sum + d.volume, 0) / postEvent.length || 1;
+                const volChangePct = ((postVolAvg / preVolAvg) - 1) * 100;
+                
+                // Calculate score
+                let score = 0;
+                score += Math.max(-15, Math.min(30, return30d)); // Return magnitude
+                if (return30d > 0) score += 20; // Positive bonus
+                if (return30d > eventDayReturn) score += 15; // Momentum
+                const volChange = postVol - preVol;
+                if (volChange < 0) score += 10;
+                else if (volChange < 0.5) score += 5;
+                if (volChangePct > 20) score += 10;
+                else if (volChangePct > 0) score += 5;
+                
+                // Categorize
+                let category, color;
+                if (score >= 60) { category = 'Transformative'; color = SCORE_COLORS.transformative; }
+                else if (score >= 40) { category = 'Strong Innovation'; color = SCORE_COLORS.strong; }
+                else if (score >= 20) { category = 'Moderate'; color = SCORE_COLORS.moderate; }
+                else { category = 'Weak/Negative'; color = SCORE_COLORS.weak; }
+                
+                // Update chart
+                const trace = {
+                    x: windowData.map(d => d.t),
+                    y: windowData.map(d => d.cumReturn),
+                    type: 'scatter',
+                    mode: 'lines',
+                    fill: 'tozeroy',
+                    line: { color: color, width: 3 },
+                    fillcolor: color + '20',
+                    hovertemplate: 'Day: %{x}<br>Return: %{y:.2f}%<extra></extra>'
+                };
+                
+                const eventMarker = {
+                    x: [0],
+                    y: [0],
+                    type: 'scatter',
+                    mode: 'markers',
+                    marker: { size: 14, color: '#ffc46a', symbol: 'star' },
+                    hovertemplate: 'Event Day<extra></extra>'
+                };
+                
+                const layout = {
+                    title: {
+                        text: `<b>${ticker}</b> - Innovation Score: ${Math.round(score)}`,
+                        font: { size: 20, color: '#ffc46a' }
+                    },
+                    xaxis: {
+                        title: { text: 'Days Relative to Event', font: { color: '#9fb0ff' } },
+                        gridcolor: 'rgba(255,255,255,0.05)',
+                        tickfont: { color: '#e8edff' },
+                        zeroline: true,
+                        zerolinecolor: '#ffc46a',
+                        zerolinewidth: 2
+                    },
+                    yaxis: {
+                        title: { text: 'Cumulative Return (%)', font: { color: '#9fb0ff' } },
+                        gridcolor: 'rgba(255,255,255,0.05)',
+                        tickfont: { color: '#e8edff' },
+                        zeroline: true,
+                        zerolinecolor: 'rgba(255,255,255,0.2)'
+                    },
+                    paper_bgcolor: '#0d1024',
+                    plot_bgcolor: '#0d1024',
+                    font: { color: '#e8edff', family: '"Source Sans 3", Arial, sans-serif' },
+                    showlegend: false,
+                    margin: { t: 60, b: 50, l: 60, r: 30 },
+                    shapes: [{
+                        type: 'line',
+                        x0: 0, x1: 0,
+                        y0: 0, y1: 1,
+                        yref: 'paper',
+                        line: { color: '#ffc46a', width: 2, dash: 'dash' }
+                    }]
+                };
+                
+                // Clear the loading spinner before rendering chart
+                document.getElementById('chart').innerHTML = '';
+                Plotly.newPlot('chart', [trace, eventMarker], layout, { responsive: true });
+                
+                // Update score panel
+                const formatPct = (val, showSign = false) => {
+                    const formatted = val.toFixed(2);
+                    return showSign && val > 0 ? `+${formatted}%` : `${formatted}%`;
+                };
+                
+                document.getElementById('scoreDisplay').innerHTML = `
+                    <p class="score-number" style="color: ${color}; text-shadow: 0 0 30px ${color}40;">${Math.round(score)}</p>
+                    <p class="score-label">Innovation Score</p>
+                    <div class="category-badge">
+                        <span style="background: ${color};">${category}</span>
+                    </div>
+                    <hr class="divider">
+                    <div class="metric">
+                        <span class="metric-label">Company:</span>
+                        <span class="metric-value" style="color: var(--accent);">${ticker}</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Event Date:</span>
+                        <span class="metric-value">${dateStr}</span>
+                    </div>
+                    <hr class="divider">
+                    <div class="metric">
+                        <span class="metric-label">30-Day Return:</span>
+                        <span class="metric-value ${return30d >= 0 ? 'positive' : 'negative'}">${formatPct(return30d, true)}</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Event Day Return:</span>
+                        <span class="metric-value ${eventDayReturn >= 0 ? 'positive' : 'negative'}">${formatPct(eventDayReturn, true)}</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Pre-Event Vol:</span>
+                        <span class="metric-value">${formatPct(preVol)}</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Post-Event Vol:</span>
+                        <span class="metric-value">${formatPct(postVol)}</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Volume Change:</span>
+                        <span class="metric-value ${volChangePct >= 0 ? 'positive' : 'negative'}">${formatPct(volChangePct, true)}</span>
+                    </div>
+                    <hr class="divider">
+                    <div class="score-breakdown">
+                        <h4>Score Breakdown:</h4>
+                        <ul>
+                            <li style="color: #4ade80;">60+ = Transformative</li>
+                            <li style="color: #60a5fa;">40-59 = Strong Innovation</li>
+                            <li style="color: #fbbf24;">20-39 = Moderate</li>
+                            <li style="color: #f87171;">&lt;20 = Weak/Negative</li>
+                        </ul>
+                    </div>
+                `;
+                
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('chart').innerHTML = `
+                    <div class="error">
+                        <p>❌ Error fetching data for ${ticker}</p>
+                        <p style="font-size: 13px; margin-top: 10px;">${error.message}</p>
+                        <p style="font-size: 12px; margin-top: 10px; opacity: 0.7;">Try a different ticker or date, or check your internet connection.</p>
+                    </div>
+                `;
+            } finally {
+                btn.disabled = false;
+                btn.textContent = '🚀 Analyze Event';
+            }
+        }
+        
+        // Set default date to today minus 6 months for better data availability
+        document.addEventListener('DOMContentLoaded', () => {
+            const today = new Date();
+            const maxDate = new Date(today);
+            maxDate.setDate(maxDate.getDate() - 30); // At least 30 days ago for full window
+            document.getElementById('date').max = maxDate.toISOString().split('T')[0];
+            document.getElementById('date').min = '2010-01-01';
+        });
+    </script>
+</body>
+</html>

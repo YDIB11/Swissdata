@@ -253,6 +253,7 @@ blockquote strong {
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 2.8rem;
+  margin: 2.25rem 0;
 }
 
 .sdx-pill {
@@ -543,7 +544,19 @@ blockquote strong {
   color: #f7f9ff;
   text-align: center;
   overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   font-family: "Space Grotesk", "Source Sans 3", sans-serif;
+}
+
+.sdx-formula-card .formula::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.sdx-formula-card .formula mjx-container {
+  overflow: visible !important;
 }
 
 .sdx-formula-card p {
@@ -617,7 +630,7 @@ blockquote strong {
 }
 
 .sdx-chart-block {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 1.25rem;
   padding: 1.6rem;
   border-radius: 16px;
   background: radial-gradient(circle at 10% 20%, rgba(159, 176, 255, 0.12), transparent 55%),
@@ -647,7 +660,7 @@ blockquote strong {
 }
 
 .sdx-dual-panel .sdx-chart-block {
-  margin-top: 0;
+  margin: 0;
 }
 
 .sdx-note {
@@ -685,6 +698,11 @@ blockquote strong {
 
   .sdx-hero-media {
     min-height: 300px;
+  }
+
+  .sdx-section.alt {
+    padding: 1.9rem;
+    margin: 1.35rem 0;
   }
 }
 </style>
@@ -812,50 +830,241 @@ Each event in this table represents a moment when _someone_ believed they were w
     <div class="sdx-panel" data-animate="fade-up">
       <p>
         Innovation doesn't wear a single costume. It arrives in many forms, each with its own personality, its own audience,
-        and its own relationship with the stock market.
+        and its own relationship with the stock market. Before we can understand how markets recognize innovation, we need
+        to understand the different types of innovation we're studying.
       </p>
       <p>
-        Think of this act as meeting the characters in our story. Each domain brings different investor expectations and
-        different patterns of recognition, especially around the line between hype and substance.
+        Think of this chapter as meeting the characters in our story. Each company and sector brings something unique to our
+        investigation. They come with different patterns of market recognition, different investor expectations, and
+        different relationships between hype and substance.
       </p>
     </div>
     <div class="sdx-case-grid">
       <div class="sdx-case-card" data-animate="fade-up">
         <h3 class="title is-5">1. Consumer Tech (e.g., Apple)</h3>
         <p>
-          The most public innovations on Earth, staged launches, instant opinions, and fast “hot takes.”
+          The spotlight category. Highly visible launches where everyone has an opinion within hours.
         </p>
         <p class="sdx-note"><strong>Question:</strong> does visibility help the market understand, or just amplify noise?</p>
       </div>
       <div class="sdx-case-card" data-animate="fade-up">
         <h3 class="title is-5">2. Compute Platforms (e.g., NVIDIA)</h3>
         <p>
-          Invisible infrastructure, platforms that most people never “see,” yet power everything from deep learning to
-          drug discovery.
+          Invisible infrastructure. Platforms most people never see, yet they power everything from AI to medicine.
         </p>
-        <p class="sdx-note"><strong>Question:</strong> can markets price value that the public can’t experience directly?</p>
+        <p class="sdx-note"><strong>Question:</strong> can markets price value that the public can't experience directly?</p>
       </div>
       <div class="sdx-case-card" data-animate="fade-up">
         <h3 class="title is-5">3. EVs &amp; Robotics (e.g., Tesla)</h3>
         <p>
-          Innovation performed live, where narrative, spectacle, and execution risk collide in public.
+          Innovation performed live. A mix of engineering, hype cycles, and very public execution risk.
         </p>
-        <p class="sdx-note"><strong>Question:</strong> are investors pricing engineering… or belief?</p>
+        <p class="sdx-note"><strong>Question:</strong> are investors pricing engineering, or belief?</p>
       </div>
       <div class="sdx-case-card" data-animate="fade-up">
         <h3 class="title is-5">4. AI Shockwaves (e.g., OpenAI, Google, Meta, Microsoft)</h3>
         <p>
-          Ecosystem events, innovations that revalue many companies at once (often even when the originator isn’t public).
+          Ecosystem events. One breakthrough can rerate dozens of companies at once, even if the innovator isn't tradable.
         </p>
-        <p class="sdx-note"><strong>Question:</strong> who captures the footprint when the “main” innovator isn’t tradable?</p>
+        <p class="sdx-note"><strong>Question:</strong> who captures the footprint when the "main" innovator isn't tradable?</p>
       </div>
       <div class="sdx-case-card sdx-case-card-wide" data-animate="fade-up">
-        <h3 class="title is-5">5. Biotech &amp; Health (e.g., mRNA, GLP‑1, CRISPR)</h3>
+        <h3 class="title is-5">5. Biotech &amp; Health (e.g., mRNA, GLP-1, CRISPR)</h3>
         <p>
-          Innovation behind a regulatory gate, where uncertainty collapses when approval arrives.
+          Innovation behind a regulatory gate. Uncertainty collapses when approval arrives.
         </p>
-        <p class="sdx-note"><strong>Question:</strong> do binary “yes/no” moments create the cleanest footprints?</p>
+        <p class="sdx-note"><strong>Question:</strong> do binary "yes/no" moments create the cleanest footprints?</p>
       </div>
+    </div>
+
+    <div class="sdx-panel" data-animate="fade-up">
+      <div class="content" markdown="1">
+
+### 1. Consumer Tech, Apple: When Innovation Is Visible to Everyone
+
+There's something almost theatrical about Apple product launches. The hushed anticipation as Tim Cook, or before him, Steve Jobs, walks onto a stage. The carefully choreographed "one more thing" moments. The live blogs updating second by second as journalists race to describe what they are seeing. Within hours, millions of people have formed opinions. Some are enthusiastic, some are skeptical, and many land somewhere in between.
+
+Apple events are perhaps the most public innovations on Earth. They happen in broad daylight, under the glare of media attention. Financial analysts publish instant takes. Twitter erupts with hot takes and memes. The stock moves in real time as traders try to price in what they are seeing.
+
+And yet, this visibility creates a paradox: **does being able to see an innovation clearly help the market understand it?**
+
+Consider the skepticism that greeted some of Apple's most successful products. When the iPod launched in October 2001, Apple was struggling. The dot com bust had devastated tech stocks. The company was known for expensive computers that few people bought. And now they wanted $399 for an MP3 player, during a recession. The market's initial verdict was a yawn, or worse.
+
+The iPhone faced similar skepticism. "No physical keyboard," critics complained. "$600 is too expensive for a phone." "It only works on AT&amp;T." These were not fringe opinions. They were mainstream analyst takes.
+
+We analyzed **eight landmark Apple events** spanning 22 years to understand how markets process highly visible consumer innovation:
+
+| Event | Date | What It Was | The Skeptic's Take |
+|-------|------|-------------|-------------------|
+| **iPod Launch** | Oct 23, 2001 | "1,000 songs in your pocket" | An overpriced MP3 player in a recession |
+| **iPhone Launch** | Jun 29, 2007 | Phone + iPod + Internet device | Too expensive, no keyboard, carrier locked |
+| **iPad Launch** | Apr 3, 2010 | A tablet computer | Just a bigger iPod Touch, no laptop replacement |
+| **iPhone 5S Touch ID** | Sep 20, 2013 | Fingerprint authentication | Nice feature, but not a selling point |
+| **Apple Watch Launch** | Apr 24, 2015 | A computer on your wrist | Another fitness tracker, battery won't last |
+| **AirPods Launch** | Dec 13, 2016 | Truly wireless earbuds | They look ridiculous, easy to lose |
+| **M1 Chip Announcement** | Nov 10, 2020 | Apple's own silicon | Can they really beat Intel? Risky bet |
+| **Vision Pro Announcement** | Jun 5, 2023 | Spatial computing headset | $3,500, no killer app, VR has failed before |
+
+Notice the pattern? The market, the media, and often the public were skeptical on day one. The iPhone was "overpriced." The AirPods looked "weird." The M1 seemed like a dangerous bet against decades of Intel partnership.
+
+What makes Apple's story particularly instructive is that we know how it ends. These doubts turned into successes. The "overpriced" iPhone generated more revenue than any product in human history. The "weird" AirPods created an entirely new product category. Apple Silicon delivered exactly what Apple promised.
+
+So the question for our investigation becomes: **did the stock market share the skeptics' doubts, or did it see through the noise to recognize value?**
+
+</div>
+    </div>
+
+    <div class="sdx-panel" data-animate="fade-up">
+      <div class="content" markdown="1">
+
+### 2. Compute Platforms, NVIDIA: Innovation Beneath the Surface
+
+If Apple innovations happen in the spotlight, NVIDIA innovations happen in the shadows, invisible to most people, yet profoundly shaping the technology they use every day.
+
+Consider this: when you ask ChatGPT a question, you are using NVIDIA hardware. When a Tesla navigates traffic using Autopilot, NVIDIA chips process the camera feeds. When a hospital uses AI to detect tumors in medical images, NVIDIA GPUs do the heavy lifting. The company's technology is everywhere, and yet most people have never thought about it.
+
+This creates a fascinating market puzzle. **How do investors price innovations that most people can't see, touch, or directly experience?**
+
+NVIDIA's story spans three distinct eras. In the early 2000s, it was a gaming company, a maker of graphics cards that rendered video game worlds in ever more realistic detail. In the 2010s, it became a deep learning company, its GPUs turned out to be unexpectedly perfect for training neural networks. In the 2020s, it became the AI company, the essential infrastructure provider for the entire artificial intelligence revolution.
+
+Each transition was driven by specific product launches and platform innovations. We analyzed **eight NVIDIA milestones** that marked these pivotal moments:
+
+| Event | Date | The Innovation | Why It Mattered (In Hindsight) |
+|-------|------|---------------|------------------------------|
+| **CUDA Launch** | Jun 23, 2007 | GPU computing becomes programmable | Enabled the deep learning revolution a decade later |
+| **Tesla V100 Launch** | May 10, 2017 | First Tensor Cores for AI | Purpose built AI hardware changes the game |
+| **RTX 2080 Ti Launch** | Aug 20, 2018 | Real time ray tracing | New visual computing paradigm for games and beyond |
+| **A100 Ampere Launch** | May 14, 2020 | 20x AI performance leap | The engine that would power ChatGPT training |
+| **Arm Acquisition Attempt** | Sep 13, 2020 | $40B semiconductor empire bid | Audacious reach for chip industry dominance |
+| **H100 Hopper Launch** | Mar 22, 2022 | The AI training workhorse | Every AI lab in the world would want these |
+| **ChatGPT AI Boom** | Nov 30, 2022 | Demand explosion catalyst | The world suddenly needed NVIDIA GPUs |
+| **Blackwell B200** | Mar 18, 2024 | 208 billion transistor monster | Next generation of AI infrastructure |
+
+The CUDA story is particularly instructive. In June 2007, NVIDIA announced that programmers could now write general purpose code that would run on graphics cards. At the time, this seemed like a niche feature, interesting to researchers, perhaps, but hardly earth shattering for the gaming focused company.
+
+Nobody imagined that this technical capability would become the foundation of modern artificial intelligence. Nobody foresaw that CUDA would power the training of AlexNet in 2012, igniting the deep learning revolution. Nobody predicted that a decade later, the entire AI industry would depend on NVIDIA hardware.
+
+**Did the market see it coming? Did anyone?** That's what we set out to discover.
+
+</div>
+    </div>
+
+    <div class="sdx-panel" data-animate="fade-up">
+      <div class="content" markdown="1">
+
+### 3. Electric Vehicles and Robotics, Tesla: Innovation Performed Live
+
+Tesla exists in a category entirely its own. It's not just a car company. It's a narrative, a movement, a perpetual drama that plays out on social media, in stock trading apps, and on stages designed for maximum impact.
+
+When Elon Musk walks onto a Tesla stage, he's not just announcing a product. He's putting on a show. And sometimes the show goes spectacularly wrong, like when the "unbreakable" Cybertruck windows shattered on live television, sending social media into a frenzy and creating one of the most memorable product demonstration failures in corporate history.
+
+But here's the thing: **the Cybertruck reveal, despite the broken windows, generated over 200,000 reservations in less than 48 hours.** The spectacle worked, even when it failed.
+
+This creates unique challenges for understanding market recognition. With Apple or NVIDIA, we're analyzing how markets respond to technology. With Tesla, we're analyzing how markets respond to theater, and trying to separate genuine innovation recognition from hype cycles, cult of personality effects, and meme stock dynamics.
+
+We analyzed **eight Tesla moments** that capture this unique dynamic:
+
+| Event | Date | The Story | The Drama |
+|-------|------|----------|----------|
+| **Model S Deliveries Begin** | Jun 22, 2012 | Tesla proves it can ship | First real cars to real customers |
+| **Autopilot Announcement** | Oct 10, 2014 | From carmaker to autonomy play | Suddenly competing with Google |
+| **Model 3 Reveal** | Mar 31, 2016 | Mass market EV unveiled | 325,000 reservations in one week |
+| **Model 3 First Deliveries** | Jul 28, 2017 | Production finally begins | "Production hell" nightmares start |
+| **Cybertruck Reveal** | Nov 21, 2019 | Radical truck design | Broken windows, polarized reactions |
+| **Battery Day 4680 Cells** | Sep 22, 2020 | Revolutionary battery tech | Promises of 56% cheaper batteries |
+| **Tesla Bot Announcement** | Aug 19, 2021 | Humanoid robots | Dancing human in robot costume |
+| **Cybertruck Deliveries Begin** | Nov 30, 2023 | Four years of waiting ends | Finally in customer driveways |
+
+Tesla's relationship with expectations is complicated. The Model 3 reveal generated euphoria, but then came years of "production hell" as Tesla struggled to actually build the cars it had promised. Battery Day generated massive anticipation, but the actual announcements disappointed investors expecting even more dramatic breakthroughs.
+
+The Tesla Bot announcement perfectly encapsulates the company's unique position. Elon Musk announced that Tesla would build humanoid robots to perform dangerous or boring tasks. The company's credentials, experience with AI, sensors, motors, manufacturing, made the idea at least plausible. But the presentation featured a human dancer in a robot costume, inviting mockery. Was this visionary innovation or tech hype theater?
+
+**When spectacle and substance blur together, how does the market respond?** Tesla gives us the perfect laboratory to find out.
+
+</div>
+    </div>
+
+    <div class="sdx-panel" data-animate="fade-up">
+      <div class="content" markdown="1">
+
+### 4. AI Industry Shockwaves, When One Innovation Moves Everything
+
+On November 30, 2022, something extraordinary happened. OpenAI released ChatGPT, and within five days, it had accumulated a million users. Within two months, it became the fastest growing consumer application in the history of the internet, faster than TikTok, faster than Instagram, faster than anything.
+
+But here's what makes ChatGPT fascinating for our investigation: **OpenAI isn't publicly traded.** You can't buy OpenAI stock. The company that built the most disruptive AI product of the decade doesn't show up on any stock exchange.
+
+So where did the market's recognition of this breakthrough show up? How did the financial system signal that it understood something profound had happened?
+
+The answer is: **everywhere at once, and nowhere specifically.** ChatGPT didn't move a single stock. It moved an entire ecosystem. Microsoft, OpenAI's partner and investor, surged. NVIDIA, maker of the GPUs that train AI models, soared. Even companies with tangential AI connections saw their stocks respond to the new narrative.
+
+This realization led us to analyze AI events differently than company specific innovations. Instead of tracking a single stock, we tracked **25 companies simultaneously** to measure the breadth and depth of market recognition.
+
+We analyzed **eight AI era events** that shaped the technology landscape:
+
+| Event | Date | What Happened | Expected Beneficiaries |
+|-------|------|--------------|----------------------|
+| **NVIDIA H100 Launch** | Mar 22, 2022 | Ultimate AI training GPU announced | NVDA, TSM, MU, AVGO |
+| **ChatGPT Launch** | Nov 30, 2022 | AI goes mainstream overnight | MSFT, NVDA, GOOGL |
+| **Meta LLaMA Release** | Feb 24, 2023 | Open source AI democratized | META, NVDA, AMD |
+| **GPT 4 Release** | Mar 14, 2023 | Major capability leap | MSFT, NVDA, PLTR |
+| **Microsoft Copilot** | Mar 16, 2023 | AI enters the workplace | MSFT, NVDA, CRM |
+| **Google Bard Launch** | Mar 21, 2023 | Google's AI response | GOOGL, NVDA, TSM |
+| **Vision Pro Announcement** | Jun 5, 2023 | Spatial computing arrives | AAPL, TSM, QCOM |
+| **NVIDIA Blackwell B200** | Mar 18, 2024 | Next gen AI chips | NVDA, TSM, AVGO, MU |
+
+<p class="sdx-note">PLACEHOLDER: Insert the Top 25 Innovation Companies table (innovation_sector_event_analysis.ipynb, Step 1 output).</p>
+
+The choice to analyze 25 companies, rather than focusing on obvious winners like NVIDIA and Microsoft, was deliberate. We wanted to answer a more nuanced question: **when AI breakthroughs happen, does the market see them as narrowly benefiting specific companies, or as broadly transforming the entire technology landscape?**
+
+The "winner ratio", the percentage of companies that ended up with positive returns 30 days after an event, became our key metric. A winner ratio of 88% (like we saw after Meta's LLaMA release) suggests the market viewed that event as a rising tide lifting all boats. A winner ratio of 40% (like ChatGPT's launch) suggests a more selective, uncertain response.
+
+</div>
+    </div>
+
+    <div class="sdx-panel" data-animate="fade-up">
+      <div class="content" markdown="1">
+
+### 5. Biotech and Healthcare, Innovation With a Regulatory Gate
+
+Healthcare innovations operate under rules fundamentally different from anything in technology. When Apple announces an iPhone, customers can buy it within weeks. When NVIDIA launches a GPU, data centers can order them immediately. The path from announcement to adoption is relatively smooth.
+
+In healthcare, a massive gate stands between announcement and reality: **regulatory approval.**
+
+Consider the journey of a new drug. A pharmaceutical company might announce promising trial results, but that drug won't help any patients until the FDA, or equivalent regulators elsewhere, grants approval. That approval might come quickly, or it might take years. It might come with conditions, or it might not come at all. The uncertainty is enormous.
+
+This creates something unique in markets: **binary events with massive stakes.** The day an FDA approval is announced, a treatment goes from "might work" to "will work" in a single moment. Uncertainty collapses. Billions of dollars in value can be created or destroyed overnight.
+
+The COVID 19 pandemic brought this dynamic into sharp focus. On December 11, 2020, the FDA granted emergency use authorization to Pfizer BioNTech's Comirnaty vaccine, the first mRNA vaccine ever approved for human use. It wasn't just a drug approval. It was validation of an entirely new platform technology that had been in development for decades.
+
+We analyzed **ten healthcare breakthroughs** that represent different types of medical innovation:
+
+**Drug and Treatment Innovations:**
+
+| Event | Date | The Stakes | The Promise |
+|-------|------|-----------|------------|
+| **First mRNA Vaccine (Comirnaty)** | Dec 11, 2020 | Revolutionary platform | New way to build vaccines forever |
+| **Wegovy GLP 1 Weight Loss** | Jun 4, 2021 | Obesity treatment | First true weight loss drug |
+| **Paxlovid Oral Antiviral** | Dec 22, 2021 | At home treatment | Turn COVID into a manageable disease |
+| **Mounjaro (Tirzepatide)** | May 13, 2022 | Diabetes breakthrough | Dual hormone approach changes outcomes |
+| **Leqembi Alzheimer's Approval** | Jan 6, 2023 | First disease slowing drug | Proof Alzheimer's can be treated |
+| **Zepbound Obesity Launch** | Nov 8, 2023 | Massive blockbuster potential | GLP 1 competition accelerates |
+| **Casgevy CRISPR Therapy** | Dec 8, 2023 | Gene editing becomes real | Cure genetic diseases at the source |
+
+**Technology and AI Innovations:**
+
+| Event | Date | The Stakes | The Promise |
+|-------|------|-----------|------------|
+| **AlphaFold 2 Breakthrough** | Nov 30, 2020 | Protein folding solved | Accelerate drug discovery dramatically |
+| **GPT 4 Medical AI Release** | Mar 14, 2023 | Medical AI advances | Better diagnosis and imaging analysis |
+| **Da Vinci 5 Surgical Robot** | Mar 14, 2024 | Next gen robotic surgery | Precision surgery advances |
+
+<p class="sdx-note">PLACEHOLDER: Insert the Top 25 Healthcare Companies table (healthcare_sector_event_analysis.ipynb, Step 1 output).</p>
+
+The GLP 1 story is particularly remarkable. Drugs like Wegovy and Mounjaro haven't just helped diabetics control their blood sugar. They've produced unprecedented weight loss in clinical trials. This has created ripple effects far beyond the pharmaceutical companies making them. Food companies have seen their stocks affected. Weight Watchers restructured its business. Fitness chains adjusted their projections. Medical device companies serving obese patients reconsidered their futures.
+
+**Healthcare gives us something tech rarely provides: clean, binary moments where we can measure market recognition with precision.** When the FDA says yes, there's no ambiguity. The footprint should be unmistakable.
+
+</div>
     </div>
   </div>
 </section>
@@ -871,73 +1080,128 @@ Each event in this table represents a moment when _someone_ believed they were w
           market data.
         </p>
         <p>
-          The core idea comes from an <strong>event study</strong>: a breakthrough matters if the stock moves more than we'd
-          expect, given everything else happening that day.
+          Before diving into results, you deserve to understand how we approached this investigation. What data did we use?
+          What calculations did we perform? What assumptions did we make? A good detective story explains the method, not just
+          the conclusions.
         </p>
-        <p><strong>Our workflow:</strong></p>
+        <hr>
+        <h3 class="title is-5" style="margin-top:0;">The Event Study Method</h3>
+        <p>
+          In academic finance, the standard way to measure whether an event mattered is called an <strong>event study</strong>.
+          The logic is simple: <strong>did the stock move more than we would expect, given everything else happening that
+          day?</strong>
+        </p>
+        <p>
+          Looking at the event day alone is rarely enough. Stocks move every day for countless reasons: the overall market may
+          rise, interest rates may shift, or competitors may release news. An event study focuses on the window around the
+          announcement to separate the signal from the noise.
+        </p>
+        <p><strong>Our approach follows three steps:</strong></p>
         <ol class="sdx-list">
-          <li><strong>Define the event date</strong> (the innovation moment).</li>
-          <li><strong>Extract a window</strong> of <strong>&plusmn;30 trading days</strong> around it.</li>
-          <li><strong>Compute impact metrics</strong> and compare pre vs post.</li>
-        </ol>
-        <p><strong>What we compute:</strong></p>
-        <ul class="sdx-list">
-          <li><strong>daily returns</strong>,</li>
-          <li><strong>abnormal returns</strong> (market‑adjusted),</li>
-          <li><strong>cumulative abnormal returns (CAR)</strong>,</li>
-          <li><strong>volume z‑scores</strong>,</li>
-          <li><strong>pre/post volatility changes</strong>,</li>
-          <li>and <strong>spillovers</strong> across related companies.</li>
-        </ul>
-        <p>Footprints can be:</p>
-        <ol class="sdx-list">
-          <li><strong>Instant</strong>, a sudden jump.</li>
-          <li><strong>Slow-burning</strong>, a delayed realization.</li>
-          <li><strong>Mirage</strong>, a spike that fades.</li>
+          <li>
+            <strong>Define the event date.</strong> For some events this is crystal clear (Apple keynotes, FDA approvals). For
+            others (like ChatGPT), we pinpoint the moment the product becomes publicly available.
+          </li>
+          <li>
+            <strong>Extract a window around it.</strong> We collect price and volume for 30 trading days before and after the
+            event. This lets us see anticipation, the immediate reaction, and whether it lasts.
+          </li>
+          <li>
+            <strong>Calculate returns and look for anomalies.</strong> We compute daily returns, cumulative returns, volatility,
+            and volume change, then compare pre vs post behavior to infer market recognition.
+          </li>
         </ol>
       </div>
 
       <div class="sdx-chart-block sdx-formula-block" data-animate="fade-up">
         <h3 class="title is-5">Key formulas</h3>
-        <p class="sdx-note">The building blocks we compute inside each event window.</p>
+        <p class="sdx-note">We explain each metric in plain English, then use it across every event window.</p>
 
         <div class="sdx-formula-grid">
           <div class="sdx-formula-card">
             <h4>Return</h4>
             <div class="formula">\( R_t = \left(\frac{P_t}{P_{t-1}} - 1\right) \times 100 \)</div>
-            <p>The daily percentage move from yesterday’s close to today’s. This is the basic unit behind every footprint.</p>
+            <p>The daily percentage move. This is the basic unit behind every footprint.</p>
           </div>
           <div class="sdx-formula-card">
             <h4>Log return</h4>
             <div class="formula">\( r_t = \ln\!\left(\frac{P_t}{P_{t-1}}\right) \times 100 \)</div>
-            <p>A return measure that “adds nicely” over time; helpful when aggregating moves across many days.</p>
+            <p>A return measure that adds nicely over time, useful when aggregating moves across many days.</p>
           </div>
           <div class="sdx-formula-card">
             <h4>Cumulative return</h4>
             <div class="formula">\( CR_t = \left(\frac{P_t}{P_0} - 1\right) \times 100 \)</div>
-            <p>How much the stock is up/down relative to event day (t=0). If the market truly recognized the innovation, this stays meaningfully positive.</p>
+            <p>Our main proxy for recognition: buy on event day (t=0) and hold. Does the move stick?</p>
           </div>
           <div class="sdx-formula-card">
             <h4>Volatility</h4>
             <div class="formula">\( \sigma = \sqrt{\mathrm{Var}(R_t)} \)</div>
-            <p>How “choppy” returns are inside the window. Counter‑intuitively, real breakthroughs often reduce volatility after investors reach price discovery.</p>
+            <p>Uncertainty proxy. Counterintuitively, real breakthroughs can reduce volatility once price discovery happens.</p>
           </div>
           <div class="sdx-formula-card">
             <h4>Volume change</h4>
             <div class="formula">\( VC = \left(\frac{\bar{V}_{post}}{\bar{V}_{pre}} - 1\right) \times 100 \)</div>
-            <p>Attention proxy: average volume after vs before the event, expressed as a percentage change.</p>
+            <p>Attention proxy: average volume after vs before. High volume plus positive returns suggests informed enthusiasm.</p>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="sdx-panel" data-animate="fade-up">
+      <div class="content" markdown="1">
+
+### The Mathematics of Market Footprints
+
+Let's make the math accessible. We show the equations, then explain them in plain English.
+
+#### 1. Daily return, how much did the stock move?
+
+$$R_t = \left(\frac{P_t - P_{t-1}}{P_{t-1}}\right) \times 100$$
+
+In plain English: take today's close \(P_t\), subtract yesterday's close \(P_{t-1}\), divide by \(P_{t-1}\), and multiply by 100.
+
+Example: if Apple's stock closed at $150 yesterday and closes at $153 today, the daily return is:
+
+$$\frac{153 - 150}{150} \times 100 = 2\%$$
+
+#### 2. Cumulative return, the running total
+
+$$CR_t = \left(\frac{P_t}{P_0} - 1\right) \times 100$$
+
+In plain English: compare the current price \(P_t\) to the price on event day \(P_0\). This is our primary measure of market recognition inside the event window.
+
+Example: if the stock was $100 on event day and is now $115:
+
+$$\frac{115}{100} - 1 = 0.15 = 15\%$$
+
+#### 3. Volatility, how uncertain was the market?
+
+Volatility measures how wildly returns jump around. High volatility means investors disagree, so prices swing dramatically from day to day.
+
+$$\sigma = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(R_i - \bar{R})^2}$$
+
+Why this matters for innovation: true breakthroughs can reduce volatility after the announcement. Before an innovation, the market is uncertain. After a successful reveal, uncertainty can resolve through price discovery.
+
+#### 4. Volume change, how much attention did it get?
+
+Trading volume measures attention. When something important happens, more investors trade. They buy if they are excited, sell if they are skeptical, and reposition either way.
+
+$$VC = \left(\frac{\bar{V}_{post}}{\bar{V}_{pre}} - 1\right) \times 100$$
+
+In plain English: compare average volume after the event \(\bar{V}_{post}\) to average volume before \(\bar{V}_{pre}\), expressed as a percentage.
+
+Interpretation: high volume plus positive returns suggests informed enthusiasm. High volume plus negative returns can indicate informed concern, or messy disagreement.
+
+</div>
+    </div>
+
     <div class="sdx-chart-block sdx-placeholder" data-animate="fade-up">
-      <h3 class="title is-5">PLACEHOLDER: Event Window Diagram (t = -30 … 0 … +30)</h3>
-      <p class="sdx-note">A ~60 trading-day “movie” centered on the innovation day.</p>
+      <h3 class="title is-5">PLACEHOLDER: Event Window Diagram (t = -30 to +30)</h3>
+      <p class="sdx-note">A ~60 trading-day "movie" centered on the innovation day.</p>
       <ul class="sdx-list">
-        <li><strong>Pre‑event (t = -30 … -1):</strong> anticipation drift if “smart money” expected the announcement.</li>
+        <li><strong>Pre-event (t = -30 to -1):</strong> anticipation drift if "smart money" expected the announcement.</li>
         <li><strong>Event day (t = 0):</strong> the first reaction, headlines, hot takes, and immediate repricing.</li>
-        <li><strong>Post‑event (t = +1 … +30):</strong> the digestion phase, does the reaction stick or fade?</li>
+        <li><strong>Post-event (t = +1 to +30):</strong> the digestion phase, does the reaction stick or fade?</li>
       </ul>
     </div>
 
@@ -958,7 +1222,7 @@ Each event in this table represents a moment when _someone_ believed they were w
   </div>
 </section>
 
-<section class="section sdx-section" id="case-files">
+<section class="section sdx-section alt" id="case-files">
   <div class="container">
     <h2 class="title is-3">Act III, Case Files Across the Innovation Landscape</h2>
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
@@ -975,6 +1239,8 @@ Rather than marching through companies one by one, we've organized our findings 
 Apple's innovations are the most watched, most analyzed, most debated product launches on Earth. Millions tune in to keynotes. Thousands of articles appear within hours. Every financial analyst in tech has an opinion.
 
 And yet, perhaps _because_ of all this attention, Apple innovations reveal something profound about how markets process information: **visibility doesn't guarantee understanding.**
+
+<iframe src="assets/apple_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
 
 ---
 
@@ -1080,6 +1346,8 @@ If Apple represents visible consumer innovation, products you can hold, use, sho
 You've probably never thought about NVIDIA while using ChatGPT. But tens of thousands of NVIDIA GPUs trained the model you're talking to. When a Tesla navigates traffic, NVIDIA chips process the camera feeds. When a pharmaceutical company uses AI to discover new drugs, NVIDIA hardware runs the calculations.
 
 This invisibility creates a fascinating market dynamic. **How do investors price innovations that most people can't see, touch, or directly experience?** The answer, it turns out, depends enormously on timing.
+
+<iframe src="assets/nvidia_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
 
 ---
 
@@ -1484,7 +1752,7 @@ The **Slow Burn** category, nearly 30% of events, is the most fascinating findin
   </div>
 </section>
 
-<section class="section sdx-section" id="what-prices">
+<section class="section sdx-section alt" id="what-prices">
   <div class="container">
     <h2 class="title is-3">Act V, Building the Innovation Signature Framework</h2>
 
@@ -1628,7 +1896,7 @@ The AI era didn't just create winners, it restructured the entire technology lan
   </div>
 </section>
 
-<section class="section sdx-section" id="act-vi">
+<section class="section sdx-section alt" id="act-vi">
   <div class="container">
     <h2 class="title is-3">Act VI, Test Your Own Innovation</h2>
 

@@ -729,7 +729,7 @@ blockquote strong {
 
 <section class="section sdx-section alt" id="prologue">
   <div class="container">
-    <h2 class="title is-3">Prologue ,  The Problem with “Obvious” Innovation</h2>
+    <h2 class="title is-3">Prologue, The Problem with “Obvious” Innovation</h2>
     <div class="sdx-panel" data-animate="fade-up">
       <p>
         There's a peculiar comfort in hindsight. Standing in 2024, we can look back at the last two decades and
@@ -768,10 +768,10 @@ blockquote strong {
       </p>
       <p>In financial markets, these footprints take specific forms:</p>
       <ul class="sdx-list">
-        <li><strong>Sudden abnormal returns</strong> ,  moments when a stock moves far more than you'd expect based on normal market conditions.</li>
-        <li><strong>Unusual trading volume</strong> ,  evidence that investors are paying attention and repositioning around the news.</li>
-        <li><strong>Anticipation before the event</strong> ,  gradual drift in prices in the weeks before the announcement.</li>
-        <li><strong>Long, slow-burning revaluation</strong> ,  weak day‑0 reaction, followed by rising conviction over weeks.</li>
+        <li><strong>Sudden abnormal returns</strong>, moments when a stock moves far more than you'd expect based on normal market conditions.</li>
+        <li><strong>Unusual trading volume</strong>, evidence that investors are paying attention and repositioning around the news.</li>
+        <li><strong>Anticipation before the event</strong>, gradual drift in prices in the weeks before the announcement.</li>
+        <li><strong>Long, slow-burning revaluation</strong>, weak day‑0 reaction, followed by rising conviction over weeks.</li>
       </ul>
       <p>Our mission is to search for these footprints across two decades of innovation history.</p>
       <blockquote>
@@ -806,9 +806,9 @@ Each event in this table represents a moment when _someone_ believed they were w
   </div>
 </section>
 
-<section class="section sdx-section" id="cast">
+<section class="section sdx-section alt" id="cast">
   <div class="container">
-    <h2 class="title is-3">Act I ,  Meet the Cast</h2>
+    <h2 class="title is-3">Act I, Meet the Cast</h2>
     <div class="sdx-panel" data-animate="fade-up">
       <p>
         Innovation doesn't wear a single costume. It arrives in many forms, each with its own personality, its own audience,
@@ -823,14 +823,14 @@ Each event in this table represents a moment when _someone_ believed they were w
       <div class="sdx-case-card" data-animate="fade-up">
         <h3 class="title is-5">1. Consumer Tech (e.g., Apple)</h3>
         <p>
-          The most public innovations on Earth ,  staged launches, instant opinions, and fast “hot takes.”
+          The most public innovations on Earth, staged launches, instant opinions, and fast “hot takes.”
         </p>
         <p class="sdx-note"><strong>Question:</strong> does visibility help the market understand, or just amplify noise?</p>
       </div>
       <div class="sdx-case-card" data-animate="fade-up">
         <h3 class="title is-5">2. Compute Platforms (e.g., NVIDIA)</h3>
         <p>
-          Invisible infrastructure ,  platforms that most people never “see,” yet power everything from deep learning to
+          Invisible infrastructure, platforms that most people never “see,” yet power everything from deep learning to
           drug discovery.
         </p>
         <p class="sdx-note"><strong>Question:</strong> can markets price value that the public can’t experience directly?</p>
@@ -838,21 +838,21 @@ Each event in this table represents a moment when _someone_ believed they were w
       <div class="sdx-case-card" data-animate="fade-up">
         <h3 class="title is-5">3. EVs &amp; Robotics (e.g., Tesla)</h3>
         <p>
-          Innovation performed live ,  where narrative, spectacle, and execution risk collide in public.
+          Innovation performed live, where narrative, spectacle, and execution risk collide in public.
         </p>
         <p class="sdx-note"><strong>Question:</strong> are investors pricing engineering… or belief?</p>
       </div>
       <div class="sdx-case-card" data-animate="fade-up">
         <h3 class="title is-5">4. AI Shockwaves (e.g., OpenAI, Google, Meta, Microsoft)</h3>
         <p>
-          Ecosystem events ,  innovations that revalue many companies at once (often even when the originator isn’t public).
+          Ecosystem events, innovations that revalue many companies at once (often even when the originator isn’t public).
         </p>
         <p class="sdx-note"><strong>Question:</strong> who captures the footprint when the “main” innovator isn’t tradable?</p>
       </div>
       <div class="sdx-case-card sdx-case-card-wide" data-animate="fade-up">
         <h3 class="title is-5">5. Biotech &amp; Health (e.g., mRNA, GLP‑1, CRISPR)</h3>
         <p>
-          Innovation behind a regulatory gate ,  where uncertainty collapses when approval arrives.
+          Innovation behind a regulatory gate, where uncertainty collapses when approval arrives.
         </p>
         <p class="sdx-note"><strong>Question:</strong> do binary “yes/no” moments create the cleanest footprints?</p>
       </div>
@@ -862,7 +862,7 @@ Each event in this table represents a moment when _someone_ believed they were w
 
 <section class="section sdx-section alt" id="method">
   <div class="container">
-    <h2 class="title is-3">Act II ,  The Detective Method</h2>
+    <h2 class="title is-3">Act II, The Detective Method</h2>
 
     <div class="sdx-dual-panel">
       <div class="sdx-panel" data-animate="fade-up">
@@ -891,9 +891,9 @@ Each event in this table represents a moment when _someone_ believed they were w
         </ul>
         <p>Footprints can be:</p>
         <ol class="sdx-list">
-          <li><strong>Instant</strong> ,  a sudden jump.</li>
-          <li><strong>Slow-burning</strong> ,  a delayed realization.</li>
-          <li><strong>Mirage</strong> ,  a spike that fades.</li>
+          <li><strong>Instant</strong>, a sudden jump.</li>
+          <li><strong>Slow-burning</strong>, a delayed realization.</li>
+          <li><strong>Mirage</strong>, a spike that fades.</li>
         </ol>
       </div>
 
@@ -936,8 +936,8 @@ Each event in this table represents a moment when _someone_ believed they were w
       <p class="sdx-note">A ~60 trading-day “movie” centered on the innovation day.</p>
       <ul class="sdx-list">
         <li><strong>Pre‑event (t = -30 … -1):</strong> anticipation drift if “smart money” expected the announcement.</li>
-        <li><strong>Event day (t = 0):</strong> the first reaction ,  headlines, hot takes, and immediate repricing.</li>
-        <li><strong>Post‑event (t = +1 … +30):</strong> the digestion phase ,  does the reaction stick or fade?</li>
+        <li><strong>Event day (t = 0):</strong> the first reaction, headlines, hot takes, and immediate repricing.</li>
+        <li><strong>Post‑event (t = +1 … +30):</strong> the digestion phase, does the reaction stick or fade?</li>
       </ul>
     </div>
 
@@ -945,11 +945,11 @@ Each event in this table represents a moment when _someone_ believed they were w
       <h3 class="title is-4" style="margin-top:0;">From One Company to Many</h3>
       <p>
         Single‑stock event studies make sense for Apple, NVIDIA, and Tesla. But for ecosystem shocks like ChatGPT, the point
-        isn’t one ticker ,  it’s the <em>breadth</em> of the reaction.
+        isn’t one ticker, it’s the <em>breadth</em> of the reaction.
       </p>
       <p>
         For AI and healthcare events, we track multiple companies simultaneously and measure how many finish the window
-        positive ,  the <strong>Winner Ratio</strong>:
+        positive, the <strong>Winner Ratio</strong>:
       </p>
       <p class="sdx-note">\( \text{Winner Ratio} = \frac{\text{# companies with positive 30‑day return}}{\text{total companies}} \times 100 \)</p>
       <p class="sdx-note">High winner ratio = broad transformation; low winner ratio = selective winners and losers.</p>
@@ -960,7 +960,7 @@ Each event in this table represents a moment when _someone_ believed they were w
 
 <section class="section sdx-section" id="case-files">
   <div class="container">
-    <h2 class="title is-3">Act III ,  Case Files Across the Innovation Landscape</h2>
+    <h2 class="title is-3">Act III, Case Files Across the Innovation Landscape</h2>
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 The stage is set. You understand our method. Now comes the exciting part: **what did we actually find?**
 
@@ -969,7 +969,7 @@ Rather than marching through companies one by one, we've organized our findings 
 </div>
 
     <div class="sdx-panel" id="chapter-apple" data-animate="fade-up">
-      <h2 class="title is-4">Chapter 1 ,  Apple: The Slow Recognition of Visible Innovation</h2>
+      <h2 class="title is-4">Chapter 1, Apple: The Slow Recognition of Visible Innovation</h2>
       <div class="content" markdown="1">
 
 Apple's innovations are the most watched, most analyzed, most debated product launches on Earth. Millions tune in to keynotes. Thousands of articles appear within hours. Every financial analyst in tech has an opinion.
@@ -992,7 +992,7 @@ But then something remarkable happened. Over the next 30 days, as people actuall
 
 **30-day cumulative return: +30.98%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Apple iPod Launch cumulative return chart (apple_event_analysis.ipynb ,  Step 5 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Apple iPod Launch cumulative return chart (apple_event_analysis.ipynb, Step 5 visualization).</p>
 
 The iPod story is the perfect example of what we call the **"Slow Burn"** pattern, an innovation that looks unremarkable on day one but proves transformative over time. The market's initial skepticism wasn't irrational; it was based on reasonable concerns about price and competition. But as more information emerged, early reviews, initial sales figures, the experience of actually using the device, the market gradually recognized what it had missed.
 
@@ -1016,7 +1016,7 @@ On launch day, June 29, 2007, Apple's stock rose a modest **1.23%**. Respectable
 
 The 30-day cumulative return? **+4.71%**. Decent, but not revolutionary.
 
-<p class="sdx-note">PLACEHOLDER: Insert Apple iPhone Launch cumulative return chart (apple_event_analysis.ipynb ,  Step 5 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Apple iPhone Launch cumulative return chart (apple_event_analysis.ipynb, Step 5 visualization).</p>
 
 Why didn't the market immediately recognize what the iPhone would become? The answer reveals something important about innovation: **the iPhone we know today is not the iPhone that launched in 2007.**
 
@@ -1040,7 +1040,7 @@ But as the M1's performance benchmarks leaked out, dramatically outperforming In
 
 **30-day cumulative return: +12.93%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Apple M1 Chip cumulative return chart (apple_event_analysis.ipynb ,  Step 5 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Apple M1 Chip cumulative return chart (apple_event_analysis.ipynb, Step 5 visualization).</p>
 
 The M1 story shows that markets _can_ recognize platform shifts, it just takes time for the implications to sink in. The event-day return was essentially zero. But over the following month, as investors digested what Apple Silicon meant for margins, performance, and competitive positioning, a substantial revaluation occurred.
 
@@ -1050,7 +1050,7 @@ The M1 story shows that markets _can_ recognize platform shifts, it just takes t
 
 When we step back and look at all eight Apple events together, a striking pattern emerges:
 
-<p class="sdx-note">PLACEHOLDER: Insert Apple Events comparison chart (apple_event_analysis.ipynb ,  Step 7 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Apple Events comparison chart (apple_event_analysis.ipynb, Step 7 visualization).</p>
 
 | Event              | Day-0 Return | 30-Day Return | The Pattern                         |
 | ------------------ | ------------ | ------------- | ----------------------------------- |
@@ -1093,7 +1093,7 @@ On announcement day, NVIDIA's stock fell **-2.64%**. The market shrugged.
 
 The 30-day return was a modest **+2.61%**, essentially noise.
 
-<p class="sdx-note">PLACEHOLDER: Insert NVIDIA CUDA Launch cumulative return chart (nvidia_event_analysis.ipynb ,  Step 5 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert NVIDIA CUDA Launch cumulative return chart (nvidia_event_analysis.ipynb, Step 5 visualization).</p>
 
 What nobody understood in 2007, what _couldn't_ be understood, was that CUDA would become the foundation of modern artificial intelligence. Neural networks, it turned out, were perfectly suited for GPU computing. The same parallel processing that rendered video game graphics could train deep learning models thousands of times faster than traditional processors.
 
@@ -1114,7 +1114,7 @@ The market's response was immediate and unmistakable:
 **Event day return: +17.83%**  
 **30-day return: +30.71%**
 
-<p class="sdx-note">PLACEHOLDER: Insert NVIDIA V100 Launch cumulative return chart (nvidia_event_analysis.ipynb ,  Step 5 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert NVIDIA V100 Launch cumulative return chart (nvidia_event_analysis.ipynb, Step 5 visualization).</p>
 
 This is what we call an **"Instant Footprint"**, immediate, sustained, unmistakable recognition. The market understood that NVIDIA had created the essential hardware for the AI revolution. No slow burn, no gradual awakening. The footprint was there on day one.
 
@@ -1130,7 +1130,7 @@ On ChatGPT's launch day, NVIDIA stock jumped **+8.24%**. The market immediately 
 
 But here's the surprise: the 30-day cumulative return was only **-0.14%**, essentially flat.
 
-<p class="sdx-note">PLACEHOLDER: Insert NVIDIA ChatGPT impact chart (nvidia_event_analysis.ipynb ,  Step 5 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert NVIDIA ChatGPT impact chart (nvidia_event_analysis.ipynb, Step 5 visualization).</p>
 
 What happened? Why didn't NVIDIA continue soaring as ChatGPT's popularity exploded?
 
@@ -1142,7 +1142,7 @@ NVIDIA's ChatGPT-era rally didn't happen in November 2022. It happened over the 
 
 ### NVIDIA Event Summary: All 8 Events Compared
 
-<p class="sdx-note">PLACEHOLDER: Insert NVIDIA Events comparison chart (nvidia_event_analysis.ipynb ,  Step 7 comparison visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert NVIDIA Events comparison chart (nvidia_event_analysis.ipynb, Step 7 comparison visualization).</p>
 
 | Event           | Day-0 Return | 30-Day Return | Pattern Type              |
 | --------------- | ------------ | ------------- | ------------------------- |
@@ -1163,7 +1163,7 @@ CUDA in 2007 was a solution looking for a problem. The V100 in 2017 was a soluti
 </div>
 
     <div class="sdx-panel" id="chapter-tesla" data-animate="fade-up">
-      <h2 class="title is-4">Chapter 3 ,  Tesla: Hype, Skepticism, and Spectacle</h2>
+      <h2 class="title is-4">Chapter 3, Tesla: Hype, Skepticism, and Spectacle</h2>
       <div class="content" markdown="1">
 
 Tesla defies easy categorization. It's not just a car company, it's a phenomenon, a cultural touchstone, a perpetual drama playing out in real-time across social media, financial news, and Elon Musk's Twitter feed.
@@ -1186,7 +1186,7 @@ But then something unexpected happened:
 
 30-day return: **-16.34%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Tesla Model S Deliveries cumulative return chart (tesla_event_analysis.ipynb ,  Step 5 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Tesla Model S Deliveries cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
 
 Wait, what? Tesla proved it could ship cars, and the stock _fell_ 16% over the following month?
 
@@ -1211,7 +1211,7 @@ The spectacle _worked_, not despite the failure, but perhaps because of it. The 
 Event day return: **+0.74%**. Surprisingly muted given the viral explosion.  
 30-day return: **+32.19%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Tesla Cybertruck Reveal cumulative return chart (tesla_event_analysis.ipynb ,  Step 5 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Tesla Cybertruck Reveal cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
 
 The Cybertruck reveal shows something important about Tesla's relationship with markets: **spectacle can create sustained momentum, even when the spectacle includes embarrassing failures.** The event generated attention, attention generated interest, interest generated reservations, reservations suggested demand, and demand supported stock price.
 
@@ -1230,7 +1230,7 @@ What they got was... a solid presentation about incremental improvements. The ne
 Event day return: **-5.60%**  
 30-day return: **-0.08%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Tesla Battery Day cumulative return chart (tesla_event_analysis.ipynb ,  Step 5 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Tesla Battery Day cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
 
 Battery Day wasn't a failure of innovation, Tesla announced genuinely important technology. It was a failure of expectations management. When reality meets hype, hype often loses.
 
@@ -1238,7 +1238,7 @@ Battery Day wasn't a failure of innovation, Tesla announced genuinely important 
 
 ### Tesla Event Summary: All 8 Events Compared
 
-<p class="sdx-note">PLACEHOLDER: Insert Tesla Events comparison chart (tesla_event_analysis.ipynb ,  Step 7 comparison visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Tesla Events comparison chart (tesla_event_analysis.ipynb, Step 7 comparison visualization).</p>
 
 | Event                 | Day-0 Return | 30-Day Return | What Happened           |
 | --------------------- | ------------ | ------------- | ----------------------- |
@@ -1259,7 +1259,7 @@ This reflects Tesla's unique position in markets: it's priced on **belief in the
 </div>
 
     <div class="sdx-panel" id="chapter-ai" data-animate="fade-up">
-      <h2 class="title is-4">Chapter 4 ,  AI Industry: When Everything Moves Together</h2>
+      <h2 class="title is-4">Chapter 4, AI Industry: When Everything Moves Together</h2>
       <div class="content" markdown="1">
 
 On November 30, 2022, the world changed. OpenAI released ChatGPT, and within weeks, the technology industry was scrambling to respond. Every earnings call mentioned AI. Every company published AI strategies. The entire sector was suddenly re-evaluated through the lens of artificial intelligence.
@@ -1268,7 +1268,7 @@ But here's what makes the AI revolution fascinating from a market perspective: *
 
 You cannot buy OpenAI stock. The most important AI company of the decade doesn't appear on any exchange. So where did the market's recognition of ChatGPT show up?
 
-<p class="sdx-note">PLACEHOLDER: Insert Innovation Sector cumulative returns comparison chart showing all 25 companies during the ChatGPT launch window (innovation_sector_event_analysis.ipynb ,  sector-wide visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Innovation Sector cumulative returns comparison chart showing all 25 companies during the ChatGPT launch window (innovation_sector_event_analysis.ipynb, sector-wide visualization).</p>
 
 The answer is: everywhere at once. ChatGPT moved entire ecosystems. Microsoft (as OpenAI's partner and investor) surged. NVIDIA (maker of the GPUs that power AI) became the most valuable company on Earth. Cloud providers, chip companies, software firms, all were re-evaluated based on their AI exposure.
 
@@ -1296,7 +1296,7 @@ The market saw ChatGPT's significance, but broader economic forces overwhelmed t
 
 By early 2023, the context had shifted. The market had digested ChatGPT's implications. Investors understood that AI was transformative. When Meta released LLaMA as open-source, democratizing large language model technology, nearly every innovation company benefited.
 
-<p class="sdx-note">PLACEHOLDER: Insert Winner Ratio comparison across all Innovation Sector events (innovation_sector_event_analysis.ipynb ,  Step 6 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Winner Ratio comparison across all Innovation Sector events (innovation_sector_event_analysis.ipynb, Step 6 visualization).</p>
 
 ---
 
@@ -1347,7 +1347,7 @@ How did the healthcare sector respond?
 Sector average 30-day return: **+2.48%**  
 Sector median 30-day return: **+0.48%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Healthcare Sector mRNA approval visualization (healthcare_sector_event_analysis.ipynb ,  Step 6 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Healthcare Sector mRNA approval visualization (healthcare_sector_event_analysis.ipynb, Step 6 visualization).</p>
 
 The returns look modest, but context matters. This was during the chaotic post-election, mid-pandemic market. Vaccine optimism was already partially priced in. And the impact wasn't uniform: Pfizer saw different movement than surgical device makers.
 
@@ -1364,7 +1364,7 @@ The implications extend far beyond pharmaceuticals. Food companies must reconsid
 - Sector average 30-day return: **+7.73%**
 - Sector median 30-day return: **+7.71%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Healthcare Sector GLP-1 impact visualization (healthcare_sector_event_analysis.ipynb ,  Step 6 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Healthcare Sector GLP-1 impact visualization (healthcare_sector_event_analysis.ipynb, Step 6 visualization).</p>
 
 The GLP-1 revolution creates clear footprints, not just for drug makers like Eli Lilly and Novo Nordisk, but for entire adjacent industries.
 
@@ -1378,7 +1378,7 @@ On December 8, 2023, the future arrived. The FDA approved Casgevy, the first CRI
 
 Sector average 30-day return: **+6.37%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Healthcare Sector CRISPR impact visualization (healthcare_sector_event_analysis.ipynb ,  Step 6 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Healthcare Sector CRISPR impact visualization (healthcare_sector_event_analysis.ipynb, Step 6 visualization).</p>
 
 The market recognized CRISPR's approval as transformative, not just for Vertex (which partnered on Casgevy) but for the entire biotechnology sector. Gene editing had crossed from possibility to reality.
 
@@ -1386,7 +1386,7 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
 
 ### Healthcare Event Summary
 
-<p class="sdx-note">PLACEHOLDER: Insert Healthcare Events comparison chart showing all 10 events (healthcare_sector_event_analysis.ipynb ,  comparison visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Healthcare Events comparison chart showing all 10 events (healthcare_sector_event_analysis.ipynb, comparison visualization).</p>
 
 | Event            | 30-Day Return | Type                |
 | ---------------- | ------------- | ------------------- |
@@ -1412,7 +1412,7 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
 
 <section class="section sdx-section alt" id="archetypes">
   <div class="container">
-    <h2 class="title is-3">Act IV ,  The Three Archetypes of Market Recognition</h2>
+    <h2 class="title is-3">Act IV, The Three Archetypes of Market Recognition</h2>
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
@@ -1475,7 +1475,7 @@ Of 24 single-company events analyzed:
 - **Double Losers** (-day, -30d): 12.5%
 - **False Starts** (+day, -30d): 20.8%
 
-<p class="sdx-note">PLACEHOLDER: Insert quadrant distribution chart (innovation_pattern_identification.ipynb ,  Step 2 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert quadrant distribution chart (innovation_pattern_identification.ipynb, Step 2 visualization).</p>
 
 The **Slow Burn** category, nearly 30% of events, is the most fascinating finding. These are innovations the market initially rejected but later embraced. They represent opportunities that patient investors could have captured while others panicked over negative event-day returns.
 
@@ -1486,7 +1486,7 @@ The **Slow Burn** category, nearly 30% of events, is the most fascinating findin
 
 <section class="section sdx-section" id="what-prices">
   <div class="container">
-    <h2 class="title is-3">Act V ,  Building the Innovation Signature Framework</h2>
+    <h2 class="title is-3">Act V, Building the Innovation Signature Framework</h2>
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
@@ -1608,7 +1608,7 @@ The AI era didn't just create winners, it restructured the entire technology lan
 
 ## AI Events: Cumulative Impact
 
-<p class="sdx-note">PLACEHOLDER: Insert AI Events Impact Timeline (innovation_sector_event_analysis.ipynb ,  combined timeline visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert AI Events Impact Timeline (innovation_sector_event_analysis.ipynb, combined timeline visualization).</p>
 
 | Event       | Date     | Sector Return | Winner Ratio |
 | ----------- | -------- | ------------- | ------------ |
@@ -1630,7 +1630,7 @@ The AI era didn't just create winners, it restructured the entire technology lan
 
 <section class="section sdx-section" id="act-vi">
   <div class="container">
-    <h2 class="title is-3">Act VI ,  Test Your Own Innovation</h2>
+    <h2 class="title is-3">Act VI, Test Your Own Innovation</h2>
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
@@ -1675,7 +1675,7 @@ We tested our framework on **13 events** not used in building the model. It succ
 
 <section class="section sdx-section alt" id="conclusion">
   <div class="container">
-    <h2 class="title is-3">Conclusion ,  What the Market Really Prices</h2>
+    <h2 class="title is-3">Conclusion, What the Market Really Prices</h2>
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 

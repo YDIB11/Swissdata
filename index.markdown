@@ -453,6 +453,83 @@ blockquote strong {
   color: var(--text);
 }
 
+.sdx-back-to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 40;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(13, 16, 36, 0.78);
+  color: var(--text);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px) scale(0.98);
+  transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.sdx-back-to-top::after {
+  content: "Back to top";
+  position: absolute;
+  right: calc(100% + 0.75rem);
+  top: 50%;
+  transform: translateY(-50%) translateX(10px);
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(13, 16, 36, 0.9);
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-size: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.sdx-back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+}
+
+.sdx-back-to-top:hover {
+  border-color: rgba(159, 176, 255, 0.45);
+  color: #f7f9ff;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.55);
+  transform: translateY(-2px);
+}
+
+.sdx-back-to-top:hover::after,
+.sdx-back-to-top:focus-visible::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.sdx-back-to-top:focus-visible {
+  outline: 2px solid rgba(255, 196, 106, 0.9);
+  outline-offset: 3px;
+}
+
+.sdx-back-to-top svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.sdx-back-to-top:hover svg {
+  transform: translateY(-1px);
+}
+
 .sdx-hero-badge {
   display: grid;
   gap: 1rem;
@@ -825,6 +902,235 @@ blockquote strong {
   border-color: rgba(159, 176, 255, 0.45);
 }
 
+.sdx-window-visual {
+  margin-top: 1.15rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: radial-gradient(circle at 20% 20%, rgba(159, 176, 255, 0.10), transparent 55%),
+              rgba(5, 8, 20, 0.35);
+  padding: 1.1rem 1.1rem 0.9rem;
+  overflow: hidden;
+}
+
+.sdx-window-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sdx-window-axis {
+  stroke: rgba(255, 255, 255, 0.24);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+}
+
+.sdx-window-tick {
+  stroke: rgba(255, 255, 255, 0.20);
+  stroke-width: 2;
+  opacity: 0.9;
+}
+
+.sdx-window-label {
+  fill: rgba(232, 237, 255, 0.92);
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.sdx-window-label-muted {
+  fill: rgba(159, 176, 255, 0.95);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.sdx-window-pre,
+.sdx-window-post {
+  stroke-width: 1;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-box: fill-box;
+}
+
+.sdx-window-pre {
+  fill: rgba(159, 176, 255, 0.16);
+  stroke: rgba(159, 176, 255, 0.42);
+  transform-origin: 100% 50%;
+}
+
+.sdx-window-post {
+  fill: rgba(78, 205, 196, 0.14);
+  stroke: rgba(78, 205, 196, 0.38);
+  transform-origin: 0% 50%;
+}
+
+.sdx-window-event {
+  stroke: rgba(255, 196, 106, 0.95);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  opacity: 0;
+}
+
+.sdx-window-glow {
+  fill: rgba(255, 196, 106, 0.85);
+  opacity: 0;
+}
+
+.sdx-window-glow-soft {
+  fill: rgba(255, 196, 106, 0.20);
+  filter: blur(10px);
+  opacity: 0;
+}
+
+.sdx-window-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.1rem;
+}
+
+.sdx-window-step {
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(13, 16, 36, 0.62);
+  padding: 1rem 1.05rem;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.sdx-window-step h4 {
+  margin: 0;
+  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.sdx-window-step p {
+  margin: 0.55rem 0 0;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.sdx-window-step .sdx-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.55rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sdx-window-step-pre .sdx-chip {
+  color: rgba(159, 176, 255, 0.95);
+  background: rgba(159, 176, 255, 0.10);
+}
+
+.sdx-window-step-event .sdx-chip {
+  color: rgba(255, 196, 106, 0.95);
+  background: rgba(255, 196, 106, 0.10);
+}
+
+.sdx-window-step-post .sdx-chip {
+  color: rgba(78, 205, 196, 0.9);
+  background: rgba(78, 205, 196, 0.09);
+}
+
+.sdx-window-block.animate-in .sdx-window-axis {
+  animation: sdxDrawAxis 1.2s ease forwards;
+}
+
+.sdx-window-block.animate-in .sdx-window-pre {
+  opacity: 1;
+  animation: sdxGrowBand 1s ease 0.75s forwards;
+}
+
+.sdx-window-block.animate-in .sdx-window-event {
+  opacity: 1;
+  animation: sdxDrawEvent 0.75s ease 1.55s forwards;
+}
+
+.sdx-window-block.animate-in .sdx-window-post {
+  opacity: 1;
+  animation: sdxGrowBand 1s ease 2s forwards;
+}
+
+.sdx-window-block.animate-in .sdx-window-glow,
+.sdx-window-block.animate-in .sdx-window-glow-soft {
+  opacity: 1;
+  animation: sdxPopGlow 0.8s ease 1.65s both;
+}
+
+.sdx-window-block.animate-in .sdx-window-label {
+  animation: sdxFadeIn 0.7s ease 2.55s forwards;
+}
+
+.sdx-window-block.animate-in .sdx-window-step:nth-child(1) {
+  animation: sdxPopStep 0.7s ease 2.9s forwards;
+}
+
+.sdx-window-block.animate-in .sdx-window-step:nth-child(2) {
+  animation: sdxPopStep 0.7s ease 3.15s forwards;
+}
+
+.sdx-window-block.animate-in .sdx-window-step:nth-child(3) {
+  animation: sdxPopStep 0.7s ease 3.4s forwards;
+}
+
+@keyframes sdxDrawAxis {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes sdxGrowBand {
+  to { transform: scaleX(1); }
+}
+
+@keyframes sdxDrawEvent {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes sdxPopGlow {
+  0% { transform: scale(0.85); }
+  55% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+@keyframes sdxFadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes sdxPopStep {
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sdx-window-axis,
+  .sdx-window-event {
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+  }
+  .sdx-window-pre,
+  .sdx-window-post {
+    opacity: 1;
+    transform: none;
+  }
+  .sdx-window-label,
+  .sdx-window-step {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+  }
+}
+
 .sdx-dual-panel {
   display: grid;
   grid-template-columns: minmax(0, 0.7fr) minmax(0, 0.3fr);
@@ -890,6 +1196,10 @@ blockquote strong {
   .sdx-section.alt {
     padding: 1.9rem;
     margin: 1.35rem 0;
+  }
+
+  .sdx-window-steps {
+    grid-template-columns: 1fr;
   }
 }
 </style>
@@ -1201,7 +1511,10 @@ We analyzed **eight AI era events** that shaped the technology landscape:
 | **Vision Pro Announcement** | Jun 5, 2023  | Spatial computing arrives          | AAPL, TSM, QCOM        |
 | **NVIDIA Blackwell B200**   | Mar 18, 2024 | Next gen AI chips                  | NVDA, TSM, AVGO, MU    |
 
-<p class="sdx-note">PLACEHOLDER: Insert the Top 25 Innovation Companies table (innovation_sector_event_analysis.ipynb, Step 1 output).</p>
+<div class="flourish-embed flourish-cards" data-src="visualisation/26799327">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript><img src="https://public.flourish.studio/visualisation/26799327/thumbnail" width="100%" alt="cards visualization" /></noscript>
+</div>
 
 The choice to analyze 25 companies, rather than focusing on obvious winners like NVIDIA and Microsoft, was deliberate. We wanted to answer a more nuanced question: **when AI breakthroughs happen, does the market see them as narrowly benefiting specific companies, or as broadly transforming the entire technology landscape?**
 
@@ -1247,7 +1560,10 @@ We analyzed **ten healthcare breakthroughs** that represent different types of m
 | **GPT 4 Medical AI Release**  | Mar 14, 2023 | Medical AI advances      | Better diagnosis and imaging analysis  |
 | **Da Vinci 5 Surgical Robot** | Mar 14, 2024 | Next gen robotic surgery | Precision surgery advances             |
 
-<p class="sdx-note">PLACEHOLDER: Insert the Top 25 Healthcare Companies table (healthcare_sector_event_analysis.ipynb, Step 1 output).</p>
+<div class="flourish-embed flourish-cards" data-src="visualisation/26830826">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript><img src="https://public.flourish.studio/visualisation/26830826/thumbnail" width="100%" alt="cards visualization" /></noscript>
+</div>
 
 The GLP 1 story is particularly remarkable. Drugs like Wegovy and Mounjaro haven't just helped diabetics control their blood sugar. They've produced unprecedented weight loss in clinical trials. This has created ripple effects far beyond the pharmaceutical companies making them. Food companies have seen their stocks affected. Weight Watchers restructured its business. Fitness chains adjusted their projections. Medical device companies serving obese patients reconsidered their futures.
 
@@ -1309,17 +1625,67 @@ The GLP 1 story is particularly remarkable. Drugs like Wegovy and Mounjaro haven
       </p>
     </div>
 
-    <div class="sdx-chart-block sdx-placeholder" data-animate="fade-up">
-      <h3 class="title is-5">PLACEHOLDER: Event window diagram (t = -30 ... 0 ... +30)</h3>
-      <p class="sdx-note">
-        A 61 trading-day clip centered on the innovation day, designed to capture anticipation, immediate reaction, and
-        delayed repricing.
+    <div class="sdx-chart-block sdx-window-block" data-animate="fade-up" id="event-window-diagram">
+      <h3 class="title is-4" style="margin-top:0;">Event window, 61 trading days</h3>
+      <p class="sdx-note" style="margin-top:0.6rem;">
+        We center each event at <strong>t = 0</strong>, then watch 30 trading days before and after to separate anticipation, reaction, and digestion.
       </p>
-      <ul class="sdx-list">
-        <li><strong>Pre-event (t = -30 to -1):</strong> drift if investors expected the news.</li>
-        <li><strong>Event day (t = 0):</strong> headlines, first reaction, immediate repricing.</li>
-        <li><strong>Post-event (t = +1 to +30):</strong> digestion, does the move stick or fade?</li>
-      </ul>
+
+      <div class="sdx-window-visual">
+        <svg class="sdx-window-svg" viewBox="0 0 920 220" role="img" aria-label="Event window diagram with pre-event, event day, and post-event segments">
+          <defs>
+            <linearGradient id="sdxAxisGlow" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="rgb(159,176,255)" stop-opacity="0"></stop>
+              <stop offset="50%" stop-color="rgb(159,176,255)" stop-opacity="0.18"></stop>
+              <stop offset="100%" stop-color="rgb(78,205,196)" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+
+          <rect x="86" y="92" width="330" height="36" rx="14" class="sdx-window-pre"></rect>
+          <rect x="504" y="92" width="330" height="36" rx="14" class="sdx-window-post"></rect>
+
+          <line x1="86" y1="110" x2="834" y2="110" class="sdx-window-axis"></line>
+          <line x1="86" y1="110" x2="834" y2="110" stroke="url(#sdxAxisGlow)" stroke-width="10" opacity="0.35"></line>
+
+          <line x1="460" y1="62" x2="460" y2="158" class="sdx-window-event"></line>
+          <circle cx="460" cy="110" r="18" class="sdx-window-glow-soft"></circle>
+          <circle cx="460" cy="110" r="6" class="sdx-window-glow"></circle>
+
+          <line x1="86" y1="110" x2="86" y2="140" class="sdx-window-tick"></line>
+          <line x1="273" y1="110" x2="273" y2="140" class="sdx-window-tick"></line>
+          <line x1="460" y1="110" x2="460" y2="140" class="sdx-window-tick"></line>
+          <line x1="647" y1="110" x2="647" y2="140" class="sdx-window-tick"></line>
+          <line x1="834" y1="110" x2="834" y2="140" class="sdx-window-tick"></line>
+
+          <text x="86" y="168" text-anchor="middle" class="sdx-window-label">-30</text>
+          <text x="273" y="168" text-anchor="middle" class="sdx-window-label">-15</text>
+          <text x="460" y="168" text-anchor="middle" class="sdx-window-label">0</text>
+          <text x="647" y="168" text-anchor="middle" class="sdx-window-label">+15</text>
+          <text x="834" y="168" text-anchor="middle" class="sdx-window-label">+30</text>
+
+          <text x="251" y="78" text-anchor="middle" class="sdx-window-label sdx-window-label-muted">Pre event</text>
+          <text x="460" y="46" text-anchor="middle" class="sdx-window-label sdx-window-label-muted">Event day</text>
+          <text x="669" y="78" text-anchor="middle" class="sdx-window-label sdx-window-label-muted">Post event</text>
+        </svg>
+
+        <div class="sdx-window-steps">
+          <div class="sdx-window-step sdx-window-step-pre">
+            <div class="sdx-chip">t = -30 to -1</div>
+            <h4>Pre-event</h4>
+            <p>Positioning, leaks, and anticipation drift if investors expected the news.</p>
+          </div>
+          <div class="sdx-window-step sdx-window-step-event">
+            <div class="sdx-chip">t = 0</div>
+            <h4>Event day</h4>
+            <p>Headlines hit, the first repricing shows up in returns, volume, and volatility.</p>
+          </div>
+          <div class="sdx-window-step sdx-window-step-post">
+            <div class="sdx-chip">t = +1 to +30</div>
+            <h4>Post-event</h4>
+            <p>Digestion phase, does the move stick, reverse, or slowly build after the story spreads.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="sdx-panel sdx-formula-block" data-animate="fade-up">
@@ -1838,7 +2204,10 @@ To measure that, we track a basket of **25 major tech companies** around the sam
 - the sector average return over the event window
 - the <a href="#winner-ratio-definition"><strong>Winner Ratio</strong></a>, how many of the 25 finish the window positive
 
-<p class="sdx-note">PLACEHOLDER: Insert Top 25 Innovation Companies table (innovation_sector_event_analysis.ipynb, Step 1 output).</p>
+<div class="flourish-embed flourish-cards" data-src="visualisation/26799327">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript><img src="https://public.flourish.studio/visualisation/26799327/thumbnail" width="100%" alt="cards visualization" /></noscript>
+</div>
 
 ---
 
@@ -2456,7 +2825,15 @@ Innovation walks through the snow of market prices, leaving footprints. Our job 
       </div>
     </section>
 
-  </div>
+</div>
+</div>
+
+<div>
+  <button class="sdx-back-to-top" id="sdx-back-to-top" type="button" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M12 5.5l7 7-1.4 1.4L13 9.3V20h-2V9.3L6.4 13.9 5 12.5l7-7z"></path>
+    </svg>
+  </button>
 </div>
 
 <script>
@@ -2477,6 +2854,41 @@ document.addEventListener("DOMContentLoaded", function () {
     animated.forEach((el) => obs.observe(el));
   } else {
     animated.forEach((el) => el.classList.add("animate-in"));
+  }
+
+  const backToTop = document.getElementById("sdx-back-to-top");
+  if (backToTop) {
+    const prefersReducedMotion =
+      window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const updateBackToTop = () => {
+      if (window.scrollY > 700) {
+        backToTop.classList.add("is-visible");
+      } else {
+        backToTop.classList.remove("is-visible");
+      }
+    };
+
+    let ticking = false;
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (!ticking) {
+          ticking = true;
+          window.requestAnimationFrame(() => {
+            ticking = false;
+            updateBackToTop();
+          });
+        }
+      },
+      { passive: true }
+    );
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: prefersReducedMotion ? "auto" : "smooth" });
+    });
+
+    updateBackToTop();
   }
 
   const chaptersModal = document.getElementById("sdx-chapters-modal");

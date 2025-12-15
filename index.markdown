@@ -1247,7 +1247,7 @@ blockquote strong {
     <h2 class="title is-3">Prologue, The Problem with "Obvious" Innovation</h2>
     <div class="sdx-panel" data-animate="fade-up">
       <p>
-        There's a peculiar comfort in hindsight. Standing in 2024, we can look back at the last two decades and
+        There's a peculiar comfort in hindsight. Standing in 2025, we can look back at the last two decades and
         confidently point to the moments that changed everything: the iPhone launch in 2007, the emergence of CUDA
         that made GPU computing possible, the mRNA vaccines that ended a pandemic, and ChatGPT's explosion onto the
         scene.
@@ -1925,16 +1925,16 @@ When we step back and look at all eight Apple events together, a striking patter
 
 <iframe src="assets/apple_plotly_05_30day_cumulative_returns.html" width="100%" height="600" frameborder="0"></iframe>
 
-| Event              | Day-0 Return | 30-Day Return | The Pattern                         |
-| ------------------ | ------------ | ------------- | ----------------------------------- |
-| iPod Launch        | -4.63%       | +30.98%       | Classic slow burn                   |
-| iPhone Launch      | +1.23%       | +4.71%        | Muted, waiting for App Store        |
-| iPad Launch        | +1.07%       | +6.60%        | Quiet, steady adoption              |
-| iPhone 5S Touch ID | -1.04%       | +11.26%       | Security innovation rewarded        |
-| Apple Pay Launch   | +2.14%       | +15.40%       | Services flywheel gets priced in    |
-| AirPods Launch     | +1.67%       | +5.87%        | Surprise hit                        |
-| M1 Chip            | -0.30%       | +12.93%       | Platform shift recognized           |
-| Vision Pro         | -0.76%       | +8.64%        | Spatial computing bet               |
+| Event              | Day-0 Return | 30-Day Return | The Pattern                      |
+| ------------------ | ------------ | ------------- | -------------------------------- |
+| iPod Launch        | -4.63%       | +30.98%       | Classic slow burn                |
+| iPhone Launch      | +1.23%       | +4.71%        | Muted, waiting for App Store     |
+| iPad Launch        | +1.07%       | +6.60%        | Quiet, steady adoption           |
+| iPhone 5S Touch ID | -1.04%       | +11.26%       | Security innovation rewarded     |
+| Apple Pay Launch   | +2.14%       | +15.40%       | Services flywheel gets priced in |
+| AirPods Launch     | +1.67%       | +5.87%        | Surprise hit                     |
+| M1 Chip            | -0.30%       | +12.93%       | Platform shift recognized        |
+| Vision Pro         | -0.76%       | +8.64%        | Spatial computing bet            |
 
 **The key insight:** For Apple, **event-day returns are nearly useless** for predicting 30-day outcomes. The iPod dropped 4.6% on announcement day but became Apple's turnaround story. The correlation between day-0 and 30-day returns is essentially zero.
 
@@ -2139,7 +2139,7 @@ Whether this represents "real" innovation recognition or hype-driven speculation
 
 Tesla AI Day was a perfect example of why Tesla is hard to analyze. On one stage, Tesla revealed two ambitious bets:
 
-- **Optimus (Tesla Bot)**, a humanoid robot vision that pushed the story beyond cars  
+- **Optimus (Tesla Bot)**, a humanoid robot vision that pushed the story beyond cars
 - **Dojo**, a custom supercomputer designed to train autonomy models at scale
 
 Both announcements landed on the same trading day, so they share the same footprint:
@@ -2157,8 +2157,8 @@ Day one looked like doubt. The robot reveal included a human dancer in a costume
 
 By late 2023, Tesla was under pressure, margins were tightening, and the market wanted evidence, not just narratives. The next three events are the same story in three different moods:
 
-- **Cybertruck Deliveries Begin (Nov 30, 2023):** -1.66% day-0, -8.40% over 30 days (reality arrives, the stock sells the news)  
-- **Optimus Gen 2 Reveal (Dec 13, 2023):** +0.96% day-0, -20.21% over 30 days (a better demo, but the market keeps de-risking)  
+- **Cybertruck Deliveries Begin (Nov 30, 2023):** -1.66% day-0, -8.40% over 30 days (reality arrives, the stock sells the news)
+- **Optimus Gen 2 Reveal (Dec 13, 2023):** +0.96% day-0, -20.21% over 30 days (a better demo, but the market keeps de-risking)
 - **FSD v12 Wide Rollout (Mar 16, 2024):** +6.25% day-0, +5.45% over 30 days (a rare clean headline pop, modest follow-through)
 
 Tesla is not one company in markets. It is three, and the stock swings between them: automaker, software bet, and moonshot lab.
@@ -2171,16 +2171,16 @@ Tesla is not one company in markets. It is three, and the stock swings between t
 
 <iframe src="assets/tesla_plotly_05_30day_cumulative_returns.html" width="100%" height="600" frameborder="0"></iframe>
 
-| Event                 | Day-0 Return | 30-Day Return | What Happened            |
-| --------------------- | ------------ | ------------- | ------------------------ |
-| Autopilot Announcement | -7.82%       | +2.48%        | Skepticism to acceptance |
-| Model 3 First Deliveries | +0.18%       | +8.54%        | Execution beats fears    |
-| Cybertruck Reveal     | +0.74%       | +32.19%       | Viral over rational      |
-| Tesla Bot Announcement | -2.25%       | +15.11%       | Skepticism to curiosity  |
-| Dojo Supercomputer Announcement | -2.25%       | +15.11%       | Big ambition, same day   |
-| Cybertruck Deliveries Begin | -1.66%       | -8.40%        | Reality arrives late     |
-| Optimus Gen 2 Reveal  | +0.96%       | -20.21%       | Demo improves, stock slides |
-| FSD v12 Wide Rollout  | +6.25%       | +5.45%        | Big jump, modest drift   |
+| Event                           | Day-0 Return | 30-Day Return | What Happened               |
+| ------------------------------- | ------------ | ------------- | --------------------------- |
+| Autopilot Announcement          | -7.82%       | +2.48%        | Skepticism to acceptance    |
+| Model 3 First Deliveries        | +0.18%       | +8.54%        | Execution beats fears       |
+| Cybertruck Reveal               | +0.74%       | +32.19%       | Viral over rational         |
+| Tesla Bot Announcement          | -2.25%       | +15.11%       | Skepticism to curiosity     |
+| Dojo Supercomputer Announcement | -2.25%       | +15.11%       | Big ambition, same day      |
+| Cybertruck Deliveries Begin     | -1.66%       | -8.40%        | Reality arrives late        |
+| Optimus Gen 2 Reveal            | +0.96%       | -20.21%       | Demo improves, stock slides |
+| FSD v12 Wide Rollout            | +6.25%       | +5.45%        | Big jump, modest drift      |
 
 **The key insight:** Tesla events are **highly unpredictable**. The correlation between day-0 reactions and 30-day outcomes is essentially random, weaker than for Apple, weaker than for NVIDIA, close to zero.
 

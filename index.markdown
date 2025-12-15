@@ -996,8 +996,8 @@ The breadth of our investigation is intentional. Innovation takes many forms, an
 | Domain            | Companies/Events                        | Time Period | Examples                                         |
 | ----------------- | --------------------------------------- | ----------- | ------------------------------------------------ |
 | Consumer Tech     | Apple (8 events)                        | 2001-2023   | iPod, iPhone, iPad, AirPods, M1 Chip, Vision Pro |
-| Compute Platforms | NVIDIA (8 events)                       | 2007-2024   | CUDA, V100, H100, Blackwell B200                 |
-| Electric Vehicles | Tesla (8 events)                        | 2012-2023   | Model S, Model 3, Cybertruck, Battery Day        |
+| Compute Platforms | NVIDIA (8 events)                       | 2007-2024   | CUDA, DGX-1, V100, Blackwell B200                |
+| Electric Vehicles | Tesla (8 events)                        | 2014-2024   | Autopilot, Model 3, Cybertruck, FSD v12          |
 | AI Industry       | Top 25 Tech Companies (8 events)        | 2022-2024   | ChatGPT, GPT-4, Copilot, LLaMA                   |
 | Healthcare        | Top 25 Healthcare Companies (10 events) | 2020-2024   | mRNA vaccines, GLP-1 drugs, CRISPR therapy       |
 
@@ -1087,7 +1087,7 @@ We analyzed **eight landmark Apple events** spanning 22 years to understand how 
 | **iPhone Launch**           | Jun 29, 2007 | Phone + iPod + Internet device | Too expensive, no keyboard, carrier locked      |
 | **iPad Launch**             | Apr 3, 2010  | A tablet computer              | Just a bigger iPod Touch, no laptop replacement |
 | **iPhone 5S Touch ID**      | Sep 20, 2013 | Fingerprint authentication     | Nice feature, but not a selling point           |
-| **Apple Watch Launch**      | Apr 24, 2015 | A computer on your wrist       | Another fitness tracker, battery won't last     |
+| **Apple Pay Launch**        | Oct 20, 2014 | Tap to pay with your iPhone    | Too early, nobody will change how they pay      |
 | **AirPods Launch**          | Dec 13, 2016 | Truly wireless earbuds         | They look ridiculous, easy to lose              |
 | **M1 Chip Announcement**    | Nov 10, 2020 | Apple's own silicon            | Can they really beat Intel? Risky bet           |
 | **Vision Pro Announcement** | Jun 5, 2023  | Spatial computing headset      | $3,500, no killer app, VR has failed before     |
@@ -1096,7 +1096,7 @@ Notice the pattern? The market, the media, and often the public were skeptical o
 
 What makes Apple's story particularly instructive is that we know how it ends. These doubts turned into successes. The "overpriced" iPhone generated more revenue than any product in human history. The "weird" AirPods created an entirely new product category. Apple Silicon delivered exactly what Apple promised.
 
-So the question for our investigation becomes: **did the stock market share the skeptics' doubts, or did it see through the noise to recognize value?**
+So the question for our investigation becomes: **did the stock market share the skeptic's doubts, or did it see through the noise to recognize value?**
 
 </div>
     </div>
@@ -1119,12 +1119,12 @@ Each transition was driven by specific product launches and platform innovations
 | Event                       | Date         | The Innovation                     | Why It Mattered (In Hindsight)                      |
 | --------------------------- | ------------ | ---------------------------------- | --------------------------------------------------- |
 | **CUDA Launch**             | Jun 23, 2007 | GPU computing becomes programmable | Enabled the deep learning revolution a decade later |
+| **DGX-1 Launch**            | Apr 5, 2016  | Deep learning system in a box      | Turned NVIDIA GPUs into an AI platform              |
 | **Tesla V100 Launch**       | May 10, 2017 | First Tensor Cores for AI          | Purpose built AI hardware changes the game          |
 | **RTX 2080 Ti Launch**      | Aug 20, 2018 | Real time ray tracing              | New visual computing paradigm for games and beyond  |
 | **A100 Ampere Launch**      | May 14, 2020 | 20x AI performance leap            | The engine that would power ChatGPT training        |
 | **Arm Acquisition Attempt** | Sep 13, 2020 | $40B semiconductor empire bid      | Audacious reach for chip industry dominance         |
 | **H100 Hopper Launch**      | Mar 22, 2022 | The AI training workhorse          | Every AI lab in the world would want these          |
-| **ChatGPT AI Boom**         | Nov 30, 2022 | Demand explosion catalyst          | The world suddenly needed NVIDIA GPUs               |
 | **Blackwell B200**          | Mar 18, 2024 | 208 billion transistor monster     | Next generation of AI infrastructure                |
 
 The CUDA story is particularly instructive. In June 2007, NVIDIA announced that programmers could now write general purpose code that would run on graphics cards. At the time, this seemed like a niche feature, interesting to researchers, perhaps, but hardly earth shattering for the gaming focused company.
@@ -1153,18 +1153,20 @@ We analyzed **eight Tesla moments** that capture this unique dynamic:
 
 | Event                           | Date         | The Story                      | The Drama                           |
 | ------------------------------- | ------------ | ------------------------------ | ----------------------------------- |
-| **Model S Deliveries Begin**    | Jun 22, 2012 | Tesla proves it can ship       | First real cars to real customers   |
-| **Autopilot Announcement**      | Oct 10, 2014 | From carmaker to autonomy play | Suddenly competing with Google      |
-| **Model 3 Reveal**              | Mar 31, 2016 | Mass market EV unveiled        | 325,000 reservations in one week    |
-| **Model 3 First Deliveries**    | Jul 28, 2017 | Production finally begins      | "Production hell" nightmares start  |
-| **Cybertruck Reveal**           | Nov 21, 2019 | Radical truck design           | Broken windows, polarized reactions |
-| **Battery Day 4680 Cells**      | Sep 22, 2020 | Revolutionary battery tech     | Promises of 56% cheaper batteries   |
-| **Tesla Bot Announcement**      | Aug 19, 2021 | Humanoid robots                | Dancing human in robot costume      |
-| **Cybertruck Deliveries Begin** | Nov 30, 2023 | Four years of waiting ends     | Finally in customer driveways       |
+| **Autopilot Announcement**      | Oct 10, 2014 | Autopilot hardware announced   | Suddenly competing with Google      |
+| **Model 3 First Deliveries**    | Jul 28, 2017 | First Model 3 deliveries begin | "Production hell" nightmares start  |
+| **Cybertruck Reveal**           | Nov 21, 2019 | Electric truck unveiled        | Broken windows, polarized reactions |
+| **Tesla Bot Announcement**      | Aug 19, 2021 | Optimus revealed at AI Day     | Dancing human in robot costume      |
+| **Dojo Supercomputer**          | Aug 19, 2021 | Dojo unveiled at AI Day        | Tesla wants its own AI factory      |
+| **Cybertruck Deliveries Begin** | Nov 30, 2023 | First Cybertruck deliveries    | Four years of waiting ends          |
+| **Optimus Gen 2 Reveal**        | Dec 13, 2023 | Second gen Optimus update      | Better demo, timeline still unclear |
+| **FSD v12 Wide Rollout**        | Mar 16, 2024 | End to end neural FSD rollout  | Autonomy meets reality              |
 
-Tesla's relationship with expectations is complicated. The Model 3 reveal generated euphoria, but then came years of "production hell" as Tesla struggled to actually build the cars it had promised. Battery Day generated massive anticipation, but the actual announcements disappointed investors expecting even more dramatic breakthroughs.
+Tesla's relationship with expectations is complicated. The Model 3 deliveries proved the product was real, but they also triggered the harder question, can Tesla scale without breaking? The Cybertruck reveal went viral for the wrong reasons and still created demand. At AI Day, Tesla unveiled both Optimus and Dojo, two bets that pushed the story beyond cars and into robots and compute.
 
 The Tesla Bot announcement perfectly encapsulates the company's unique position. Elon Musk announced that Tesla would build humanoid robots to perform dangerous or boring tasks. The company's credentials, experience with AI, sensors, motors, manufacturing, made the idea at least plausible. But the presentation featured a human dancer in a robot costume, inviting mockery. Was this visionary innovation or tech hype theater?
+
+The later updates, Optimus Gen 2 and the FSD v12 rollout, show the same pattern at a different intensity. Each step forward is real, but the market keeps asking whether the timeline is finally catching up to the story.
 
 **When spectacle and substance blur together, how does the market respond?** Tesla gives us the perfect laboratory to find out.
 
@@ -1563,7 +1565,7 @@ When we step back and look at all eight Apple events together, a striking patter
 | iPhone Launch      | +1.23%       | +4.71%        | Muted, waiting for App Store        |
 | iPad Launch        | +1.07%       | +6.60%        | Quiet, steady adoption              |
 | iPhone 5S Touch ID | -1.04%       | +11.26%       | Security innovation rewarded        |
-| Apple Watch Launch | +0.47%       | -1.49%        | Skepticism proved right (initially) |
+| Apple Pay Launch   | +2.14%       | +15.40%       | Services flywheel gets priced in    |
 | AirPods Launch     | +1.67%       | +5.87%        | Surprise hit                        |
 | M1 Chip            | -0.30%       | +12.93%       | Platform shift recognized           |
 | Vision Pro         | -0.76%       | +8.64%        | Spatial computing bet               |
@@ -1637,43 +1639,59 @@ Why the difference between CUDA (ignored) and V100 (celebrated)? Context. In 200
 
 ---
 
-### The ChatGPT Boom (November 30, 2022): When Your Customer Becomes Famous
+### DGX-1 Launch (April 5, 2016): When GPUs Become a Product
 
-ChatGPT's launch created a unique situation for NVIDIA. The most talked-about technology product of 2022 wasn't an NVIDIA product, but it was entirely dependent on NVIDIA hardware. Every query to ChatGPT ran on NVIDIA GPUs. Training GPT models required tens of thousands of NVIDIA chips.
+By 2016, deep learning had escaped the lab, but building the hardware stack was still a craft project. If you were a researcher or a startup, you needed GPUs, drivers, CUDA libraries, frameworks, and a lot of time making everything work together.
 
-On ChatGPT's launch day, NVIDIA stock jumped **+8.24%**. The market immediately saw the connection.
+DGX-1 was NVIDIA's attempt to productize the whole thing. Not a single chip, but a deep learning system in a box, built for one job, train neural networks fast.
 
-But here's the surprise: the 30-day cumulative return was only **-0.14%**, essentially flat.
+The market reaction was understated on day one:
 
-<p class="sdx-note">PLACEHOLDER: Insert NVIDIA ChatGPT impact chart (nvidia_event_analysis.ipynb, Step 5 visualization).</p>
+**Event day return: -0.14%**  
+**30-day return: +18.27%**
 
-What happened? Why didn't NVIDIA continue soaring as ChatGPT's popularity exploded?
+<p class="sdx-note">PLACEHOLDER: Insert NVIDIA DGX-1 cumulative return chart (nvidia_event_analysis.ipynb, Step 5 visualization).</p>
 
-The answer is context again, but this time, a different kind. November 2022 was the depths of a brutal tech bear market. The Federal Reserve was aggressively raising interest rates. Growth stocks were under siege. The "AI revolution" narrative was competing with very real recession fears.
+This is a different kind of footprint. Not a loud spike, but a quiet pivot, NVIDIA signaling that it was not just selling gaming parts anymore, it was building an AI platform.
 
-NVIDIA's ChatGPT-era rally didn't happen in November 2022. It happened over the _following year_, as the macro environment improved and the AI demand became undeniable. The 30-day window was simply too short to capture the full impact.
+---
+
+### H100 Hopper Launch (March 22, 2022): Right Chip, Wrong Tape
+
+In March 2022, NVIDIA introduced Hopper, the H100, a GPU designed to be the workhorse of modern AI training. On paper, this should have been another clean, instant footprint.
+
+Instead, the market did the opposite:
+
+**Event day return: -0.79%**  
+**30-day return: -23.34%**
+
+<p class="sdx-note">PLACEHOLDER: Insert NVIDIA H100 Hopper cumulative return chart (nvidia_event_analysis.ipynb, Step 5 visualization).</p>
+
+The explanation is not that the innovation was weak. It is timing. 2022 was a brutal tech drawdown. Rates were rising, growth multiples were compressing, and investors were de-risking. Even a real breakthrough had to fight for oxygen.
+
+Hopper matters in hindsight because it shows a hard truth about market recognition. Sometimes the market sees the future, and still refuses to pay for it, because the present is on fire.
 
 ---
 
 ### NVIDIA Event Summary: All 8 Events Compared
 
 <iframe src="assets/nvidia_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
-<iframe src="assets/tesla_plotly_05_30day_cumulative_returns.html" width="100%" height="800" frameborder="0"></iframe>
+<iframe src="assets/nvidia_plotly_05_30day_cumulative_returns.html" width="100%" height="800" frameborder="0"></iframe>
 
 | Event           | Day-0 Return | 30-Day Return | Pattern Type           |
 | --------------- | ------------ | ------------- | ---------------------- |
 | CUDA Launch     | -2.64%       | +2.61%        | Decade-long slow burn  |
+| DGX-1 Launch    | -0.14%       | +18.27%       | Quiet platform shift   |
 | Tesla V100      | +17.83%      | +30.71%       | Instant recognition    |
 | RTX 2080 Ti     | +1.23%       | +15.65%       | Strong innovation      |
 | A100 Ampere     | +3.22%       | +14.05%       | Datacenter bet pays    |
 | Arm Acquisition | +5.82%       | +2.09%        | Deal skepticism        |
 | H100 Hopper     | -0.79%       | -23.34%       | Bear market overwhelms |
-| ChatGPT Boom    | +8.24%       | -0.14%        | Already priced in      |
 | Blackwell B200  | +0.70%       | -2.32%        | High expectations      |
 
 **The key insight:** NVIDIA's story reveals that **timing is everything** for infrastructure innovation. The same company can release equally important innovations and see completely different market responses, depending on whether the demand for that innovation is already visible.
 
-CUDA in 2007 was a solution looking for a problem. The V100 in 2017 was a solution to a problem everyone was desperately trying to solve. Same company, same engineering excellence, vastly different market recognition.
+CUDA in 2007 was a solution looking for a problem. DGX-1 in 2016 was NVIDIA packaging the solution before the world fully understood the scale of the problem. The V100 in 2017 was a solution to a problem everyone was desperately trying to solve. Same company, same engineering excellence, vastly different market recognition.
 
 </div>
 </div>
@@ -1688,27 +1706,33 @@ This creates unique challenges for understanding market recognition. With Apple,
 
 ---
 
-### Model S Deliveries (June 22, 2012): Birth of Credibility
+### Autopilot Announcement (October 10, 2014): When Tesla Starts Selling Software
 
-In June 2012, Tesla did something that many had thought impossible: it delivered real, working electric cars to real customers. The Model S wasn't a concept. It wasn't a promise. It was a vehicle you could actually drive.
+Tesla's Autopilot announcement was not a new car, it was a new identity. The company was asking investors to see Tesla as more than an automaker, a sensor stack, a computer on wheels, and a software roadmap that could compound over time.
 
-This mattered enormously because Tesla's credibility was constantly questioned. Could they really build cars at scale? Would the technology work? Was this whole thing just vaporware from a charismatic CEO?
+The market was not impressed on day one:
 
-The first deliveries answered those questions, at least partially. Tesla could build a car. It could ship that car. The future was starting to arrive.
+**Event day return: -7.82%**  
+**30-day return: +2.48%**
 
-Event day return: **+4.97%**. The market cheered.
+<p class="sdx-note">PLACEHOLDER: Insert Tesla Autopilot Announcement cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
 
-But then something unexpected happened:
+That combination is classic Tesla. The headline triggers fear, regulation risk, liability, execution, but the idea lingers, and the stock drifts back as investors reprice the narrative.
 
-30-day return: **-16.34%**
+---
 
-<p class="sdx-note">PLACEHOLDER: Insert Tesla Model S Deliveries cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
+### Model 3 First Deliveries (July 28, 2017): Proof, and the Start of Production Hell
 
-Wait, what? Tesla proved it could ship cars, and the stock _fell_ 16% over the following month?
+The Model 3 was Tesla's make or break product. Deliveries meant the promise was real, but they also opened the harder question, can Tesla scale without breaking?
 
-This is what we call a **"False Start"**, initial enthusiasm that quickly fades. The celebration of delivery day gave way to harder questions: Could Tesla actually make money selling cars? How would it scale production? The company was still tiny, still losing money, still facing enormous execution risks.
+The footprint was subtle:
 
-The Model S delivery was a genuine milestone. But in 2012, it wasn't yet clear that Tesla would survive long enough to matter.
+**Event day return: +0.18%**  
+**30-day return: +8.54%**
+
+<p class="sdx-note">PLACEHOLDER: Insert Tesla Model 3 First Deliveries cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
+
+This is a slow-burn pattern. The market did not celebrate the first cars, it waited to see whether the factory could keep up.
 
 ---
 
@@ -1745,20 +1769,33 @@ Whether this represents "real" innovation recognition or hype-driven speculation
 
 ---
 
-### Battery Day (September 22, 2020): When Expectations Exceed Reality
+### AI Day (August 19, 2021): Optimus and Dojo, Vision Meets Skepticism
 
-Battery Day was supposed to be Tesla's defining moment, a detailed roadmap showing how Tesla would revolutionize battery technology, slash costs, and accelerate the transition to sustainable energy.
+Tesla AI Day was a perfect example of why Tesla is hard to analyze. On one stage, Tesla revealed two ambitious bets:
 
-The hype was astronomical. Investors anticipated announcements so dramatic that they would fundamentally change the economics of electric vehicles. Some expected a "million-mile battery." Others anticipated partnerships or breakthroughs that would leave competitors in the dust.
+- **Optimus (Tesla Bot)**, a humanoid robot vision that pushed the story beyond cars  
+- **Dojo**, a custom supercomputer designed to train autonomy models at scale
 
-What they got was... a solid presentation about incremental improvements. The new 4680 battery cell format was genuinely innovative. The promises of 56% cost reduction were compelling. But it wasn't the revolution some had expected.
+Both announcements landed on the same trading day, so they share the same footprint:
 
-Event day return: **-5.60%**  
-30-day return: **-0.08%**
+**Event day return: -2.25%**  
+**30-day return: +15.11%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Tesla Battery Day cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Tesla AI Day cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
 
-Battery Day wasn't a failure of innovation, Tesla announced genuinely important technology. It was a failure of expectations management. When reality meets hype, hype often loses.
+Day one looked like doubt. The robot reveal included a human dancer in a costume. The Dojo story was technical and easy to dismiss as a slide deck promise. But over the next month, the stock rallied anyway. Tesla was still being priced as a company that might become more than a car company.
+
+---
+
+### Shipping the Future (Late 2023 to 2024): Reality Checks, and One Big Jump
+
+By late 2023, Tesla was under pressure, margins were tightening, and the market wanted evidence, not just narratives. The next three events are the same story in three different moods:
+
+- **Cybertruck Deliveries Begin (Nov 30, 2023):** -1.66% day-0, -8.40% over 30 days (reality arrives, the stock sells the news)  
+- **Optimus Gen 2 Reveal (Dec 13, 2023):** +0.96% day-0, -20.21% over 30 days (a better demo, but the market keeps de-risking)  
+- **FSD v12 Wide Rollout (Mar 16, 2024):** +6.25% day-0, +5.45% over 30 days (a rare clean headline pop, modest follow-through)
+
+Tesla is not one company in markets. It is three, and the stock swings between them: automaker, software bet, and moonshot lab.
 
 ---
 
@@ -1770,14 +1807,14 @@ Battery Day wasn't a failure of innovation, Tesla announced genuinely important 
 
 | Event                 | Day-0 Return | 30-Day Return | What Happened            |
 | --------------------- | ------------ | ------------- | ------------------------ |
-| Model S Deliveries    | +4.97%       | -16.34%       | Early enthusiasm fades   |
-| Autopilot             | -7.82%       | +2.48%        | Skepticism to acceptance |
-| Model 3 Reveal        | +1.27%       | -9.79%        | Production hell fears    |
-| Model 3 Deliveries    | +0.18%       | +8.54%        | Execution beats fears    |
+| Autopilot Announcement | -7.82%       | +2.48%        | Skepticism to acceptance |
+| Model 3 First Deliveries | +0.18%       | +8.54%        | Execution beats fears    |
 | Cybertruck Reveal     | +0.74%       | +32.19%       | Viral over rational      |
-| Battery Day           | -5.60%       | -0.08%        | Hype meets reality       |
-| Tesla Bot             | -2.25%       | +15.11%       | Skepticism to curiosity  |
-| Cybertruck Deliveries | -1.66%       | -8.40%        | Four years late          |
+| Tesla Bot Announcement | -2.25%       | +15.11%       | Skepticism to curiosity  |
+| Dojo Supercomputer Announcement | -2.25%       | +15.11%       | Big ambition, same day   |
+| Cybertruck Deliveries Begin | -1.66%       | -8.40%        | Reality arrives late     |
+| Optimus Gen 2 Reveal  | +0.96%       | -20.21%       | Demo improves, stock slides |
+| FSD v12 Wide Rollout  | +6.25%       | +5.45%        | Big jump, modest drift   |
 
 **The key insight:** Tesla events are **highly unpredictable**. The correlation between day-0 reactions and 30-day outcomes is essentially random, weaker than for Apple, weaker than for NVIDIA, close to zero.
 
@@ -1886,6 +1923,7 @@ At this point the pattern reads like a storyline:
 - finally, expectations become the main risk, even for genuinely historic hardware
 
 Now the story leaves the windows and follows the aftershocks. The next section treats AI as an era, because this footprint is not only what happened in 30 days, it is what kept happening after.
+
 </div>
     </div>
 
@@ -2019,8 +2057,8 @@ Some events create immediate excitement that fades away. Strong initial reaction
 
 **Classic Examples:**
 
-- Tesla Model S Deliveries: +4.97% day-0, -16.34% over 30 days
-- Tesla Battery Day: -5.60% day-0 (expectations collapse)
+- Tesla Optimus Gen 2 Reveal: +0.96% day-0, -20.21% over 30 days
+- Tesla Cybertruck Deliveries Begin: -1.66% day-0, -8.40% over 30 days
 - Overhyped competitor announcements
 
 <p class="sdx-note">PLACEHOLDER: Insert three-archetype comparison plot (Instant / Slow Burn / Mirage).</p>
@@ -2298,6 +2336,7 @@ Event windows show the first reaction, but the AI era is a compounding repricing
 - competitive responses changed who captured the value
 
 This is why we complement short windows with a long-horizon view. The footprint of AI is not only day 0, it is the slope of belief over time.
+
 </div>
 
   </div>

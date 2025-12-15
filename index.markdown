@@ -121,6 +121,100 @@ a:hover {
   padding: 0.75rem 0.95rem;
 }
 
+/* Chapters modal */
+.sdx-modal .modal-card {
+  width: min(780px, calc(100vw - 2rem));
+  background: radial-gradient(circle at 18% 22%, rgba(159, 176, 255, 0.14) 0, transparent 45%),
+              radial-gradient(circle at 88% 10%, rgba(255, 196, 106, 0.10) 0, transparent 40%),
+              linear-gradient(180deg, rgba(13, 16, 36, 0.96) 0%, rgba(7, 10, 26, 0.96) 100%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.62);
+  overflow: hidden;
+}
+
+.sdx-modal .modal-card-head,
+.sdx-modal .modal-card-foot {
+  background: rgba(10, 12, 28, 0.8);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.sdx-modal .modal-card-title {
+  color: #f7f9ff;
+  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.sdx-modal .modal-card-body {
+  background: transparent;
+}
+
+.sdx-modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sdx-modal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sdx-modal-box {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(13, 16, 36, 0.55);
+  padding: 0.9rem 1rem;
+}
+
+.sdx-modal-links {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.sdx-chapter-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text) !important;
+  text-decoration: none !important;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.sdx-chapter-link:hover {
+  background: rgba(159, 176, 255, 0.10);
+  border-color: rgba(159, 176, 255, 0.24);
+  transform: translateY(-1px);
+}
+
+.sdx-chapter-link .sdx-kicker {
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.sdx-chapter-link .sdx-label {
+  color: #f7f9ff;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.sdx-modal-hint {
+  color: rgba(232, 237, 255, 0.78);
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
 .navbar .navbar-item::after,
 .navbar .navbar-link::after {
   content: "";
@@ -1693,70 +1787,91 @@ This reflects Tesla's unique position in markets: it's priced on **belief in the
 </div>
 
     <div class="sdx-panel" id="chapter-ai" data-animate="fade-up">
-      <h2 class="title is-4">Chapter 4 - AI Industry: When Everything Moves Together</h2>
+      <h2 class="title is-4">Chapter 4 - Tech Industry: When Everything Moves Together</h2>
       <div class="content" markdown="1">
 
-On November 30, 2022, the world changed. OpenAI released ChatGPT, and within weeks, the technology industry was scrambling to respond. Every earnings call mentioned AI. Every company published AI strategies. The entire sector was suddenly re-evaluated through the lens of artificial intelligence.
+This chapter is where our method stops being a single-company microscope and becomes a wide-angle lens.
 
-But here's what makes the AI revolution fascinating from a market perspective: **the company that started it all isn't publicly traded.**
+For Apple, NVIDIA, and Tesla, the footprint lives in one ticker at a time. For the tech industry, the most important innovations are ecosystem shocks. A capability jump can rerate dozens of companies at once, even when the original innovator is not tradable.
 
-You cannot buy OpenAI stock. The most important AI company of the decade doesn't appear on any exchange. So where did the market's recognition of ChatGPT show up?
+That is why we studied a basket of **25 major tech companies** around a shared set of AI era milestones and measured not only the sector return, but also how broad the reaction was.
 
-<p class="sdx-note">PLACEHOLDER: Insert Innovation Sector cumulative returns comparison chart showing all 25 companies during the ChatGPT launch window (innovation_sector_event_analysis.ipynb, sector-wide visualization).</p>
+The key metric is the **Winner Ratio**, the percentage of companies that end the 30-day window positive:
 
-The answer is: everywhere at once. ChatGPT moved entire ecosystems. Microsoft (as OpenAI's partner and investor) surged. NVIDIA (maker of the GPUs that power AI) became the most valuable company on Earth. Cloud providers, chip companies, software firms, all were re-evaluated based on their AI exposure.
+\( \text{Winner Ratio} = \frac{\text{# companies with positive 30-day return}}{\text{total companies}} \times 100 \)
+
+<p class="sdx-note">PLACEHOLDER: Insert Top 25 Innovation Companies table (innovation_sector_event_analysis.ipynb, Step 1 output).</p>
 
 ---
 
-### Winners and Losers: The AI Shakeout
+### ChatGPT (November 30, 2022): The Signal Arrives in a Bear Market
 
-Not every company benefited equally from the AI revolution. Our sector-wide analysis reveals a more nuanced picture than simple "AI good" thinking would suggest.
-
-**ChatGPT Launch (November 30, 2022):**
+ChatGPT felt like a before and after moment culturally, but markets do not price culture, they price cash flows under constraints.
 
 - Companies with positive 30-day returns: **10/25 (40%)**
 - Sector average 30-day return: **-2.51%**
 
-Wait, the most important AI moment of the decade produced _negative_ average returns? Less than half of major tech companies ended up positive?
+This looks like the market missed the breakthrough. The better explanation is that macro was dominant. Late 2022 was a brutal tech drawdown. Rates were rising aggressively. Growth valuations were compressing. In that environment, even a real signal can get drowned out.
 
-Context matters enormously. ChatGPT launched during a brutal tech bear market. The Federal Reserve was aggressively raising interest rates to fight inflation. Growth stocks were under severe pressure. The "AI revolution" narrative was competing with very real recession fears.
+<p class="sdx-note">PLACEHOLDER: Insert sector-wide cumulative returns comparison for the ChatGPT window (innovation_sector_event_analysis.ipynb, sector-wide visualization).</p>
 
-The market saw ChatGPT's significance, but broader economic forces overwhelmed the positive signal.
+---
 
-**Meta LLaMA Release (February 24, 2023):**
+### Meta LLaMA (February 24, 2023): When AI Became a Broad Repricing
+
+When Meta released LLaMA, it shifted the narrative from one product to a platform race. It also pushed open models into the mainstream, which made AI feel less like a single-company trick and more like an industry-wide transition.
 
 - Companies with positive 30-day returns: **22/25 (88%)**
 - Sector average 30-day return: **+9.04%**
 
-By early 2023, the context had shifted. The market had digested ChatGPT's implications. Investors understood that AI was transformative. When Meta released LLaMA as open-source, democratizing large language model technology, nearly every innovation company benefited.
+This is what broad market recognition looks like. A rising tide, not a small pocket of winners.
 
-<p class="sdx-note">PLACEHOLDER: Insert Winner Ratio comparison across all Innovation Sector events (innovation_sector_event_analysis.ipynb, Step 6 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert Winner Ratio comparison across all tech industry events (innovation_sector_event_analysis.ipynb, Step 6 visualization).</p>
 
 ---
 
-### The AI Era: A Before-and-After Story
+### GPT-4, Copilot, Bard: Capability vs Monetization
 
-Perhaps our most striking finding is how completely AI changed the technology landscape. Pre-ChatGPT and post-ChatGPT are almost different worlds.
+Not every milestone has the same footprint. After the initial shock, the market starts asking harder questions, who captures value, who loses pricing power, and who becomes an infrastructure toll booth.
 
-**Before ChatGPT (2022 H1):**
+From our 25-company sector view:
 
-- Tech stocks in decline
-- "AI" mentioned occasionally in earnings calls
-- NVIDIA seen primarily as a gaming/graphics company
-- Market cap around $350 billion
+- **GPT-4 (March 14, 2023):** sector return **+2.20%**, Winner Ratio **60%**
+- **Microsoft Copilot (March 16, 2023):** sector return **+2.26%**, Winner Ratio **64%**
 
-**After ChatGPT (2023-2024):**
+<p class="sdx-note">PLACEHOLDER: Add Google Bard event row with sector return and Winner Ratio (innovation_sector_event_analysis.ipynb, event summary export).</p>
 
-- AI dominates every tech earnings call
-- NVIDIA market cap explodes to $3+ trillion
-- Infrastructure companies rerated dramatically upward
-- "AI exposure" becomes critical investment criterion
+Interpretation: these were meaningful, but they were incremental. Once AI is taken seriously, later announcements often shift the split between winners and losers more than they move the whole sector.
 
-<p class="sdx-note">PLACEHOLDER: Insert AI Era performance comparison visualization (healthcare_sector_exports/10_flourish_bar_race_ai_era.csv).</p>
+---
 
-The AI era didn't just create winners, it **restructured the entire technology sector.** Companies that had seemed peripheral (like NVIDIA, primarily known for gaming) became essential. Companies that had seemed dominant (like Intel, which missed the AI chip transition) struggled to adapt.
+### Hardware Roadmaps: H100 and Blackwell, Expectations Can Be the Enemy
 
-<p class="sdx-note">PLACEHOLDER: Flourish - interactive bar-chart race showing how different companies' market caps changed during the AI era.</p>
+Two moments show how sensitive tech is to expectations:
+
+- **H100 launch (March 2022):** sector return **-12.33%**, Winner Ratio **8%**
+- **Blackwell (March 2024):** sector return **-6.09%**, Winner Ratio **24%**
+
+The story is not that these products were unimportant. The story is that the market often prices the theme before it prices the milestone, then punishes anything that does not beat the already inflated expectation.
+
+---
+
+### Tech Industry Summary: Eight Events, One Theme
+
+| Event       | Date     | Sector Return | Winner Ratio |
+| ----------- | -------- | ------------- | ------------ |
+| H100 Launch | Mar 2022 | -12.33%       | 8%           |
+| ChatGPT     | Nov 2022 | -2.51%        | 40%          |
+| LLaMA       | Feb 2023 | +9.04%        | 88%          |
+| GPT-4       | Mar 2023 | +2.20%        | 60%          |
+| Copilot     | Mar 2023 | +2.26%        | 64%          |
+| Bard        | Mar 2023 | TODO          | TODO         |
+| Vision Pro  | Jun 2023 | +9.40%        | 80%          |
+| Blackwell   | Mar 2024 | -6.09%        | 24%          |
+
+If you want the long-horizon version of this story, the section below zooms out and treats AI as an unfolding repricing across years, not a single event window.
+
+<p><a class="sdx-btn sdx-btn-ghost" href="#ai-era">Continue to the AI Era section</a></p>
 </div>
     </div>
 
@@ -2068,13 +2183,21 @@ We tested our framework on **13 events** not used in building the model. It succ
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
-No analysis of innovation footprints would be complete without examining **the most transformative period in recent technology history**: the AI era launched by ChatGPT in November 2022.
+No analysis of innovation footprints would be complete without examining **the most transformative period in recent technology history**, the AI era that became impossible to ignore after ChatGPT in November 2022.
+
+This era is recent and still unfolding. We can tell it is a huge innovative moment, but we do not yet know how big it is. Ten years from now, people may look back and say, that was the turning point. Or they may say it was one milestone in a longer sequence that started earlier and matured later.
+
+If you said "AI started in 2022", that is not quite right. AI has decades of research behind it. What happened in late 2022 is the public inflection point, when capabilities became visible to millions overnight, and markets were forced to price the consequences.
+
+So in this section we do something different. We take a step back and study AI as a multi-year repricing, not only a collection of 30-day windows.
+
+<p class="sdx-note">PLACEHOLDER: Add a long-horizon AI timeline view from 2022 to 2024, with key events annotated (ChatGPT, LLaMA, GPT 4, Copilot, Blackwell).</p>
 
 ---
 
 ## Before and After: The Great Reshuffling
 
-The AI era didn't just create winners, it restructured the entire technology landscape.
+The AI era did not just create winners, it restructured the entire technology landscape.
 
 <p class="sdx-note">PLACEHOLDER: Insert Before/After AI Era comparison chart.</p>
 
@@ -2095,6 +2218,21 @@ The AI era didn't just create winners, it restructured the entire technology lan
 
 ---
 
+## The AI Footprint Problem: The Innovator Is Not Tradable
+
+The company that triggered the public shockwave is not publicly traded, so the market expressed recognition through second-order exposures.
+
+That is why we track the AI footprint across an ecosystem of companies and measure both:
+
+- the average return for the group
+- how many finish positive, the **Winner Ratio**
+
+\( \text{Winner Ratio} = \frac{\text{# companies with positive 30-day return}}{\text{total companies}} \times 100 \)
+
+<p class="sdx-note">PLACEHOLDER: Insert Innovation Sector cumulative returns comparison chart showing all tracked companies during the ChatGPT launch window (innovation_sector_event_analysis.ipynb, sector-wide visualization).</p>
+
+---
+
 ## AI Events: Cumulative Impact
 
 <p class="sdx-note">PLACEHOLDER: Insert AI Events Impact Timeline (innovation_sector_event_analysis.ipynb, combined timeline visualization).</p>
@@ -2109,9 +2247,43 @@ The AI era didn't just create winners, it restructured the entire technology lan
 | Vision Pro  | Jun 2023 | +9.40%        | 80%          |
 | Blackwell   | Mar 2024 | -6.09%        | 24%          |
 
-**The pattern:** The first AI moment (ChatGPT) produced mixed returns due to macro context. Subsequent AI events produced clearer positive responses as the market learned to price AI infrastructure.
+The pattern is clear. The first public AI moment, ChatGPT, produced mixed returns because macro context was hostile. Subsequent AI events produced clearer positive responses as the market learned to price AI infrastructure, and as the demand signal stopped being theoretical.
 
 <p class="sdx-note">PLACEHOLDER: Flourish - interactive AI Era timeline with stock performance overlays.</p>
+
+---
+
+## Winners and Losers: The AI Shakeout
+
+Not every company benefited equally from the AI repricing. Our sector-wide analysis is more nuanced than the simplistic view that AI lifts everything.
+
+**ChatGPT (November 30, 2022)**
+
+- Companies with positive 30-day returns: **10/25 (40%)**
+- Sector average 30-day return: **-2.51%**
+
+This looks wrong if you expect markets to celebrate breakthroughs immediately, but the context explains it. ChatGPT launched during a brutal tech bear market. The Federal Reserve was aggressively raising interest rates to fight inflation. Growth stocks were under pressure. The AI narrative was competing with recession fears.
+
+**Meta LLaMA (February 24, 2023)**
+
+- Companies with positive 30-day returns: **22/25 (88%)**
+- Sector average 30-day return: **+9.04%**
+
+By early 2023, the market had digested ChatGPT's implications. Investors started treating AI as a durable shift, not a single product demo. When Meta released LLaMA and accelerated open model adoption, nearly the whole ecosystem benefited.
+
+<p class="sdx-note">PLACEHOLDER: Insert Winner Ratio comparison across all Innovation Sector events (innovation_sector_event_analysis.ipynb, Step 6 visualization).</p>
+
+---
+
+## Why We Zoom Out
+
+Event windows show the first reaction, but the AI era is a compounding repricing that plays out over quarters:
+
+- capability shocks changed what software could do
+- infrastructure roadmaps changed what compute was worth
+- competitive responses changed who captured the value
+
+This is why we complement short windows with a long-horizon view. The footprint of AI is not only day 0, it is the slope of belief over time.
 </div>
 
   </div>
@@ -2191,6 +2363,49 @@ Innovation walks through the snow of market prices, leaving footprints. Our job 
   </div>
 </section>
 
+<div class="modal sdx-modal" id="sdx-chapters-modal" aria-hidden="true">
+  <div class="modal-background" data-sdx-modal-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-label="Chapter navigation">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Jump to a section</p>
+      <button class="delete" aria-label="close" data-sdx-modal-close></button>
+    </header>
+    <section class="modal-card-body content">
+      <div class="sdx-modal-grid">
+        <div class="sdx-modal-box">
+          <h4 class="title is-6" style="margin:0;">Acts</h4>
+          <div class="sdx-modal-links">
+            <a class="sdx-chapter-link" href="#intro"><span><span class="sdx-kicker">Act 0</span><br><span class="sdx-label">Intro</span></span><span class="sdx-kicker">#intro</span></a>
+            <a class="sdx-chapter-link" href="#cast"><span><span class="sdx-kicker">Act I</span><br><span class="sdx-label">Meet the Cast</span></span><span class="sdx-kicker">#cast</span></a>
+            <a class="sdx-chapter-link" href="#method"><span><span class="sdx-kicker">Act II</span><br><span class="sdx-label">The Detective Method</span></span><span class="sdx-kicker">#method</span></a>
+            <a class="sdx-chapter-link" href="#case-files"><span><span class="sdx-kicker">Act III</span><br><span class="sdx-label">Case Files</span></span><span class="sdx-kicker">#case-files</span></a>
+            <a class="sdx-chapter-link" href="#archetypes"><span><span class="sdx-kicker">Act IV</span><br><span class="sdx-label">Archetypes</span></span><span class="sdx-kicker">#archetypes</span></a>
+            <a class="sdx-chapter-link" href="#what-prices"><span><span class="sdx-kicker">Act V</span><br><span class="sdx-label">Signature Framework</span></span><span class="sdx-kicker">#what-prices</span></a>
+            <a class="sdx-chapter-link" href="#act-vi"><span><span class="sdx-kicker">Act VI</span><br><span class="sdx-label">Test Your Own Innovation</span></span><span class="sdx-kicker">#act-vi</span></a>
+            <a class="sdx-chapter-link" href="#conclusion"><span><span class="sdx-kicker">Final</span><br><span class="sdx-label">Conclusion</span></span><span class="sdx-kicker">#conclusion</span></a>
+          </div>
+        </div>
+
+        <div class="sdx-modal-box">
+          <h4 class="title is-6" style="margin:0;">Chapters</h4>
+          <div class="sdx-modal-links">
+            <a class="sdx-chapter-link" href="#chapter-apple"><span><span class="sdx-kicker">Chapter 1</span><br><span class="sdx-label">Apple</span></span><span class="sdx-kicker">#chapter-apple</span></a>
+            <a class="sdx-chapter-link" href="#chapter-nvidia"><span><span class="sdx-kicker">Chapter 2</span><br><span class="sdx-label">NVIDIA</span></span><span class="sdx-kicker">#chapter-nvidia</span></a>
+            <a class="sdx-chapter-link" href="#chapter-tesla"><span><span class="sdx-kicker">Chapter 3</span><br><span class="sdx-label">Tesla</span></span><span class="sdx-kicker">#chapter-tesla</span></a>
+            <a class="sdx-chapter-link" href="#chapter-ai"><span><span class="sdx-kicker">Chapter 4</span><br><span class="sdx-label">Tech Industry</span></span><span class="sdx-kicker">#chapter-ai</span></a>
+            <a class="sdx-chapter-link" href="#chapter-biotech"><span><span class="sdx-kicker">Chapter 5</span><br><span class="sdx-label">Biotech and Health</span></span><span class="sdx-kicker">#chapter-biotech</span></a>
+            <a class="sdx-chapter-link" href="#ai-era"><span><span class="sdx-kicker">Appendix</span><br><span class="sdx-label">Interactive Appendix</span></span><span class="sdx-kicker">#ai-era</span></a>
+          </div>
+          <p class="sdx-modal-hint">
+            Tip: click a section, the modal closes and the page scrolls there.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const animated = document.querySelectorAll("[data-animate]");
@@ -2209,6 +2424,71 @@ document.addEventListener("DOMContentLoaded", function () {
     animated.forEach((el) => obs.observe(el));
   } else {
     animated.forEach((el) => el.classList.add("animate-in"));
+  }
+
+  const chaptersModal = document.getElementById("sdx-chapters-modal");
+  const navbarStart = document.querySelector(".navbar .navbar-menu .navbar-start");
+  if (chaptersModal && navbarStart && !document.getElementById("sdx-chapters-trigger")) {
+    const trigger = document.createElement("a");
+    trigger.id = "sdx-chapters-trigger";
+    trigger.className = "navbar-item";
+    trigger.href = "#chapters";
+    trigger.textContent = "Chapters";
+    const navItems = navbarStart.querySelectorAll("a.navbar-item");
+    if (navItems.length >= 2) {
+      navbarStart.insertBefore(trigger, navItems[1]);
+    } else {
+      navbarStart.appendChild(trigger);
+    }
+  }
+
+  const openChaptersModal = () => {
+    if (!chaptersModal) return;
+    chaptersModal.classList.add("is-active");
+    document.documentElement.classList.add("is-clipped");
+    const closeBtn = chaptersModal.querySelector("button[data-sdx-modal-close]");
+    if (closeBtn) closeBtn.focus({ preventScroll: true });
+  };
+
+  const closeChaptersModal = () => {
+    if (!chaptersModal) return;
+    chaptersModal.classList.remove("is-active");
+    document.documentElement.classList.remove("is-clipped");
+  };
+
+  const chaptersTrigger = document.getElementById("sdx-chapters-trigger");
+  if (chaptersModal && chaptersTrigger) {
+    chaptersTrigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      openChaptersModal();
+    });
+
+    chaptersModal.addEventListener("click", (e) => {
+      const closeTarget = e.target.closest("[data-sdx-modal-close]");
+      if (closeTarget) {
+        e.preventDefault();
+        closeChaptersModal();
+        return;
+      }
+
+      const link = e.target.closest("a[href^=\"#\"]");
+      if (link) {
+        e.preventDefault();
+        const hash = link.getAttribute("href");
+        closeChaptersModal();
+        const target = hash ? document.querySelector(hash) : null;
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          history.replaceState(null, "", hash);
+        }
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && chaptersModal.classList.contains("is-active")) {
+        closeChaptersModal();
+      }
+    });
   }
 
   const scoreIframe = document.getElementById("innovation-score-iframe");

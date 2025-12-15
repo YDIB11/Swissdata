@@ -1152,8 +1152,8 @@ blockquote strong {
 /* Scroll-triggered reveal animations */
 [data-animate] {
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(12px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
   will-change: opacity, transform;
 }
 
@@ -2849,7 +2849,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       },
-      { threshold: 0.15, rootMargin: "0px 0px -10% 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -5% 0px" }
     );
     animated.forEach((el) => obs.observe(el));
   } else {

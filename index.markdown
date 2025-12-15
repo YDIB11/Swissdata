@@ -1444,7 +1444,7 @@ Interpretation: high volume plus positive returns suggests informed enthusiasm. 
         For AI and healthcare events, we track multiple companies simultaneously and measure how many finish the window
         positive, the <strong>Winner Ratio</strong>:
       </p>
-      <p class="sdx-note">\( \text{Winner Ratio} = \frac{\text{# companies with positive 30-day return}}{\text{total companies}} \times 100 \)</p>
+      <p class="sdx-note" id="winner-ratio-definition">\( \text{Winner Ratio} = \frac{\text{Number of companies with positive 30-day return}}{\text{Total companies}} \times 100 \)</p>
       <p class="sdx-note">High winner ratio = broad transformation; low winner ratio = selective winners and losers.</p>
     </div>
 
@@ -1792,13 +1792,14 @@ This reflects Tesla's unique position in markets: it's priced on **belief in the
 
 This chapter is where our method stops being a single-company microscope and becomes a wide-angle lens.
 
-For Apple, NVIDIA, and Tesla, the footprint lives in one ticker at a time. For the tech industry, the most important innovations are ecosystem shocks. A capability jump can rerate dozens of companies at once, even when the original innovator is not tradable.
+Until now we followed protagonists, Apple on a stage, NVIDIA in the datacenter, Tesla in the spotlight. In this chapter, the protagonist is the whole industry. The camera pulls back.
 
-That is why we studied a basket of **25 major tech companies** around a shared set of AI era milestones and measured not only the sector return, but also how broad the reaction was.
+When an innovation hits the tech industry, it rarely stays inside one ticker. It spreads. Partners, suppliers, competitors, and the platforms that will be disrupted all move, sometimes in opposite directions. That is what makes this chapter different. We stop asking, "did one stock jump?" and start asking, "did the market move together?"
 
-The key metric is the **Winner Ratio**, the percentage of companies that end the 30-day window positive:
+To measure that, we track a basket of **25 major tech companies** around the same milestone dates and look at two signals:
 
-\( \text{Winner Ratio} = \frac{\text{# companies with positive 30-day return}}{\text{total companies}} \times 100 \)
+- the sector average return over the event window
+- the <a href="#winner-ratio-definition"><strong>Winner Ratio</strong></a>, how many of the 25 finish the window positive
 
 <p class="sdx-note">PLACEHOLDER: Insert Top 25 Innovation Companies table (innovation_sector_event_analysis.ipynb, Step 1 output).</p>
 
@@ -1808,31 +1809,37 @@ The key metric is the **Winner Ratio**, the percentage of companies that end the
 
 ChatGPT felt like a before and after moment culturally, but markets do not price culture, they price cash flows under constraints.
 
+Late 2022 was the coldest part of a tech winter. Rates were rising. Growth multiples were compressing. Even a real breakthrough had to fight for oxygen.
+
 - Companies with positive 30-day returns: **10/25 (40%)**
 - Sector average 30-day return: **-2.51%**
 
-This looks like the market missed the breakthrough. The better explanation is that macro was dominant. Late 2022 was a brutal tech drawdown. Rates were rising aggressively. Growth valuations were compressing. In that environment, even a real signal can get drowned out.
+On paper, this looks like disbelief. In reality, it is the market saying, "interesting, but prove it, and also, survive the macro."
 
 <p class="sdx-note">PLACEHOLDER: Insert sector-wide cumulative returns comparison for the ChatGPT window (innovation_sector_event_analysis.ipynb, sector-wide visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert a heatmap of 25-company abnormal returns around ChatGPT to show dispersion (who wins, who loses).</p>
 
 ---
 
 ### Meta LLaMA (February 24, 2023): When AI Became a Broad Repricing
 
-When Meta released LLaMA, it shifted the narrative from one product to a platform race. It also pushed open models into the mainstream, which made AI feel less like a single-company trick and more like an industry-wide transition.
+Three months later, the tone changes. LLaMA makes AI feel less like a single demo and more like an arms race, models everywhere, competition everywhere, and adoption no longer optional.
 
 - Companies with positive 30-day returns: **22/25 (88%)**
 - Sector average 30-day return: **+9.04%**
 
-This is what broad market recognition looks like. A rising tide, not a small pocket of winners.
+This is what broad recognition looks like. Not a single hero stock, but an ecosystem repricing together.
 
 <p class="sdx-note">PLACEHOLDER: Insert Winner Ratio comparison across all tech industry events (innovation_sector_event_analysis.ipynb, Step 6 visualization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert a distribution plot of 30-day returns across the 25 companies for LLaMA vs ChatGPT.</p>
 
 ---
 
 ### GPT-4, Copilot, Bard: Capability vs Monetization
 
-Not every milestone has the same footprint. After the initial shock, the market starts asking harder questions, who captures value, who loses pricing power, and who becomes an infrastructure toll booth.
+After the shock comes the interrogation. Capability is exciting, but markets ask a colder question, who captures the value?
+
+This is where the reaction becomes more selective. Some companies look like toll booths, others look like features. Some look protected, others look exposed.
 
 From our 25-company sector view:
 
@@ -1841,18 +1848,20 @@ From our 25-company sector view:
 
 <p class="sdx-note">PLACEHOLDER: Add Google Bard event row with sector return and Winner Ratio (innovation_sector_event_analysis.ipynb, event summary export).</p>
 
-Interpretation: these were meaningful, but they were incremental. Once AI is taken seriously, later announcements often shift the split between winners and losers more than they move the whole sector.
+Interpretation: these were meaningful, but more incremental. Once AI is taken seriously, later announcements often reshuffle the ranking more than they lift the whole index.
 
 ---
 
 ### Hardware Roadmaps: H100 and Blackwell, Expectations Can Be the Enemy
 
-Two moments show how sensitive tech is to expectations:
+Two moments show the darker side of tech pricing. Sometimes the market prices the theme first, then punishes the milestone.
 
 - **H100 launch (March 2022):** sector return **-12.33%**, Winner Ratio **8%**
 - **Blackwell (March 2024):** sector return **-6.09%**, Winner Ratio **24%**
 
-The story is not that these products were unimportant. The story is that the market often prices the theme before it prices the milestone, then punishes anything that does not beat the already inflated expectation.
+These products are not small. The reaction is. That gap is the point. The milestone can be historic while the footprint is muted because the expectation arrived earlier.
+
+<p class="sdx-note">PLACEHOLDER: Insert a chart that compares event-day return vs 30-day return for all tech industry events (to show expectation vs realization).</p>
 
 ---
 
@@ -1869,9 +1878,14 @@ The story is not that these products were unimportant. The story is that the mar
 | Vision Pro  | Jun 2023 | +9.40%        | 80%          |
 | Blackwell   | Mar 2024 | -6.09%        | 24%          |
 
-If you want the long-horizon version of this story, the section below zooms out and treats AI as an unfolding repricing across years, not a single event window.
+At this point the pattern reads like a storyline:
 
-<p><a class="sdx-btn sdx-btn-ghost" href="#ai-era">Continue to the AI Era section</a></p>
+- first, a breakthrough arrives during a storm, the signal is real but the reaction is scattered
+- then, the second wave spreads the belief, more companies move together
+- after that, the market stops rewarding "AI exists" and starts pricing who wins
+- finally, expectations become the main risk, even for genuinely historic hardware
+
+Now the story leaves the windows and follows the aftershocks. The next section treats AI as an era, because this footprint is not only what happened in 30 days, it is what kept happening after.
 </div>
     </div>
 
@@ -2227,7 +2241,7 @@ That is why we track the AI footprint across an ecosystem of companies and measu
 - the average return for the group
 - how many finish positive, the **Winner Ratio**
 
-\( \text{Winner Ratio} = \frac{\text{# companies with positive 30-day return}}{\text{total companies}} \times 100 \)
+<p class="sdx-note">Winner Ratio definition: see <a href="#winner-ratio-definition">Act II</a>.</p>
 
 <p class="sdx-note">PLACEHOLDER: Insert Innovation Sector cumulative returns comparison chart showing all tracked companies during the ChatGPT launch window (innovation_sector_event_analysis.ipynb, sector-wide visualization).</p>
 

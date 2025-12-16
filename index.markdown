@@ -1303,13 +1303,13 @@ Before we dive into the data, let's set the stage with the full scope of our inv
 
 The breadth of our investigation is intentional. Innovation takes many forms, and we wanted to understand whether the market recognizes different types of breakthroughs in different ways. A consumer gadget like the iPod is visible to everyone, millions saw the keynote, tried the product, formed opinions. But a computing platform like CUDA is invisible to most people, even as it quietly enables everything from video games to self-driving cars to ChatGPT.
 
-| Domain            | Companies/Events                        | Time Period | Examples                                         |
-| ----------------- | --------------------------------------- | ----------- | ------------------------------------------------ |
-| Consumer Tech     | Apple (8 events)                        | 2001-2023   | iPod, iPhone, iPad, AirPods, M1 Chip, Vision Pro |
-| Compute Platforms | NVIDIA (8 events)                       | 2007-2024   | CUDA, DGX-1, V100, Blackwell B200                |
-| Electric Vehicles | Tesla (8 events)                        | 2014-2024   | Autopilot, Model 3, Cybertruck, FSD v12          |
-| AI Industry       | Top 25 Tech Companies (8 events)        | 2022-2024   | ChatGPT, GPT-4, Copilot, LLaMA                   |
-| Healthcare        | Top 25 Healthcare Companies (10 events) | 2020-2024   | mRNA vaccines, GLP-1 drugs, CRISPR therapy       |
+| Domain            | Companies/Events                                                 | Time Period | Examples                                                             |
+| ----------------- | ---------------------------------------------------------------- | ----------- | -------------------------------------------------------------------- |
+| Consumer Tech     | Apple (8 events)                                                 | 2001-2023   | iPod, iPhone, iPad, AirPods, M1 Chip, Vision Pro                     |
+| Compute Platforms | NVIDIA (8 events)                                                | 2007-2024   | CUDA, DGX-1, V100, Blackwell B200                                    |
+| Electric Vehicles | Tesla (8 events)                                                 | 2014-2024   | Autopilot, Model 3, Cybertruck, FSD v12                              |
+| Innovation Stack  | Top 25 market-cap leaders across the innovation stack (8 events) | 2006-2023   | AWS EC2, iPhone, App Store, Android, Azure, Touch ID, M1, Vision Pro |
+| Healthcare        | Top 25 Healthcare Companies (10 events)                          | 2020-2024   | mRNA vaccines, GLP-1 drugs, CRISPR therapy                           |
 
 Each event in this table represents a moment when _someone_ believed they were witnessing history. Our job is to determine whether Wall Street agreed, and when.
 
@@ -1486,39 +1486,37 @@ The later updates, Optimus Gen 2 and the FSD v12 rollout, show the same pattern 
     <div class="sdx-panel" data-animate="fade-up">
       <div class="content" markdown="1">
 
-### 4. AI Industry Shockwaves, When One Innovation Moves Everything
+### 4. Innovation Stack Shockwaves, When One Innovation Moves Everything
 
-On November 30, 2022, something extraordinary happened. OpenAI released ChatGPT, and within five days, it had accumulated a million users. Within two months, it became the fastest growing consumer application in the history of the internet, faster than TikTok, faster than Instagram, faster than anything.
+Some innovation footprints do not belong to one company. They belong to a stack.
 
-But here's what makes ChatGPT fascinating for our investigation: **OpenAI isn't publicly traded.** You can't buy OpenAI stock. The company that built the most disruptive AI product of the decade doesn't show up on any stock exchange.
+When a platform shift happens, the market does not move one ticker. It reprices a web of suppliers, customers, competitors, and complements.
 
-So where did the market's recognition of this breakthrough show up? How did the financial system signal that it understood something profound had happened?
+That is why this project includes a different kind of case file, a basket view of the innovation stack. Instead of tracking one stock, we track a basket of the **25 largest, most liquid market-cap leaders** across semiconductors, cloud, platforms, and enterprise software, and we ask a wider question.
 
-The answer is: **everywhere at once, and nowhere specifically.** ChatGPT didn't move a single stock. It moved an entire ecosystem. Microsoft, OpenAI's partner and investor, surged. NVIDIA, maker of the GPUs that train AI models, soared. Even companies with tangential AI connections saw their stocks respond to the new narrative.
+When the stack is hit by a turning point, do stocks move together, or does the market split into winners and losers?
 
-This realization led us to analyze AI events differently than company specific innovations. Instead of tracking a single stock, we tracked **25 companies simultaneously** to measure the breadth and depth of market recognition.
+We anchored this lens around **eight turning point innovations** that moved multiple companies at once:
 
-We analyzed **eight AI era events** that shaped the technology landscape:
-
-| Event                       | Date         | What Happened                      | Expected Beneficiaries |
-| --------------------------- | ------------ | ---------------------------------- | ---------------------- |
-| **NVIDIA H100 Launch**      | Mar 22, 2022 | Ultimate AI training GPU announced | NVDA, TSM, MU, AVGO    |
-| **ChatGPT Launch**          | Nov 30, 2022 | AI goes mainstream overnight       | MSFT, NVDA, GOOGL      |
-| **Meta LLaMA Release**      | Feb 24, 2023 | Open source AI democratized        | META, NVDA, AMD        |
-| **GPT 4 Release**           | Mar 14, 2023 | Major capability leap              | MSFT, NVDA, PLTR       |
-| **Microsoft Copilot**       | Mar 16, 2023 | AI enters the workplace            | MSFT, NVDA, CRM        |
-| **Google Bard Launch**      | Mar 21, 2023 | Google's AI response               | GOOGL, NVDA, TSM       |
-| **Vision Pro Announcement** | Jun 5, 2023  | Spatial computing arrives          | AAPL, TSM, QCOM        |
-| **NVIDIA Blackwell B200**   | Mar 18, 2024 | Next gen AI chips                  | NVDA, TSM, AVGO, MU    |
+| Event                       | Date         | What Happened                        | Expected Beneficiaries  |
+| --------------------------- | ------------ | ------------------------------------ | ----------------------- |
+| **AWS EC2 Launch**          | Aug 25, 2006 | Cloud compute becomes on demand      | AMZN, MSFT, GOOGL, ORCL |
+| **iPhone Launch**           | Jun 29, 2007 | Mobile computing goes mainstream     | AAPL, GOOGL, QCOM, TSM  |
+| **App Store Launch**        | Jul 10, 2008 | The app economy is born              | AAPL, GOOGL, ADBE, CRM  |
+| **Android Launch**          | Sep 23, 2008 | Open mobile platform scales globally | GOOGL, QCOM, AMZN, META |
+| **Microsoft Azure Launch**  | Feb 1, 2010  | Cloud becomes enterprise default     | MSFT, AMZN, ORCL, IBM   |
+| **iPhone 5S Touch ID**      | Sep 20, 2013 | Biometrics becomes default UX        | AAPL, QCOM, GOOGL, MSFT |
+| **M1 Chip Announcement**    | Nov 10, 2020 | Apple silicon breaks the Intel era   | AAPL, TSM, INTC, AMD    |
+| **Vision Pro Announcement** | Jun 5, 2023  | Spatial computing arrives            | AAPL, TSM, QCOM         |
 
 <div class="flourish-embed flourish-cards" data-src="visualisation/26799327">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
   <noscript><img src="https://public.flourish.studio/visualisation/26799327/thumbnail" width="100%" alt="cards visualization" /></noscript>
 </div>
 
-The choice to analyze 25 companies, rather than focusing on obvious winners like NVIDIA and Microsoft, was deliberate. We wanted to answer a more nuanced question: **when AI breakthroughs happen, does the market see them as narrowly benefiting specific companies, or as broadly transforming the entire technology landscape?**
+The choice to analyze 25 market-cap leaders, rather than focusing on obvious winners like NVIDIA or Apple, was deliberate. We wanted to answer a more nuanced question: when a turning point hits the stack, does value concentrate in a few winners, or spread broadly across the ecosystem?
 
-The "winner ratio", the percentage of companies that ended up with positive returns 30 days after an event, became our key metric. A winner ratio of 88% (like we saw after Meta's LLaMA release) suggests the market viewed that event as a rising tide lifting all boats. A winner ratio of 40% (like ChatGPT's launch) suggests a more selective, uncertain response.
+The "winner ratio", the percentage of companies that end up with positive returns 30 days after an event, became our key metric. A high winner ratio suggests a broad repricing across the stack. A low winner ratio suggests a selective move, a few winners and many laggards.
 
 </div>
     </div>
@@ -1966,7 +1964,7 @@ On announcement day, NVIDIA's stock fell **-2.64%**. The market shrugged.
 
 The 30-day return was a modest **+2.61%**, essentially noise.
 
-<p class="sdx-note">PLACEHOLDER: Insert NVIDIA CUDA Launch cumulative return chart (nvidia_event_analysis.ipynb, Step 5 visualization).</p>
+<iframe src="assets/cuda_launch_plotly_dark.html" width="100%" height="950" frameborder="0"></iframe>
 
 What nobody understood in 2007, what _couldn't_ be understood, was that CUDA would become the foundation of modern artificial intelligence. Neural networks, it turned out, were perfectly suited for GPU computing. The same parallel processing that rendered video game graphics could train deep learning models thousands of times faster than traditional processors.
 
@@ -2016,7 +2014,17 @@ The market reaction was understated on day one:
 **Event day return: -0.14%**  
 **30-day return: +18.27%**
 
-<p class="sdx-note">PLACEHOLDER: Insert NVIDIA DGX-1 cumulative return chart (nvidia_event_analysis.ipynb, Step 5 visualization).</p>
+  <iframe
+  id="innovation-score-iframe"
+  src="{{ '/assets/dgx_1_launch_plotly_detailed.html' | relative_url }}"
+  title="Innovation score explorer"
+  width="100%"
+  height="1000"
+  frameborder="0"
+  scrolling="no"
+  style="display:block; border:0; overflow:hidden;"
+  loading="lazy"
+></iframe>
 
 This is a different kind of footprint. Not a loud spike, but a quiet pivot, NVIDIA signaling that it was not just selling gaming parts anymore, it was building an AI platform.
 
@@ -2031,7 +2039,17 @@ Instead, the market did the opposite:
 **Event day return: -0.79%**  
 **30-day return: -23.34%**
 
-<p class="sdx-note">PLACEHOLDER: Insert NVIDIA H100 Hopper cumulative return chart (nvidia_event_analysis.ipynb, Step 5 visualization).</p>
+  <iframe
+  id="innovation-score-iframe"
+  src="{{ '/assets/h100_hopper_launch_plotly_detailed.html' | relative_url }}"
+  title="Innovation score explorer"
+  width="100%"
+  height="1000"
+  frameborder="0"
+  scrolling="no"
+  style="display:block; border:0; overflow:hidden;"
+  loading="lazy"
+></iframe>
 
 The explanation is not that the innovation was weak. It is timing. 2022 was a brutal tech drawdown. Rates were rising, growth multiples were compressing, and investors were de-risking. Even a real breakthrough had to fight for oxygen.
 
@@ -2190,108 +2208,135 @@ This reflects Tesla's unique position in markets: it's priced on **belief in the
 </div>
 
     <div class="sdx-panel" id="chapter-ai" data-animate="fade-up">
-      <h2 class="title is-4">Chapter 4 - Tech Industry: When Everything Moves Together</h2>
+      <h2 class="title is-4">Chapter 4 - Innovation Stack: When Everything Moves Together</h2>
       <div class="content" markdown="1">
 
 This chapter is where our method stops being a single-company microscope and becomes a wide-angle lens.
 
 Until now we followed protagonists, Apple on a stage, NVIDIA in the datacenter, Tesla in the spotlight. In this chapter, the protagonist is the whole industry. The camera pulls back.
 
-When an innovation hits the tech industry, it rarely stays inside one ticker. It spreads. Partners, suppliers, competitors, and the platforms that will be disrupted all move, sometimes in opposite directions. That is what makes this chapter different. We stop asking, "did one stock jump?" and start asking, "did the market move together?"
+When an innovation hits the innovation stack, it rarely stays inside one ticker. It spreads. Partners, suppliers, competitors, and the platforms that will be disrupted all move, sometimes in opposite directions. That is what makes this chapter different. We stop asking, "did one stock jump?" and start asking, "did the market move together?"
 
-To measure that, we track a basket of **25 major tech companies** around the same milestone dates and look at two signals:
+To measure that, we track a basket of the **25 largest, most liquid market-cap leaders** across the innovation stack around the same milestone dates and look at two signals:
 
 - the sector average return over the event window
 - the <a href="#winner-ratio-definition"><strong>Winner Ratio</strong></a>, how many of the 25 finish the window positive
 
-<div class="flourish-embed flourish-cards" data-src="visualisation/26799327">
-  <script src="https://public.flourish.studio/resources/embed.js"></script>
-  <noscript><img src="https://public.flourish.studio/visualisation/26799327/thumbnail" width="100%" alt="cards visualization" /></noscript>
-</div>
+<div class="flourish-embed flourish-network" data-src="visualisation/26742106"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26742106/thumbnail" width="100%" alt="network visualization" /></noscript></div>
 
 ---
 
-### ChatGPT (November 30, 2022): The Signal Arrives in a Bear Market
-
-ChatGPT felt like a before and after moment culturally, but markets do not price culture, they price cash flows under constraints.
-
-Late 2022 was the coldest part of a tech winter. Rates were rising. Growth multiples were compressing. Even a real breakthrough had to fight for oxygen.
-
-- Companies with positive 30-day returns: **10/25 (40%)**
-- Sector average 30-day return: **-2.51%**
-
-On paper, this looks like disbelief. In reality, it is the market saying, "interesting, but prove it, and also, survive the macro."
-
-<p class="sdx-note">PLACEHOLDER: Insert sector-wide cumulative returns comparison for the ChatGPT window (innovation_sector_event_analysis.ipynb, sector-wide visualization).</p>
-<p class="sdx-note">PLACEHOLDER: Insert a heatmap of 25-company abnormal returns around ChatGPT to show dispersion (who wins, who loses).</p>
+Most of the chapter specific numbers below are still being computed. Where you see **(N/A)**, treat it as a placeholder that tells you exactly what metric belongs there.
 
 ---
 
-### Meta LLaMA (February 24, 2023): When AI Became a Broad Repricing
+### AWS EC2 Launch (August 25, 2006): The Cloud Becomes a Utility
 
-Three months later, the tone changes. LLaMA makes AI feel less like a single demo and more like an arms race, models everywhere, competition everywhere, and adoption no longer optional.
+Before EC2, compute was something you bought. After EC2, compute became something you rented by the hour. That single shift rewired the stack, startups could scale without owning servers, enterprises could move workloads without building data centers, and software companies could sell subscriptions instead of boxes.
 
-- Companies with positive 30-day returns: **22/25 (88%)**
-- Sector average 30-day return: **+9.04%**
+- Winner Ratio: **(N/A)**
+- Sector average 30-day return: **(N/A)**
 
-This is what broad recognition looks like. Not a single hero stock, but an ecosystem repricing together.
-
-<p class="sdx-note">PLACEHOLDER: Insert Winner Ratio comparison across all tech industry events (innovation_sector_event_analysis.ipynb, Step 6 visualization).</p>
-<p class="sdx-note">PLACEHOLDER: Insert a distribution plot of 30-day returns across the 25 companies for LLaMA vs ChatGPT.</p>
+<p class="sdx-note">PLACEHOLDER: Insert 25-company cumulative return overlay for the EC2 launch window.</p>
+<p class="sdx-note">PLACEHOLDER: Insert cloud cohort breakdown (AMZN, MSFT, GOOGL, ORCL, IBM) vs the rest of the basket during the EC2 window.</p>
 
 ---
 
-### GPT-4, Copilot, Bard: Capability vs Monetization
+### iPhone Launch (June 29, 2007): The Pocket Computer Era Begins
 
-After the shock comes the interrogation. Capability is exciting, but markets ask a colder question, who captures the value?
+The iPhone did not just improve a phone. It turned the phone into a computer you carry. That changed consumer behavior, ad distribution, chip demand, and the competitive map for an entire decade.
 
-This is where the reaction becomes more selective. Some companies look like toll booths, others look like features. Some look protected, others look exposed.
+- Winner Ratio: **(N/A)**
+- Sector average 30-day return: **(N/A)**
 
-From our 25-company sector view:
-
-- **GPT-4 (March 14, 2023):** sector return **+2.20%**, Winner Ratio **60%**
-- **Microsoft Copilot (March 16, 2023):** sector return **+2.26%**, Winner Ratio **64%**
-
-<p class="sdx-note">PLACEHOLDER: Add Google Bard event row with sector return and Winner Ratio (innovation_sector_event_analysis.ipynb, event summary export).</p>
-
-Interpretation: these were meaningful, but more incremental. Once AI is taken seriously, later announcements often reshuffle the ranking more than they lift the whole index.
+<p class="sdx-note">PLACEHOLDER: Insert 25-company return dispersion plot for the iPhone launch window (who got pulled up, who got left behind).</p>
 
 ---
 
-### Hardware Roadmaps: H100 and Blackwell, Expectations Can Be the Enemy
+### App Store Launch (July 10, 2008): Software Becomes a Marketplace
 
-Two moments show the darker side of tech pricing. Sometimes the market prices the theme first, then punishes the milestone.
+The App Store turned software into an economy. It created the idea that distribution is a platform advantage, not a marketing problem. It also created a new kind of company, one that lives entirely inside someone else's ecosystem.
 
-- **H100 launch (March 2022):** sector return **-12.33%**, Winner Ratio **8%**
-- **Blackwell (March 2024):** sector return **-6.09%**, Winner Ratio **24%**
+- Winner Ratio: **(N/A)**
+- Sector average 30-day return: **(N/A)**
 
-These products are not small. The reaction is. That gap is the point. The milestone can be historic while the footprint is muted because the expectation arrived earlier.
-
-<p class="sdx-note">PLACEHOLDER: Insert a chart that compares event-day return vs 30-day return for all tech industry events (to show expectation vs realization).</p>
+<p class="sdx-note">PLACEHOLDER: Insert a platform vs tools comparison for the App Store window (AAPL, GOOGL, ADBE, CRM) to show who benefited from the new software distribution model.</p>
 
 ---
 
-### Tech Industry Summary: Eight Events, One Theme
+### Android Launch (September 23, 2008): The Open Mobile Stack
 
-| Event       | Date     | Sector Return | Winner Ratio |
-| ----------- | -------- | ------------- | ------------ |
-| H100 Launch | Mar 2022 | -12.33%       | 8%           |
-| ChatGPT     | Nov 2022 | -2.51%        | 40%          |
-| LLaMA       | Feb 2023 | +9.04%        | 88%          |
-| GPT-4       | Mar 2023 | +2.20%        | 60%          |
-| Copilot     | Mar 2023 | +2.26%        | 64%          |
-| Bard        | Mar 2023 | TODO          | TODO         |
-| Vision Pro  | Jun 2023 | +9.40%        | 80%          |
-| Blackwell   | Mar 2024 | -6.09%        | 24%          |
+Android made smartphones a volume market. By being open, it scaled. By scaling, it forced every platform, chip, and app business to adapt to a world where mobile is the default surface.
 
-At this point the pattern reads like a storyline:
+- Winner Ratio: **(N/A)**
+- Sector average 30-day return: **(N/A)**
 
-- first, a breakthrough arrives during a storm, the signal is real but the reaction is scattered
-- then, the second wave spreads the belief, more companies move together
-- after that, the market stops rewarding "AI exists" and starts pricing who wins
-- finally, expectations become the main risk, even for genuinely historic hardware
+<p class="sdx-note">PLACEHOLDER: Insert iPhone vs Android era split analysis across platforms and chip suppliers (GOOGL, QCOM, AAPL, TSM) around the Android launch.</p>
 
-Now the story leaves the windows and follows the aftershocks. The next section treats AI as an era, because this footprint is not only what happened in 30 days, it is what kept happening after.
+---
+
+### Microsoft Azure Launch (February 1, 2010): Cloud Goes Enterprise
+
+Azure made the cloud safe for corporate IT. It is the moment cloud stopped being a startup story and became a boardroom story. Once enterprises move, the whole stack moves, databases, operating systems, security, and productivity software.
+
+- Winner Ratio: **(N/A)**
+- Sector average 30-day return: **(N/A)**
+
+<p class="sdx-note">PLACEHOLDER: Insert enterprise software cohort comparison (MSFT, ORCL, IBM, CRM, NOW) for the Azure launch window.</p>
+
+---
+
+### iPhone 5S Touch ID (September 20, 2013): Security Becomes Frictionless
+
+Touch ID is a small sensor with a big effect. It made biometrics mainstream, which made payments, authentication, and mobile trust easier. The market impact is subtle, because it is less about one product and more about what becomes possible afterwards.
+
+- Winner Ratio: **(N/A)**
+- Sector average 30-day return: **(N/A)**
+
+<p class="sdx-note">PLACEHOLDER: Insert post-event slow-burn chart for Touch ID (does the footprint show up over weeks rather than day 0).</p>
+
+---
+
+### M1 Chip Announcement (November 10, 2020): A Platform Shift Hidden Inside a Laptop
+
+Apple's M1 was not a spec sheet update. It was a break with Intel and a bet that control of the stack, from silicon to software, beats buying performance from someone else. For markets, this is the kind of event where the footprint should show up across a mini supply chain, Apple as the integrator, TSM as the foundry, Intel as the displaced default.
+
+- Winner Ratio: **(N/A)**
+- Sector average 30-day return: **(N/A)**
+
+<p class="sdx-note">PLACEHOLDER: Insert 25-company heatmap for the M1 window (winners vs losers across chips, platforms, and software).</p>
+<p class="sdx-note">PLACEHOLDER: Insert a focused comparison panel for AAPL, INTC, AMD, TSM around M1 (price, volume, cumulative return).</p>
+
+---
+
+### Vision Pro Announcement (June 5, 2023): A New Interface, a Big Question Mark
+
+Vision Pro is the rare product launch that tries to create a new category. Markets like categories, but only when they turn into ecosystems. The early footprint here is less about day 0 hype and more about whether the stack believes spatial computing becomes a platform, or stays a premium niche.
+
+- Winner Ratio: **(N/A)**
+- Sector average 30-day return: **(N/A)**
+
+<p class="sdx-note">PLACEHOLDER: Insert Vision Pro window heatmap (AAPL, QCOM, TSM and the full basket) with cumulative returns.</p>
+<p class="sdx-note">PLACEHOLDER: Insert a small multiples grid of suppliers vs platforms around the Vision Pro announcement.</p>
+
+---
+
+### Innovation Stack Summary: Eight Events, One Map
+
+| Event      | Date     | Sector Return | Winner Ratio |
+| ---------- | -------- | ------------- | ------------ |
+| AWS EC2    | Aug 2006 | (N/A)         | (N/A)        |
+| iPhone     | Jun 2007 | (N/A)         | (N/A)        |
+| App Store  | Jul 2008 | (N/A)         | (N/A)        |
+| Android    | Sep 2008 | (N/A)         | (N/A)        |
+| Azure      | Feb 2010 | (N/A)         | (N/A)        |
+| Touch ID   | Sep 2013 | (N/A)         | (N/A)        |
+| M1         | Nov 2020 | (N/A)         | (N/A)        |
+| Vision Pro | Jun 2023 | (N/A)         | (N/A)        |
+
+The point of this chapter is not to crown a single winner. It is to show that when the stack is hit, the footprint is usually distributed, and often asymmetric.
+
+Next, we leave the innovation stack and enter a domain where the rules are even stricter, healthcare, where a single approval can rewrite the future overnight.
 
 </div>
     </div>
@@ -2612,7 +2657,7 @@ If you said "AI started in 2022", that is not quite right. AI has decades of res
 
 So in this section we do something different. We take a step back and study AI as a multi-year repricing, not only a collection of 30-day windows.
 
-<p class="sdx-note">PLACEHOLDER: Add a long-horizon AI timeline view from 2022 to 2024, with key events annotated (ChatGPT, LLaMA, GPT 4, Copilot, Blackwell).</p>
+<p class="sdx-note">PLACEHOLDER: Add a long-horizon AI timeline view from 2022 to 2024, with key events annotated (H100, ChatGPT, LLaMA, GPT-4, Copilot, Blackwell).</p>
 
 ---
 
@@ -2643,7 +2688,7 @@ The AI era did not just create winners, it restructured the entire technology la
 
 The company that triggered the public shockwave is not publicly traded, so the market expressed recognition through second-order exposures.
 
-That is why we track the AI footprint across an ecosystem of companies and measure both:
+That is why we track the AI footprint across a basket of 25 market-cap leaders and measure both:
 
 - the average return for the group
 - how many finish positive, the **Winner Ratio**
@@ -2665,7 +2710,6 @@ That is why we track the AI footprint across an ecosystem of companies and measu
 | LLaMA       | Feb 2023 | +9.04%        | 88%          |
 | GPT-4       | Mar 2023 | +2.20%        | 60%          |
 | Copilot     | Mar 2023 | +2.26%        | 64%          |
-| Vision Pro  | Jun 2023 | +9.40%        | 80%          |
 | Blackwell   | Mar 2024 | -6.09%        | 24%          |
 
 The pattern is clear. The first public AI moment, ChatGPT, produced mixed returns because macro context was hostile. Subsequent AI events produced clearer positive responses as the market learned to price AI infrastructure, and as the demand signal stopped being theoretical.
@@ -2814,7 +2858,7 @@ Innovation walks through the snow of market prices, leaving footprints. Our job 
             <a class="sdx-chapter-link" href="#chapter-apple"><span><span class="sdx-kicker">Chapter 1</span><br><span class="sdx-label">Apple</span></span><span class="sdx-kicker">#chapter-apple</span></a>
             <a class="sdx-chapter-link" href="#chapter-nvidia"><span><span class="sdx-kicker">Chapter 2</span><br><span class="sdx-label">NVIDIA</span></span><span class="sdx-kicker">#chapter-nvidia</span></a>
             <a class="sdx-chapter-link" href="#chapter-tesla"><span><span class="sdx-kicker">Chapter 3</span><br><span class="sdx-label">Tesla</span></span><span class="sdx-kicker">#chapter-tesla</span></a>
-            <a class="sdx-chapter-link" href="#chapter-ai"><span><span class="sdx-kicker">Chapter 4</span><br><span class="sdx-label">Tech Industry</span></span><span class="sdx-kicker">#chapter-ai</span></a>
+            <a class="sdx-chapter-link" href="#chapter-ai"><span><span class="sdx-kicker">Chapter 4</span><br><span class="sdx-label">Innovation Stack</span></span><span class="sdx-kicker">#chapter-ai</span></a>
             <a class="sdx-chapter-link" href="#chapter-biotech"><span><span class="sdx-kicker">Chapter 5</span><br><span class="sdx-label">Biotech and Health</span></span><span class="sdx-kicker">#chapter-biotech</span></a>
             <a class="sdx-chapter-link" href="#ai-era"><span><span class="sdx-kicker">Appendix</span><br><span class="sdx-label">Interactive Appendix</span></span><span class="sdx-kicker">#ai-era</span></a>
           </div>

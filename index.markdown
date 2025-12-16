@@ -2185,7 +2185,29 @@ Both announcements landed on the same trading day, so they share the same footpr
 **Event day return: -2.25%**  
 **30-day return: +15.11%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Tesla AI Day cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
+  <iframe
+  id="innovation-score-iframe"
+  src="{{ '/assets/tesla_event_exports/tesla_bot_announcement_plotly_detailed.html' | relative_url }}"
+  title="Innovation score explorer"
+  width="100%"
+  height="1000"
+  frameborder="0"
+  scrolling="no"
+  style="display:block; border:0; overflow:hidden;"
+  loading="lazy"
+></iframe>
+
+  <iframe
+  id="innovation-score-iframe"
+  src="{{ '/assets/tesla_event_exports/dojo_supercomputer_announcement_plotly_detailed.html' | relative_url }}"
+  title="Innovation score explorer"
+  width="100%"
+  height="1000"
+  frameborder="0"
+  scrolling="no"
+  style="display:block; border:0; overflow:hidden;"
+  loading="lazy"
+></iframe>
 
 Day one looked like doubt. The robot reveal included a human dancer in a costume. The Dojo story was technical and easy to dismiss as a slide deck promise. But over the next month, the stock rallied anyway. Tesla was still being priced as a company that might become more than a car company.
 

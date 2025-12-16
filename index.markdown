@@ -2099,7 +2099,17 @@ The market was not impressed on day one:
 **Event day return: -7.82%**  
 **30-day return: +2.48%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Tesla Autopilot Announcement cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
+  <iframe
+  id="innovation-score-iframe"
+  src="{{ '/assets/tesla_event_exports/autopilot_announcement_plotly_detailed.html' | relative_url }}"
+  title="Innovation score explorer"
+  width="100%"
+  height="1000"
+  frameborder="0"
+  scrolling="no"
+  style="display:block; border:0; overflow:hidden;"
+  loading="lazy"
+></iframe>
 
 That combination is classic Tesla. The headline triggers fear, regulation risk, liability, execution, but the idea lingers, and the stock drifts back as investors reprice the narrative.
 
@@ -2114,7 +2124,17 @@ The footprint was subtle:
 **Event day return: +0.18%**  
 **30-day return: +8.54%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Tesla Model 3 First Deliveries cumulative return chart (tesla_event_analysis.ipynb, Step 5 visualization).</p>
+  <iframe
+  id="innovation-score-iframe"
+  src="{{ '/assets/tesla_event_exports/model_3_first_deliveries_plotly_detailed.html' | relative_url }}"
+  title="Innovation score explorer"
+  width="100%"
+  height="1000"
+  frameborder="0"
+  scrolling="no"
+  style="display:block; border:0; overflow:hidden;"
+  loading="lazy"
+></iframe>
 
 This is a slow-burn pattern. The market did not celebrate the first cars, it waited to see whether the factory could keep up.
 
@@ -2137,7 +2157,7 @@ Event day return: **+0.74%**. Surprisingly muted given the viral explosion.
 
   <iframe
   id="innovation-score-iframe"
-  src="{{ '/assets/cybertruck_reveal_plotly_dark.html' | relative_url }}"
+  src="{{ '/assets/tesla_event_exports/cybertruck_reveal_plotly_dark.html' | relative_url }}"
   title="Innovation score explorer"
   width="100%"
   height="1000"

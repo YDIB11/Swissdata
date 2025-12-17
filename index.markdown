@@ -1076,6 +1076,22 @@ blockquote strong {
   background: rgba(13, 16, 36, 0.55);
 }
 
+.sdx-embed-media {
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(13, 16, 36, 0.55);
+}
+
+.sdx-embed-media .flourish-embed {
+  margin: 0 !important;
+}
+
+.sdx-embed-media iframe {
+  width: 100% !important;
+  border: 0;
+  display: block;
+}
+
 .sdx-formula-block {
   background: rgba(13, 16, 36, 0.82);
 
@@ -1463,7 +1479,7 @@ blockquote strong {
       </p>
       <p>In financial markets, these footprints take specific forms:</p>
       <ul class="sdx-list">
-        <li><strong>Sudden abnormal returns</strong>, moments when a stock moves far more than you'd expect based on normal market conditions.</li>
+        <li><strong>Sharp event-day reactions</strong>, pronounced price moves when headlines hit, the market's first verdict on the news.</li>
         <li><strong>Unusual trading volume</strong>, evidence that investors are paying attention and repositioning around the news.</li>
         <li><strong>Anticipation before the event</strong>, gradual drift in prices in the weeks before the announcement.</li>
         <li><strong>Long, slow-burning revaluation</strong>, weak day 0 reaction, followed by rising conviction over weeks.</li>
@@ -1477,7 +1493,7 @@ blockquote strong {
 
 ## A Timeline of Turning Points
 
-Before we dive into the data, let's set the stage with the full scope of our investigation. We analyzed **42 innovation events** spanning two decades and five domains of human progress. These aren't just any product launches or press releases, they're moments that, in retrospect, fundamentally changed their industries.
+Before we dive into the data, let's set the stage with the full scope of our investigation. We analyzed **45 innovation events** spanning two decades and five domains of human progress. These aren't just any product launches or press releases, they're moments that, in retrospect, fundamentally changed their industries.
 
   <div class="sdx-panel" style="margin: 2rem 0;" data-animate="fade-up">
 <div class="flourish-embed flourish-timeline" data-src="visualisation/26798005"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26798005/thumbnail" width="100%" alt="timeline visualization" /></noscript></div>
@@ -2786,10 +2802,6 @@ To measure that, we track a basket of the **25 largest, most liquid market-cap l
 
 ---
 
-Most of the visuals in this chapter are still being built. The metric bullets below use the 30-day window; the **PLACEHOLDER** callouts mark where charts and heatmaps will land. In the narrative, we zoom in on three stack shocks; the full event list is summarized at the end of the chapter.
-
----
-
 ### ASML First EUV Tools (August 29, 2006): The Chokepoint in Modern Chips
 
 EUV is one of those breakthroughs that does not look like a consumer moment, but becomes a bottleneck for the entire industry. If you want leading edge chips, you need EUV. That means a single supplier milestone can ripple into foundries, designers, and eventually every company that depends on faster compute.
@@ -2953,6 +2965,40 @@ Two final lenses make the "distributed footprint" concrete:
       </div>
     </div>
 
+  </div>
+</div>
+
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Where Value Flowed After Stack Shifts</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <div class="sdx-embed-media">
+        <div class="flourish-embed flourish-sankey" data-src="visualisation/26822851">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+          <noscript><img src="https://public.flourish.studio/visualisation/26822851/thumbnail" width="100%" alt="sankey visualization" /></noscript>
+        </div>
+      </div>
+      <div style="margin-top: 0.85rem;">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          Now for the part everyone cares about: who actually captured the upside when the stack moved.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          For each of the <strong>12 stack-level events</strong>, we extracted the <strong>top 3 companies by 30-day cumulative return</strong>. The Sankey shows two views:
+        </p>
+        <p style="margin: 0.65rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          <strong>Top:</strong> Positive impact - companies that gained the most from each event
+        </p>
+        <p style="margin: 0.35rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          <strong>Bottom:</strong> Negative impact - companies that lost the most from each event
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          &#128161; <strong>Key insight:</strong> some tickers appear repeatedly as winners. <strong>NVDA</strong> shows up across multiple events, capturing disproportionate value from stack shifts. The negative panel reveals the other side: events like <strong>Chrome (2008)</strong> created more losers than winners as macro headwinds overwhelmed innovation.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -3134,7 +3180,40 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
   </div>
 </div>
 
-<p class="sdx-note">PLACEHOLDER: Flourish - Healthcare Innovations Line Chart Race (data/healthcare_sector_exports/flourish_long_format/01_all_innovations_all_companies_long.csv).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Who Actually Won When the Stack Moved</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <div class="sdx-embed-media">
+        <div class="flourish-embed flourish-sankey" data-src="visualisation/26858530">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+          <noscript><img src="https://public.flourish.studio/visualisation/26858530/thumbnail" width="100%" alt="sankey visualization" /></noscript>
+        </div>
+      </div>
+      <div style="margin-top: 0.85rem;">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          Here’s the fun part: approvals don’t just move the innovator. They reshuffle the whole competitive map.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          This Sankey ranks the <strong>top 3 companies by 30-day cumulative return</strong> after each of our <strong>10 healthcare events</strong>, split into two panels:
+        </p>
+        <p style="margin: 0.65rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          <strong>Top:</strong> Positive impact, who benefited most from each approval
+        </p>
+        <p style="margin: 0.35rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          <strong>Bottom:</strong> Negative impact, who lost ground after each event
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          &#128161; <strong>Key insight:</strong> approvals don’t just reward the innovator. The positive panel shows flows spreading to adjacent players positioned for the same therapeutic shift. The negative panel captures competitive casualties: when a breakthrough drug launches, rivals and incumbents often lose ground.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
     </div>
 
@@ -3147,7 +3226,7 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
-After analyzing 42 innovation events across five domains, clear patterns emerge. Markets don't recognize all innovations the same way. Instead, we found **three distinct archetypes** of market response:
+After analyzing 45 innovation events across five domains, clear patterns emerge. Markets don't recognize all innovations the same way. Instead, we found **three distinct archetypes** of market response:
 
 ---
 
@@ -3402,12 +3481,12 @@ But one relationship stood out: **successful innovations decrease volatility** (
 
 Across our 24 single-company events, most innovations end up positive over 30 days. That is where the plot gets fascinating: the market recognizes innovation far more often than the day-0 headline would make you believe.
 
-| Archetype | Share | Description |
-| --- | ---: | --- |
-| Instant Winners | 46% | Positive on day 0, positive at day 30 |
-| Slow Burns &#128293; | 38% | Negative on day 0, positive at day 30 |
-| False Starts | 8% | Positive on day 0, negative at day 30 |
-| Double Losers | 8% | Negative on both |
+| Archetype            | Share | Description                           |
+| -------------------- | ----: | ------------------------------------- |
+| Instant Winners      |   46% | Positive on day 0, positive at day 30 |
+| Slow Burns &#128293; |   38% | Negative on day 0, positive at day 30 |
+| False Starts         |    8% | Positive on day 0, negative at day 30 |
+| Double Losers        |    8% | Negative on both                      |
 
 The standout result is how rare "true failures" are. Only 8% land negative on both day 0 and day 30. For most events, the market does recognize the innovation. The only question is timing: does recognition arrive instantly, or does it show up after an early phase of doubt?
 
@@ -3702,106 +3781,213 @@ Markets don't see the future perfectly. But they leave footprints—traces that 
   </div>
 </div>
 
-No analysis of innovation footprints would be complete without examining **the most transformative period in recent technology history**, the AI era that became impossible to ignore after ChatGPT in November 2022.
+**Opening narrative**
 
-This era is recent and still unfolding. We can tell it is a huge innovative moment, but we do not yet know how big it is. Ten years from now, people may look back and say, that was the turning point. Or they may say it was one milestone in a longer sequence that started earlier and matured later.
-
-If you said "AI started in 2022", that is not quite right. AI has decades of research behind it. What happened in late 2022 is the public inflection point, when capabilities became visible to millions overnight, and markets were forced to price the consequences.
-
-So in this section we do something different. We take a step back and study AI as a multi-year repricing, not only a collection of 30-day windows.
-
-<p class="sdx-note">PLACEHOLDER: Add a long-horizon AI timeline view from 2022 to 2024, with key events annotated (H100, ChatGPT, LLaMA, GPT-4, Copilot, Blackwell).</p>
-
----
-
-## Before and After: The Great Reshuffling
-
-The AI era did not just create winners, it restructured the entire technology landscape.
-
-<p class="sdx-note">PLACEHOLDER: Insert Before/After AI Era comparison chart.</p>
-
-### Companies That Exploded:
-
-| Company   | Pre-ChatGPT | Current | Growth |
-| --------- | ----------- | ------- | ------ |
-| NVIDIA    | ~$350B      | $3T+    | ~9x    |
-| Microsoft | ~$1.8T      | $3T+    | ~1.7x  |
-| Meta      | ~$300B      | $1.3T+  | ~4x    |
-
-### Companies That Struggled:
-
-| Company | Challenge                      |
-| ------- | ------------------------------ |
-| Intel   | Missed AI chip transition      |
-| IBM     | Legacy overhang despite Watson |
+> No analysis of innovation footprints would be complete without examining the most transformative period in recent technology history: the AI era that became impossible to ignore after ChatGPT in November 2022.
+>
+> This era is recent and still unfolding. We can feel the magnitude, but we do not yet know the final shape of the story. Ten years from now, people may look back and say, "That was the turning point." Or they may say it was one milestone in a longer sequence.
+>
+> If you say "AI started in 2022," that is not quite right. AI has decades of research behind it. What changed in late 2022 is the public inflection point, when capability became visible to millions overnight and markets were forced to price the consequences.
+>
+> In this section, we zoom out. We study AI as a multi-year repricing, not only a collection of 30-day windows.
 
 ---
 
-## The AI Footprint Problem: The Innovator Is Not Tradable
+## The NVIDIA Story: Infrastructure Dominance
 
-The company that triggered the public shockwave is not publicly traded, so the market expressed recognition through second-order exposures.
+Before we look at sector-wide impacts, we start with the company that became synonymous with AI infrastructure: NVIDIA.
 
-That is why we track the AI footprint across a basket of 25 market-cap leaders and measure both:
+The chart below tells a remarkable story. From January 2022 to today, NVIDIA delivered roughly **+491% total return**, close to a 6x climb. This is not a single event window. It is a compounding repricing as the market gradually realized that AI compute would become as essential as electricity.
 
-- the average return for the group
-- how many finish positive, the **Winner Ratio**
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">NVIDIA: The AI Boom (Jan 2022 to today)</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/nvidia_event_exports/nvidia_ai_boom_plotly_dark.html' | relative_url }}"
+        title="NVIDIA AI boom era analysis"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
-<p class="sdx-note">Winner Ratio definition: see <a href="#winner-ratio-definition">Act II</a>.</p>
+Notice the timeline markers:
 
-<p class="sdx-note">PLACEHOLDER: Insert Innovation Sector cumulative returns comparison chart showing all tracked companies during the ChatGPT launch window (innovation_sector_event_analysis.ipynb, sector-wide visualization).</p>
+- **H100 Hopper Launch (March 2022):** launched into a brutal bear market. The chip was revolutionary, but rates were rising and tech was selling off. The initial footprint was muted, even negative in the 30-day window.
+- **Blackwell B200 Announcement (March 2024):** by then, NVIDIA's dominance was undeniable. But with the stock already up hundreds of percent, the bar for "surprise" was higher. The 30-day return was slightly negative because expectations were already sky high.
+
+The most important insight from the NVIDIA arc is that the AI boom was not a single announcement. It was the accumulation of demand signals: ChatGPT's usage explosion, every AI lab ordering H100s, hyperscalers building GPU farms. That compounding evidence is what pushed the valuation higher quarter after quarter.
+
+&#128161; <strong>Key insight:</strong> NVIDIA's +491% happened over quarters, not days. The AI footprint is not only day 0. It is the slope of belief over time.
 
 ---
 
-## AI Events: Cumulative Impact
+## The Innovation Sector: Who Captured AI Value?
 
-<p class="sdx-note">PLACEHOLDER: Insert AI Events Impact Timeline (innovation_sector_event_analysis.ipynb, combined timeline visualization).</p>
+The company that triggered the public AI shockwave, OpenAI, is not publicly traded. So the market expressed recognition through second-order exposures: NVIDIA (chips), Microsoft (investor and distribution), and every AI-adjacent company repositioning around the new paradigm.
+
+This chart shows how value was distributed across the 25 largest innovation companies since the public AI inflection point. The AI era did not lift everyone equally. It created clear winners and relative laggards.
+
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Innovation Sector: AI Era Performance</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/innovation_sector_exports/plotly_ai_era_performance.html' | relative_url }}"
+        title="Innovation sector AI era performance"
+        loading="lazy"
+      ></iframe>
+      <div style="margin-top: 0.85rem;">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          The winners cluster around infrastructure and credible AI integration stories. The laggards are the names the market sees as AI disrupted, or simply too slow to adapt.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">AI Era Reshuffling: Who Won in the Innovation Sector?</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <div class="sdx-embed-media">
+        <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26748280">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+          <noscript><img src="https://public.flourish.studio/visualisation/26748280/thumbnail" width="100%" alt="bar-chart-race visualization" /></noscript>
+        </div>
+      </div>
+      <div style="margin-top: 0.85rem;">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          Each bar shows a company's cumulative percentage return since January 2022, the start of the AI era. The race turns the repricing into a story you can watch unfold.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          You will see the ecosystem split into lanes. Infrastructure and platforms that could turn AI into real products accelerate. Companies without a clear AI story drift. The AI era did not reward exposure. It rewarded position in the stack.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Key AI moments, in sector form
+
+#### ChatGPT Launch (November 30, 2022)
+
+Winner Ratio: **40%**  
+Sector average 30-day return: **-2.51%**
+
+This looks wrong if you expect markets to celebrate breakthroughs instantly. But the context matters. ChatGPT launched during a brutal tech bear market. The Federal Reserve was aggressively raising rates. Growth multiples were compressing. The AI narrative was competing with recession fear, and only 40% of companies finished positive.
+
+#### Meta LLaMA Release (February 24, 2023)
+
+Winner Ratio: **88%**  
+Sector average 30-day return: **+9.04%**
+
+By early 2023, the market had digested ChatGPT's implications. Investors started treating AI as a durable shift, not a one-off demo. When Meta released LLaMA and accelerated open model adoption, nearly the whole ecosystem benefited.
+
+#### GPT-4 Release (March 14, 2023)
+
+Winner Ratio: **60%**  
+Sector average 30-day return: **+2.20%**
+
+A clearer positive signal as the narrative solidified. The capability leap was real, and the market was finally positioned to recognize it.
 
 | Event       | Date     | Sector Return | Winner Ratio |
-| ----------- | -------- | ------------- | ------------ |
-| H100 Launch | Mar 2022 | -12.33%       | 8%           |
-| ChatGPT     | Nov 2022 | -2.51%        | 40%          |
-| LLaMA       | Feb 2023 | +9.04%        | 88%          |
-| GPT-4       | Mar 2023 | +2.20%        | 60%          |
-| Copilot     | Mar 2023 | +2.26%        | 64%          |
-| Blackwell   | Mar 2024 | -6.09%        | 24%          |
+| ----------- | -------- | ------------: | -----------: |
+| H100 Launch | Mar 2022 |       -12.33% |           8% |
+| ChatGPT     | Nov 2022 |        -2.51% |          40% |
+| LLaMA       | Feb 2023 |        +9.04% |          88% |
+| GPT-4       | Mar 2023 |        +2.20% |          60% |
+| Copilot     | Mar 2023 |        +2.26% |          64% |
+| Blackwell   | Mar 2024 |        -6.09% |          24% |
 
-The pattern is clear. The first public AI moment, ChatGPT, produced mixed returns because macro context was hostile. Subsequent AI events produced clearer positive responses as the market learned to price AI infrastructure, and as the demand signal stopped being theoretical.
-
-<p class="sdx-note">PLACEHOLDER: Flourish - interactive AI Era timeline with stock performance overlays.</p>
+&#128161; <strong>Key insight:</strong> the first public AI moment produced mixed returns because macro context was hostile. Later events produced clearer positive responses as the market learned how to price AI infrastructure.
 
 ---
 
-## Winners and Losers: The AI Shakeout
+## Healthcare in the AI Era: A Different Story
 
-Not every company benefited equally from the AI repricing. Our sector-wide analysis is more nuanced than the simplistic view that AI lifts everything.
+Healthcare did not respond to the AI era uniformly. The sector shows a striking divergence. Some companies thrived, others struggled, and the pattern hints at where AI value actually accrues in medicine.
 
-**ChatGPT (November 30, 2022)**
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Healthcare Sector: AI Era Performance</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/healthcare_sector_exports/plotly_ai_era_industry_combined.html' | relative_url }}"
+        title="Healthcare AI era performance"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
-- Companies with positive 30-day returns: **10/25 (40%)**
-- Sector average 30-day return: **-2.51%**
+The shape of the chart suggests a simple storyline: AI creates indirect value in healthcare. It speeds drug discovery, improves diagnostics, and optimizes operations. The market rewarded the companies that could convert those benefits into real workflows.
 
-This looks wrong if you expect markets to celebrate breakthroughs immediately, but the context explains it. ChatGPT launched during a brutal tech bear market. The Federal Reserve was aggressively raising interest rates to fight inflation. Growth stocks were under pressure. The AI narrative was competing with recession fears.
+**Industry clues from the split:**
 
-**Meta LLaMA (February 24, 2023)**
+- Medical instruments and supplies: premium valuations for AI integrated hardware
+- Medical care facilities: efficiency gains from AI adoption
+- Drug manufacturers: mixed, depending on visible AI discovery positioning
+- Healthcare plans: pressured, because AI threatens intermediary roles
 
-- Companies with positive 30-day returns: **22/25 (88%)**
-- Sector average 30-day return: **+9.04%**
-
-By early 2023, the market had digested ChatGPT's implications. Investors started treating AI as a durable shift, not a single product demo. When Meta released LLaMA and accelerated open model adoption, nearly the whole ecosystem benefited.
-
-<p class="sdx-note">PLACEHOLDER: Insert Winner Ratio comparison across all Innovation Sector events (innovation_sector_event_analysis.ipynb, Step 6 visualization).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">The AI Era Reshuffling: Who Won in Healthcare?</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <div class="sdx-embed-media">
+        <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26749258">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+          <noscript><img src="https://public.flourish.studio/visualisation/26749258/thumbnail" width="100%" alt="bar-chart-race visualization" /></noscript>
+        </div>
+      </div>
+      <div style="margin-top: 0.85rem;">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          Each bar shows a company's cumulative percentage return since January 2022, the start of the AI era. When you see LLY at roughly 699, that means Eli Lilly's stock gained about 699% since the baseline.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          The race makes the plot twist obvious. AI value in healthcare accrues to enablers, not incumbents. Lilly dominates the race, driven by the GLP-1 revolution plus heavy investment in AI powered drug discovery. Close behind are device makers and care operators like ISRG, BSX, and HCA, companies that integrated AI into surgical robotics, imaging, and operations.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          Traditional pharma names and healthcare plans lag near the bottom, often perceived as slow AI adopters or even potential AI casualties.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          &#128161; <strong>Key insight:</strong> in healthcare, AI value accrues to enablers (devices, facilities) more than to incumbents (plans, traditional pharma). The market rewards integration, not just exposure.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
 ## Why We Zoom Out
 
-Event windows show the first reaction, but the AI era is a compounding repricing that plays out over quarters:
+Event windows capture the first reaction. The AI era is different. It is a compounding repricing that plays out over quarters:
 
-- capability shocks changed what software could do
-- infrastructure roadmaps changed what compute was worth
-- competitive responses changed who captured the value
+- Capability shocks change what software can do
+- Infrastructure roadmaps change what compute is worth
+- Competitive responses change who captures the value
 
-This is why we complement short windows with a long-horizon view. The footprint of AI is not only day 0, it is the slope of belief over time.
+This is why we complement short windows with a long-horizon lens. The footprint of AI is not only day 0. It is the slope of belief over time. NVIDIA's +491% did not happen on any single announcement day. The AI era is best understood as a sustained narrative shift, not a collection of event-day reactions.
 
 </div>
 
@@ -3830,7 +4016,7 @@ This is why we complement short windows with a long-horizon view. The footprint 
 
 We started with a question: **When history happens, does the market react right away, or only once everyone knows it was history?**
 
-After analyzing 42 innovations across 50+ companies, we have an answer:
+After analyzing 45 innovations across 50+ companies, we have an answer:
 
 ## **It depends.**
 

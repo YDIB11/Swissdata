@@ -1297,7 +1297,6 @@ blockquote strong {
     <div class="sdx-hero-panel" data-animate="scale">
       <div class="sdx-hero-grid">
         <div data-animate="fade-up">
-          <div class="sdx-pill"><span>Event studies &bull; innovation &bull; stock markets</span></div>
           <h1 class="sdx-hero-title">Innovation Footprints in Tech Stock Markets</h1>
           <p class="sdx-hero-body"><em>Can Wall Street smell the future, or only read the headlines afterwards?</em></p>
           <div class="sdx-hero-actions">
@@ -1314,13 +1313,6 @@ blockquote strong {
             <div class="sdx-hero-media-card">
               <h4>Project snapshot</h4>
               <p>Event-study narratives across Apple, NVIDIA, Tesla, AI, and biotech.</p>
-              <div class="sdx-hero-meta">
-                <span class="sdx-tag">&plusmn;30 trading days</span>
-                <span class="sdx-tag">Returns</span>
-                <span class="sdx-tag">Volume</span>
-                <span class="sdx-tag">Volatility</span>
-                <span class="sdx-tag">Spillovers</span>
-              </div>
             </div>
           </div>
         </div>
@@ -2851,7 +2843,36 @@ Some innovations are recognized immediately and sustainably. The event-day retur
 - Healthcare regulatory approvals with clear commercial potential
 - Infrastructure plays when demand is already visible
 
-<p class="sdx-note">PLACEHOLDER: Insert Event Day vs 30-Day Return scatter plot (data/pattern_01_event_day_vs_30d.png).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-dual-panel">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Apple Pay Launch (90-Day Window)</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/act_4/apple_pay_90day_window.html' | relative_url }}"
+          title="Apple Pay launch 90-day window"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Plot Read: Instant Footprint</h4>
+        <span class="sdx-embed-kicker">Why it fits</span>
+      </div>
+      <div class="sdx-embed-body">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          Apple Pay is what immediate recognition looks like: after day 0, the curve climbs into a clean uptrend, reaching <strong>+15.4% by day 30</strong> and continuing to build through the rest of the window. No long wait-and-see period; investors price the wedge into payments and ecosystem lock-in with visible conviction.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 **When it happens:** Instant footprints appear when an innovation **confirms what sophisticated investors already suspected.** The V100 didn't surprise anyone tracking AI research, it just provided the hardware that everyone knew was needed. The market was primed to price it immediately.
 
@@ -2867,6 +2888,37 @@ Other innovations are initially dismissed or ignored, only to be recognized week
 - Apple M1 Chip: -0.30% day-0, +12.93% over 30 days
 - NVIDIA CUDA: -2.64% day-0, years of delayed recognition
 
+<div class="sdx-embed-block">
+  <div class="sdx-dual-panel">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Blackwell B200 Announcement (90-Day Window)</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/act_4/blackwell_b200_90day_window.html' | relative_url }}"
+          title="Blackwell B200 announcement 90-day window"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Plot Read: Slow Burn</h4>
+        <span class="sdx-embed-kicker">Why it fits</span>
+      </div>
+      <div class="sdx-embed-body">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          The first month barely rewards the headline: by <strong>day 30 it's still about -2.3%</strong>. Then the story flips: the back half of the window rerates sharply as the implications sink in, pushing the curve far higher later on. That delay is the slow-burn signature: digestion first, conviction later.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 **When it happens:** Slow burns appear when an innovation is **too different to understand immediately.** The iPod wasn't just a better MP3 player, it was the beginning of Apple's transformation into a consumer electronics company. CUDA wasn't just faster graphics, it was the foundation of modern AI. These implications take time to become clear.
 
 ---
@@ -2881,7 +2933,36 @@ Some events create immediate excitement that fades away. Strong initial reaction
 - Tesla Cybertruck Deliveries Begin: -1.66% day-0, -8.40% over 30 days
 - Overhyped competitor announcements
 
-<p class="sdx-note">PLACEHOLDER: Insert three-archetype comparison plot (Instant / Slow Burn / Mirage).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-dual-panel">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Cybertruck Deliveries Begin (90-Day Window)</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/act_4/cybertruck_deliveries_90day_window.html' | relative_url }}"
+          title="Cybertruck deliveries begin 90-day window"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Plot Read: Mirage</h4>
+        <span class="sdx-embed-kicker">Why it fits</span>
+      </div>
+      <div class="sdx-embed-body">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          The dashed line is delivery day. The curve pops briefly (peaking around <strong>day 11 ~ +5.6%</strong>), then rolls over; by <strong>day 30 it's -8.4%</strong>, and the rest of the window bleeds toward roughly <strong>-30%</strong> by day 90. That is the mirage signature: attention on launch, but no durable repricing once the story meets reality.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 **When it happens:** Mirages appear when **expectations exceed reality**, or when an event is more show than substance. Tesla events are particularly prone to mirages because they blend genuine innovation with theatrical presentation. The spectacle creates immediate attention, but sustained analysis reveals less than advertised.
 
@@ -3187,6 +3268,8 @@ The average curve across all test events mirrors what we saw in training: a slig
 > This validates our logic: the framework measures **market recognition**, not historical importance. Some innovations matter enormously for technology's arc while leaving no immediate stock footprint.
 
 **❌ Netflix Streaming (Score: 19)** — We know now it was the beginning of the streaming revolution. In 2007? The market didn't care. The ultimate slow-burn—too slow for even our 30-day window.
+
+<div class="flourish-embed flourish-gauge" data-src="visualisation/26749201"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26749201/thumbnail" width="100%" alt="gauge visualization" /></noscript></div>
 
 ---
 

@@ -1,0 +1,33 @@
+Event,Source,Normalized_Score,Return
+CUDA Launch,NVIDIA,58.85455218356773,2.61
+Tesla V100 Launch,NVIDIA,84.19689119170984,30.71
+H100 Hopper Launch,NVIDIA,14.803849000740193,-23.34
+DGX-1 Launch,NVIDIA,,
+RTX 2080 Ti Launch,NVIDIA,70.919689119171,15.65
+A100 Ampere Launch,NVIDIA,74.06550703182828,14.05
+Arm Acquisition Announcement,NVIDIA,44.494818652849744,2.09
+Blackwell B200 Announcement,NVIDIA,21.909696521095483,-2.32
+Autopilot Announcement,Tesla,58.73427091043671,2.48
+Model 3 First Deliveries,Tesla,64.34122871946705,8.54
+Cybertruck Reveal,Tesla,88.82309400444116,32.19
+Tesla Bot Announcement,Tesla,70.42005921539601,15.11
+Dojo Supercomputer Announcement,Tesla,70.42005921539601,15.11
+Cybertruck Deliveries Begin,Tesla,16.28423390081421,-8.4
+Optimus Gen 2 Reveal,Tesla,0.9252405625462621,-20.21
+FSD v12 Wide Rollout,Tesla,42.977424130273874,5.45
+iPod Launch,Apple,84.19689119170984,30.98
+iPhone Launch,Apple,56.17135455218357,4.71
+iPad Launch,Apple,62.54626202812731,6.6
+iPhone 5S Touch ID,Apple,66.85788304959289,11.26
+Apple Pay Launch,Apple,70.68837897853443,15.4
+AirPods Launch,Apple,61.870836417468546,5.87
+M1 Chip Announcement,Apple,68.40303478904517,12.93
+Vision Pro Announcement,Apple,64.43375277572169,8.64
+NVIDIA H100 Launch,Innovation,0.0,-12.33
+ChatGPT Launch,Innovation,28.663952627683198,-2.51
+Meta LLaMA Release,Innovation,100.0,9.04
+GPT-4 Release,Innovation,74.38934122871947,2.2
+Microsoft Copilot Announcement,Innovation,76.35085122131754,2.26
+Google Bard Launch,Innovation,37.32420429311622,-0.83
+Apple Vision Pro Announcement,Innovation,96.96521095484826,9.4
+NVIDIA Blackwell B200,Innovation,14.637305699481864,-6.09

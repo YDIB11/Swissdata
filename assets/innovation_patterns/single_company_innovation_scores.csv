@@ -1,0 +1,25 @@
+Event,Date,Company,Event_Day_Return,Cumulative_Return_30d,Pre_Event_Volatility,Post_Event_Volatility,Volume_Change_Pct,Domain,Event_Type,Source,Analysis_Type,Return_Positive,Volatility_Change,Event_Day_Magnitude,Return_vs_EventDay,Momentum_Sustained,Event_Stage,Innovation_Score,Innovation_Category
+CUDA Launch,2007-06-23,NVDA,-2.64,2.61,2.39,2.1,-16.47,GPU Computing,Platform Launch,NVIDIA,Single Company,True,-0.29000000000000004,2.64,5.25,True,Launch/Delivery,47.61,✅ Strong Innovation
+Tesla V100 Launch,2017-05-10,NVDA,17.83,30.71,1.93,2.83,122.2,AI Hardware,Product Launch,NVIDIA,Single Company,True,0.9000000000000001,17.83,12.880000000000003,True,Launch/Delivery,75.0,🌟 Transformative
+H100 Hopper Launch,2022-03-22,NVDA,-0.79,-23.34,4.66,4.18,3.84,AI Hardware,Product Launch,NVIDIA,Single Company,False,-0.4800000000000004,0.79,-22.55,False,Launch/Delivery,0.0,❌ Weak/Negative
+DGX-1 Launch,2016-04-05,NVDA,,,,,,AI Hardware,Product Launch,NVIDIA,Single Company,False,,,,False,Launch/Delivery,,❌ Weak/Negative
+RTX 2080 Ti Launch,2018-08-20,NVDA,1.23,15.65,1.53,1.73,15.32,Gaming/Graphics,Product Launch,NVIDIA,Single Company,True,0.19999999999999996,1.23,14.42,True,Launch/Delivery,60.65,🌟 Transformative
+A100 Ampere Launch,2020-05-14,NVDA,3.22,14.05,3.89,2.64,15.88,AI Hardware,Product Launch,NVIDIA,Single Company,True,-1.25,3.22,10.83,True,Launch/Delivery,64.05,🌟 Transformative
+Arm Acquisition Announcement,2020-09-13,NVDA,5.82,2.09,3.46,2.29,-12.37,M&A/Corporate,Acquisition,NVIDIA,Single Company,True,-1.17,5.82,-3.7300000000000004,False,Launch/Delivery,32.09,🔶 Moderate
+Blackwell B200 Announcement,2024-03-18,NVDA,0.7,-2.32,4.14,3.22,-19.53,AI Hardware,Product Launch,NVIDIA,Single Company,False,-0.9199999999999995,0.7,-3.0199999999999996,False,Launch/Delivery,7.68,❌ Weak/Negative
+Autopilot Announcement,2014-10-10,TSLA,-7.82,2.48,2.59,2.98,1.48,Autonomous Driving,Product Announcement,Tesla,Single Company,True,0.3900000000000001,7.82,10.3,True,Announcement/Reveal,47.480000000000004,✅ Strong Innovation
+Model 3 First Deliveries,2017-07-28,TSLA,0.18,8.54,2.57,2.39,-31.96,Electric Vehicles,Product Launch,Tesla,Single Company,True,-0.17999999999999972,0.18,8.36,True,Launch/Delivery,53.54,✅ Strong Innovation
+Cybertruck Reveal,2019-11-21,TSLA,0.74,32.19,3.84,2.39,11.46,Electric Vehicles,Product Reveal,Tesla,Single Company,True,-1.4499999999999997,0.74,31.45,True,Announcement/Reveal,80.0,🌟 Transformative
+Tesla Bot Announcement,2021-08-19,TSLA,-2.25,15.11,2.17,1.59,-10.96,Robotics/AI,Product Announcement,Tesla,Single Company,True,-0.5799999999999998,2.25,17.36,True,Announcement/Reveal,60.11,🌟 Transformative
+Dojo Supercomputer Announcement,2021-08-19,TSLA,-2.25,15.11,2.17,1.59,-10.96,AI Infrastructure,Technology Announcement,Tesla,Single Company,True,-0.5799999999999998,2.25,17.36,True,Announcement/Reveal,60.11,🌟 Transformative
+Cybertruck Deliveries Begin,2023-11-30,TSLA,-1.66,-8.4,3.52,2.1,-12.1,Electric Vehicles,Product Launch,Tesla,Single Company,False,-1.42,1.66,-6.74,False,Launch/Delivery,1.5999999999999996,❌ Weak/Negative
+Optimus Gen 2 Reveal,2023-12-13,TSLA,0.96,-20.21,2.6,3.1,-7.52,Robotics/AI,Product Reveal,Tesla,Single Company,False,0.5,0.96,-21.17,False,Announcement/Reveal,-15.0,❌ Weak/Negative
+FSD v12 Wide Rollout,2024-03-16,TSLA,6.25,5.45,2.82,4.62,2.47,Autonomous Driving,Software Release,Tesla,Single Company,True,1.8000000000000003,6.25,-0.7999999999999998,False,Launch/Delivery,30.45,🔶 Moderate
+iPod Launch,2001-10-23,AAPL,-4.63,30.98,3.67,3.33,-20.75,Consumer Electronics,Product Launch,Apple,Single Company,True,-0.33999999999999986,4.63,35.61,True,Launch/Delivery,75.0,🌟 Transformative
+iPhone Launch,2007-06-29,AAPL,1.23,4.71,1.88,3.01,8.86,Mobile/Smartphone,Product Launch,Apple,Single Company,True,1.13,1.23,3.48,True,Launch/Delivery,44.71,✅ Strong Innovation
+iPad Launch,2010-04-03,AAPL,1.07,6.6,1.18,2.55,31.33,Tablet Computing,Product Launch,Apple,Single Company,True,1.3699999999999999,1.07,5.529999999999999,True,Launch/Delivery,51.6,✅ Strong Innovation
+iPhone 5S Touch ID,2013-09-20,AAPL,-1.04,11.26,1.98,1.44,-17.0,Mobile Security,Product Launch,Apple,Single Company,True,-0.54,1.04,12.3,True,Launch/Delivery,56.26,✅ Strong Innovation
+Apple Pay Launch,2014-10-20,AAPL,2.14,15.4,1.37,1.13,-26.2,Mobile Payments,Product Launch,Apple,Single Company,True,-0.2400000000000002,2.14,13.26,True,Launch/Delivery,60.4,🌟 Transformative
+AirPods Launch,2016-12-13,AAPL,1.67,5.87,1.2,0.51,-18.52,Audio/Wearables,Product Launch,Apple,Single Company,True,-0.69,1.67,4.2,True,Launch/Delivery,50.870000000000005,✅ Strong Innovation
+M1 Chip Announcement,2020-11-10,AAPL,-0.3,12.93,2.63,1.66,-21.88,Semiconductors,Product Launch,Apple,Single Company,True,-0.97,0.3,13.23,True,Launch/Delivery,57.93,✅ Strong Innovation
+Vision Pro Announcement,2023-06-05,AAPL,-0.76,8.64,1.25,0.91,-4.45,Spatial Computing,Product Announcement,Apple,Single Company,True,-0.33999999999999997,0.76,9.4,True,Announcement/Reveal,53.64,✅ Strong Innovation

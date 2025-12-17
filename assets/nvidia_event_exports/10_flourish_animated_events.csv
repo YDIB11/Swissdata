@@ -1,0 +1,489 @@
+Event,Event_Label,Event_Date,Category,Day,Cumulative_Return,Price
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-30,-17.26,0.54
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-29,-18.08,0.53
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-28,-18.81,0.53
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-27,-17.78,0.53
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-26,-19.14,0.52
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-25,-17.54,0.54
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-24,-17.28,0.54
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-23,-16.84,0.54
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-22,-19.05,0.53
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-21,-21.97,0.51
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-20,-20.74,0.51
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-19,-19.9,0.52
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-18,-19.71,0.52
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-17,-18.44,0.53
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-16,-17.87,0.53
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-15,-17.42,0.54
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-14,-14.98,0.55
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-13,-14.34,0.56
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-12,-15.26,0.55
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-11,-13.94,0.56
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-10,-13.63,0.56
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-9,-14.53,0.55
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-8,-12.48,0.57
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-7,-10.93,0.58
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-6,-6.88,0.6
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-5,-6.83,0.6
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-4,-6.24,0.61
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-3,-6.15,0.61
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-2,1.2,0.66
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,-1,2.71,0.67
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,0,0.0,0.65
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,1,-4.64,0.62
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,2,-2.07,0.64
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,3,-1.13,0.64
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,4,-2.73,0.63
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,5,1.32,0.66
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,6,1.48,0.66
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,7,2.57,0.67
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,8,3.06,0.67
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,9,6.05,0.69
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,10,7.09,0.69
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,11,6.62,0.69
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,12,8.67,0.71
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,13,8.01,0.7
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,14,9.96,0.71
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,15,9.49,0.71
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,16,7.49,0.7
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,17,7.37,0.7
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,18,6.19,0.69
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,19,7.25,0.7
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,20,4.43,0.68
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,21,3.93,0.67
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,22,4.45,0.68
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,23,4.19,0.68
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,24,7.11,0.7
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,25,7.75,0.7
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,26,6.95,0.69
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,27,6.48,0.69
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,28,0.16,0.65
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,29,1.01,0.66
+CUDA Launch,CUDA Launch (2007),"June 23, 2007",GPU Computing,30,2.61,0.67
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-30,-11.21,2.66
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-29,-11.5,2.65
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-28,-9.8,2.7
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-27,-10.19,2.69
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-26,-10.64,2.67
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-25,-16.91,2.49
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-24,-17.53,2.47
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-23,-16.93,2.48
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-22,-17.28,2.47
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-21,-19.39,2.41
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-20,-19.1,2.42
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-19,-19.77,2.4
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-18,-21.27,2.35
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-17,-18.19,2.45
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-16,-18.14,2.45
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-15,-17.82,2.46
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-14,-16.51,2.5
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-13,-16.17,2.51
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-12,-15.12,2.54
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-11,-13.64,2.58
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-10,-14.24,2.56
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-9,-12.9,2.6
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-8,-14.01,2.57
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-7,-12.08,2.63
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-6,-14.68,2.55
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-5,-14.05,2.57
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-4,-14.38,2.56
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-3,-14.37,2.56
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-2,-15.27,2.53
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,-1,-15.13,2.54
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,0,0.0,2.99
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,1,4.3,3.12
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,2,5.44,3.15
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,3,10.73,3.31
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,4,12.8,3.37
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,5,5.3,3.15
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,6,9.71,3.28
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,7,12.25,3.36
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,8,14.64,3.43
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,9,13.1,3.38
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,10,14.37,3.42
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,11,14.11,3.41
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,12,17.07,3.5
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,13,19.57,3.58
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,14,19.14,3.56
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,15,19.15,3.56
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,16,18.55,3.55
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,17,22.16,3.65
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,18,21.61,3.64
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,19,23.07,3.68
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,20,32.0,3.95
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,21,23.47,3.69
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,22,23.78,3.7
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,23,24.96,3.74
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,24,25.22,3.75
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,25,25.76,3.76
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,26,25.14,3.74
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,27,29.84,3.88
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,28,29.65,3.88
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,29,31.62,3.94
+Tesla V100 Launch,Tesla V100 Launch (2017),"May 10, 2017",AI Hardware,30,30.71,3.91
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-30,0.57,6.17
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-29,2.18,6.27
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-28,-0.13,6.13
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-27,1.37,6.22
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-26,0.6,6.17
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-25,0.15,6.14
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-24,2.36,6.28
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-23,1.56,6.23
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-22,1.69,6.24
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-21,1.23,6.21
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-20,0.63,6.17
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-19,0.35,6.16
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-18,1.63,6.23
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-17,2.82,6.31
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-16,1.69,6.24
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-15,-1.5,6.04
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-14,-1.2,6.06
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-13,-0.55,6.1
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-12,1.12,6.2
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-11,1.72,6.24
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-10,2.5,6.29
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-9,3.68,6.36
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-8,4.27,6.4
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-7,3.48,6.35
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-6,2.8,6.31
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-5,3.34,6.34
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-4,5.48,6.47
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-3,4.54,6.41
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-2,3.87,6.37
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,-1,-1.22,6.06
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,0,0.0,6.13
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,1,2.21,6.27
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,2,6.04,6.51
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,3,7.67,6.61
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,4,9.84,6.74
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,5,11.32,6.83
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,6,10.71,6.79
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,7,12.43,6.9
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,8,12.15,6.88
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,9,13.31,6.95
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,10,14.53,7.03
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,11,12.4,6.9
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,12,10.1,6.75
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,13,9.75,6.73
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,14,10.91,6.8
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,15,10.13,6.76
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,16,8.27,6.64
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,17,9.54,6.72
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,18,11.6,6.85
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,19,10.59,6.78
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,20,9.41,6.71
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,21,9.8,6.74
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,22,7.5,6.6
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,23,6.36,6.52
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,24,7.26,6.58
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,25,8.36,6.65
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,26,7.76,6.61
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,27,7.95,6.62
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,28,13.45,6.96
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,29,16.82,7.17
+RTX 2080 Ti Launch,RTX 2080 Ti Launch (2018),"August 20, 2018",Gaming/Graphics,30,15.65,7.1
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-30,-24.33,6.05
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-29,-20.47,6.36
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-28,-24.07,6.07
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-27,-16.44,6.68
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-26,-19.36,6.45
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-25,-16.89,6.65
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-24,-18.14,6.55
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-23,-15.99,6.72
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-22,-11.6,7.07
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-21,-12.57,6.99
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-20,-8.26,7.34
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-19,-9.0,7.28
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-18,-10.64,7.15
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-17,-16.1,6.71
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-16,-10.92,7.13
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-15,-11.58,7.07
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-14,-9.85,7.21
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-13,-7.52,7.4
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-12,-9.3,7.26
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-11,-7.09,7.43
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-10,-9.01,7.28
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-9,-11.97,7.04
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-8,-9.32,7.25
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-7,-8.55,7.32
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-6,-7.29,7.42
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-5,-5.09,7.59
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-4,-2.71,7.78
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-3,0.44,8.03
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-2,-2.84,7.77
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,-1,-3.12,7.75
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,0,0.0,8.0
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,1,5.73,8.46
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,2,8.96,8.72
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,3,9.65,8.77
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,4,11.7,8.94
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,5,9.27,8.74
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,6,12.4,8.99
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,7,8.56,8.68
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,8,6.16,8.49
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,9,5.68,8.45
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,10,10.52,8.84
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,11,9.66,8.77
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,12,9.9,8.79
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,13,9.2,8.74
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,14,9.21,8.74
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,15,11.13,8.89
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,16,9.69,8.78
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,17,12.7,9.02
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,18,16.69,9.33
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,19,9.59,8.77
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,20,11.28,8.9
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,21,14.29,9.14
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,22,12.98,9.04
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,23,15.06,9.2
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,24,14.84,9.19
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,25,15.38,9.23
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,26,18.69,9.49
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,27,17.73,9.42
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,28,15.06,9.2
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,29,18.23,9.46
+A100 Ampere Launch,A100 Ampere Launch (2020),"May 14, 2020",AI Hardware,30,14.05,9.12
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-30,-17.56,10.58
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-29,-14.49,10.97
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-28,-12.8,11.19
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-27,-12.34,11.25
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-26,-11.96,11.3
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-25,-13.02,11.16
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-24,-13.29,11.13
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-23,-15.74,10.81
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-22,-11.15,11.4
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-21,-11.13,11.4
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-20,-10.19,11.52
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-19,-4.19,12.3
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-18,-4.78,12.22
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-17,-5.73,12.1
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-16,-5.71,12.1
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-15,-1.5,12.64
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-14,-1.21,12.68
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-13,-0.98,12.71
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-12,-0.8,12.73
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-11,-1.92,12.59
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-10,2.11,13.1
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-9,3.87,13.33
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-8,7.37,13.78
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-7,11.45,14.3
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-6,1.11,12.98
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-5,-1.94,12.58
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-4,-7.45,11.88
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-3,-1.22,12.68
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-2,-4.35,12.27
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,-1,-5.5,12.13
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,0,0.0,12.83
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,1,0.92,12.95
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,2,-2.78,12.48
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,3,-3.18,12.42
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,4,-5.31,12.15
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,5,-2.76,12.48
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,6,-1.82,12.6
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,7,-5.81,12.09
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,8,-4.07,12.31
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,9,0.01,12.83
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,10,1.26,12.99
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,11,2.75,13.18
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,12,5.11,13.49
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,13,5.77,13.57
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,14,1.48,13.02
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,15,5.98,13.6
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,16,6.71,13.69
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,17,8.48,13.92
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,18,7.51,13.8
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,19,6.92,13.72
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,20,10.52,14.18
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,21,10.69,14.2
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,22,9.5,14.05
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,23,8.53,13.93
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,24,7.3,13.77
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,25,4.86,13.46
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,26,6.01,13.6
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,27,5.07,13.48
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,28,3.8,13.32
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,29,5.58,13.55
+Arm Acquisition Announcement,Arm Acquisition Announcement (2020),"September 13, 2020",M&A/Corporate,30,2.09,13.1
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-30,-6.79,24.68
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-29,-5.35,25.06
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-28,0.67,26.65
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-27,-2.66,25.77
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-26,-9.72,23.9
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-25,-8.52,24.22
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-24,-0.13,26.44
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-23,-0.07,26.46
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-22,-7.62,24.46
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-21,-10.88,23.6
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-20,-11.83,23.34
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-19,-15.61,22.34
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-18,-10.48,23.7
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-17,-8.94,24.11
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-16,-8.08,24.34
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-15,-11.5,23.43
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-14,-8.69,24.18
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-13,-10.59,23.67
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-12,-13.53,22.9
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-11,-19.5,21.31
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-10,-18.89,21.48
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-9,-13.23,22.97
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-8,-14.58,22.62
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-7,-16.68,22.06
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-6,-19.58,21.29
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-5,-13.39,22.93
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-4,-7.65,24.45
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-3,-6.63,24.72
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-2,-0.27,26.41
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,-1,0.79,26.69
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,0,0.0,26.48
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,1,-3.36,25.59
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,2,6.13,28.1
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,3,4.4,27.64
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,4,6.39,28.17
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,5,8.04,28.61
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,6,4.4,27.64
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,7,2.87,27.24
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,8,0.71,26.66
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,9,3.15,27.31
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,10,-2.24,25.89
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,11,-7.98,24.36
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,12,-8.73,24.17
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,13,-12.84,23.08
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,14,-17.37,21.88
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,15,-18.93,21.47
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,16,-16.29,22.16
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,17,-19.85,21.22
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,18,-17.87,21.74
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,19,-16.31,22.16
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,20,-19.01,21.44
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,21,-23.91,20.15
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,22,-26.43,19.48
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,23,-24.97,19.87
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,24,-29.17,18.75
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,25,-30.57,18.38
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,26,-25.42,19.75
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,27,-30.07,18.51
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,28,-26.36,19.5
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,29,-26.1,19.57
+H100 Hopper Launch,H100 Hopper Launch (2022),"March 22, 2022",AI Hardware,30,-23.34,20.3
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-30,-29.3,11.95
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-29,-28.81,12.04
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-28,-27.96,12.18
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-27,-26.36,12.45
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-26,-25.57,12.58
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-25,-21.66,13.24
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-24,-23.82,12.88
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-23,-22.16,13.16
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-22,-18.27,13.82
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-21,-20.27,13.48
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-20,-19.99,13.53
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-19,-21.91,13.2
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-18,-20.71,13.4
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-17,-16.37,14.14
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-16,-15.52,14.28
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-15,-13.74,14.58
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-14,-18.62,13.76
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-13,-6.96,15.73
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-12,-3.55,16.31
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-11,-3.74,16.27
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-10,-1.54,16.65
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-9,-6.01,15.89
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-8,-7.39,15.66
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-7,-8.97,15.39
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-6,-9.51,15.3
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-5,-5.25,16.02
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-4,-2.41,16.5
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-3,-3.88,16.25
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-2,-6.5,15.81
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,-1,-7.61,15.62
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,0,0.0,16.91
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,1,1.25,17.12
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,2,-0.28,16.86
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,3,-1.85,16.59
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,4,-5.53,15.97
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,5,-4.75,16.1
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,6,1.45,17.15
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,7,0.46,16.98
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,8,3.62,17.52
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,9,6.79,18.05
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,10,4.44,17.66
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,11,0.17,16.94
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,12,-2.08,16.55
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,13,-3.95,16.24
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,14,-4.95,16.07
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,15,-2.49,16.48
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,16,-9.36,15.32
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,17,-10.15,15.19
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,18,-16.56,14.11
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,19,-17.06,14.02
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,20,-13.71,14.59
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,21,-13.64,14.6
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,22,-15.41,14.3
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,23,-12.85,14.73
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,24,-15.71,14.25
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,25,-12.2,14.84
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,26,-7.65,15.61
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,27,-5.99,15.89
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,28,-5.45,15.98
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,29,-2.43,16.49
+ChatGPT AI Boom,ChatGPT AI Boom (2022),"November 30, 2022",AI/ML Demand,30,-0.14,16.88
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-30,-25.21,66.12
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-29,-21.62,69.29
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-28,-22.88,68.19
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-27,-20.76,70.06
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-26,-21.27,69.6
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-25,-18.46,72.09
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-24,-18.33,72.21
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-23,-18.46,72.09
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-22,-16.46,73.86
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-21,-17.86,72.62
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-20,-17.91,72.57
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-19,-21.49,69.41
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-18,-23.73,67.43
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-17,-11.22,78.49
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-16,-10.9,78.77
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-15,-10.59,79.05
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-14,-11.03,78.66
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-13,-12.2,77.62
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-12,-10.57,79.07
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-11,-6.99,82.23
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-10,-3.64,85.19
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-9,-2.82,85.92
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-8,0.28,88.65
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-7,4.76,92.62
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-6,-1.05,87.48
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-5,-3.03,85.73
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-4,3.91,91.87
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-3,2.75,90.84
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-2,-0.58,87.9
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,-1,-0.7,87.79
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,0,0.0,88.41
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,1,1.07,89.35
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,2,2.17,90.33
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,3,3.37,91.39
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,4,6.6,94.24
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,5,7.4,94.95
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,6,4.64,92.51
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,7,2.03,90.2
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,8,2.15,90.31
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,9,2.16,90.32
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,10,1.13,89.41
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,11,0.58,88.92
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,12,-2.88,85.86
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,13,-0.51,87.96
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,14,-1.49,87.09
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,15,-3.51,85.31
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,16,-1.6,86.99
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,17,2.44,90.57
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,18,-0.3,88.14
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,19,-2.77,85.96
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,20,-1.18,87.37
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,21,-5.0,83.99
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,22,-4.28,84.63
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,23,-13.85,76.16
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,24,-10.1,79.48
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,25,-6.82,82.38
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,26,-9.92,79.64
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,27,-6.58,82.59
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,28,-0.81,87.69
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,29,-0.79,87.71
+Blackwell B200 Announcement,Blackwell B200 Announcement (2024),"March 18, 2024",AI Hardware,30,-2.32,86.36

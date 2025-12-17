@@ -1,0 +1,439 @@
+Position,Ticker,Company_Name,Industry,Market_Cap,Market_Cap_Formatted
+1,NVDA,NVIDIA Corporation,Semiconductors,4500664877056,$4.50T
+2,AAPL,Apple Inc.,Consumer Electronics,4126222057472,$4.13T
+3,MSFT,Microsoft Corporation,Software - Infrastructure,3574461104128,$3.57T
+4,AVGO,Broadcom Inc.,Semiconductors,1909653635072,$1.91T
+5,TSM,Taiwan Semiconductor Manufactur,Semiconductors,1584217980928,$1.58T
+6,ORCL,Oracle Corporation,Software - Infrastructure,629027373056,$629.03B
+7,ASML,ASML Holding N.V. - New York Re,Semiconductor Equipment & Materials,431631859712,$431.63B
+8,AMD,"Advanced Micro Devices, Inc.",Semiconductors,359691354112,$359.69B
+9,CSCO,"Cisco Systems, Inc.",Communication Equipment,314112016384,$314.11B
+10,IBM,International Business Machines,Information Technology Services,288674283520,$288.67B
+11,MU,"Micron Technology, Inc.",Semiconductors,286530928640,$286.53B
+12,SAP,SAP  SE,Software - Application,283571879936,$283.57B
+13,CRM,"Salesforce, Inc.",Software - Application,247881760768,$247.88B
+14,AMAT,"Applied Materials, Inc.",Semiconductor Equipment & Materials,214790733824,$214.79B
+15,LRCX,Lam Research Corporation,Semiconductor Equipment & Materials,208530620416,$208.53B
+16,SHOP,Shopify Inc.,Software - Application,207878275072,$207.88B
+17,QCOM,QUALCOMM Incorporated,Semiconductors,190260084736,$190.26B
+18,INTC,Intel Corporation,Semiconductors,188685942784,$188.69B
+19,INTU,Intuit Inc.,Software - Application,183209476096,$183.21B
+20,UBER,"Uber Technologies, Inc.",Software - Application,182234316800,$182.23B
+21,NOW,"ServiceNow, Inc.",Software - Application,177028268032,$177.03B
+22,APH,Amphenol Corporation,Electronic Components,168729935872,$168.73B
+23,ANET,"Arista Networks, Inc.",Computer Hardware,168404189184,$168.40B
+24,ACN,Accenture plc,Information Technology Services,167323156480,$167.32B
+25,TXN,Texas Instruments Incorporated,Semiconductors,163312844800,$163.31B
+26,KLAC,KLA Corporation,Semiconductor Equipment & Materials,162655404032,$162.66B
+27,ADBE,Adobe Inc.,Software - Application,145759354880,$145.76B
+28,ADI,"Analog Devices, Inc.",Semiconductors,136192401408,$136.19B
+29,PANW,"Palo Alto Networks, Inc.",Software - Infrastructure,135500283904,$135.50B
+30,CRWD,"CrowdStrike Holdings, Inc.",Software - Infrastructure,128925663232,$128.93B
+31,ADP,"Automatic Data Processing, Inc.",Software - Application,104338907136,$104.34B
+32,CDNS,"Cadence Design Systems, Inc.",Software - Application,92270559232,$92.27B
+33,DELL,Dell Technologies Inc.,Computer Hardware,91809185792,$91.81B
+34,SNPS,"Synopsys, Inc.",Software - Infrastructure,88464678912,$88.46B
+35,MRVL,"Marvell Technology, Inc.",Semiconductors,78766538752,$78.77B
+36,GLW,Corning Incorporated,Electronic Components,77436788736,$77.44B
+37,NET,"Cloudflare, Inc.",Software - Infrastructure,72310292480,$72.31B
+38,INFY,Infosys Limited,Information Technology Services,71787986944,$71.79B
+39,TEL,TE Connectivity plc,Electronic Components,69854461952,$69.85B
+40,ADSK,"Autodesk, Inc.",Software - Application,63577300992,$63.58B
+41,FTNT,"Fortinet, Inc.",Software - Infrastructure,62948757504,$62.95B
+42,STX,Seagate Technology Holdings PLC,Computer Hardware,62176325632,$62.18B
+43,MSI,"Motorola Solutions, Inc.",Communication Equipment,61436850176,$61.44B
+44,NXPI,NXP Semiconductors N.V.,Semiconductors,57424142336,$57.42B
+45,DDOG,"Datadog, Inc.",Software - Application,53308968960,$53.31B
+46,MSTR,Strategy Inc,Software - Application,53200670720,$53.20B
+47,ROP,"Roper Technologies, Inc.",Software - Application,47339479040,$47.34B
+48,MPWR,"Monolithic Power Systems, Inc.",Semiconductors,46844903424,$46.84B
+49,TEAM,Atlassian Corporation,Software - Application,42217046016,$42.22B
+50,FICO,Fair Isaac Corporation,Software - Application,41792524288,$41.79B
+51,PAYX,"Paychex, Inc.",Software - Application,40554672128,$40.55B
+52,CTSH,Cognizant Technology Solutions ,Information Technology Services,39486812160,$39.49B
+53,CLS,"Celestica, Inc.",Electronic Components,39420174336,$39.42B
+54,GRMN,Garmin Ltd.,Scientific & Technical Instruments,38996389888,$39.00B
+55,KEYS,Keysight Technologies Inc.,Scientific & Technical Instruments,36374237184,$36.37B
+56,MCHP,Microchip Technology Incorporat,Semiconductors,36107251712,$36.11B
+57,UI,Ubiquiti Inc.,Communication Equipment,35395321856,$35.40B
+58,ASX,"ASE Technology Holding Co., Ltd",Semiconductors,35167404032,$35.17B
+59,FI,"Fiserv, Inc.",Information Technology Services,34314950656,$34.31B
+60,FIS,Fidelity National Information S,Information Technology Services,34205296640,$34.21B
+61,NOK,Nokia Corporation Sponsored,Communication Equipment,34187913216,$34.19B
+62,MDB,"MongoDB, Inc.",Software - Infrastructure,33701072896,$33.70B
+63,HPE,Hewlett Packard Enterprise Comp,Communication Equipment,32610209792,$32.61B
+64,TER,"Teradyne, Inc.",Semiconductor Equipment & Materials,32043773952,$32.04B
+65,ERIC,Ericsson,Communication Equipment,31966220288,$31.97B
+66,COHR,Coherent Corp.,Scientific & Technical Instruments,30806808576,$30.81B
+67,CIEN,Ciena Corporation,Communication Equipment,30784124928,$30.78B
+68,FSLR,"First Solar, Inc.",Solar,27245537280,$27.25B
+69,BR,"Broadridge Financial Solutions,",Information Technology Services,26369923072,$26.37B
+70,LITE,Lumentum Holdings Inc.,Communication Equipment,25649084416,$25.65B
+71,FLEX,Flex Ltd.,Electronic Components,25425301504,$25.43B
+72,JBL,Jabil Inc.,Electronic Components,24235812864,$24.24B
+73,TDY,Teledyne Technologies Incorpora,Scientific & Technical Instruments,23979278336,$23.98B
+74,HPQ,HP Inc.,Computer Hardware,23707248640,$23.71B
+75,LDOS,"Leidos Holdings, Inc.",Information Technology Services,23693309952,$23.69B
+76,CYBR,CyberArk Software Ltd.,Software - Infrastructure,23636842496,$23.64B
+77,NTAP,"NetApp, Inc.",Software - Infrastructure,23461148672,$23.46B
+78,PSTG,"Pure Storage, Inc.",Computer Hardware,23366060032,$23.37B
+79,STM,STMicroelectronics N.V.,Semiconductors,23138508800,$23.14B
+80,ON,ON Semiconductor Corporation,Semiconductors,22710325248,$22.71B
+81,SSNC,"SS&C Technologies Holdings, Inc",Software - Application,21143400448,$21.14B
+82,CHKP,Check Point Software Technologi,Software - Infrastructure,20996704256,$21.00B
+83,PTC,PTC Inc.,Software - Application,20724137984,$20.72B
+84,SMCI,"Super Micro Computer, Inc.",Computer Hardware,20527808512,$20.53B
+85,HUBS,"HubSpot, Inc.",Software - Application,20302129152,$20.30B
+86,GIB,CGI Inc.,Information Technology Services,20143210496,$20.14B
+87,UMC,United Microelectronics Corpora,Semiconductors,20103284736,$20.10B
+88,TWLO,Twilio Inc.,Software - Infrastructure,20080621568,$20.08B
+89,TYL,"Tyler Technologies, Inc.",Software - Application,19616419840,$19.62B
+90,TRMB,Trimble Inc.,Scientific & Technical Instruments,19362355200,$19.36B
+91,CDW,CDW Corporation,Information Technology Services,19082444800,$19.08B
+92,FTV,Fortive Corporation,Scientific & Technical Instruments,18214336512,$18.21B
+93,FN,Fabrinet,Electronic Components,17823676416,$17.82B
+94,GDDY,GoDaddy Inc.,Software - Infrastructure,17574719488,$17.57B
+95,LOGI,Logitech International S.A. - R,Computer Hardware,17418786816,$17.42B
+96,IT,"Gartner, Inc.",Information Technology Services,17287450624,$17.29B
+97,GWRE,"Guidewire Software, Inc.",Software - Application,17029341184,$17.03B
+98,GEN,Gen Digital Inc.,Software - Infrastructure,16658735104,$16.66B
+99,OKTA,"Okta, Inc.",Software - Infrastructure,15539546112,$15.54B
+100,FFIV,"F5, Inc.",Software - Infrastructure,14848867328,$14.85B
+101,MTSI,MACOM Technology Solutions Hold,Semiconductors,14139852800,$14.14B
+102,TSEM,Tower Semiconductor Ltd.,Semiconductors,14091719680,$14.09B
+103,ENTG,"Entegris, Inc.",Semiconductor Equipment & Materials,14062415872,$14.06B
+104,DOCU,"DocuSign, Inc.",Software - Application,13820821504,$13.82B
+105,DT,"Dynatrace, Inc.",Software - Application,13567780864,$13.57B
+106,JKHY,"Jack Henry & Associates, Inc.",Information Technology Services,13142953984,$13.14B
+107,CACI,"CACI International, Inc.",Information Technology Services,13010247680,$13.01B
+108,NTNX,"Nutanix, Inc.",Software - Infrastructure,12838535168,$12.84B
+109,SNX,TD SYNNEX Corporation,Electronics & Computer Distribution,12780747776,$12.78B
+110,AKAM,"Akamai Technologies, Inc.",Software - Infrastructure,12314144768,$12.31B
+111,EPAM,"EPAM Systems, Inc.",Information Technology Services,11536223232,$11.54B
+112,AMKR,"Amkor Technology, Inc.",Semiconductor Equipment & Materials,11393145856,$11.39B
+113,RMBS,"Rambus, Inc.",Semiconductors,11380234240,$11.38B
+114,MKSI,MKS Inc.,Scientific & Technical Instruments,11213272064,$11.21B
+115,SAIL,"SailPoint, Inc.",Software - Infrastructure,11181538304,$11.18B
+116,LSCC,Lattice Semiconductor Corporati,Semiconductors,10814749696,$10.81B
+117,MANH,"Manhattan Associates, Inc.",Software - Application,10577468416,$10.58B
+118,PEGA,Pegasystems Inc.,Software - Application,10320612352,$10.32B
+119,SWKS,"Skyworks Solutions, Inc.",Semiconductors,10317450240,$10.32B
+120,NVMI,Nova Ltd.,Semiconductor Equipment & Materials,9993177088,$9.99B
+121,SITM,SiTime Corporation,Semiconductors,9729793024,$9.73B
+122,IDCC,"InterDigital, Inc.",Software - Application,9351548928,$9.35B
+123,PAYC,"Paycom Software, Inc.",Software - Application,9148446720,$9.15B
+124,SANM,Sanmina Corporation,Electronic Components,9083529216,$9.08B
+125,LYFT,"Lyft, Inc.",Software - Application,8679558144,$8.68B
+126,DOX,Amdocs Limited,Software - Infrastructure,8476654592,$8.48B
+127,OTEX,Open Text Corporation,Software - Application,8472898048,$8.47B
+128,APPF,"AppFolio, Inc.",Software - Application,8439905280,$8.44B
+129,QRVO,"Qorvo, Inc.",Semiconductors,8297189376,$8.30B
+130,ONTO,Onto Innovation Inc.,Semiconductor Equipment & Materials,8164929024,$8.16B
+131,PCTY,Paylocity Holding Corporation,Software - Application,8063526400,$8.06B
+132,G,Genpact Limited,Information Technology Services,7986798080,$7.99B
+133,DSGX,The Descartes Systems Group Inc,Software - Application,7951201792,$7.95B
+134,ESTC,Elastic N.V.,Software - Application,7896042496,$7.90B
+135,TTMI,"TTM Technologies, Inc.",Electronic Components,7895501312,$7.90B
+136,DBX,"Dropbox, Inc.",Software - Infrastructure,7490137088,$7.49B
+137,SMTC,Semtech Corporation,Semiconductors,7397652480,$7.40B
+138,PSN,Parsons Corporation,Information Technology Services,7045189120,$7.05B
+139,GDS,GDS Holdings Limited,Information Technology Services,6814001664,$6.81B
+140,NICE,NICE Ltd,Software - Application,6615006208,$6.62B
+141,CRUS,"Cirrus Logic, Inc.",Semiconductors,6491723776,$6.49B
+142,LFUS,"Littelfuse, Inc.",Electronic Components,6490376192,$6.49B
+143,EXLS,"ExlService Holdings, Inc.",Information Technology Services,6481523200,$6.48B
+144,CGNX,Cognex Corporation,Scientific & Technical Instruments,6424870912,$6.42B
+145,ARW,"Arrow Electronics, Inc.",Electronics & Computer Distribution,5809966080,$5.81B
+146,OLED,Universal Display Corporation,Electronic Components,5798723072,$5.80B
+147,BILL,"BILL Holdings, Inc.",Software - Application,5492228608,$5.49B
+148,CAMT,Camtek Ltd.,Semiconductor Equipment & Materials,5448358400,$5.45B
+149,QLYS,"Qualys, Inc.",Software - Infrastructure,5440731648,$5.44B
+150,CVLT,"Commvault Systems, Inc.",Software - Application,5402293248,$5.40B
+151,BMI,"Badger Meter, Inc.",Scientific & Technical Instruments,5200827392,$5.20B
+152,ESE,ESCO Technologies Inc.,Scientific & Technical Instruments,5116240384,$5.12B
+153,ST,Sensata Technologies Holding pl,Scientific & Technical Instruments,5043397632,$5.04B
+154,BDC,Belden Inc,Communication Equipment,4892654080,$4.89B
+155,PI,"Impinj, Inc.",Semiconductors,4715090432,$4.72B
+156,CCC,CCC Intelligent Solutions Holdi,Software - Application,4702064128,$4.70B
+157,ACIW,"ACI Worldwide, Inc.",Software - Infrastructure,4680286720,$4.68B
+158,SLAB,"Silicon Laboratories, Inc.",Semiconductors,4665445888,$4.67B
+159,QTWO,"Q2 Holdings, Inc.",Software - Application,4598144000,$4.60B
+160,FORM,"FormFactor, Inc.",Semiconductor Equipment & Materials,4555028480,$4.56B
+161,SAIC,Science Applications Internatio,Information Technology Services,4470162944,$4.47B
+162,OSIS,"OSI Systems, Inc.",Electronic Components,4466708480,$4.47B
+163,ITRI,"Itron, Inc.",Scientific & Technical Instruments,4462427648,$4.46B
+164,BOX,"Box, Inc.",Software - Infrastructure,4419294208,$4.42B
+165,LPL,"LG Display Co, Ltd AMERICAN DEP",Consumer Electronics,4405000192,$4.41B
+166,COMM,"CommScope Holding Company, Inc.",Communication Equipment,4397742080,$4.40B
+167,NOVT,Novanta Inc.,Scientific & Technical Instruments,4204598016,$4.20B
+168,PLXS,Plexus Corp.,Electronic Components,4178219776,$4.18B
+169,ENPH,"Enphase Energy, Inc.",Solar,4093291776,$4.09B
+170,RUN,Sunrun Inc.,Solar,4072241408,$4.07B
+171,AVT,"Avnet, Inc.",Electronics & Computer Distribution,3990023680,$3.99B
+172,STNE,StoneCo Ltd.,Software - Infrastructure,3859039744,$3.86B
+173,CALX,"Calix, Inc",Software - Infrastructure,3692925184,$3.69B
+174,BL,"BlackLine, Inc.",Software - Application,3591350272,$3.59B
+175,IPGP,IPG Photonics Corporation,Semiconductor Equipment & Materials,3589326592,$3.59B
+176,AGYS,"Agilysys, Inc.",Software - Application,3576858624,$3.58B
+177,AMBA,"Ambarella, Inc.",Semiconductor Equipment & Materials,3389149696,$3.39B
+178,SIMO,Silicon Motion Technology Corpo,Semiconductors,3226409984,$3.23B
+179,TENB,"Tenable Holdings, Inc.",Software - Infrastructure,3222337024,$3.22B
+180,SPSC,"SPS Commerce, Inc.",Software - Application,3221865728,$3.22B
+181,EEFT,"Euronet Worldwide, Inc.",Software - Infrastructure,3153350912,$3.15B
+182,SYNA,Synaptics Incorporated,Semiconductors,3146666496,$3.15B
+183,APPN,Appian Corporation,Software - Infrastructure,3130804224,$3.13B
+184,GLOB,Globant S.A.,Information Technology Services,3017679104,$3.02B
+185,BLKB,"Blackbaud, Inc.",Software - Application,2990582016,$2.99B
+186,TDC,Teradata Corporation,Software - Infrastructure,2976910592,$2.98B
+187,PAGS,PagSeguro Digital Ltd.,Software - Infrastructure,2844288256,$2.84B
+188,ACLS,"Axcelis Technologies, Inc.",Semiconductor Equipment & Materials,2835709184,$2.84B
+189,RNG,"Ringcentral, Inc.",Software - Application,2754309632,$2.75B
+190,DXC,DXC Technology Company,Information Technology Services,2675134976,$2.68B
+191,NSIT,"Insight Enterprises, Inc.",Electronics & Computer Distribution,2650957568,$2.65B
+192,BB,BlackBerry Limited,Software - Infrastructure,2621686016,$2.62B
+193,ALRM,"Alarm.com Holdings, Inc.",Software - Application,2618516992,$2.62B
+194,FORTY,Formula Systems (1985) Ltd.,Information Technology Services,2589687296,$2.59B
+195,KLIC,"Kulicke and Soffa Industries, I",Semiconductor Equipment & Materials,2589350400,$2.59B
+196,DBD,Diebold Nixdorf Incorporated,Software - Application,2444922624,$2.44B
+197,ACMR,"ACM Research, Inc.",Semiconductor Equipment & Materials,2426930688,$2.43B
+198,SPNS,Sapiens International Corporati,Software - Application,2426926080,$2.43B
+199,DIOD,Diodes Incorporated,Semiconductors,2421524224,$2.42B
+200,EXTR,"Extreme Networks, Inc.",Communication Equipment,2410944256,$2.41B
+201,PLUS,ePlus inc.,Software - Application,2387781376,$2.39B
+202,SONO,"Sonos, Inc.",Consumer Electronics,2305912320,$2.31B
+203,PLAB,"Photronics, Inc.",Semiconductor Equipment & Materials,2258657536,$2.26B
+204,AI,"C3.ai, Inc.",Software - Infrastructure,2223901952,$2.22B
+205,DQ,DAQO New Energy Corp.,Semiconductor Equipment & Materials,2212871680,$2.21B
+206,CSGS,"CSG Systems International, Inc.",Software - Infrastructure,2181365760,$2.18B
+207,AAOI,"Applied Optoelectronics, Inc.",Communication Equipment,2133405184,$2.13B
+208,BELFB,Bel Fuse Inc.,Electronic Components,2119757952,$2.12B
+209,BELFA,Bel Fuse Inc.,Electronic Components,2087224448,$2.09B
+210,POWI,"Power Integrations, Inc.",Semiconductors,2048049664,$2.05B
+211,KN,Knowles Corporation,Electronic Components,2013205632,$2.01B
+212,ASGN,ASGN Incorporated,Information Technology Services,1995528064,$2.00B
+213,NTCT,"NetScout Systems, Inc.",Software - Infrastructure,1989657600,$1.99B
+214,VECO,Veeco Instruments Inc.,Semiconductor Equipment & Materials,1955281664,$1.96B
+215,RAMP,"LiveRamp Holdings, Inc.",Software - Infrastructure,1935359744,$1.94B
+216,LASR,"nLIGHT, Inc.",Semiconductors,1916156032,$1.92B
+217,PRGS,Progress Software Corporation,Software - Infrastructure,1911661312,$1.91B
+218,SEDG,"SolarEdge Technologies, Inc.",Solar,1871741568,$1.87B
+219,EVTC,"Evertec, Inc.",Software - Infrastructure,1796666240,$1.80B
+220,INOD,Innodata Inc.,Information Technology Services,1741838208,$1.74B
+221,DGII,Digi International Inc.,Communication Equipment,1727592320,$1.73B
+222,MXL,"MaxLinear, Inc",Semiconductors,1697654144,$1.70B
+223,BHE,"Benchmark Electronics, Inc.",Electronic Components,1692112384,$1.69B
+224,FIVN,"Five9, Inc.",Software - Infrastructure,1676169984,$1.68B
+225,FSLY,"Fastly, Inc. Class A Common Stock",Software - Application,1645641088,$1.65B
+226,HIMX,"Himax Technologies, Inc.",Semiconductors,1628443904,$1.63B
+227,CSIQ,Canadian Solar Inc.,Solar,1594756608,$1.59B
+228,ROG,Rogers Corporation,Electronic Components,1585285120,$1.59B
+229,CNXN,"PC Connection, Inc.",Electronics & Computer Distribution,1491603968,$1.49B
+230,PAR,PAR Technology Corporation,Software - Application,1435923968,$1.44B
+231,JKS,JinkoSolar Holding Company Limi,Solar,1318686848,$1.32B
+232,ATEN,"A10 Networks, Inc.",Software - Infrastructure,1312456064,$1.31B
+233,CTS,CTS Corporation,Electronic Components,1276043648,$1.28B
+234,MGIC,Magic Software Enterprises Ltd.,Information Technology Services,1268726016,$1.27B
+235,DFIN,"Donnelley Financial Solutions, ",Software - Application,1266134528,$1.27B
+236,PDFS,"PDF Solutions, Inc.",Software - Application,1262439040,$1.26B
+237,UCTT,"Ultra Clean Holdings, Inc.",Semiconductor Equipment & Materials,1244967808,$1.24B
+238,PD,"PagerDuty, Inc.",Software - Application,1207801984,$1.21B
+239,COHU,"Cohu, Inc.",Semiconductor Equipment & Materials,1186692864,$1.19B
+240,HLIT,Harmonic Inc.,Communication Equipment,1184805376,$1.18B
+241,PRO,"PROS Holdings, Inc.",Software - Application,1122923392,$1.12B
+242,RPD,"Rapid7, Inc.",Software - Infrastructure,1055229312,$1.06B
+243,RDWR,Radware Ltd.,Software - Infrastructure,1052848896,$1.05B
+244,IMOS,ChipMOS TECHNOLOGIES INC.,Semiconductors,1043066496,$1.04B
+245,DAKT,"Daktronics, Inc.",Electronic Components,986345664,$986.35M
+246,SCSC,"ScanSource, Inc.",Electronics & Computer Distribution,911813696,$911.81M
+247,ITRN,Ituran Location and Control Ltd,Scientific & Technical Instruments,848262208,$848.26M
+248,GDYN,"Grid Dynamics Holdings, Inc.",Information Technology Services,831515008,$831.52M
+249,RDVT,"Red Violet, Inc.",Software - Application,801831680,$801.83M
+250,SSYS,"Stratasys, Ltd.",Computer Hardware,789428608,$789.43M
+251,MFH,Mercurity Fintech Holding Inc. ,Information Technology Services,784024448,$784.02M
+252,IIIV,"i3 Verticals, Inc.",Software - Infrastructure,778755584,$778.76M
+253,GILT,Gilat Satellite Networks Ltd.,Communication Equipment,775104896,$775.10M
+254,NTGR,"NETGEAR, Inc.",Communication Equipment,770177152,$770.18M
+255,AEHR,Aehr Test Systems,Semiconductor Equipment & Materials,741462784,$741.46M
+256,ADTN,"ADTRAN Holdings, Inc.",Communication Equipment,702617280,$702.62M
+257,AXTI,AXT Inc,Semiconductor Equipment & Materials,680698240,$680.70M
+258,SPT,"Sprout Social, Inc",Software - Application,675350464,$675.35M
+259,DJCO,Daily Journal Corp. (S.C.),Software - Application,660172736,$660.17M
+260,AOSL,Alpha and Omega Semiconductor L,Semiconductors,658045120,$658.05M
+261,CAN,Canaan Inc.,Computer Hardware,647759296,$647.76M
+262,ICHR,Ichor Holdings,Semiconductor Equipment & Materials,624073792,$624.07M
+263,CEVA,"CEVA, Inc.",Semiconductors,618437504,$618.44M
+264,LYTS,LSI Industries Inc.,Electronic Components,586876352,$586.88M
+265,SABR,Sabre Corporation,Software - Infrastructure,586404096,$586.40M
+266,APPS,"Digital Turbine, Inc.",Software - Application,559062272,$559.06M
+267,CRNC,Cerence Inc.,Software - Application,537018112,$537.02M
+268,HCKT,"The Hackett Group, Inc.",Information Technology Services,532984896,$532.98M
+269,RBBN,Ribbon Communications Inc.,Software - Application,516193600,$516.19M
+270,OSPN,OneSpan Inc.,Software - Infrastructure,491321664,$491.32M
+271,ALLT,Allot Ltd.,Software - Infrastructure,474571040,$474.57M
+272,BAND,Bandwidth Inc.,Software - Infrastructure,470642752,$470.64M
+273,KOPN,Kopin Corporation,Electronic Components,469116768,$469.12M
+274,IMXI,"International Money Express, In",Software - Infrastructure,457668448,$457.67M
+275,PRTH,"Priority Technology Holdings, I",Software - Infrastructure,447018752,$447.02M
+276,MLAB,"Mesa Laboratories, Inc.",Scientific & Technical Instruments,435875072,$435.88M
+277,MITK,"Mitek Systems, Inc.",Software - Application,417214048,$417.21M
+278,CLFD,"Clearfield, Inc.",Communication Equipment,415588064,$415.59M
+279,NNDM,Nano Dimension Ltd.,Computer Hardware,389776608,$389.78M
+280,LPTH,"LightPath Technologies, Inc.",Electronic Components,384289088,$384.29M
+281,RMNI,"Rimini Street, Inc.",Software - Application,382099360,$382.10M
+282,SMRT,"SmartRent, Inc.",Software - Application,370000928,$370.00M
+283,TTGT,"TechTarget, Inc.",Information Technology Services,368005312,$368.01M
+284,DOMO,"Domo, Inc.",Software - Application,364900832,$364.90M
+285,MTLS,Materialise NV,Software - Application,362771776,$362.77M
+286,DAVA,Endava plc,Software - Infrastructure,359985568,$359.99M
+287,FEIM,"Frequency Electronics, Inc.",Communication Equipment,341906944,$341.91M
+288,NVEC,NVE Corporation,Semiconductors,339569120,$339.57M
+289,RPAY,Repay Holdings Corporation,Software - Infrastructure,321047488,$321.05M
+290,CNDT,Conduent Incorporated,Information Technology Services,318317664,$318.32M
+291,OCFT,OneConnect Financial Technology,Software - Application,307704928,$307.70M
+292,OOMA,"Ooma, Inc.",Software - Application,299361824,$299.36M
+293,III,"Information Services Group, Inc",Information Technology Services,291842816,$291.84M
+294,EGHT,8x8 Inc,Software - Application,291837984,$291.84M
+295,GPRO,"GoPro, Inc.",Consumer Electronics,289124128,$289.12M
+296,PAYS,"Paysign, Inc.",Software - Infrastructure,287323872,$287.32M
+297,MVIS,"Microvision, Inc.",Scientific & Technical Instruments,279896608,$279.90M
+298,AVNW,"Aviat Networks, Inc.",Communication Equipment,275877184,$275.88M
+299,EGAN,eGain Corporation,Software - Application,265777600,$265.78M
+300,AUDC,AudioCodes Ltd.,Communication Equipment,259164720,$259.16M
+301,BKTI,BK Technologies Corporation,Communication Equipment,257846832,$257.85M
+302,GSIT,"GSI Technology, Inc.",Semiconductors,243273472,$243.27M
+303,MEI,"Methode Electronics, Inc.",Electronic Components,240776096,$240.78M
+304,REKR,"Rekor Systems, Inc.",Software - Infrastructure,239253680,$239.25M
+305,DDD,3D Systems Corporation,Computer Hardware,232372112,$232.37M
+306,ASUR,Asure Software Inc,Software - Application,231828368,$231.83M
+307,LTRX,"Lantronix, Inc.",Communication Equipment,227492768,$227.49M
+308,IMMR,Immersion Corporation,Software - Application,226684224,$226.68M
+309,TCX,Tucows Inc.,Software - Infrastructure,224965408,$224.97M
+310,MRAM,"Everspin Technologies, Inc.",Semiconductors,213696976,$213.70M
+311,UIS,Unisys Corporation New,Information Technology Services,211066064,$211.07M
+312,DUOT,"Duos Technologies Group, Inc.",Software - Application,204867408,$204.87M
+313,DMRC,Digimarc Corporation,Software - Application,198206160,$198.21M
+314,CRNT,Ceragon Networks Ltd.,Communication Equipment,188319488,$188.32M
+315,OSS,"One Stop Systems, Inc.",Computer Hardware,185312608,$185.31M
+316,TTEC,"TTEC Holdings, Inc.",Information Technology Services,178177264,$178.18M
+317,INSG,Inseego Corp.,Communication Equipment,170134976,$170.13M
+318,RELL,"Richardson Electronics, Ltd.",Electronic Components,159249328,$159.25M
+319,AEYE,"AudioEye, Inc.",Software - Application,158772016,$158.77M
+320,SPWR,SunPower Inc.,Solar,157598128,$157.60M
+321,CSPI,CSP Inc.,Information Technology Services,147946512,$147.95M
+322,QMCO,Quantum Corporation,Computer Hardware,147617008,$147.62M
+323,IDN,"Intellicheck, Inc.",Software - Application,129717536,$129.72M
+324,ASYS,"Amtech Systems, Inc.",Semiconductor Equipment & Materials,126313568,$126.31M
+325,QUIK,QuickLogic Corporation,Semiconductors,108876864,$108.88M
+326,MX,Magnachip Semiconductor Corpora,Semiconductors,106686104,$106.69M
+327,SQNS,Sequans Communications S.A.,Semiconductors,105247016,$105.25M
+328,CMTL,Comtech Telecommunications Corp,Communication Equipment,99951288,$99.95M
+329,SNCR,"Synchronoss Technologies, Inc.",Software - Infrastructure,98618712,$98.62M
+330,SOL,Emeren Group Ltd,Solar,98075624,$98.08M
+331,SSTI,"SoundThinking, Inc.",Software - Application,96829776,$96.83M
+332,RSSS,"Research Solutions, Inc",Software - Application,96264712,$96.26M
+333,INTT,inTest Corporation,Semiconductor Equipment & Materials,94624424,$94.62M
+334,GNSS,Genasys Inc.,Scientific & Technical Instruments,94390976,$94.39M
+335,VHC,VirnetX Holding Corp,Software - Infrastructure,91604888,$91.60M
+336,SILC,Silicom Ltd,Communication Equipment,83454672,$83.45M
+337,DHX,"DHI Group, Inc.",Software - Application,81617600,$81.62M
+338,OCC,Optical Cable Corporation,Communication Equipment,81164560,$81.16M
+339,ATOM,Atomera Incorporated,Semiconductor Equipment & Materials,81103440,$81.10M
+340,ALOT,"AstroNova, Inc.",Computer Hardware,65976112,$65.98M
+341,CPSH,CPS Technologies Corp.,Electronic Components,63646644,$63.65M
+342,ELTK,Eltek Ltd.,Electronic Components,62628784,$62.63M
+343,JFU,9F Inc.,Information Technology Services,61745252,$61.75M
+344,LPSN,"LivePerson, Inc.",Software - Application,61047772,$61.05M
+345,MIND,"MIND Technology, Inc.",Scientific & Technical Instruments,60567608,$60.57M
+346,MTC,"MMTec, Inc.",Software - Application,59441052,$59.44M
+347,DSWL,"Deswell Industries, Inc.",Electronic Components,56410744,$56.41M
+348,CMBM,Cambium Networks Corporation,Communication Equipment,54790164,$54.79M
+349,REFR,Research Frontiers Incorporated,Electronic Components,53500676,$53.50M
+350,UAVS,"AgEagle Aerial Systems, Inc.",Computer Hardware,49273252,$49.27M
+351,AIRG,"Airgain, Inc.",Communication Equipment,48191520,$48.19M
+352,UPLD,"Upland Software, Inc.",Software - Application,46803984,$46.80M
+353,TACT,TransAct Technologies Incorpora,Computer Hardware,46619020,$46.62M
+354,KOSS,Koss Corporation,Consumer Electronics,45107208,$45.11M
+355,AWRE,"Aware, Inc.",Software - Application,43388604,$43.39M
+356,UEIC,Universal Electronics Inc.,Consumer Electronics,43038860,$43.04M
+357,PHUN,"Phunware, Inc.",Software - Application,42393388,$42.39M
+358,PXLW,"Pixelworks, Inc.",Semiconductors,41537404,$41.54M
+359,JG,Aurora Mobile Limited,Software - Infrastructure,41121524,$41.12M
+360,TRT,Trio-Tech International,Semiconductor Equipment & Materials,40901308,$40.90M
+361,INUV,"Inuvo, Inc.",Software - Application,40885384,$40.89M
+362,USIO,"Usio, Inc.",Software - Infrastructure,39186748,$39.19M
+363,NEON,Neonode Inc.,Electronic Components,38481564,$38.48M
+364,LUNA,"Luna Innovations, Inc.",Scientific & Technical Instruments,38166724,$38.17M
+365,NTWK,NETSOL Technologies Inc.,Software - Application,35253484,$35.25M
+366,IPWR,Ideal Power Inc.,Semiconductors,35152096,$35.15M
+367,LGL,"LGL Group, Inc. (The)",Scientific & Technical Instruments,31585076,$31.59M
+368,CREX,"Creative Realities, Inc.",Software - Application,31030852,$31.03M
+369,MOGO,Mogo Inc.,Software - Infrastructure,28361994,$28.36M
+370,BOSC,B.O.S. Better Online Solutions,Communication Equipment,28084440,$28.08M
+371,KTCC,Key Tronic Corporation,Computer Hardware,27691136,$27.69M
+372,DAIO,Data I/O Corporation,Electronic Components,27216738,$27.22M
+373,CLPS,CLPS Incorporation,Information Technology Services,26287264,$26.29M
+374,MNDO,MIND C.T.I. Ltd.,Software - Application,24846918,$24.85M
+375,UTSI,UTStarcom Holdings Corp,Communication Equipment,22823316,$22.82M
+376,FTFT,Future FinTech Group Inc.,Software - Application,22773242,$22.77M
+377,TAOP,Taoping Inc.,Software - Infrastructure,20888670,$20.89M
+378,SMSI,"Smith Micro Software, Inc.",Software - Application,16470863,$16.47M
+379,FIEE,"FiEE, Inc",Communication Equipment,16180622,$16.18M
+380,ELSE,"Electro-Sensors, Inc.",Scientific & Technical Instruments,15731955,$15.73M
+381,LEDS,SemiLEDS Corporation,Semiconductors,15465168,$15.47M
+382,BLIN,"Bridgeline Digital, Inc.",Software - Infrastructure,12959913,$12.96M
+383,DTSS,Datasea Inc.,Software - Infrastructure,10092872,$10.09M
+384,SCKT,"Socket Mobile, Inc.",Computer Hardware,9890015,$9.89M
+385,CLRO,"ClearOne, Inc.",Communication Equipment,9711800,$9.71M
+386,MSN,Emerson Radio Corporation,Consumer Electronics,8858957,$8.86M
+387,OBLG,Oblong Inc.,Software - Application,8659470,$8.66M
+388,SEAC,"SeaChange International, Inc.",Software - Application,8424795,$8.42M
+389,TAIT,Taitron Components Incorporated,Electronics & Computer Distribution,6984568,$6.98M
+390,RBCN,"Rubicon Technology, Inc.",Semiconductor Equipment & Materials,6657884,$6.66M
+391,ASTC,Astrotech Corporation,Scientific & Technical Instruments,6596077,$6.60M
+392,SONM,"Sonim Technologies, Inc.",Communication Equipment,6444719,$6.44M
+393,AGMH,AGM Group Holdings Inc.,Computer Hardware,5714085,$5.71M
+394,BOXL,Boxlight Corporation,Consumer Electronics,4871687,$4.87M
+395,EVOL,Symbolic Logic Inc.,Software - Application,4657757,$4.66M
+396,MYSZ,"My Size, Inc.",Software - Application,3733895,$3.73M
+397,IMTE,Integrated Media Technology Lim,Electronic Components,2758873,$2.76M
+398,CETX,Cemtrex Inc.,Software - Infrastructure,2712082,$2.71M
+399,CETXP,"Cemtrex, Inc.",Software - Infrastructure,1505074,$1.51M
+400,DZSI,DZS Inc.,Communication Equipment,810698,$810698
+401,SRAX,"SRAX, Inc.",Software - Application,588765,$588765
+402,MARK,"Remark Holdings, Inc.",Software - Infrastructure,185707,$185707
+403,SMIT,"Schmitt Industries, Inc.",Scientific & Technical Instruments,58082,$58082
+404,TCCO,Technical Communications Corp.,Communication Equipment,185,$185
+405,WYY,Unknown,Information Technology Services,0,$0
+406,XELA,Unknown,Software - Application,0,$0
+407,WDAY,Unknown,Software - Application,0,$0
+408,WATT,Unknown,Scientific & Technical Instruments,0,$0
+409,VVPR,Unknown,Solar,0,$0
+410,VUZI,Unknown,Consumer Electronics,0,$0
+411,VTSI,Unknown,Software - Application,0,$0
+412,WDC,Unknown,Computer Hardware,0,$0
+413,WIT,Unknown,Information Technology Services,0,$0
+414,WEX,Unknown,Software - Infrastructure,0,$0
+415,WSTL,Unknown,Communication Equipment,0,$0
+416,WNS,Unknown,Information Technology Services,0,$0
+417,WKEY,Unknown,Semiconductors,0,$0
+418,WK,Unknown,Software - Application,0,$0
+419,WIX,Unknown,Software - Infrastructure,0,$0
+420,XNET,Unknown,Software - Infrastructure,0,$0
+421,VERI,Unknown,Software - Infrastructure,0,$0
+422,VIAV,Unknown,Communication Equipment,0,$0
+423,VICR,Unknown,Electronic Components,0,$0
+424,VISL,Unknown,Communication Equipment,0,$0
+425,VNET,Unknown,Information Technology Services,0,$0
+426,VPG,Unknown,Scientific & Technical Instruments,0,$0
+427,VRNS,Unknown,Software - Infrastructure,0,$0
+428,VRNT,Unknown,Software - Infrastructure,0,$0
+429,VRRM,Unknown,Information Technology Services,0,$0
+430,VRSN,Unknown,Software - Infrastructure,0,$0
+431,VSAT,Unknown,Communication Equipment,0,$0
+432,VSH,Unknown,Semiconductors,0,$0
+433,XPER,Unknown,Software - Application,0,$0
+434,XRX,Unknown,Information Technology Services,0,$0
+435,YEXT,Unknown,Software - Infrastructure,0,$0
+436,ZBRA,Unknown,Communication Equipment,0,$0
+437,ZM,Unknown,Software - Application,0,$0
+438,ZS,Unknown,Software - Infrastructure,0,$0

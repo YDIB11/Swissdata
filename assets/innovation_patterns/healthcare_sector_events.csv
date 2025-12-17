@@ -1,0 +1,11 @@
+Event,Date,Company,Event_Day_Return,Cumulative_Return_30d,Sector_Median_Return,Domain,Event_Type,Innovation_Category,Source,Analysis_Type
+First mRNA Vaccine (Comirnaty),2020-12-11,Sector (25 companies),,2.48,0.48,Vaccines,Drug Launch,Drug/Treatment,Healthcare Sector,Sector Wide
+Wegovy GLP-1 Weight Loss Launch,2021-06-04,Sector (25 companies),,4.1,2.24,Obesity Treatment,Drug Launch,Drug/Treatment,Healthcare Sector,Sector Wide
+Paxlovid Oral Antiviral Launch,2021-12-22,Sector (25 companies),,-2.26,-0.03,Antiviral Treatment,Drug Launch,Drug/Treatment,Healthcare Sector,Sector Wide
+Mounjaro (Tirzepatide) Launch,2022-05-13,Sector (25 companies),,-1.35,0.75,Diabetes/Obesity,Drug Launch,Drug/Treatment,Healthcare Sector,Sector Wide
+Leqembi Alzheimer Approval,2023-01-06,Sector (25 companies),,-3.33,-1.71,Neurology,Drug Approval,Drug/Treatment,Healthcare Sector,Sector Wide
+Zepbound Obesity Launch,2023-11-08,Sector (25 companies),,7.73,7.71,Obesity Treatment,Drug Launch,Drug/Treatment,Healthcare Sector,Sector Wide
+Casgevy CRISPR Therapy,2023-12-08,Sector (25 companies),,6.37,6.04,Gene Therapy,Therapy Approval,Drug/Treatment,Healthcare Sector,Sector Wide
+AlphaFold 2 Breakthrough,2020-11-30,Sector (25 companies),,5.51,4.94,AI/Drug Discovery,AI Breakthrough,Tech/AI,Healthcare Sector,Sector Wide
+GPT-4 Medical AI Release,2023-03-14,Sector (25 companies),,8.02,6.13,AI/Medical,AI Release,Tech/AI,Healthcare Sector,Sector Wide
+Da Vinci 5 Surgical Robot,2024-03-14,Sector (25 companies),,-3.54,-4.57,Surgical Robotics,Product Launch,Tech/AI,Healthcare Sector,Sector Wide

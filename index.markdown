@@ -788,6 +788,10 @@ blockquote strong {
   font-family: "Space Grotesk", "Source Sans 3", sans-serif;
 }
 
+.sdx-panel[id^="chapter-"] { padding: 2rem; }
+.sdx-panel[id^="chapter-"] + .sdx-panel[id^="chapter-"] { margin-top: 2.5rem; }
+
+
 .sdx-formula-card .formula::-webkit-scrollbar {
   width: 0;
   height: 0;
@@ -893,8 +897,87 @@ blockquote strong {
   overflow: hidden;
 }
 
+.sdx-embed-block {
+  margin: 1.75rem 0 1.75rem;
+}
+
+.sdx-embed-block.is-tight {
+  margin-bottom: 0.85rem;
+}
+
+.sdx-embed-stack {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.sdx-embed-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem;
+  align-items: stretch;
+}
+
+.sdx-embed-card {
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: rgba(13, 16, 36, 0.68);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.sdx-embed-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(159, 176, 255, 0.32);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.36);
+}
+
+.sdx-embed-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 0.9rem;
+  background: rgba(5, 8, 20, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sdx-embed-title {
+  margin: 0;
+  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-size: 1rem;
+  color: #f7f9ff;
+}
+
+.sdx-embed-kicker {
+  color: rgba(232, 237, 255, 0.8);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.sdx-embed-body {
+  padding: 0.55rem;
+  background: rgba(5, 8, 20, 0.28);
+}
+
+.sdx-embed-body iframe {
+  width: 100%;
+  height: 780px;
+  display: block;
+  border: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background: rgba(13, 16, 36, 0.55);
+}
+
 .sdx-formula-block {
   background: rgba(13, 16, 36, 0.82);
+
 }
 
 .sdx-placeholder {
@@ -1198,6 +1281,10 @@ blockquote strong {
     margin: 1.35rem 0;
   }
 
+  .sdx-embed-grid {
+    grid-template-columns: 1fr;
+  }
+
   .sdx-window-steps {
     grid-template-columns: 1fr;
   }
@@ -1299,7 +1386,9 @@ blockquote strong {
 
 Before we dive into the data, let's set the stage with the full scope of our investigation. We analyzed **42 innovation events** spanning two decades and five domains of human progress. These aren't just any product launches or press releases, they're moments that, in retrospect, fundamentally changed their industries.
 
-  <p class="sdx-note">PLACEHOLDER: Add a combined timeline visualization of all analyzed events.</p>
+  <div class="sdx-panel" style="margin: 2rem 0;" data-animate="fade-up">
+<div class="flourish-embed flourish-timeline" data-src="visualisation/26798005"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26798005/thumbnail" width="100%" alt="timeline visualization" /></noscript></div>
+</div>
 
 The breadth of our investigation is intentional. Innovation takes many forms, and we wanted to understand whether the market recognizes different types of breakthroughs in different ways. A consumer gadget like the iPod is visible to everyone, millions saw the keynote, tried the product, formed opinions. But a computing platform like CUDA is invisible to most people, even as it quietly enables everything from video games to self-driving cars to ChatGPT.
 
@@ -1314,9 +1403,6 @@ The breadth of our investigation is intentional. Innovation takes many forms, an
 Each event in this table represents a moment when _someone_ believed they were witnessing history. Our job is to determine whether Wall Street agreed, and when.
 
   </div>
-<div class="sdx-panel" data-animate="fade-up">
-<div class="flourish-embed flourish-timeline" data-src="visualisation/26798005"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26798005/thumbnail" width="100%" alt="timeline visualization" /></noscript></div>
-</div>
 
   </div>
 </section>
@@ -1686,7 +1772,7 @@ The GLP 1 story is particularly remarkable. Drugs like Wegovy and Mounjaro haven
       </div>
     </div>
 
-    <div class="sdx-panel sdx-formula-block" data-animate="fade-up">
+    <div class="sdx-panel sdx-formula-block" data-animate="fade-up" style="margin: 2rem 0;">
       <h3 class="title is-4" style="margin-top:0;">Key formulas, the footprint checklist</h3>
       <p>
         These are the metrics we compute for every event window today. The panel below expands the same ideas with examples.
@@ -1721,21 +1807,7 @@ The GLP 1 story is particularly remarkable. Drugs like Wegovy and Mounjaro haven
         </div>
       </div>
 
-      <h4 class="title is-5" style="margin-top:1.4rem;">Planned extension, market-adjusted impact</h4>
-      <p class="sdx-note" style="margin-top:0.6rem;">
-        PLACEHOLDER: Add a benchmark (market index) and compute abnormal returns and CAR.
-      </p>
-      <div class="sdx-formula-grid sdx-formula-grid-addon">
-        <div class="sdx-formula-card">
-          <h4>Abnormal return</h4>
-          <div class="formula">\( AR_t = R_t - R_{m,t} \)</div>
-          <p>The event-day surprise after subtracting the market's move (a simple market-adjusted baseline).</p>
-        </div>
-        <div class="sdx-formula-card">
-          <h4>CAR</h4>
-          <div class="formula">\( CAR_{[a,b]} = \sum_{t=a}^{b} AR_t \)</div>
-          <p>Cumulative abnormal return, the footprint across the full window.</p>
-        </div>
+
       </div>
     </div>
 
@@ -1812,7 +1884,6 @@ Interpretation: high volume plus positive returns suggests informed enthusiasm. 
       </p>
       <p class="sdx-note" id="winner-ratio-definition">\( \text{Winner Ratio} = \frac{\text{Number of companies with positive 30-day return}}{\text{Total companies}} \times 100 \)</p>
       <p class="sdx-note">High winner ratio = broad transformation; low winner ratio = selective winners and losers.</p>
-    </div>
 
   </div>
 </section>
@@ -1851,17 +1922,22 @@ But then something remarkable happened. Over the next 30 days, as people actuall
 
 **30-day cumulative return: +30.98%**
 
-<iframe
-  id="innovation-score-iframe"
-  src="{{ '/assets/ipod_launch_plotly_dark.html' | relative_url }}"
-  title="Innovation score explorer"
-  width="100%"
-  height="950"
-  frameborder="0"
-  scrolling="no"
-  style="display:block; border:0; overflow:hidden;"
-  loading="lazy"
-></iframe>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">iPod Launch</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/apple_event_exports/ipod_launch_plotly_dark.html' | relative_url }}"
+        title="iPod Launch innovation footprint explorer"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
 The iPod story is the perfect example of what we call the **"Slow Burn"** pattern, an innovation that looks unremarkable on day one but proves transformative over time. The market's initial skepticism wasn't irrational; it was based on reasonable concerns about price and competition. But as more information emerged, early reviews, initial sales figures, the experience of actually using the device, the market gradually recognized what it had missed.
 
@@ -1885,7 +1961,22 @@ On launch day, June 29, 2007, Apple's stock rose a modest **1.23%**. Respectable
 
 The 30-day cumulative return? **+4.71%**. Decent, but not revolutionary.
 
-<p class="sdx-note">PLACEHOLDER: Insert Apple iPhone Launch cumulative return chart (apple_event_analysis.ipynb, Step 5 visualization).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">iPhone Launch</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/apple_event_exports/iphone_launch_plotly_detailed.html' | relative_url }}"
+        title="iPod Launch innovation footprint explorer"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
 Why didn't the market immediately recognize what the iPhone would become? The answer reveals something important about innovation: **the iPhone we know today is not the iPhone that launched in 2007.**
 
@@ -1909,7 +2000,22 @@ But as the M1's performance benchmarks leaked out, dramatically outperforming In
 
 **30-day cumulative return: +12.93%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Apple M1 Chip cumulative return chart (apple_event_analysis.ipynb, Step 5 visualization).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">M1 Chip Annoucement</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/apple_event_exports/m1_chip_announcement_plotly_detailed.html' | relative_url }}"
+        title="iPod Launch innovation footprint explorer"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
 The M1 story shows that markets _can_ recognize platform shifts, it just takes time for the implications to sink in. The event-day return was essentially zero. But over the following month, as investors digested what Apple Silicon meant for margins, performance, and competitive positioning, a substantial revaluation occurred.
 
@@ -1919,9 +2025,41 @@ The M1 story shows that markets _can_ recognize platform shifts, it just takes t
 
 When we step back and look at all eight Apple events together, a striking pattern emerges:
 
-<iframe src="assets/apple_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-stack">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Apple: Cumulative returns</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="assets/apple_event_exports/apple_cumulative_returns_interactive.html"
+          title="Apple cumulative returns explorer"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
 
-<iframe src="assets/apple_plotly_05_30day_cumulative_returns.html" width="100%" height="600" frameborder="0"></iframe>
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Apple: Day 0 vs 30-day returns</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="assets/apple_event_exports/apple_plotly_05_30day_cumulative_returns.html"
+          title="Apple day 0 vs 30-day returns explorer"
+          loading="lazy"
+          data-sdx-height="600"
+        ></iframe>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 | Event              | Day-0 Return | 30-Day Return | The Pattern                      |
 | ------------------ | ------------ | ------------- | -------------------------------- |
@@ -1938,7 +2076,12 @@ When we step back and look at all eight Apple events together, a striking patter
 
 This tells us something profound about consumer innovation: **the market's first reaction is often noise.** The signal emerges over weeks, not hours.
 
-<p class="sdx-note">PLACEHOLDER: Flourish - Apple Events Line Chart Race (data/apple_event_exports/09_flourish_line_race.csv).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="flourish-embed flourish-chart" data-src="visualisation/26748328"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26748328/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+  </div>
+</div>
+
 </div>
     </div>
 
@@ -1964,7 +2107,22 @@ On announcement day, NVIDIA's stock fell **-2.64%**. The market shrugged.
 
 The 30-day return was a modest **+2.61%**, essentially noise.
 
-<iframe src="assets/cuda_launch_plotly_dark.html" width="100%" height="950" frameborder="0"></iframe>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">CUDA Launch</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="assets/nvidia_event_exports/cuda_launch_plotly_dark.html"
+        title="CUDA launch innovation footprint explorer"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
 What nobody understood in 2007, what _couldn't_ be understood, was that CUDA would become the foundation of modern artificial intelligence. Neural networks, it turned out, were perfectly suited for GPU computing. The same parallel processing that rendered video game graphics could train deep learning models thousands of times faster than traditional processors.
 
@@ -1985,17 +2143,22 @@ The market's response was immediate and unmistakable:
 **Event day return: +17.83%**  
 **30-day return: +30.71%**
 
-  <iframe
-  id="innovation-score-iframe"
-  src="{{ '/assets/tesla_v100_launch_plotly_dark.html' | relative_url }}"
-  title="Innovation score explorer"
-  width="100%"
-  height="1000"
-  frameborder="0"
-  scrolling="no"
-  style="display:block; border:0; overflow:hidden;"
-  loading="lazy"
-></iframe>
+  <div class="sdx-embed-block">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Tesla V100 Launch</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/nvidia_event_exports/tesla_v100_launch_plotly_dark.html' | relative_url }}"
+          title="Tesla V100 launch innovation footprint explorer"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
 This is what we call an **"Instant Footprint"**, immediate, sustained, unmistakable recognition. The market understood that NVIDIA had created the essential hardware for the AI revolution. No slow burn, no gradual awakening. The footprint was there on day one.
 
@@ -2014,18 +2177,22 @@ The market reaction was understated on day one:
 **Event day return: -0.14%**  
 **30-day return: +18.27%**
 
-  <iframe
-  id="innovation-score-iframe"
-  src="{{ '/assets/dgx_1_launch_plotly_detailed.html' | relative_url }}"
-  title="Innovation score explorer"
-  width="100%"
-  height="1000"
-  frameborder="0"
-  scrolling="no"
-  style="display:block; border:0; overflow:hidden;"
-  loading="lazy"
-></iframe>
-
+  <div class="sdx-embed-block">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">DGX-1 Launch</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/nvidia_event_exports/dgx_1_launch_plotly_detailed.html' | relative_url }}"
+          title="DGX-1 launch innovation footprint explorer"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 This is a different kind of footprint. Not a loud spike, but a quiet pivot, NVIDIA signaling that it was not just selling gaming parts anymore, it was building an AI platform.
 
 ---
@@ -2039,17 +2206,22 @@ Instead, the market did the opposite:
 **Event day return: -0.79%**  
 **30-day return: -23.34%**
 
-  <iframe
-  id="innovation-score-iframe"
-  src="{{ '/assets/h100_hopper_launch_plotly_detailed.html' | relative_url }}"
-  title="Innovation score explorer"
-  width="100%"
-  height="1000"
-  frameborder="0"
-  scrolling="no"
-  style="display:block; border:0; overflow:hidden;"
-  loading="lazy"
-></iframe>
+  <div class="sdx-embed-block">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">H100 Hopper Launch</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/nvidia_event_exports/h100_hopper_launch_plotly_detailed.html' | relative_url }}"
+          title="H100 Hopper launch innovation footprint explorer"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
 The explanation is not that the innovation was weak. It is timing. 2022 was a brutal tech drawdown. Rates were rising, growth multiples were compressing, and investors were de-risking. Even a real breakthrough had to fight for oxygen.
 
@@ -2059,8 +2231,40 @@ Hopper matters in hindsight because it shows a hard truth about market recogniti
 
 ### NVIDIA Event Summary: All 8 Events Compared
 
-<iframe src="assets/nvidia_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
-<iframe src="assets/nvidia_plotly_05_30day_cumulative_returns.html" width="100%" height="800" frameborder="0"></iframe>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-stack">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">NVIDIA: Cumulative returns</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="assets/nvidia_event_exports/nvidia_cumulative_returns_interactive.html"
+          title="NVIDIA cumulative returns explorer"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">NVIDIA: Day 0 vs 30-day returns</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="assets/nvidia_event_exports/nvidia_plotly_05_30day_cumulative_returns.html"
+          title="NVIDIA day 0 vs 30-day returns explorer"
+          loading="lazy"
+          data-sdx-height="800"
+        ></iframe>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 | Event           | Day-0 Return | 30-Day Return | Pattern Type           |
 | --------------- | ------------ | ------------- | ---------------------- |
@@ -2076,6 +2280,12 @@ Hopper matters in hindsight because it shows a hard truth about market recogniti
 **The key insight:** NVIDIA's story reveals that **timing is everything** for infrastructure innovation. The same company can release equally important innovations and see completely different market responses, depending on whether the demand for that innovation is already visible.
 
 CUDA in 2007 was a solution looking for a problem. DGX-1 in 2016 was NVIDIA packaging the solution before the world fully understood the scale of the problem. The V100 in 2017 was a solution to a problem everyone was desperately trying to solve. Same company, same engineering excellence, vastly different market recognition.
+
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="flourish-embed flourish-chart" data-src="visualisation/26811097"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26811097/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+  </div>
+</div>
 
 </div>
 </div>
@@ -2099,17 +2309,22 @@ The market was not impressed on day one:
 **Event day return: -7.82%**  
 **30-day return: +2.48%**
 
-  <iframe
-  id="innovation-score-iframe"
-  src="{{ '/assets/tesla_event_exports/autopilot_announcement_plotly_detailed.html' | relative_url }}"
-  title="Innovation score explorer"
-  width="100%"
-  height="1000"
-  frameborder="0"
-  scrolling="no"
-  style="display:block; border:0; overflow:hidden;"
-  loading="lazy"
-></iframe>
+  <div class="sdx-embed-block">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Autopilot Announcement</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/tesla_event_exports/autopilot_announcement_plotly_detailed.html' | relative_url }}"
+          title="Autopilot announcement innovation footprint explorer"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
 That combination is classic Tesla. The headline triggers fear, regulation risk, liability, execution, but the idea lingers, and the stock drifts back as investors reprice the narrative.
 
@@ -2124,17 +2339,22 @@ The footprint was subtle:
 **Event day return: +0.18%**  
 **30-day return: +8.54%**
 
-  <iframe
-  id="innovation-score-iframe"
-  src="{{ '/assets/tesla_event_exports/model_3_first_deliveries_plotly_detailed.html' | relative_url }}"
-  title="Innovation score explorer"
-  width="100%"
-  height="1000"
-  frameborder="0"
-  scrolling="no"
-  style="display:block; border:0; overflow:hidden;"
-  loading="lazy"
-></iframe>
+  <div class="sdx-embed-block">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Model 3 First Deliveries</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/tesla_event_exports/model_3_first_deliveries_plotly_detailed.html' | relative_url }}"
+          title="Model 3 first deliveries innovation footprint explorer"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
 This is a slow-burn pattern. The market did not celebrate the first cars, it waited to see whether the factory could keep up.
 
@@ -2155,17 +2375,22 @@ The spectacle _worked_, not despite the failure, but perhaps because of it. The 
 Event day return: **+0.74%**. Surprisingly muted given the viral explosion.  
 30-day return: **+32.19%**
 
-  <iframe
-  id="innovation-score-iframe"
-  src="{{ '/assets/tesla_event_exports/cybertruck_reveal_plotly_dark.html' | relative_url }}"
-  title="Innovation score explorer"
-  width="100%"
-  height="1000"
-  frameborder="0"
-  scrolling="no"
-  style="display:block; border:0; overflow:hidden;"
-  loading="lazy"
-></iframe>
+  <div class="sdx-embed-block">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Cybertruck Reveal</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/tesla_event_exports/cybertruck_reveal_plotly_dark.html' | relative_url }}"
+          title="Cybertruck reveal innovation footprint explorer"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
 The Cybertruck reveal shows something important about Tesla's relationship with markets: **spectacle can create sustained momentum, even when the spectacle includes embarrassing failures.** The event generated attention, attention generated interest, interest generated reservations, reservations suggested demand, and demand supported stock price.
 
@@ -2185,29 +2410,41 @@ Both announcements landed on the same trading day, so they share the same footpr
 **Event day return: -2.25%**  
 **30-day return: +15.11%**
 
-  <iframe
-  id="innovation-score-iframe"
-  src="{{ '/assets/tesla_event_exports/tesla_bot_announcement_plotly_detailed.html' | relative_url }}"
-  title="Innovation score explorer"
-  width="100%"
-  height="1000"
-  frameborder="0"
-  scrolling="no"
-  style="display:block; border:0; overflow:hidden;"
-  loading="lazy"
-></iframe>
+  <div class="sdx-embed-block">
+    <div class="sdx-embed-grid">
+      <div class="sdx-embed-card" data-animate="fade-up">
+        <div class="sdx-embed-head">
+          <h4 class="sdx-embed-title">Optimus (Tesla Bot)</h4>
+          <span class="sdx-embed-kicker">Interactive window</span>
+        </div>
+        <div class="sdx-embed-body">
+          <iframe
+            class="sdx-embed-iframe"
+            src="{{ '/assets/tesla_event_exports/tesla_bot_announcement_plotly_detailed.html' | relative_url }}"
+            title="Optimus (Tesla Bot) innovation footprint explorer"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
 
-  <iframe
-  id="innovation-score-iframe"
-  src="{{ '/assets/tesla_event_exports/dojo_supercomputer_announcement_plotly_detailed.html' | relative_url }}"
-  title="Innovation score explorer"
-  width="100%"
-  height="1000"
-  frameborder="0"
-  scrolling="no"
-  style="display:block; border:0; overflow:hidden;"
-  loading="lazy"
-></iframe>
+      <div class="sdx-embed-card" data-animate="fade-up">
+        <div class="sdx-embed-head">
+          <h4 class="sdx-embed-title">Dojo (Training Supercomputer)</h4>
+          <span class="sdx-embed-kicker">Interactive window</span>
+        </div>
+        <div class="sdx-embed-body">
+          <iframe
+            class="sdx-embed-iframe"
+            src="{{ '/assets/tesla_event_exports/dojo_supercomputer_announcement_plotly_detailed.html' | relative_url }}"
+            title="Dojo supercomputer innovation footprint explorer"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
 Day one looked like doubt. The robot reveal included a human dancer in a costume. The Dojo story was technical and easy to dismiss as a slide deck promise. But over the next month, the stock rallied anyway. Tesla was still being priced as a company that might become more than a car company.
 
@@ -2227,9 +2464,39 @@ Tesla is not one company in markets. It is three, and the stock swings between t
 
 ### Tesla Event Summary: All 8 Events Compared
 
-<iframe src="assets/tesla_cumulative_returns_interactive.html" width="100%" height="600" frameborder="0"></iframe>
-
-<iframe src="assets/tesla_plotly_05_30day_cumulative_returns.html" width="100%" height="600" frameborder="0"></iframe>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-stack">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Tesla: Cumulative returns</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="assets/tesla_event_exports/tesla_cumulative_returns_interactive.html"
+          title="Tesla cumulative returns explorer"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Tesla: Day 0 vs 30-day returns</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="assets/tesla_event_exports/tesla_plotly_05_30day_cumulative_returns.html"
+          title="Tesla day 0 vs 30-day returns explorer"
+          loading="lazy"
+          data-sdx-height="600"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
 | Event                           | Day-0 Return | 30-Day Return | What Happened               |
 | ------------------------------- | ------------ | ------------- | --------------------------- |
@@ -2245,6 +2512,12 @@ Tesla is not one company in markets. It is three, and the stock swings between t
 **The key insight:** Tesla events are **highly unpredictable**. The correlation between day-0 reactions and 30-day outcomes is essentially random, weaker than for Apple, weaker than for NVIDIA, close to zero.
 
 This reflects Tesla's unique position in markets: it's priced on **belief in the future**, not analysis of the present. And belief is volatile. It can surge on spectacle and crash on disappointment. The footprints exist, but they're chaotic, reflecting the chaotic nature of narrative-driven investing.
+
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="flourish-embed flourish-chart" data-src="visualisation/26811111"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26811111/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+  </div>
+</div>
 
 </div>
 </div>
@@ -2669,17 +2942,22 @@ Then score:
 
 We tested our framework on **13 events** not used in building the model. It successfully identified the category for **11 of 13** test events.
 
-  <iframe
-  id="innovation-score-iframe"
-  src="{{ '/assets/innovation_score_explorer.html' | relative_url }}"
-  title="Innovation score explorer"
-  width="100%"
-  height="1400"
-  frameborder="0"
-  scrolling="no"
-  style="display:block; border:0; overflow:hidden;"
-  loading="lazy"
-></iframe>
+  <div class="sdx-embed-block">
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Innovation Score Explorer</h4>
+        <span class="sdx-embed-kicker">Interactive window</span>
+      </div>
+      <div class="sdx-embed-body">
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/innovation_patterns/innovation_score_explorer.html' | relative_url }}"
+          title="Innovation score explorer"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
 </div>
   </div>
@@ -2935,7 +3213,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -5% 0px" }
+      { threshold: 0.01, rootMargin: "0px 0px 12% 0px" }
     );
     animated.forEach((el) => obs.observe(el));
   } else {
@@ -3042,41 +3320,134 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  const scoreIframe = document.getElementById("innovation-score-iframe");
-  if (scoreIframe) {
+  const scoreIframes = Array.from(document.querySelectorAll("iframe.sdx-embed-iframe"));
+  const iframeResizers = [];
+  const MIN_IFRAME_HEIGHT = 420;
+  const HEIGHT_EPSILON = 8;
+
+  const getIframeDocument = (iframe) =>
+    iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document);
+
+  const getExplicitHeight = (iframe) => {
+    const raw = iframe.getAttribute("data-sdx-height");
+    const value = raw ? parseInt(raw, 10) : NaN;
+    return Number.isFinite(value) && value > 0 ? value : 0;
+  };
+
+  const getBodyMargin = (doc) => {
+    try {
+      if (!doc || !doc.body || !doc.defaultView) return 0;
+      const style = doc.defaultView.getComputedStyle(doc.body);
+      const top = parseFloat(style.marginTop) || 0;
+      const bottom = parseFloat(style.marginBottom) || 0;
+      return top + bottom;
+    } catch (error) {
+      return 0;
+    }
+  };
+
+  const computeEmbedHeight = (doc) => {
+    const bodyMargin = getBodyMargin(doc);
+    const plotlyDivs = doc.querySelectorAll(".plotly-graph-div");
+    if (plotlyDivs.length) {
+      let maxBottom = 0;
+      let hasFluidPlotly = false;
+      plotlyDivs.forEach((el) => {
+        const inlineHeight = el && el.style ? String(el.style.height || "").trim() : "";
+        if (inlineHeight && inlineHeight.includes("%")) {
+          hasFluidPlotly = true;
+          return;
+        }
+
+        let height = el.offsetHeight || 0;
+        const pxMatch = inlineHeight.match(/^(\d+(?:\.\d+)?)px$/);
+        if (pxMatch) height = parseFloat(pxMatch[1]);
+
+        const bottom = (el.offsetTop || 0) + height;
+        if (bottom > maxBottom) maxBottom = bottom;
+      });
+      if (maxBottom) return maxBottom + bodyMargin;
+    }
+
+    const body = doc.body;
+    if (!body) return 0;
+
+    const scrollHeight = Math.max(
+      doc.documentElement ? doc.documentElement.scrollHeight : 0,
+      body.scrollHeight || 0
+    );
+    if (scrollHeight) return scrollHeight;
+
+    const children = Array.from(body.children || []);
+    if (children.length) {
+      let maxBottom = 0;
+      children.forEach((el) => {
+        const bottom = (el.offsetTop || 0) + (el.offsetHeight || 0);
+        if (bottom > maxBottom) maxBottom = bottom;
+      });
+      if (maxBottom) return maxBottom + bodyMargin;
+    }
+
+    return 0;
+  };
+
+  const setupIframeAutoResize = (iframe) => {
     let resizeObserver;
-    const resizeScoreIframe = () => {
+    const explicitHeight = getExplicitHeight(iframe);
+    if (explicitHeight) {
+      iframe.style.height = `${explicitHeight}px`;
+      return;
+    }
+
+    const resize = () => {
       try {
-        const doc = scoreIframe.contentDocument || scoreIframe.contentWindow.document;
+        const doc = getIframeDocument(iframe);
         if (!doc) return;
-        const height = Math.max(
-          doc.documentElement ? doc.documentElement.scrollHeight : 0,
-          doc.body ? doc.body.scrollHeight : 0
-        );
-        if (height) scoreIframe.style.height = `${height}px`;
+
+        let nextHeight = computeEmbedHeight(doc);
+        if (!nextHeight) return;
+        nextHeight = Math.max(nextHeight, MIN_IFRAME_HEIGHT);
+
+        const currentHeight = Math.round(iframe.getBoundingClientRect().height);
+        if (Math.abs(nextHeight - currentHeight) <= HEIGHT_EPSILON) return;
+
+        iframe.style.height = `${Math.round(nextHeight)}px`;
       } catch (error) {
-        // Cross-origin, ignore.
+        // Cross-origin or blocked (e.g., file://), ignore.
       }
     };
 
-    scoreIframe.addEventListener("load", () => {
-      resizeScoreIframe();
+    const scheduleResizes = () => {
+      [0, 120, 300, 700, 1200, 2000].forEach((delay) => setTimeout(resize, delay));
+    };
+
+    iframe.addEventListener("load", () => {
+      scheduleResizes();
       try {
         if ("ResizeObserver" in window) {
-          const doc = scoreIframe.contentDocument || scoreIframe.contentWindow.document;
-          if (doc && doc.documentElement) {
-            resizeObserver = new ResizeObserver(resizeScoreIframe);
-            resizeObserver.observe(doc.documentElement);
-          }
+          const doc = getIframeDocument(iframe);
+          if (!doc) return;
+          const plotlyDiv = doc.querySelector(".plotly-graph-div");
+          const isFluidPlotly =
+            plotlyDiv && plotlyDiv.style && String(plotlyDiv.style.height || "").includes("%");
+          const target = isFluidPlotly ? doc.body : plotlyDiv || doc.body;
+          if (!target) return;
+          resizeObserver = new ResizeObserver(() => window.requestAnimationFrame(resize));
+          resizeObserver.observe(target);
         }
       } catch (error) {
         // Cross-origin or unsupported, ignore.
       }
-      setTimeout(resizeScoreIframe, 300);
-      setTimeout(resizeScoreIframe, 1200);
     });
 
-    window.addEventListener("resize", resizeScoreIframe);
-  }
+    iframeResizers.push(resize);
+    scheduleResizes();
+  };
+
+  scoreIframes.forEach(setupIframeAutoResize);
+
+  window.addEventListener("resize", () => {
+    iframeResizers.forEach((resize) => resize());
+  });
 });
 </script>

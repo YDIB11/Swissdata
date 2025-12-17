@@ -1,0 +1,26 @@
+Position,Ticker,Company_Name,Sector,Industry,Market_Cap,Market_Cap_Formatted,Country
+1,NVDA,NVIDIA Corporation,Technology,Semiconductors,4492751798272,$4.49T,United States
+2,AAPL,Apple Inc.,Technology,Consumer Electronics,4135127613440,$4.14T,United States
+3,GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,3838816026624,$3.84T,United States
+4,MSFT,Microsoft Corporation,Technology,Software - Infrastructure,3572937261056,$3.57T,United States
+5,AMZN,"Amazon.com, Inc.",Consumer Cyclical,Internet Retail,2484085456896,$2.48T,United States
+6,AVGO,Broadcom Inc.,Technology,Semiconductors,1896548925440,$1.90T,United States
+7,META,"Meta Platforms, Inc.",Communication Services,Internet Content & Information,1640246018048,$1.64T,United States
+8,TSM,Taiwan Semiconductor Manufactur,Technology,Semiconductors,1575374815232,$1.58T,Taiwan
+9,TSLA,"Tesla, Inc.",Consumer Cyclical,Auto Manufacturers,1478881705984,$1.48T,United States
+10,ORCL,Oracle Corporation,Technology,Software - Infrastructure,625830264832,$625.83B,United States
+11,PLTR,Palantir Technologies Inc.,Technology,Software - Infrastructure,436562100224,$436.56B,United States
+12,ASML,ASML Holding N.V. - New York Re,Technology,Semiconductor Equipment & Materials,429858029568,$429.86B,Netherlands
+13,NFLX,"Netflix, Inc.",Communication Services,Entertainment,405151645696,$405.15B,United States
+14,AMD,"Advanced Micro Devices, Inc.",Technology,Semiconductors,358303793152,$358.30B,United States
+15,IBM,International Business Machines,Technology,Information Technology Services,287963906048,$287.96B,United States
+16,MU,"Micron Technology, Inc.",Technology,Semiconductors,283869478912,$283.87B,United States
+17,CRM,"Salesforce, Inc.",Technology,Software - Application,247624712192,$247.62B,United States
+18,AMAT,"Applied Materials, Inc.",Technology,Semiconductor Equipment & Materials,213344813056,$213.34B,United States
+19,SHOP,Shopify Inc.,Technology,Software - Application,208490135552,$208.49B,Canada
+20,QCOM,QUALCOMM Incorporated,Technology,Semiconductors,191188025344,$191.19B,United States
+21,INTC,Intel Corporation,Technology,Semiconductors,188891987968,$188.89B,United States
+22,UBER,"Uber Technologies, Inc.",Technology,Software - Application,181452275712,$181.45B,United States
+23,NOW,"ServiceNow, Inc.",Technology,Software - Application,177434165248,$177.43B,United States
+24,ARM,Arm Holdings plc,Technology,Semiconductors,150152527872,$150.15B,United Kingdom
+25,ADBE,Adobe Inc.,Technology,Software - Application,146177196032,$146.18B,United States

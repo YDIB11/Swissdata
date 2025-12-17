@@ -2610,6 +2610,36 @@ Even with all the "VR has failed before" skepticism baked in, the stack leans in
 | Copilot    | Mar 2023 | +3.23%        | 67%          |
 | Vision Pro | Jun 2023 | +10.67%       | 83%          |
 
+Two final lenses make the "distributed footprint" concrete:
+
+- **Cross-sectional dispersion:** how spread out returns are across the 25 companies. Higher dispersion means clearer winners and losers.
+- **Return range (best vs worst):** the gap between the strongest and weakest names in the basket for each event. It shows how brutal the tails can be even when the average looks fine.
+
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Breadth vs Spread: Dispersion &amp; Return Range</h4>
+      <span class="sdx-embed-kicker">Interactive windows</span>
+    </div>
+    <div class="sdx-embed-body">
+      <div class="sdx-embed-stack">
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/innovation_sector_exports/plotly_04_cross_sectional_dispersion.html' | relative_url }}"
+          title="Innovation stack cross-sectional dispersion"
+          loading="lazy"
+        ></iframe>
+        <iframe
+          class="sdx-embed-iframe"
+          src="{{ '/assets/innovation_sector_exports/plotly_06_return_range_dumbbell.html' | relative_url }}"
+          title="Innovation stack return range dumbbell"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
 The point of this chapter is not to crown a single winner. It is to show that when the stack is hit, the footprint is usually distributed, and often asymmetric.
 
 Next, we leave the innovation stack and enter a domain where the rules are even stricter, healthcare, where a single approval can rewrite the future overnight.

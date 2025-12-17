@@ -1392,13 +1392,13 @@ Before we dive into the data, let's set the stage with the full scope of our inv
 
 The breadth of our investigation is intentional. Innovation takes many forms, and we wanted to understand whether the market recognizes different types of breakthroughs in different ways. A consumer gadget like the iPod is visible to everyone, millions saw the keynote, tried the product, formed opinions. But a computing platform like CUDA is invisible to most people, even as it quietly enables everything from video games to self-driving cars to ChatGPT.
 
-| Domain            | Companies/Events                                                 | Time Period | Examples                                                             |
-| ----------------- | ---------------------------------------------------------------- | ----------- | -------------------------------------------------------------------- |
-| Consumer Tech     | Apple (8 events)                                                 | 2001-2023   | iPod, iPhone, iPad, AirPods, M1 Chip, Vision Pro                     |
-| Compute Platforms | NVIDIA (8 events)                                                | 2007-2024   | CUDA, DGX-1, V100, Blackwell B200                                    |
-| Electric Vehicles | Tesla (8 events)                                                 | 2014-2024   | Autopilot, Model 3, Cybertruck, FSD v12                              |
-| Innovation Stack  | Top 25 market-cap leaders across the innovation stack (8 events) | 2006-2023   | AWS EC2, iPhone, App Store, Android, Azure, Touch ID, M1, Vision Pro |
-| Healthcare        | Top 25 Healthcare Companies (10 events)                          | 2020-2024   | mRNA vaccines, GLP-1 drugs, CRISPR therapy                           |
+| Domain            | Companies/Events                                                  | Time Period | Examples                                                      |
+| ----------------- | ----------------------------------------------------------------- | ----------- | ------------------------------------------------------------- |
+| Consumer Tech     | Apple (8 events)                                                  | 2001-2023   | iPod, iPhone, iPad, AirPods, M1 Chip, Vision Pro              |
+| Compute Platforms | NVIDIA (8 events)                                                 | 2007-2024   | CUDA, DGX-1, V100, Blackwell B200                             |
+| Electric Vehicles | Tesla (8 events)                                                  | 2014-2024   | Autopilot, Model 3, Cybertruck, FSD v12                       |
+| Innovation Stack  | Top 25 market-cap leaders across the innovation stack (12 events) | 2006-2023   | S3, EUV, iPhone, Chrome, Azure, TensorFlow, LLaMA, Vision Pro |
+| Healthcare        | Top 25 Healthcare Companies (10 events)                           | 2020-2024   | mRNA vaccines, GLP-1 drugs, CRISPR therapy                    |
 
 Each event in this table represents a moment when _someone_ believed they were witnessing history. Our job is to determine whether Wall Street agreed, and when.
 
@@ -1582,18 +1582,22 @@ That is why this project includes a different kind of case file, a basket view o
 
 When the stack is hit by a turning point, do stocks move together, or does the market split into winners and losers?
 
-We anchored this lens around **eight turning point innovations** that moved multiple companies at once:
+We anchored this lens around **twelve turning point innovations** that moved multiple companies at once:
 
-| Event                       | Date         | What Happened                        | Expected Beneficiaries  |
-| --------------------------- | ------------ | ------------------------------------ | ----------------------- |
-| **AWS EC2 Launch**          | Aug 25, 2006 | Cloud compute becomes on demand      | AMZN, MSFT, GOOGL, ORCL |
-| **iPhone Launch**           | Jun 29, 2007 | Mobile computing goes mainstream     | AAPL, GOOGL, QCOM, TSM  |
-| **App Store Launch**        | Jul 10, 2008 | The app economy is born              | AAPL, GOOGL, ADBE, CRM  |
-| **Android Launch**          | Sep 23, 2008 | Open mobile platform scales globally | GOOGL, QCOM, AMZN, META |
-| **Microsoft Azure Launch**  | Feb 1, 2010  | Cloud becomes enterprise default     | MSFT, AMZN, ORCL, IBM   |
-| **iPhone 5S Touch ID**      | Sep 20, 2013 | Biometrics becomes default UX        | AAPL, QCOM, GOOGL, MSFT |
-| **M1 Chip Announcement**    | Nov 10, 2020 | Apple silicon breaks the Intel era   | AAPL, TSM, INTC, AMD    |
-| **Vision Pro Announcement** | Jun 5, 2023  | Spatial computing arrives            | AAPL, TSM, QCOM         |
+| Event                              | Date         | What Happened                              | Expected Beneficiaries  |
+| ---------------------------------- | ------------ | ------------------------------------------ | ----------------------- |
+| **Amazon S3 Launch**               | Mar 14, 2006 | Cloud storage becomes a utility            | AMZN, MSFT, GOOGL, ORCL |
+| **ASML First EUV Tools**           | Aug 29, 2006 | EUV lithography enables leading edge chips | ASML, TSM, INTC, NVDA   |
+| **iPhone Launch**                  | Jun 29, 2007 | Mobile computing goes mainstream           | AAPL, QCOM, TSM, AVGO   |
+| **Google Chrome Beta Launch**      | Sep 2, 2008  | The modern web runtime arrives             | GOOGL, MSFT, AAPL, META |
+| **Microsoft Azure Launch**         | Feb 1, 2010  | Cloud becomes enterprise default           | MSFT, AMZN, GOOGL, ORCL |
+| **iPhone 5S Touch ID**             | Sep 20, 2013 | Biometrics becomes default UX              | AAPL, QCOM, TSM, AVGO   |
+| **TensorFlow Open Sourced**        | Nov 9, 2015  | AI tooling becomes a platform              | GOOGL, NVDA, AMD, MSFT  |
+| **Armv9 Architecture Introduced**  | Mar 30, 2021 | Next gen CPU era, security plus efficiency | ARM, AAPL, QCOM, TSM    |
+| **Meta LLaMA Release**             | Feb 24, 2023 | Open source LLM shockwave                  | META, NVDA, AMD, GOOGL  |
+| **GPT-4 Release**                  | Mar 14, 2023 | Capability leap accelerates AI adoption    | MSFT, NVDA, GOOGL, META |
+| **Microsoft Copilot Announcement** | Mar 16, 2023 | Enterprise AI goes mainstream              | MSFT, NVDA, CRM, ORCL   |
+| **Vision Pro Announcement**        | Jun 5, 2023  | Spatial computing arrives                  | AAPL, TSM, QCOM, AVGO   |
 
 <div class="flourish-embed flourish-cards" data-src="visualisation/26799327">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
@@ -2541,86 +2545,63 @@ To measure that, we track a basket of the **25 largest, most liquid market-cap l
 
 ---
 
-Most of the chapter specific numbers below are still being computed. Where you see **(N/A)**, treat it as a placeholder that tells you exactly what metric belongs there.
+Most of the visuals in this chapter are still being built. The metric bullets below use the 30-day window; the **PLACEHOLDER** callouts mark where charts and heatmaps will land. In the narrative, we zoom in on three stack shocks; the full event list is summarized at the end of the chapter.
 
 ---
 
-### AWS EC2 Launch (August 25, 2006): The Cloud Becomes a Utility
+### ASML First EUV Tools (August 29, 2006): The Chokepoint in Modern Chips
 
-Before EC2, compute was something you bought. After EC2, compute became something you rented by the hour. That single shift rewired the stack, startups could scale without owning servers, enterprises could move workloads without building data centers, and software companies could sell subscriptions instead of boxes.
+EUV is one of those breakthroughs that does not look like a consumer moment, but becomes a bottleneck for the entire industry. If you want leading edge chips, you need EUV. That means a single supplier milestone can ripple into foundries, designers, and eventually every company that depends on faster compute.
 
-- Winner Ratio: **(N/A)**
-- Sector average 30-day return: **(N/A)**
+- Winner Ratio: **88%**
+- Sector average 30-day return: **+8.93%**
 
-<p class="sdx-note">PLACEHOLDER: Insert 25-company cumulative return overlay for the EC2 launch window.</p>
-<p class="sdx-note">PLACEHOLDER: Insert cloud cohort breakdown (AMZN, MSFT, GOOGL, ORCL, IBM) vs the rest of the basket during the EC2 window.</p>
+It is a quiet kind of turning point, but the footprint is loud: the basket averages **+8.93%** over 30 days, and **88%** of names finish green.
 
----
-
-### iPhone Launch (June 29, 2007): The Pocket Computer Era Begins
-
-The iPhone did not just improve a phone. It turned the phone into a computer you carry. That changed consumer behavior, ad distribution, chip demand, and the competitive map for an entire decade.
-
-- Winner Ratio: **(N/A)**
-- Sector average 30-day return: **(N/A)**
-
-<p class="sdx-note">PLACEHOLDER: Insert 25-company return dispersion plot for the iPhone launch window (who got pulled up, who got left behind).</p>
-
----
-
-### App Store Launch (July 10, 2008): Software Becomes a Marketplace
-
-The App Store turned software into an economy. It created the idea that distribution is a platform advantage, not a marketing problem. It also created a new kind of company, one that lives entirely inside someone else's ecosystem.
-
-- Winner Ratio: **(N/A)**
-- Sector average 30-day return: **(N/A)**
-
-<p class="sdx-note">PLACEHOLDER: Insert a platform vs tools comparison for the App Store window (AAPL, GOOGL, ADBE, CRM) to show who benefited from the new software distribution model.</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">ASML EUV: Sector-wide impact</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/innovation_sector_exports/plotly_event_ASML_First_EUV_Tools_sector_average_and_event_day_30d.html' | relative_url }}"
+        title="ASML EUV sector-wide impact analysis"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
 ---
 
-### Android Launch (September 23, 2008): The Open Mobile Stack
+### Meta LLaMA Release (February 24, 2023): Open Source as a Shockwave
 
-Android made smartphones a volume market. By being open, it scaled. By scaling, it forced every platform, chip, and app business to adapt to a world where mobile is the default surface.
+LLaMA is a reminder that not every turning point is a product you can buy. Sometimes it is a capability that becomes broadly accessible. By pushing frontier-grade models into the open-source ecosystem, LLaMA changed developer expectations and accelerated demand for training, inference, and tooling across the stack.
 
-- Winner Ratio: **(N/A)**
-- Sector average 30-day return: **(N/A)**
+- Winner Ratio: **92%**
+- Sector average 30-day return: **+10.30%**
 
-<p class="sdx-note">PLACEHOLDER: Insert iPhone vs Android era split analysis across platforms and chip suppliers (GOOGL, QCOM, AAPL, TSM) around the Android launch.</p>
+That is what an open-source shockwave looks like on a price chart: **+10.30%** on average, with **92%** of the basket positive.
 
----
-
-### Microsoft Azure Launch (February 1, 2010): Cloud Goes Enterprise
-
-Azure made the cloud safe for corporate IT. It is the moment cloud stopped being a startup story and became a boardroom story. Once enterprises move, the whole stack moves, databases, operating systems, security, and productivity software.
-
-- Winner Ratio: **(N/A)**
-- Sector average 30-day return: **(N/A)**
-
-<p class="sdx-note">PLACEHOLDER: Insert enterprise software cohort comparison (MSFT, ORCL, IBM, CRM, NOW) for the Azure launch window.</p>
-
----
-
-### iPhone 5S Touch ID (September 20, 2013): Security Becomes Frictionless
-
-Touch ID is a small sensor with a big effect. It made biometrics mainstream, which made payments, authentication, and mobile trust easier. The market impact is subtle, because it is less about one product and more about what becomes possible afterwards.
-
-- Winner Ratio: **(N/A)**
-- Sector average 30-day return: **(N/A)**
-
-<p class="sdx-note">PLACEHOLDER: Insert post-event slow-burn chart for Touch ID (does the footprint show up over weeks rather than day 0).</p>
-
----
-
-### M1 Chip Announcement (November 10, 2020): A Platform Shift Hidden Inside a Laptop
-
-Apple's M1 was not a spec sheet update. It was a break with Intel and a bet that control of the stack, from silicon to software, beats buying performance from someone else. For markets, this is the kind of event where the footprint should show up across a mini supply chain, Apple as the integrator, TSM as the foundry, Intel as the displaced default.
-
-- Winner Ratio: **(N/A)**
-- Sector average 30-day return: **(N/A)**
-
-<p class="sdx-note">PLACEHOLDER: Insert 25-company heatmap for the M1 window (winners vs losers across chips, platforms, and software).</p>
-<p class="sdx-note">PLACEHOLDER: Insert a focused comparison panel for AAPL, INTC, AMD, TSM around M1 (price, volume, cumulative return).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">LLaMA: Sector-wide impact</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/innovation_sector_exports/plotly_event_Meta_LLaMA_Release_sector_average_and_event_day_30d.html' | relative_url }}"
+        title="Meta LLaMA sector-wide impact analysis"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -2628,26 +2609,46 @@ Apple's M1 was not a spec sheet update. It was a break with Intel and a bet that
 
 Vision Pro is the rare product launch that tries to create a new category. Markets like categories, but only when they turn into ecosystems. The early footprint here is less about day 0 hype and more about whether the stack believes spatial computing becomes a platform, or stays a premium niche.
 
-- Winner Ratio: **(N/A)**
-- Sector average 30-day return: **(N/A)**
+- Winner Ratio: **83%**
+- Sector average 30-day return: **+10.67%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Vision Pro window heatmap (AAPL, QCOM, TSM and the full basket) with cumulative returns.</p>
-<p class="sdx-note">PLACEHOLDER: Insert a small multiples grid of suppliers vs platforms around the Vision Pro announcement.</p>
+Even with all the "VR has failed before" skepticism baked in, the stack leans in: **+10.67%** on average, and **83%** of names end the window up.
+
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Vision Pro: Sector-wide impact</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/innovation_sector_exports/plotly_event_Vision_Pro_Announcement_sector_average_and_event_day_30d.html' | relative_url }}"
+        title="Vision Pro sector-wide impact analysis"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
 ---
 
-### Innovation Stack Summary: Eight Events, One Map
+### Innovation Stack Summary: Twelve Events, One Map
 
 | Event      | Date     | Sector Return | Winner Ratio |
 | ---------- | -------- | ------------- | ------------ |
-| AWS EC2    | Aug 2006 | (N/A)         | (N/A)        |
-| iPhone     | Jun 2007 | (N/A)         | (N/A)        |
-| App Store  | Jul 2008 | (N/A)         | (N/A)        |
-| Android    | Sep 2008 | (N/A)         | (N/A)        |
-| Azure      | Feb 2010 | (N/A)         | (N/A)        |
-| Touch ID   | Sep 2013 | (N/A)         | (N/A)        |
-| M1         | Nov 2020 | (N/A)         | (N/A)        |
-| Vision Pro | Jun 2023 | (N/A)         | (N/A)        |
+| Amazon S3  | Mar 2006 | +4.77%        | 65%          |
+| ASML EUV   | Aug 2006 | +8.93%        | 88%          |
+| iPhone     | Jun 2007 | -0.30%        | 59%          |
+| Chrome     | Sep 2008 | -24.72%       | 6%           |
+| Azure      | Feb 2010 | +8.77%        | 89%          |
+| Touch ID   | Sep 2013 | +2.70%        | 71%          |
+| TensorFlow | Nov 2015 | +1.42%        | 64%          |
+| Armv9      | Mar 2021 | -2.34%        | 50%          |
+| LLaMA      | Feb 2023 | +10.30%       | 92%          |
+| GPT-4      | Mar 2023 | +3.17%        | 63%          |
+| Copilot    | Mar 2023 | +3.23%        | 67%          |
+| Vision Pro | Jun 2023 | +10.67%       | 83%          |
 
 The point of this chapter is not to crown a single winner. It is to show that when the stack is hit, the footprint is usually distributed, and often asymmetric.
 
@@ -2677,7 +2678,22 @@ How did the healthcare sector respond?
 Sector average 30-day return: **+2.48%**  
 Sector median 30-day return: **+0.48%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Healthcare Sector mRNA approval visualization (healthcare_sector_event_analysis.ipynb, Step 6 visualization).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">First mRNA Vaccine (Comirnaty)</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/healthcare_sector_exports/plotly_event_First_mRNA_Vaccine_Comirnaty_sector_average_and_event_day_30d.html' | relative_url }}"
+        title="First mRNA Vaccine (Comirnaty) healthcare sector window"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
 The returns look modest, but context matters. This was during the chaotic post-election, mid-pandemic market. Vaccine optimism was already partially priced in. And the impact wasn't uniform: Pfizer saw different movement than surgical device makers.
 
@@ -2694,7 +2710,22 @@ The implications extend far beyond pharmaceuticals. Food companies must reconsid
 - Sector average 30-day return: **+7.73%**
 - Sector median 30-day return: **+7.71%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Healthcare Sector GLP-1 impact visualization (healthcare_sector_event_analysis.ipynb, Step 6 visualization).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Zepbound Obesity Drug Launch</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/healthcare_sector_exports/plotly_event_Zepbound_Obesity_Drug_Launch_sector_average_and_event_day_30d.html' | relative_url }}"
+        title="Zepbound obesity drug launch healthcare sector window"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
 The GLP-1 revolution creates clear footprints, not just for drug makers like Eli Lilly and Novo Nordisk, but for entire adjacent industries.
 
@@ -2708,7 +2739,22 @@ On December 8, 2023, the future arrived. The FDA approved Casgevy, the first CRI
 
 Sector average 30-day return: **+6.37%**
 
-<p class="sdx-note">PLACEHOLDER: Insert Healthcare Sector CRISPR impact visualization (healthcare_sector_event_analysis.ipynb, Step 6 visualization).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Casgevy CRISPR Therapy Approval</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/healthcare_sector_exports/plotly_event_Casgevy_CRISPR_Therapy_Approval_sector_average_and_event_day_30d.html' | relative_url }}"
+        title="Casgevy CRISPR therapy approval healthcare sector window"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
 The market recognized CRISPR's approval as transformative, not just for Vertex (which partnered on Casgevy) but for the entire biotechnology sector. Gene editing had crossed from possibility to reality.
 
@@ -2716,7 +2762,22 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
 
 ### Healthcare Event Summary
 
-<p class="sdx-note">PLACEHOLDER: Insert Healthcare Events comparison chart showing all 10 events (healthcare_sector_event_analysis.ipynb, comparison visualization).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Healthcare Events Comparison (10 Events)</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/healthcare_sector_exports/plotly_07_avg_30d_return_by_event.html' | relative_url }}"
+        title="Healthcare events comparison chart (10 events)"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
 | Event            | 30-Day Return | Type                |
 | ---------------- | ------------- | ------------------- |
@@ -2822,31 +2883,118 @@ The **Slow Burn** category, nearly 30% of events, is the most fascinating findin
 
 Patterns are interesting. But can we turn them into something actionable? Can we **quantify** what makes an innovation truly transformative versus merely hyped?
 
-Based on our pattern analysis, we built an **Innovation Signature Score** framework, a systematic way to measure how strongly the market recognized any given innovation.
+Based on our pattern analysis, we built an **Innovation Signature Score** framework—a systematic way to measure how strongly the market recognized any given innovation.
+
+---
+
+## From Patterns to Predictors
+
+Before building the score, we needed to identify which signals actually matter. Our correlation analysis revealed the answer.
+
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Feature Correlation Heatmap</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ 'assets/act_5/plotly_correlation_matrix.html' | relative_url }}"
+        title="Innovation signature feature correlation heatmap"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+**The striking finding:** Event Day Return and 30-Day Return have only **r = 0.22 correlation**. The market's immediate reaction has almost no predictive power for sustained performance. Event day is theater. The 30-day window is where recognition actually happens.
+
+But one relationship stood out: **successful innovations decrease volatility** (r = -0.25). True breakthroughs don't just move prices—they resolve uncertainty.
+
+---
+
+## The Four Archetypes
+
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Event Day vs 30-Day Scatter</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ 'assets/act_5/plotly_event_day_vs_30d_combined.html' | relative_url }}"
+        title="Event day vs 30-day returns scatter"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+Plotting all 24 single-company events revealed four distinct patterns:
+
+| Archetype           | Pattern    | Share | Key Examples           |
+| ------------------- | ---------- | ----- | ---------------------- |
+| **Instant Winners** | +Day, +30d | 37.5% | V100 (+17.8% → +30.7%) |
+| **Slow Burn** 🔥    | −Day, +30d | 29.2% | iPod (-4.6% → +31.0%)  |
+| **False Starts**    | +Day, −30d | 20.8% | Arm Acquisition        |
+| **Double Losers**   | −Day, −30d | 12.5% | H100 Hopper            |
+
+**The surprise:** Nearly 30% of innovations showed the "Slow Burn" pattern—initially doubted, then embraced. A negative event day does not mean failure.
+
+---
+
+## The Volatility Signature
+
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Volatility vs Returns</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/act_5/plotly_volatility_comparison.html' | relative_url }}"
+        title="Volatility change vs returns"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+One of our most counterintuitive discoveries: **successful innovations REDUCE post-event volatility.**
+
+| Outcome             | Pre-Event Vol | Post-Event Vol | Change     |
+| ------------------- | ------------- | -------------- | ---------- |
+| Positive 30d Return | 2.38%         | 2.26%          | **−0.12%** |
+| Negative 30d Return | 2.74%         | 3.06%          | **+0.32%** |
+
+**Interpretation:** True innovations resolve uncertainty. Before an announcement, the market doesn't know what to expect. After a successful innovation, price discovery occurs—investors converge on a valuation, and volatility decreases.
 
 ---
 
 ## The Innovation Signature Score Formula
 
-For single-company events, we score innovations on five components:
+We synthesized these patterns into a single composite metric with five components:
 
 ### Component 1: Return Magnitude (0-30 points)
-
-$$\text{Score}_1 = \min(\max(R_{30d}, -15), 30)$$
 
 The 30-day cumulative return, capped to prevent outliers from dominating. Big returns suggest the market eventually recognized value.
 
 ### Component 2: Positive Return Bonus (20 points)
 
-If the 30-day return is positive, add 20 points. Direction matters more than magnitude, being positive signals success.
+If the 30-day return is positive, add 20 points. Direction matters more than magnitude—being positive signals success.
 
 ### Component 3: Momentum Sustained (15 points)
 
-If the 30-day return exceeds the event-day return, add 15 points. This captures the Slow Burn pattern, innovations that build momentum over time.
+If the 30-day return exceeds the event-day return, add 15 points. This captures the **Slow Burn** pattern—innovations that build momentum over time.
 
 ### Component 4: Volatility Stabilization (0-10 points)
 
-If post-event volatility is lower than pre-event volatility, add points. True innovations **resolve uncertainty**, the market figures out what something is worth.
+If post-event volatility is lower than pre-event volatility, add points. True innovations **resolve uncertainty**—the market figures out what something is worth.
 
 ### Component 5: Volume Conviction (0-10 points)
 
@@ -2856,47 +3004,47 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
 
 ## Innovation Categories
 
-| Score    | Category          | Interpretation                          |
-| -------- | ----------------- | --------------------------------------- |
-| 60+      | Transformative    | Clear, sustained market recognition     |
-| 40-59    | Strong innovation | Solid recognition with some uncertainty |
-| 20-39    | Moderate          | Mixed signals, partial recognition      |
-| Under 20 | Weak/Negative     | Market rejected or ignored              |
+| Score  | Category                 | Interpretation                          |
+| ------ | ------------------------ | --------------------------------------- |
+| ≥60    | 🌟 **Transformative**    | Clear, sustained market recognition     |
+| 40-59  | ✅ **Strong Innovation** | Solid recognition with some uncertainty |
+| 20-39  | 🔶 **Moderate**          | Mixed signals, partial recognition      |
+| &lt;20 | ❌ **Weak/Negative**     | Market rejected or ignored              |
 
 ---
 
 ## Top Innovations by Score
 
-<p class="sdx-note">PLACEHOLDER: Insert Innovation Signature Scores bar chart (data/pattern_06_innovation_scores.png).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Innovation Scores Ranking</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ 'assets/act_5/plotly_innovation_scores_ranking.html' | relative_url }}"
+        title="Innovation signature scores ranking"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
-### Transformative innovations (Score 60+):
+### 🌟 Transformative (Score ≥60):
 
 | Event                  | Company | Score | 30-Day Return |
 | ---------------------- | ------- | ----- | ------------- |
 | Cybertruck Reveal      | Tesla   | 80    | +32.19%       |
 | Tesla V100 Launch      | NVIDIA  | 75    | +30.71%       |
 | iPod Launch            | Apple   | 75    | +30.98%       |
+| DGX-1 Launch           | NVIDIA  | 64    | +18.27%       |
 | A100 Ampere Launch     | NVIDIA  | 64    | +14.05%       |
 | RTX 2080 Ti Launch     | NVIDIA  | 61    | +15.65%       |
 | Tesla Bot Announcement | Tesla   | 60    | +15.11%       |
 
-**The key insight:** The iPod and CUDA, two innovations that seemed minor on announcement day, score as highly as the hyped Cybertruck reveal. Our framework captures both immediate blockbusters and slow-burn transformations.
-
----
-
-## The Volatility Pattern: A Counterintuitive Finding
-
-One of our most surprising discoveries: **successful innovations tend to reduce post-event volatility.**
-
-<p class="sdx-note">PLACEHOLDER: Insert Volatility Analysis chart (data/pattern_02_volatility_analysis.png).</p>
-
-For events with positive 30-day returns:
-
-- Pre-event volatility: 2.38%
-- Post-event volatility: 2.26%
-- Change: **-0.12%**
-
-**Interpretation:** True innovations **resolve uncertainty**. Before an announcement, the market doesn't know what to expect. After a successful innovation, price discovery occurs, investors converge on a valuation, and volatility decreases.
+**The key insight:** The iPod (-4.6% on day 0) scores as highly as the hyped Cybertruck reveal (+0.7% on day 0). Our framework captures both immediate blockbusters and slow-burn transformations—because it rewards **sustained momentum**, not initial hype.
 
 </div>
 
@@ -2905,42 +3053,114 @@ For events with positive 30-day returns:
 
 <section class="section sdx-section alt" id="act-vi">
   <div class="container">
-    <h2 class="title is-3">Act VI - Test Your Own Innovation</h2>
+    <h2 class="title is-3">Act VI - Validation: Does It Actually Work?</h2>
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
-We've built a framework. Now let's make it actionable.
+A framework is only valuable if it works on data it wasn't trained on. We tested on **13 out-of-sample events**—different companies, different industries, different time periods.
 
 ---
 
-## The Innovation Score Calculator
+## The Test Events
 
-For any innovation event, collect:
-
-- Event-day stock return
-- 30-day cumulative return
-- Pre-event volatility
-- Post-event volatility
-- Volume change percentage
-
-Then score:
-
-| Component        | Max Points |
-| ---------------- | ---------- |
-| Return magnitude | 30         |
-| Positive bonus   | 20         |
-| Momentum         | 15         |
-| Volatility       | 10         |
-| Volume           | 10         |
-| **Total**        | **85**     |
+| Category            | Events                                                      |
+| ------------------- | ----------------------------------------------------------- |
+| **AI/ML**           | AlphaGo, Microsoft OpenAI $10B, Meta Llama 2, Google Gemini |
+| **Cloud/Dev Tools** | AWS Lambda, GitHub Copilot GA                               |
+| **Biotech**         | Moderna mRNA 94.5%, CRISPR Casgevy, AlphaFold 2             |
+| **Consumer**        | Netflix Streaming, Amazon Echo/Alexa                        |
+| **Other**           | Adobe Firefly, Bitcoin ETF                                  |
 
 ---
 
-## Validation Results
+## The Results
 
-<p class="sdx-note">PLACEHOLDER: Insert out-of-sample validation results (data/innovation_patterns/out_of_sample_validation.png).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Out-of-Sample Validation</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/act_6/plotly_out_of_sample_validation.html' | relative_url }}"
+        title="Out-of-sample innovation score validation"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
-We tested our framework on **13 events** not used in building the model. It successfully identified the category for **11 of 13** test events.
+| Event                 | Score | Category    | 30-Day Return |
+| --------------------- | ----- | ----------- | ------------- |
+| Moderna mRNA 94.5%    | 58    | ✅ Strong   | +13.5%        |
+| Google Gemini         | 57    | ✅ Strong   | +12.3%        |
+| GitHub Copilot GA     | 56    | ✅ Strong   | +11.3%        |
+| Microsoft OpenAI $10B | 55    | ✅ Strong   | +5.0%         |
+| Bitcoin ETF           | 45    | ✅ Strong   | +3.8%         |
+| AlphaFold 2           | 25    | 🔶 Moderate | -0.4%         |
+| Netflix Streaming     | 19    | ❌ Weak     | -0.9%         |
+| AlphaGo               | 6     | ❌ Weak     | -3.9%         |
+| Meta Llama 2          | -4    | ❌ Weak     | -4.5%         |
+
+---
+
+## Does Score Predict Returns?
+
+| Group              | N   | Avg 30-Day Return           |
+| ------------------ | --- | --------------------------- |
+| High Score (≥40)   | 5   | **+9.2%**                   |
+| Low Score (&lt;40) | 8   | **-1.9%**                   |
+| **Separation**     |     | **+11.1 percentage points** |
+
+**The framework works.** High-scoring events averaged +9.2% returns. Low-scoring events averaged -1.9%. The model successfully identified the category for **11 of 13 test events**.
+
+---
+
+## Visualizing the Test Events
+
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Average Cumulative Return (Test Events)</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/act_6/plotly_average_cumulative_return.html' | relative_url }}"
+        title="Average cumulative return for out-of-sample events"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+Plotting the ±30 day cumulative return windows reveals how differently the market processes each innovation:
+
+- **High scorers** (Moderna, Copilot, Gemini) show steady upward trajectories—conviction building over time
+- **Low scorers** (AlphaGo, Llama 2) flatline or drift negative—the market never found a reason to reprice
+
+The average curve across all test events mirrors what we saw in training: a slight dip around event day (uncertainty), followed by gradual separation as winners pull away from losers.
+
+---
+
+## Case Studies: What the Framework Reveals
+
+**✅ Moderna mRNA (Score: 58)** — Efficacy data eliminated uncertainty. Volatility dropped. Momentum sustained. Framework correctly identified Strong Innovation.
+
+**✅ GitHub Copilot GA (Score: 56)** — When AI-assisted coding went mainstream in June 2022, our framework flagged it as Strong Innovation. The 30-day return (+11.3%) confirmed it. This wasn't hype—it was a real product shipping to real developers.
+
+**❌ AlphaGo (Score: 6)** — Arguably the most important AI milestone of the decade. But it was a _research demonstration_, not a product. No revenue, no commercial application. The market shrugged.
+
+> This validates our logic: the framework measures **market recognition**, not historical importance. Some innovations matter enormously for technology's arc while leaving no immediate stock footprint.
+
+**❌ Netflix Streaming (Score: 19)** — We know now it was the beginning of the streaming revolution. In 2007? The market didn't care. The ultimate slow-burn—too slow for even our 30-day window.
+
+---
+
+## Test Your Own Innovation
 
   <div class="sdx-embed-block">
     <div class="sdx-embed-card" data-animate="fade-up">
@@ -2951,13 +3171,39 @@ We tested our framework on **13 events** not used in building the model. It succ
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="{{ '/assets/innovation_patterns/innovation_score_explorer.html' | relative_url }}"
+          src="{{ '/assets/act_6/innovation_score_explorer.html' | relative_url }}"
           title="Innovation score explorer"
           loading="lazy"
         ></iframe>
       </div>
     </div>
   </div>
+
+We packaged everything into an interactive dashboard. Enter any ticker and date—the system fetches real data from Yahoo Finance and calculates the Innovation Score with full breakdown.
+
+The next time a major innovation is announced, you can run it through the framework and get an objective assessment of market recognition.
+
+---
+
+## What We Built
+
+From 46 training events + 13 test events, we constructed and validated a quantitative framework:
+
+**The Innovation Signature Score:**
+
+- Synthesizes return magnitude, momentum, volatility, and volume
+- Successfully separates transformative innovations from noise
+- Works across companies, industries, and time periods
+
+**The Core Insight:** Event day reactions are noise. Sustained patterns are signal.
+
+**The Three Archetypes:**
+
+- **Instant Winners** — Immediate and sustained recognition
+- **Slow Burns** — Initial doubt, then gradual acceptance
+- **False Starts** — Early hype, fading conviction
+
+Markets don't see the future perfectly. But they leave footprints—traces that a careful analyst can learn to read. We built a framework for reading them.
 
 </div>
   </div>
@@ -3167,7 +3413,7 @@ Innovation walks through the snow of market prices, leaving footprints. Our job 
             <a class="sdx-chapter-link" href="#case-files"><span><span class="sdx-kicker">Act III</span><br><span class="sdx-label">Case Files</span></span><span class="sdx-kicker">#case-files</span></a>
             <a class="sdx-chapter-link" href="#archetypes"><span><span class="sdx-kicker">Act IV</span><br><span class="sdx-label">Archetypes</span></span><span class="sdx-kicker">#archetypes</span></a>
             <a class="sdx-chapter-link" href="#what-prices"><span><span class="sdx-kicker">Act V</span><br><span class="sdx-label">Signature Framework</span></span><span class="sdx-kicker">#what-prices</span></a>
-            <a class="sdx-chapter-link" href="#act-vi"><span><span class="sdx-kicker">Act VI</span><br><span class="sdx-label">Test Your Own Innovation</span></span><span class="sdx-kicker">#act-vi</span></a>
+            <a class="sdx-chapter-link" href="#act-vi"><span><span class="sdx-kicker">Act VI</span><br><span class="sdx-label">Validation</span></span><span class="sdx-kicker">#act-vi</span></a>
             <a class="sdx-chapter-link" href="#conclusion"><span><span class="sdx-kicker">Final</span><br><span class="sdx-label">Conclusion</span></span><span class="sdx-kicker">#conclusion</span></a>
           </div>
         </div>

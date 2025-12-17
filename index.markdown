@@ -111,9 +111,9 @@ a:hover {
 
 .navbar a.navbar-item,
 .navbar .navbar-item,
-.navbar a.navbar-item:visited,
 .navbar .navbar-link {
   color: var(--muted) !important;
+  background: transparent !important;
   font-weight: 600;
   letter-spacing: -0.01em;
   position: relative;
@@ -240,11 +240,6 @@ a:hover {
 .navbar .navbar-link:hover::after {
   opacity: 1;
   transform: translateY(0);
-}
-
-.navbar .navbar-item.is-active,
-.navbar .navbar-link.is-active {
-  color: var(--muted) !important;
 }
 
 .navbar .navbar-item.is-active::after,
@@ -983,6 +978,37 @@ blockquote strong {
 .sdx-embed-stack {
   display: grid;
   gap: 1.35rem;
+}
+
+.sdx-embed-subbox {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 0.55rem;
+  background: rgba(5, 8, 20, 0.18);
+}
+
+.sdx-embed-subbox iframe {
+  border-radius: 12px;
+}
+
+.sdx-embed-explain {
+  padding: 1.05rem 1.1rem;
+  background: radial-gradient(circle at 22% 18%, rgba(159, 176, 255, 0.10), transparent 62%),
+              rgba(5, 8, 20, 0.18);
+}
+
+.sdx-embed-explain p {
+  margin: 0;
+  max-width: 68ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: rgba(232, 237, 255, 0.9);
+  line-height: 1.55;
+}
+
+.sdx-embed-explain p + p {
+  margin-top: 0.75rem;
 }
 
 .sdx-embed-grid {
@@ -2128,6 +2154,27 @@ When we step back and look at all eight Apple events together, a striking patter
 
     <div class="sdx-embed-card" data-animate="fade-up">
       <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Plot Read: Apple’s Slow Recognition</h4>
+        <span class="sdx-embed-kicker">Key takeaway</span>
+      </div>
+      <div class="sdx-embed-body">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          When we step back and compare all eight Apple events together, a consistent pattern emerges. The chart overlays each innovation from iPod to Vision Pro across the same ±30 trading-day window, showing how the market absorbed the news over time.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          Day-0 reactions are all over the place: some dip, some barely move, a few jump. But the follow-through is the story. Over the next weeks, every curve trends upward and finishes the 30-day window positive.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          The iPod is the clearest example. It fell close to 5% on announcement day (October 23, 2001), then climbed steadily to the strongest 30-day return in our Apple sample: <strong>+30.98%</strong>.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          &#128161; <strong>Key insight:</strong>  Apple often gets skepticism first, recognition later, and in our data it always ends up positive by day 30.
+        </p>
+      </div>
+    </div>
+
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
         <h4 class="sdx-embed-title">Apple: Day 0 vs 30-day returns</h4>
         <span class="sdx-embed-kicker">Interactive window</span>
       </div>
@@ -2139,6 +2186,20 @@ When we step back and look at all eight Apple events together, a striking patter
           loading="lazy"
           data-sdx-height="600"
         ></iframe>
+        <div style="margin-top: 0.85rem;">
+          <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+            This chart is the punchline of the Apple chapter. For each innovation, it puts two numbers side by side: the market’s reaction on day 0, and the outcome after 30 trading days.
+          </p>
+          <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+            Start with the iPod. It dropped <strong>-4.63%</strong> on announcement day, yet finished <strong>+30.98%</strong> over 30 days. That is a swing of more than <strong>35 percentage points</strong> between the first reaction and the later verdict.
+          </p>
+          <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+            Now look across all eight events. Day-0 returns are inconsistent: some positive, some negative, with no clear pattern. The 30-day returns are the opposite: every single event ends positive. That contrast is the whole message.
+          </p>
+          <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+            For Apple, event-day moves are a poor read on market recognition. In our sample, the relationship between day-0 and 30-day returns is essentially zero.The market’s first reaction is often just a headline response. The real signal shows up gradually, as the product’s meaning becomes easier to price.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -2156,7 +2217,7 @@ When we step back and look at all eight Apple events together, a striking patter
 | M1 Chip            | -0.30%       | +12.93%       | Platform shift recognized        |
 | Vision Pro         | -0.76%       | +8.64%        | Spatial computing bet            |
 
-**The key insight:** For Apple, **event-day returns are nearly useless** for predicting 30-day outcomes. The iPod dropped 4.6% on announcement day but became Apple's turnaround story. The correlation between day-0 and 30-day returns is essentially zero.
+&#128161; **Key insight:** For Apple, **event-day returns are nearly useless** for predicting 30-day outcomes. The iPod dropped 4.6% on announcement day but became Apple's turnaround story. The correlation between day-0 and 30-day returns is essentially zero.
 
 This tells us something profound about consumer innovation: **the market's first reaction is often noise.** The signal emerges over weeks, not hours.
 
@@ -2337,13 +2398,32 @@ Hopper matters in hindsight because it shows a hard truth about market recogniti
       </div>
       <div class="sdx-embed-body">
         <iframe
-          class="sdx-embed-iframe"
+          class="sdx-embed-iframe" 
           src="assets/nvidia_event_exports/nvidia_cumulative_returns_interactive.html"
           title="NVIDIA cumulative returns explorer"
           loading="lazy"
         ></iframe>
       </div>
     </div>
+
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Plot Read: NVIDIA's Timing-Dependent Recognition</h4>
+        <span class="sdx-embed-kicker">Key takeaway</span>
+      </div>
+      <div class="sdx-embed-body">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          Apple is visible consumer innovation. NVIDIA is mostly invisible infrastructure that powers what people use.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          That changes how markets react. In the chart above, some NVIDIA events show clean recognition (V100, DGX-1, A100). Others stay flat or negative even when the tech was foundational, like CUDA in 2007 or H100 landing into the 2022 macro slump.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          &#128161; <strong>Key insight:</strong> for infrastructure, recognition is highly timing-dependent. The same level of innovation can leave very different market footprints when demand visibility and macro conditions shift.
+        </p>
+      </div>
+    </div>
+
     <div class="sdx-embed-card" data-animate="fade-up">
       <div class="sdx-embed-head">
         <h4 class="sdx-embed-title">NVIDIA: Day 0 vs 30-day returns</h4>
@@ -2357,6 +2437,17 @@ Hopper matters in hindsight because it shows a hard truth about market recogniti
           loading="lazy"
           data-sdx-height="800"
         ></iframe>
+        <div style="margin-top: 0.85rem;">
+          <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+            Unlike Apple (where everything eventually works out), NVIDIA shows divergence.
+          </p>
+          <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+            V100 and A100 show strong day-0 and 30-day returns. H100 shows both negative.
+          </p>
+          <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+            The pattern: when infrastructure meets visible demand, recognition is immediate. When it doesn't, even great products struggle.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -2590,6 +2681,25 @@ Tesla is not one company in markets. It is three, and the stock swings between t
         ></iframe>
       </div>
     </div>
+
+    <div class="sdx-embed-card" data-animate="fade-up">
+      <div class="sdx-embed-head">
+        <h4 class="sdx-embed-title">Plot Read: Tesla's Narrative Volatility</h4>
+        <span class="sdx-embed-kicker">Key takeaway</span>
+      </div>
+      <div class="sdx-embed-body">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          Tesla is in a category of its own: not just products, but narrative and spectacle.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          That shows in the chart above. Its event windows are the most chaotic we saw: huge spikes (Cybertruck reveal), steady climbs (Tesla Bot), and sharp drops (Cybertruck deliveries, Optimus Gen 2). With Apple or NVIDIA we mainly study how markets price technology. With Tesla, we also have to price theater.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          &#128161; <strong>Key insight:</strong> day-0 tells you little for Tesla. In our sample, the link between day-0 and 30-day outcomes is close to random, because the stock is driven heavily by belief and narrative.
+        </p>
+      </div>
+    </div>
+
     <div class="sdx-embed-card" data-animate="fade-up">
       <div class="sdx-embed-head">
         <h4 class="sdx-embed-title">Tesla: Day 0 vs 30-day returns</h4>
@@ -2603,8 +2713,20 @@ Tesla is not one company in markets. It is three, and the stock swings between t
           loading="lazy"
           data-sdx-height="600"
         ></iframe>
+        <div style="margin-top: 0.85rem;">
+          <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+            The randomness becomes concrete.
+          </p>
+          <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+            Some events with negative day-0 returns end up strongly positive (Autopilot, Tesla Bot). Some with positive day-0 returns end up negative (Optimus Gen 2).
+          </p>
+          <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+            Tesla teaches us that for narrative-driven stocks, the footprint detection framework needs adjustment.
+          </p>
+        </div>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -2690,6 +2812,29 @@ It is a quiet kind of turning point, but the footprint is loud: the basket avera
         title="ASML EUV sector-wide impact analysis"
         loading="lazy"
       ></iframe>
+      <div style="margin-top: 0.85rem;">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          Some innovation footprints don't belong to a single company. They belong to a stack.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          Platform shifts don't reprice one ticker, they reprice a network: suppliers, customers, competitors, and complements. That's why this chapter tracks a basket of the 25 largest, most liquid leaders across semiconductors, cloud, platforms, and enterprise software.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          The chart above shows how the full basket moved around the ASML First EUV Tools. Sometimes the lines rise together, like a broad re-rating. Other times they split sharply, revealing who the market views as a beneficiary and who looks exposed.
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          We summarize the footprint with two signals:
+        </p>
+        <p style="margin: 0.65rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          <strong>30-day average return:</strong> the basket's average return over the event window
+        </p>
+        <p style="margin: 0.35rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          <strong>Winner Ratio:</strong> the share of the 25 companies that end the window positive
+        </p>
+        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          &#128161; <strong>Key insight:</strong> stack events create distributed, often asymmetric impacts. A high winner ratio signals broad transformation; a low winner ratio signals selective winners and losers.
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -2771,8 +2916,8 @@ Even with all the "VR has failed before" skepticism baked in, the stack leans in
 
 Two final lenses make the "distributed footprint" concrete:
 
-- **Cross-sectional dispersion:** how spread out returns are across the 25 companies. Higher dispersion means clearer winners and losers.
 - **Return range (best vs worst):** the gap between the strongest and weakest names in the basket for each event. It shows how brutal the tails can be even when the average looks fine.
+- **Cross-sectional dispersion:** how spread out returns are across the 25 companies. Higher dispersion means clearer winners and losers.
 
 <div class="sdx-embed-block">
   <div class="sdx-embed-card" data-animate="fade-up">
@@ -2782,20 +2927,32 @@ Two final lenses make the "distributed footprint" concrete:
     </div>
     <div class="sdx-embed-body">
       <div class="sdx-embed-stack">
-        <iframe
-          class="sdx-embed-iframe"
-          src="{{ '/assets/innovation_sector_exports/plotly_04_cross_sectional_dispersion.html' | relative_url }}"
-          title="Innovation stack cross-sectional dispersion"
-          loading="lazy"
-        ></iframe>
-        <iframe
-          class="sdx-embed-iframe"
-          src="{{ '/assets/innovation_sector_exports/plotly_06_return_range_dumbbell.html' | relative_url }}"
-          title="Innovation stack return range dumbbell"
-          loading="lazy"
-        ></iframe>
+        <div class="sdx-embed-subbox">
+          <iframe
+            class="sdx-embed-iframe"
+            src="{{ '/assets/innovation_sector_exports/plotly_06_return_range_dumbbell.html' | relative_url }}"
+            title="Innovation stack return range dumbbell"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="sdx-embed-subbox sdx-embed-explain">
+          <p>High dispersion means clearer winners and losers. The market is differentiating.</p>
+          <p>Low dispersion means broad repricing: a rising tide lifts all boats.</p>
+          <p>This helps readers understand <em>how the market distributes value during platform shifts.</em> </p>
+        </div>
+
+        <div class="sdx-embed-subbox">
+          <iframe
+            class="sdx-embed-iframe"
+            src="{{ '/assets/innovation_sector_exports/plotly_04_cross_sectional_dispersion.html' | relative_url }}"
+            title="Innovation stack cross-sectional dispersion"
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -2954,7 +3111,28 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
 | GPT-4 Medical    | +8.02%        | Medical AI          |
 | Da Vinci 5       | -3.54%        | Surgical robotics   |
 
-**The key insight:** Healthcare innovations show **stronger immediate recognition** than many tech innovations. When the FDA says yes, uncertainty collapses instantly. The footprint is clearer because the event is binary.
+<div class="sdx-embed-block is-tight">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Plot Read: The Regulatory Cliff</h4>
+      <span class="sdx-embed-kicker">Key takeaway</span>
+    </div>
+    <div class="sdx-embed-body">
+      <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+        Healthcare innovations operate under different rules than tech. When Apple ships a product or NVIDIA launches a GPU, the market can quickly see demand. In healthcare, one gate dominates everything: regulatory approval.
+      </p>
+      <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+        A company can announce strong trial results, but nothing is "real" until regulators say yes. That makes these moments unusually binary. Approval can collapse uncertainty in a single day, shifting a treatment from "might work" to "can be sold," and markets reprice fast.
+      </p>
+      <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+        The chart above aggregates the 10 healthcare innovations we studied, from mRNA breakthroughs to CRISPR therapies. The footprints often look cleaner than in tech for a simple reason: when the regulator decides, ambiguity disappears.
+      </p>
+      <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+        &#128161; <strong>Key insight:</strong> Healthcare innovations show stronger immediate recognition than many tech innovations. When the FDA says yes, uncertainty collapses instantly. The footprint is clearer because the event is binary.
+      </p>
+    </div>
+  </div>
+</div>
 
 <p class="sdx-note">PLACEHOLDER: Flourish - Healthcare Innovations Line Chart Race (data/healthcare_sector_exports/flourish_long_format/01_all_innovations_all_companies_long.csv).</p>
 </div>
@@ -3115,14 +3293,49 @@ Some events create immediate excitement that fades away. Strong initial reaction
 
 Of 24 single-company events analyzed:
 
-- **Instant Winners** (+day, +30d): 37.5%
-- **Slow Burn** (day 0, +30d): 29.2%, the surprise finding.
-- **Double Losers** (-day, -30d): 12.5%
-- **False Starts** (+day, -30d): 20.8%
+- **Instant Winners** (+day, +30d): 46% (11)
+- **Slow Burns** (-day, +30d): 38% (9), the most fascinating finding.
+- **False Starts** (+day, -30d): 8% (2)
+- **Double Losers** (-day, -30d): 8% (2)
 
-<p class="sdx-note">PLACEHOLDER: Insert quadrant distribution chart (innovation_pattern_identification.ipynb, Step 2 visualization).</p>
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Event Day vs 30-Day Scatter</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ 'assets/act_4/plotly_event_day_vs_30d_combined.html' | relative_url }}"
+        title="Event day vs 30-day returns scatter"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
-The **Slow Burn** category, nearly 30% of events, is the most fascinating finding. These are innovations the market initially rejected but later embraced. They represent opportunities that patient investors could have captured while others panicked over negative event-day returns.
+This figure brings the full story together. Imagine a map of market recognition: each dot is an innovation event, the x-axis is the headline reaction on day 0, and the y-axis is the verdict 30 trading days later.
+
+That simple setup creates four quadrants: four ways the market can process the exact same kind of "big announcement."
+
+- **Instant Winners (Q1):** positive immediately and still positive by day 30
+- **Slow Burns (Q2 🔥):** negative on day 0, but positive by day 30
+- **False Starts (Q4):** positive on day 0, then fade below zero by day 30
+- **Double Losers (Q3):** negative on day 0 and still negative by day 30
+
+The dashed trend line and **R² = 0.05** make the point bluntly: day-0 moves explain almost none of the 30-day outcomes. The real "recognition" signal shows up in the weeks after the announcement, not the hours after the headline.
+
+The bar chart on the right quantifies how often each archetype appears across our 24 single-company events:
+
+| Archetype       | Share | Count |
+| --------------- | ----- | ----: |
+| Instant Winners | 46%   |    11 |
+| Slow Burns 🔥   | 38%   |     9 |
+| False Starts    | 8%    |     2 |
+| Double Losers   | 8%    |     2 |
+
+&#128161; <strong>Key insight:</strong> The most fascinating finding is the Slow Burn quadrant: <strong>38%</strong> of events start negative on day 0, but still finish the month positive. In fact, only <strong>8%</strong> of innovations are "true failures"—<strong>84%</strong> end up positive over 30 days. These are the moments patient investors could have captured while others panicked over the first print.
 
 </div>
 
@@ -3173,13 +3386,13 @@ But one relationship stood out: **successful innovations decrease volatility** (
 <div class="sdx-embed-block">
   <div class="sdx-embed-card" data-animate="fade-up">
     <div class="sdx-embed-head">
-      <h4 class="sdx-embed-title">Event Day vs 30-Day Scatter</h4>
+      <h4 class="sdx-embed-title">Footprint types donut chart</h4>
       <span class="sdx-embed-kicker">Interactive window</span>
     </div>
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="{{ 'assets/act_5/plotly_event_day_vs_30d_combined.html' | relative_url }}"
+        src="{{ 'assets/act_5/plotly_footprint_types_donut.html' | relative_url }}"
         title="Event day vs 30-day returns scatter"
         loading="lazy"
       ></iframe>
@@ -3187,16 +3400,20 @@ But one relationship stood out: **successful innovations decrease volatility** (
   </div>
 </div>
 
-Plotting all 24 single-company events revealed four distinct patterns:
+Across our 24 single-company events, most innovations end up positive over 30 days. That is where the plot gets fascinating: the market recognizes innovation far more often than the day-0 headline would make you believe.
 
-| Archetype           | Pattern    | Share | Key Examples           |
-| ------------------- | ---------- | ----- | ---------------------- |
-| **Instant Winners** | +Day, +30d | 37.5% | V100 (+17.8% → +30.7%) |
-| **Slow Burn** 🔥    | −Day, +30d | 29.2% | iPod (-4.6% → +31.0%)  |
-| **False Starts**    | +Day, −30d | 20.8% | Arm Acquisition        |
-| **Double Losers**   | −Day, −30d | 12.5% | H100 Hopper            |
+| Archetype | Share | Description |
+| --- | ---: | --- |
+| Instant Winners | 46% | Positive on day 0, positive at day 30 |
+| Slow Burns &#128293; | 38% | Negative on day 0, positive at day 30 |
+| False Starts | 8% | Positive on day 0, negative at day 30 |
+| Double Losers | 8% | Negative on both |
 
-**The surprise:** Nearly 30% of innovations showed the "Slow Burn" pattern—initially doubted, then embraced. A negative event day does not mean failure.
+The standout result is how rare "true failures" are. Only 8% land negative on both day 0 and day 30. For most events, the market does recognize the innovation. The only question is timing: does recognition arrive instantly, or does it show up after an early phase of doubt?
+
+The most fascinating finding lives in the Slow Burn bucket. Selling on a bad day-0 reaction can mean missing the move that comes next, because nearly four in ten innovations start with skepticism and still finish the month in the green.
+
+&#128161; <strong>Key insight:</strong> Only 8% of innovations are "true failures." A remarkable 84% of innovations end up with positive 30-day returns. The question is when the market recognizes them.
 
 ---
 
@@ -3876,6 +4093,69 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
+  const ensurePlotlyEmbedResets = (doc) => {
+    try {
+      if (!doc) return;
+      if (!doc.querySelector(".plotly-graph-div")) return;
+      if (doc.getElementById("sdx-plotly-embed-reset")) return;
+
+      const style = doc.createElement("style");
+      style.id = "sdx-plotly-embed-reset";
+      style.textContent = `
+        html, body { margin: 0; padding: 0; overflow: hidden; }
+      `;
+
+      (doc.head || doc.documentElement).appendChild(style);
+    } catch (error) {
+      // Cross-origin or unsupported, ignore.
+    }
+  };
+
+  const syncPlotlyEmbedSizing = (doc) => {
+    try {
+      if (!doc) return;
+
+      const plotlyDivs = Array.from(doc.querySelectorAll(".plotly-graph-div"));
+      if (!plotlyDivs.length) return;
+
+      ensurePlotlyEmbedResets(doc);
+
+      const win = doc.defaultView;
+      const plotly = win && win.Plotly;
+      if (!plotly) return;
+
+      plotlyDivs.forEach((div) => {
+        if (!div) return;
+
+        div.style.width = "100%";
+        div.style.maxWidth = "100%";
+
+        const width = div.clientWidth;
+        if (width > 0) {
+          const hasLayout = Boolean(div._fullLayout);
+          const lastWidth = parseInt(div.getAttribute("data-sdx-plotly-width") || "", 10);
+          const shouldRelayout = !hasLayout || Number.isNaN(lastWidth) || Math.abs(lastWidth - width) > 1;
+
+          if (shouldRelayout) {
+            if (hasLayout) {
+              div.setAttribute("data-sdx-plotly-width", String(width));
+            }
+
+            try {
+              plotly.relayout(div, { width });
+            } catch (error) {}
+          }
+        }
+
+        try {
+          plotly.Plots.resize(div);
+        } catch (error) {}
+      });
+    } catch (error) {
+      // Cross-origin or unsupported, ignore.
+    }
+  };
+
   const computeEmbedHeight = (doc) => {
     const bodyMargin = getBodyMargin(doc);
     const plotlyDivs = doc.querySelectorAll(".plotly-graph-div");
@@ -3933,6 +4213,8 @@ document.addEventListener("DOMContentLoaded", function () {
       try {
         const doc = getIframeDocument(iframe);
         if (!doc) return;
+
+        syncPlotlyEmbedSizing(doc);
 
         let nextHeight = computeEmbedHeight(doc);
         if (!nextHeight) return;

@@ -791,6 +791,81 @@ blockquote strong {
 .sdx-panel[id^="chapter-"] { padding: 2rem; }
 .sdx-panel[id^="chapter-"] + .sdx-panel[id^="chapter-"] { margin-top: 2.5rem; }
 
+.sdx-chapter-hero {
+  position: relative;
+  margin: 1.15rem 0 1.6rem;
+  height: 240px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: rgba(13, 16, 36, 0.55);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.sdx-chapter-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.06);
+  opacity: 0.32;
+  filter: saturate(1.05) contrast(1.06);
+}
+
+.sdx-chapter-hero--top .sdx-chapter-hero-img {
+  object-position: center top;
+}
+
+.sdx-chapter-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(159, 176, 255, 0.22), transparent 55%),
+    radial-gradient(circle at 82% 10%, rgba(255, 196, 106, 0.18), transparent 55%),
+    linear-gradient(180deg, rgba(5, 8, 20, 0.25), rgba(5, 8, 20, 0.95) 82%);
+  pointer-events: none;
+}
+
+.sdx-chapter-hero-caption {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  padding: 1rem 1.1rem;
+}
+
+.sdx-chapter-hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: rgba(232, 237, 255, 0.82);
+}
+
+.sdx-chapter-hero-title {
+  margin: 0;
+  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-size: 1.15rem;
+  color: #f7f9ff;
+}
+
+@media (max-width: 980px) {
+  .sdx-chapter-hero {
+    height: 200px;
+  }
+}
+
 
 .sdx-formula-card .formula::-webkit-scrollbar {
   width: 0;
@@ -1219,7 +1294,7 @@ blockquote strong {
   grid-template-columns: minmax(0, 0.7fr) minmax(0, 0.3fr);
   gap: 1.25rem;
   margin-top: 1.2rem;
-  align-items: stretch;
+  align-items: start;
 }
 
 .sdx-dual-panel .sdx-chart-block {
@@ -1818,7 +1893,7 @@ The checklist above is the compact version. This panel shows the exact math we c
 
 $$R_t = \left(\frac{P_t - P_{t-1}}{P_{t-1}}\right) \times 100$$
 
-Daily return is the percentage move from yesterday's close \(P\_{t-1}\) to today's close \(P_t\).
+Daily return is the percentage move from yesterday's close $$P_{t-1}$$ to today's close $$P_t$$.
 
 Log return is a closely related measure that adds cleanly across time:
 
@@ -1834,7 +1909,7 @@ To isolate the event from the market's noise, we can add a market-adjusted basel
 
 $$AR_t = R_t - R_{m,t}$$
 
-Here, \(R\_{m,t}\) is the benchmark return (a broad market index) on the same day.
+Here $$R_{m,t}$$ is the benchmark return (a broad market index) on the same day.
 We then sum abnormal returns across a window to get cumulative abnormal return:
 
 $$CAR_{[a,b]} = \sum_{t=a}^{b} AR_t$$
@@ -1861,7 +1936,7 @@ Trading volume measures attention. When something important happens, more invest
 
 $$VC = \left(\frac{\bar{V}_{post}}{\bar{V}_{pre}} - 1\right) \times 100$$
 
-In plain English: compare average volume after the event \(\bar{V}_{post}\) to average volume before \(\bar{V}_{pre}\), expressed as a percentage.
+In plain English: compare average volume after the event $$\bar{V}_{post}$$ to average volume before $$\bar{V}_{pre}$$, expressed as a percentage.
 
 Interpretation: high volume plus positive returns suggests informed enthusiasm. High volume plus negative returns can indicate informed concern, or messy disagreement.
 
@@ -1896,6 +1971,19 @@ Rather than marching through companies one by one, we've organized our findings 
 
     <div class="sdx-panel" id="chapter-apple" data-animate="fade-up">
       <h2 class="title is-4">Chapter 1 - Apple: The Slow Recognition of Visible Innovation</h2>
+      <div class="sdx-chapter-hero sdx-chapter-hero--top" aria-hidden="true">
+        <img
+          class="sdx-chapter-hero-img"
+          src="{{ '/assets/images/Apples-New-AI-Revolution-Why-Apple-Intelligence-Could-Change-Everything-scaled.webp' | relative_url }}"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="sdx-chapter-hero-caption">
+          <span class="sdx-chapter-hero-kicker">Chapter 1</span>
+          <span class="sdx-chapter-hero-title">Apple Intelligence</span>
+        </div>
+      </div>
       <div class="content" markdown="1">
 
 Apple's innovations are the most watched, most analyzed, most debated product launches on Earth. Millions tune in to keynotes. Thousands of articles appear within hours. Every financial analyst in tech has an opinion.
@@ -2083,6 +2171,19 @@ This tells us something profound about consumer innovation: **the market's first
 
     <div class="sdx-panel" id="chapter-nvidia" data-animate="fade-up">
       <h2 class="title is-4">Chapter 2 - NVIDIA: The Infrastructure Play</h2>
+      <div class="sdx-chapter-hero" aria-hidden="true">
+        <img
+          class="sdx-chapter-hero-img"
+          src="{{ '/assets/images/nvidia_1651928213.webp' | relative_url }}"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="sdx-chapter-hero-caption">
+          <span class="sdx-chapter-hero-kicker">Chapter 2</span>
+          <span class="sdx-chapter-hero-title">NVIDIA Compute Stack</span>
+        </div>
+      </div>
       <div class="content" markdown="1">
 
 If Apple represents visible consumer innovation, products you can hold, use, show your friends, NVIDIA represents something entirely different: **invisible infrastructure** that powers the digital world.
@@ -2288,6 +2389,19 @@ CUDA in 2007 was a solution looking for a problem. DGX-1 in 2016 was NVIDIA pack
 
     <div class="sdx-panel" id="chapter-tesla" data-animate="fade-up">
       <h2 class="title is-4">Chapter 3 - Tesla: Hype, Skepticism, and Spectacle</h2>
+      <div class="sdx-chapter-hero" aria-hidden="true">
+        <img
+          class="sdx-chapter-hero-img"
+          src="{{ '/assets/images/tesla-mexico.webp' | relative_url }}"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="sdx-chapter-hero-caption">
+          <span class="sdx-chapter-hero-kicker">Chapter 3</span>
+          <span class="sdx-chapter-hero-title">Tesla Narrative Machine</span>
+        </div>
+      </div>
       <div class="content" markdown="1">
 
 Tesla defies easy categorization. It's not just a car company, it's a phenomenon, a cultural touchstone, a perpetual drama playing out in real-time across social media, financial news, and Elon Musk's Twitter feed.
@@ -2520,6 +2634,19 @@ This reflects Tesla's unique position in markets: it's priced on **belief in the
 
     <div class="sdx-panel" id="chapter-ai" data-animate="fade-up">
       <h2 class="title is-4">Chapter 4 - Innovation Stack: When Everything Moves Together</h2>
+      <div class="sdx-chapter-hero" aria-hidden="true">
+        <img
+          class="sdx-chapter-hero-img"
+          src="{{ '/assets/images/innovation.png' | relative_url }}"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="sdx-chapter-hero-caption">
+          <span class="sdx-chapter-hero-kicker">Chapter 4</span>
+          <span class="sdx-chapter-hero-title">Innovation Stack</span>
+        </div>
+      </div>
       <div class="content" markdown="1">
 
 This chapter is where our method stops being a single-company microscope and becomes a wide-angle lens.
@@ -2681,6 +2808,19 @@ Next, we leave the innovation stack and enter a domain where the rules are even 
 
     <div class="sdx-panel" id="chapter-biotech" data-animate="fade-up">
       <h2 class="title is-4">Chapter 5 - Healthcare: The Power of Regulatory Moments</h2>
+      <div class="sdx-chapter-hero" aria-hidden="true">
+        <img
+          class="sdx-chapter-hero-img"
+          src="{{ '/assets/images/healthcare.png' | relative_url }}"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="sdx-chapter-hero-caption">
+          <span class="sdx-chapter-hero-kicker">Chapter 5</span>
+          <span class="sdx-chapter-hero-title">Regulatory Moments</span>
+        </div>
+      </div>
       <div class="content" markdown="1">
 
 Healthcare innovations operate under different rules than anything in technology. A drug that shows promising results in trials might never help a single patient, until regulators say yes.
@@ -2871,6 +3011,7 @@ Some innovations are recognized immediately and sustainably. The event-day retur
         </p>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -2916,6 +3057,7 @@ Other innovations are initially dismissed or ignored, only to be recognized week
         </p>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -2961,6 +3103,7 @@ Some events create immediate excitement that fades away. Strong initial reaction
         </p>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -3328,6 +3471,20 @@ Markets don't see the future perfectly. But they leave footprints—traces that 
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
+<div class="sdx-chapter-hero" aria-hidden="true">
+  <img
+    class="sdx-chapter-hero-img"
+    src="{{ '/assets/images/AI_1.png' | relative_url }}"
+    alt=""
+    loading="lazy"
+    decoding="async"
+  />
+  <div class="sdx-chapter-hero-caption">
+    <span class="sdx-chapter-hero-kicker">AI Era</span>
+    <span class="sdx-chapter-hero-title">The Great Repricing</span>
+  </div>
+</div>
+
 No analysis of innovation footprints would be complete without examining **the most transformative period in recent technology history**, the AI era that became impossible to ignore after ChatGPT in November 2022.
 
 This era is recent and still unfolding. We can tell it is a huge innovative moment, but we do not yet know how big it is. Ten years from now, people may look back and say, that was the turning point. Or they may say it was one milestone in a longer sequence that started earlier and matured later.
@@ -3439,6 +3596,20 @@ This is why we complement short windows with a long-horizon view. The footprint 
     <h2 class="title is-3">Conclusion, What the Market Really Prices</h2>
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
+
+<div class="sdx-chapter-hero" aria-hidden="true">
+  <img
+    class="sdx-chapter-hero-img"
+    src="{{ '/assets/images/AI_2.png' | relative_url }}"
+    alt=""
+    loading="lazy"
+    decoding="async"
+  />
+  <div class="sdx-chapter-hero-caption">
+    <span class="sdx-chapter-hero-kicker">Final</span>
+    <span class="sdx-chapter-hero-title">What the Market Really Prices</span>
+  </div>
+</div>
 
 We started with a question: **When history happens, does the market react right away, or only once everyone knows it was history?**
 

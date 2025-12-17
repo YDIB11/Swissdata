@@ -1,9 +1,0 @@
-Event,Date,Company,Event_Day_Return,Cumulative_Return_30d,Companies_Positive,Companies_Negative,Domain,Event_Type,Source,Winner_Ratio,Analysis_Type,Innovation_Score,Sector_Innovation_Score
-NVIDIA H100 Launch,2022-03-22,Sector (25 companies),,-12.33,2,23,AI Hardware,Product Launch,Innovation Sector,0.08,Sector Wide,-16.0,-16.0
-ChatGPT Launch,2022-11-30,Sector (25 companies),,-2.51,10,15,AI/Chatbot,Product Launch,Innovation Sector,0.4,Sector Wide,14.98,14.98
-Meta LLaMA Release,2023-02-24,Sector (25 companies),,9.04,22,3,AI/Open Source,Open Source Release,Innovation Sector,0.88,Sector Wide,92.08,92.08
-GPT-4 Release,2023-03-14,Sector (25 companies),,2.2,15,10,AI/Chatbot,Product Launch,Innovation Sector,0.6,Sector Wide,64.4,64.4
-Microsoft Copilot Announcement,2023-03-16,Sector (25 companies),,2.26,16,9,AI/Productivity,Product Announcement,Innovation Sector,0.64,Sector Wide,66.52,66.52
-Google Bard Launch,2023-03-21,Sector (25 companies),,-0.83,13,12,AI/Chatbot,Product Launch,Innovation Sector,0.52,Sector Wide,24.34,24.34
-Apple Vision Pro Announcement,2023-06-05,Sector (25 companies),,9.4,20,5,Spatial Computing,Product Announcement,Innovation Sector,0.8,Sector Wide,88.8,88.8
-NVIDIA Blackwell B200,2024-03-18,Sector (25 companies),1.34,-6.09,6,19,AI Hardware,Product Announcement,Innovation Sector,0.24,Sector Wide,-0.17999999999999972,-0.17999999999999972

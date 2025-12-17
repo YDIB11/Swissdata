@@ -79,6 +79,17 @@ a:hover {
   100% { transform: translate3d(0,0,0) scale(1); opacity: 0.35; }
 }
 
+@keyframes heroKenBurns {
+  0% { transform: translate3d(0,0,0) scale(1.04); }
+  100% { transform: translate3d(-1%, -1%, 0) scale(1.08); }
+}
+
+@keyframes heroFloat {
+  0% { transform: translate3d(0,0,0); }
+  50% { transform: translate3d(0, -6px, 0); }
+  100% { transform: translate3d(0,0,0); }
+}
+
 .navbar {
   background: rgba(5, 8, 20, 0.78) !important;
   backdrop-filter: blur(16px);
@@ -365,11 +376,14 @@ blockquote strong {
 
 .sdx-hero-panel {
   margin-top: -60px;
-  background: linear-gradient(145deg, rgba(15, 21, 48, 0.9), rgba(13, 16, 36, 0.85));
+  background:
+    radial-gradient(980px 420px at 10% 0%, rgba(159, 176, 255, 0.18), transparent 62%),
+    radial-gradient(900px 460px at 92% 10%, rgba(255, 196, 106, 0.12), transparent 58%),
+    linear-gradient(145deg, rgba(15, 21, 48, 0.92), rgba(13, 16, 36, 0.88));
   border: 1px solid var(--border);
   border-radius: 24px;
   padding: 2.5rem;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   position: relative;
   overflow: hidden;
 }
@@ -383,6 +397,7 @@ blockquote strong {
   border-radius: 50%;
   filter: blur(50px);
   opacity: 0.32;
+  pointer-events: none;
 }
 
 .sdx-hero-panel::before {
@@ -403,21 +418,26 @@ blockquote strong {
   display: grid;
   gap: 1.8rem;
   grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
 }
 
 .sdx-hero-title {
   font-family: "Space Grotesk", "Source Sans 3", sans-serif;
   font-weight: 700;
   letter-spacing: -0.02em;
-  font-size: 2.35rem;
+  font-size: clamp(2.65rem, 4vw, 3.45rem);
+  line-height: 1.06;
   color: #f7f9ff;
   margin: 0.75rem 0;
+  max-width: 26ch;
 }
 
 .sdx-hero-body {
   color: var(--text);
   opacity: 0.94;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  max-width: 58ch;
 }
 
 .sdx-hero-actions {
@@ -428,11 +448,37 @@ blockquote strong {
 }
 
 .sdx-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 12px;
   padding: 0.85rem 1.25rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.sdx-btn:hover {
+  transform: translateY(-1px);
+}
+
+.sdx-btn:active {
+  transform: translateY(0);
+}
+
+.sdx-btn:focus-visible {
+  outline: 2px solid rgba(255, 196, 106, 0.9);
+  outline-offset: 3px;
+}
+
+.sdx-btn:visited,
+.sdx-btn:hover {
+  color: var(--text);
 }
 
 .sdx-btn-primary {
@@ -442,10 +488,48 @@ blockquote strong {
   border: none;
 }
 
+.sdx-btn-primary:visited,
+.sdx-btn-primary:hover {
+  color: #041022;
+}
+
+.sdx-btn-primary:hover {
+  box-shadow: 0 16px 42px rgba(159, 176, 255, 0.32);
+}
+
 .sdx-btn-ghost {
   background: transparent;
   border: 1px solid var(--border);
   color: var(--text);
+}
+
+.sdx-btn-ghost:visited,
+.sdx-btn-ghost:hover {
+  color: var(--text);
+}
+
+.sdx-btn-ghost:hover {
+  background: rgba(217, 226, 255, 0.08);
+  border-color: rgba(217, 226, 255, 0.22);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sdx-hero-panel::before,
+  .sdx-hero-panel::after,
+  .sdx-hero-media-img,
+  .sdx-hero-media-card {
+    animation: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sdx-hero-media-img {
+    animation: heroKenBurns 18s ease-in-out infinite alternate;
+  }
+
+  .sdx-hero-media-card {
+    animation: heroFloat 7.5s ease-in-out infinite;
+  }
 }
 
 .sdx-back-to-top {
@@ -557,7 +641,8 @@ blockquote strong {
   height: 100%;
   object-fit: cover;
   display: block;
-  transform: scale(1.04);
+  transform: translate3d(0,0,0) scale(1.04);
+  will-change: transform;
   filter: saturate(1.05) contrast(1.05);
 }
 
@@ -887,22 +972,38 @@ blockquote strong {
 }
 
 .sdx-case-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
   align-items: stretch;
   gap: 1rem;
   margin-top: 1.25rem;
   margin-bottom: 1.5rem;
 }
 
-.sdx-case-grid + .sdx-panel {
-  margin-top: 1.25rem;
+@media (min-width: 768px) {
+  .sdx-case-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem;
+  }
 }
 
-.sdx-case-grid .sdx-case-card {
-  flex: 1 1 280px;
-  max-width: 360px;
+@media (min-width: 980px) {
+  .sdx-case-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .sdx-case-grid .sdx-case-card {
+    grid-column: span 2;
+  }
+
+  .sdx-case-grid .sdx-case-card-wide {
+    grid-column: span 3;
+  }
+}
+
+.sdx-case-grid + .sdx-panel {
+  margin-top: 1.25rem;
 }
 
 .sdx-case-card {
@@ -933,8 +1034,7 @@ blockquote strong {
 }
 
 .sdx-case-card-wide {
-  flex-basis: 100%;
-  max-width: 760px;
+  /* grid span set in media query above */
 }
 
 .sdx-case-card:hover {
@@ -1416,9 +1516,15 @@ blockquote strong {
         <div data-animate="fade-up">
           <h1 class="sdx-hero-title">Innovation Footprints in Tech Stock Markets</h1>
           <p class="sdx-hero-body"><em>Can Wall Street smell the future, or only read the headlines afterwards?</em></p>
+          <div class="sdx-hero-meta" aria-label="Project quick stats">
+            <span class="sdx-pill">45 innovations</span>
+            <span class="sdx-pill">50+ companies</span>
+            <span class="sdx-pill">5 case files</span>
+          </div>
           <div class="sdx-hero-actions">
             <a class="sdx-btn sdx-btn-primary" href="#prologue">Start the story</a>
             <a class="sdx-btn sdx-btn-ghost" href="#case-files">Jump to chapters</a>
+            <a class="sdx-btn sdx-btn-ghost" href="{{ '/about/' | relative_url }}">Meet the team</a>
           </div>
         </div>
         <div class="sdx-hero-media" data-animate="fade-up">
@@ -1430,6 +1536,20 @@ blockquote strong {
             <div class="sdx-hero-media-card">
               <h4>Project snapshot</h4>
               <p>Event-study narratives across Apple, NVIDIA, Tesla, AI, and biotech.</p>
+              <div class="sdx-hero-stats" style="margin-top:0.95rem;">
+                <div class="sdx-mini-stat">
+                  <div class="label">Innovations</div>
+                  <div class="value">45</div>
+                </div>
+                <div class="sdx-mini-stat">
+                  <div class="label">Companies</div>
+                  <div class="value">50+</div>
+                </div>
+                <div class="sdx-mini-stat">
+                  <div class="label">Case files</div>
+                  <div class="value">5</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1553,14 +1673,14 @@ Each event in this table represents a moment when _someone_ believed they were w
         </p>
         <p class="sdx-note"><strong>Question:</strong> are investors pricing engineering, or belief?</p>
       </div>
-      <div class="sdx-case-card" data-animate="fade-up">
-        <h3 class="title is-5">4. AI Shockwaves (e.g., OpenAI, Google, Meta, Microsoft)</h3>
+      <div class="sdx-case-card sdx-case-card-wide" data-animate="fade-up">
+        <h3 class="title is-5">4. Innovation Stack Shockwaves (e.g, Amazon, Google, Meta)</h3>
         <p>
-          Ecosystem events. One breakthrough can rerate dozens of companies at once, even if the innovator isn't tradable.
+          A platform shift rarely moves one ticker, it replaces the whole stack: chips, cloud, platforms, and software. We track a basket of 25 leaders to see whether the market moves together or splits into winners and losers.
         </p>
-        <p class="sdx-note"><strong>Question:</strong> who captures the footprint when the "main" innovator isn't tradable?</p>
+        <p class="sdx-note"><strong>Question:</strong> is it a rising tide or a reshuffling?</p>
       </div>
-      <div class="sdx-case-card" data-animate="fade-up">
+      <div class="sdx-case-card sdx-case-card-wide" data-animate="fade-up">
         <h3 class="title is-5">5. Biotech &amp; Health (e.g., mRNA, GLP-1, CRISPR)</h3>
         <p>
           Innovation behind a regulatory gate. Uncertainty collapses when approval arrives.
@@ -4014,9 +4134,7 @@ This is why we complement short windows with a long-horizon lens. The footprint 
   </div>
 </div>
 
-We started with a question: **When history happens, does the market react right away, or only once everyone knows it was history?**
-
-After analyzing 45 innovations across 50+ companies, we have an answer:
+We started with a question: when history happens, does the market react right away, or only once everyone knows it was history? After analyzing 45 innovations across 50+ companies, we found the answer depends entirely on context.
 
 ## **It depends.**
 
@@ -4048,35 +4166,48 @@ Tesla events show that spectacle can create short-term volatility without sustai
 
 ### The Final Insight
 
-<p class="sdx-note">PLACEHOLDER: Insert Combined Framework visualization (data/pattern_07_combined_framework.png).</p>
+Compute infrastructure gets priced early when demand is visible. Consumer products get priced slowly, even when the whole world is watching. Healthcare innovations produce the cleanest footprints because regulatory approval collapses uncertainty overnight. AI shocks move entire ecosystems at once, not individual stocks. And spectacle without substance creates mirages that fade when reality arrives.
 
-Markets are not oracles. They don't see the future clearly. But they're not blind either.
+The Innovation Signature Score framework we built captures these patterns in a single metric. It rewards sustained momentum over initial hype and separates transformative innovations from noise. High-scoring events averaged <strong>+9.2%</strong> returns. Low-scoring events averaged <strong>-1.9%</strong>. The separation is real.
 
-Innovation leaves footprints, some instant, some slow, some illusory. The key is knowing which type you're looking at.
+<div class="sdx-embed-block">
+  <div class="sdx-embed-card" data-animate="fade-up">
+    <div class="sdx-embed-head">
+      <h4 class="sdx-embed-title">Top 10 Innovation Signatures</h4>
+      <span class="sdx-embed-kicker">Interactive window</span>
+    </div>
+    <div class="sdx-embed-body">
+      <iframe
+        class="sdx-embed-iframe"
+        src="{{ '/assets/conclusion/plotly_top10_leaderboard.html' | relative_url }}"
+        title="Top 10 Innovation Signature Scores leaderboard"
+        loading="lazy"
+      ></iframe>
+      <div style="margin-top: 0.85rem;">
+        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
+          This leaderboard is the story in one snapshot: the events with the strongest signature are not just the loudest headlines. They are the ones where conviction held, uncertainty fell, and momentum kept building after day 0.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+Markets are not oracles. They do not see the future clearly. But they leave footprints. Some are instant. Some build slowly. Some are illusions. The key is learning to read them.
 
 > **Some futures are priced in hours. Others take quarters. And some are never priced at the moment you'd expect.**
-
-Innovation walks through the snow of market prices, leaving footprints. Our job is to learn to read them.
 
 ---
 
 ## Thank You for Reading
 
-**Team:** SwissDataExplorers 2025 | **Course:** Applied Data Analysis, EPFL
+**Team:** SwissDataExplorers2025 | **Course:** Applied Data Analysis, EPFL
 
 **Data Sources:** Kaggle Stock Market Dataset (1962-2020), Yahoo Finance (2020-2024 extension), Official company newsrooms
 
----
+<div class="sdx-hero-actions" style="margin-top: 1.25rem;">
+  <a class="sdx-btn sdx-btn-ghost" href="{{ '/about/' | relative_url }}">Meet the team</a>
+</div>
 
-## Interactive Appendix
-
-**FLOURISH VISUALIZATIONS:**
-
-1. Timeline of All Innovation Events
-2. Apple Events Line Chart Race
-3. Innovation Sector Bar Chart Race
-4. Healthcare Innovations Comparison
-5. Innovation Score Explorer
 </div>
 
   </div>

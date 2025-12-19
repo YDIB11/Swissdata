@@ -87,7 +87,7 @@ We treat each innovation announcement as an “event” and measure its market f
 - **Youssef:** Building the innovation event list (dates + sources), validating event dates vs trading days, maintaining the references/sources list
 - **Rami:** Implementing the event-study pipeline (window extraction, returns/cumulative returns/volatility/volume metrics), writing reusable code modules
 - **Chloe:** Creating the main figures and visual consistency (plot styling, annotations, comparability across cases), preparing summary tables for the story
-- **Michel:** Writing and structuring the data story website (Jekyll/GitHub Pages), improving clarity for non-technical readers, final integration + reproducibility checks
+- **Michel:** Structuring the data story website (Jekyll/GitHub Pages), improving clarity for non-technical readers, final integration + reproducibility checks
 
 
 

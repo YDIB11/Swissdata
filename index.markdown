@@ -2177,7 +2177,7 @@ But then something remarkable happened. Over the next 30 days, as people actuall
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="{{ '/assets/apple_event_exports/ipod_launch_plotly_dark.html' | relative_url }}"
+        src="{{ '/assets/act_3/chapter_1/ipod_launch_plotly_dark.html' | relative_url }}"
         title="iPod Launch innovation footprint explorer"
         loading="lazy"
       ></iframe>
@@ -2216,7 +2216,7 @@ The 30-day cumulative return? **+4.71%**. Decent, but not revolutionary.
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="{{ '/assets/apple_event_exports/iphone_launch_plotly_detailed.html' | relative_url }}"
+        src="{{ '/assets/act_3/chapter_1/iphone_launch_plotly_detailed.html' | relative_url }}"
         title="iPod Launch innovation footprint explorer"
         loading="lazy"
       ></iframe>
@@ -2255,7 +2255,7 @@ But as the M1's performance benchmarks leaked out, dramatically outperforming In
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="{{ '/assets/apple_event_exports/m1_chip_announcement_plotly_detailed.html' | relative_url }}"
+        src="{{ '/assets/act_3/chapter_1/m1_chip_announcement_plotly_detailed.html' | relative_url }}"
         title="iPod Launch innovation footprint explorer"
         loading="lazy"
       ></iframe>
@@ -2281,7 +2281,7 @@ When we step back and look at all eight Apple events together, a striking patter
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="assets/apple_event_exports/apple_cumulative_returns_interactive.html"
+          src="assets/act_3/chapter_1/apple_cumulative_returns_interactive.html"
           title="Apple cumulative returns explorer"
           loading="lazy"
         ></iframe>
@@ -2317,7 +2317,7 @@ When we step back and look at all eight Apple events together, a striking patter
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="assets/apple_event_exports/apple_plotly_05_30day_cumulative_returns.html"
+          src="assets/act_3/chapter_1/apple_plotly_05_30day_cumulative_returns.html"
           title="Apple day 0 vs 30-day returns explorer"
           loading="lazy"
           data-sdx-height="600"
@@ -2410,7 +2410,7 @@ The 30-day return was a modest **+2.61%**, essentially noise.
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="assets/nvidia_event_exports/cuda_launch_plotly_dark.html"
+        src="assets/act_3/chapter_2/cuda_launch_plotly_dark.html"
         title="CUDA launch innovation footprint explorer"
         loading="lazy"
       ></iframe>
@@ -2446,7 +2446,7 @@ The market's response was immediate and unmistakable:
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="{{ '/assets/nvidia_event_exports/tesla_v100_launch_plotly_dark.html' | relative_url }}"
+          src="{{ '/assets/act_3/chapter_2/tesla_v100_launch_plotly_dark.html' | relative_url }}"
           title="Tesla V100 launch innovation footprint explorer"
           loading="lazy"
         ></iframe>
@@ -2480,7 +2480,7 @@ The market reaction was understated on day one:
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="{{ '/assets/nvidia_event_exports/dgx_1_launch_plotly_detailed.html' | relative_url }}"
+          src="{{ '/assets/act_3/chapter_2/dgx_1_launch_plotly_detailed.html' | relative_url }}"
           title="DGX-1 launch innovation footprint explorer"
           loading="lazy"
         ></iframe>
@@ -2509,7 +2509,7 @@ Instead, the market did the opposite:
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="{{ '/assets/nvidia_event_exports/h100_hopper_launch_plotly_detailed.html' | relative_url }}"
+          src="{{ '/assets/act_3/chapter_2/h100_hopper_launch_plotly_detailed.html' | relative_url }}"
           title="H100 Hopper launch innovation footprint explorer"
           loading="lazy"
         ></iframe>
@@ -2535,7 +2535,7 @@ Hopper matters in hindsight because it shows a hard truth about market recogniti
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe" 
-          src="assets/nvidia_event_exports/nvidia_cumulative_returns_interactive.html"
+          src="assets/act_3/chapter_2/nvidia_cumulative_returns_interactive.html"
           title="NVIDIA cumulative returns explorer"
           loading="lazy"
         ></iframe>
@@ -2568,7 +2568,7 @@ Hopper matters in hindsight because it shows a hard truth about market recogniti
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="assets/nvidia_event_exports/nvidia_plotly_05_30day_cumulative_returns.html"
+          src="assets/act_3/chapter_2/nvidia_plotly_05_30day_cumulative_returns.html"
           title="NVIDIA day 0 vs 30-day returns explorer"
           loading="lazy"
           data-sdx-height="800"
@@ -2655,7 +2655,7 @@ The market was not impressed on day one:
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="{{ '/assets/tesla_event_exports/autopilot_announcement_plotly_detailed.html' | relative_url }}"
+          src="{{ '/assets/act_3/chapter_3/autopilot_announcement_plotly_detailed.html' | relative_url }}"
           title="Autopilot announcement innovation footprint explorer"
           loading="lazy"
         ></iframe>
@@ -2685,7 +2685,7 @@ The footprint was subtle:
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="{{ '/assets/tesla_event_exports/model_3_first_deliveries_plotly_detailed.html' | relative_url }}"
+          src="{{ '/assets/act_3/chapter_3/model_3_first_deliveries_plotly_detailed.html' | relative_url }}"
           title="Model 3 first deliveries innovation footprint explorer"
           loading="lazy"
         ></iframe>
@@ -2721,7 +2721,7 @@ Event day return: **+0.74%**. Surprisingly muted given the viral explosion.
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="{{ '/assets/tesla_event_exports/cybertruck_reveal_plotly_dark.html' | relative_url }}"
+          src="{{ '/assets/act_3/chapter_3/cybertruck_reveal_plotly_dark.html' | relative_url }}"
           title="Cybertruck reveal innovation footprint explorer"
           loading="lazy"
         ></iframe>
@@ -2757,7 +2757,7 @@ Both announcements landed on the same trading day, so they share the same footpr
         <div class="sdx-embed-body">
           <iframe
             class="sdx-embed-iframe"
-            src="{{ '/assets/tesla_event_exports/tesla_bot_announcement_plotly_detailed.html' | relative_url }}"
+            src="{{ '/assets/act_3/chapter_3/tesla_bot_announcement_plotly_detailed.html' | relative_url }}"
             title="Optimus (Tesla Bot) innovation footprint explorer"
             loading="lazy"
           ></iframe>
@@ -2772,7 +2772,7 @@ Both announcements landed on the same trading day, so they share the same footpr
         <div class="sdx-embed-body">
           <iframe
             class="sdx-embed-iframe"
-            src="{{ '/assets/tesla_event_exports/dojo_supercomputer_announcement_plotly_detailed.html' | relative_url }}"
+            src="{{ '/assets/act_3/chapter_3/dojo_supercomputer_announcement_plotly_detailed.html' | relative_url }}"
             title="Dojo supercomputer innovation footprint explorer"
             loading="lazy"
           ></iframe>
@@ -2811,7 +2811,7 @@ Tesla is not one company in markets. It is three, and the stock swings between t
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="assets/tesla_event_exports/tesla_cumulative_returns_interactive.html"
+          src="assets/act_3/chapter_3/tesla_cumulative_returns_interactive.html"
           title="Tesla cumulative returns explorer"
           loading="lazy"
         ></iframe>
@@ -2844,7 +2844,7 @@ Tesla is not one company in markets. It is three, and the stock swings between t
       <div class="sdx-embed-body">
         <iframe
           class="sdx-embed-iframe"
-          src="assets/tesla_event_exports/tesla_plotly_05_30day_cumulative_returns.html"
+          src="assets/act_3/chapter_3/tesla_plotly_05_30day_cumulative_returns.html"
           title="Tesla day 0 vs 30-day returns explorer"
           loading="lazy"
           data-sdx-height="600"
@@ -2940,7 +2940,7 @@ It is a quiet kind of turning point, but the footprint is loud: the basket avera
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="{{ '/assets/innovation_sector_exports/plotly_event_ASML_First_EUV_Tools_sector_average_and_event_day_30d.html' | relative_url }}"
+        src="{{ '/assets/act_3/chapter_4/plotly_event_ASML_First_EUV_Tools_sector_average_and_event_day_30d.html' | relative_url }}"
         title="ASML EUV sector-wide impact analysis"
         loading="lazy"
       ></iframe>
@@ -2991,7 +2991,7 @@ That is what an open-source shockwave looks like on a price chart: **+10.30%** o
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="{{ '/assets/innovation_sector_exports/plotly_event_Meta_LLaMA_Release_sector_average_and_event_day_30d.html' | relative_url }}"
+        src="{{ '/assets/act_3/chapter_4/plotly_event_Meta_LLaMA_Release_sector_average_and_event_day_30d.html' | relative_url }}"
         title="Meta LLaMA sector-wide impact analysis"
         loading="lazy"
       ></iframe>
@@ -3019,7 +3019,7 @@ Even with all the "VR has failed before" skepticism baked in, the stack leans in
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="{{ '/assets/innovation_sector_exports/plotly_event_Vision_Pro_Announcement_sector_average_and_event_day_30d.html' | relative_url }}"
+        src="{{ '/assets/act_3/chapter_4/plotly_event_Vision_Pro_Announcement_sector_average_and_event_day_30d.html' | relative_url }}"
         title="Vision Pro sector-wide impact analysis"
         loading="lazy"
       ></iframe>
@@ -3062,7 +3062,7 @@ Two final lenses make the "distributed footprint" concrete:
         <div class="sdx-embed-subbox">
           <iframe
             class="sdx-embed-iframe"
-            src="{{ '/assets/innovation_sector_exports/plotly_06_return_range_dumbbell.html' | relative_url }}"
+            src="{{ '/assets/act_3/chapter_4/plotly_06_return_range_dumbbell.html' | relative_url }}"
             title="Innovation stack return range dumbbell"
             loading="lazy"
           ></iframe>
@@ -3077,7 +3077,7 @@ Two final lenses make the "distributed footprint" concrete:
         <div class="sdx-embed-subbox">
           <iframe
             class="sdx-embed-iframe"
-            src="{{ '/assets/innovation_sector_exports/plotly_04_cross_sectional_dispersion.html' | relative_url }}"
+            src="{{ '/assets/act_3/chapter_4/plotly_04_cross_sectional_dispersion.html' | relative_url }}"
             title="Innovation stack cross-sectional dispersion"
             loading="lazy"
           ></iframe>
@@ -3172,7 +3172,7 @@ Sector median 30-day return: **+0.48%**
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="{{ '/assets/healthcare_sector_exports/plotly_event_First_mRNA_Vaccine_Comirnaty_sector_average_and_event_day_30d.html' | relative_url }}"
+        src="{{ '/assets/act_3/chapter_5/plotly_event_First_mRNA_Vaccine_Comirnaty_sector_average_and_event_day_30d.html' | relative_url }}"
         title="First mRNA Vaccine (Comirnaty) healthcare sector window"
         loading="lazy"
       ></iframe>
@@ -3204,7 +3204,7 @@ The implications extend far beyond pharmaceuticals. Food companies must reconsid
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="{{ '/assets/healthcare_sector_exports/plotly_event_Zepbound_Obesity_Drug_Launch_sector_average_and_event_day_30d.html' | relative_url }}"
+        src="{{ '/assets/act_3/chapter_5/plotly_event_Zepbound_Obesity_Drug_Launch_sector_average_and_event_day_30d.html' | relative_url }}"
         title="Zepbound obesity drug launch healthcare sector window"
         loading="lazy"
       ></iframe>
@@ -3233,7 +3233,7 @@ Sector average 30-day return: **+6.37%**
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="{{ '/assets/healthcare_sector_exports/plotly_event_Casgevy_CRISPR_Therapy_Approval_sector_average_and_event_day_30d.html' | relative_url }}"
+        src="{{ '/assets/act_3/chapter_5/plotly_event_Casgevy_CRISPR_Therapy_Approval_sector_average_and_event_day_30d.html' | relative_url }}"
         title="Casgevy CRISPR therapy approval healthcare sector window"
         loading="lazy"
       ></iframe>
@@ -3256,7 +3256,7 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
     <div class="sdx-embed-body">
       <iframe
         class="sdx-embed-iframe"
-        src="{{ '/assets/healthcare_sector_exports/plotly_07_avg_30d_return_by_event.html' | relative_url }}"
+        src="{{ '/assets/act_3/chapter_5/plotly_07_avg_30d_return_by_event.html' | relative_url }}"
         title="Healthcare events comparison chart (10 events)"
         loading="lazy"
       ></iframe>

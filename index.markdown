@@ -2191,47 +2191,6 @@ The iPod wasn't just a music player. It was Apple's entry into consumer electron
 
 ---
 
-### The iPhone: A Revolution Hiding in Plain Sight
-
-If any product launch should have produced an instant footprint, it was the iPhone. Steve Jobs called it "a revolutionary product that changes everything." He unveiled it on January 9, 2007, and for the next six months, the tech world debated whether he was right.
-
-The critics had plenty of ammunition:
-
-- "No physical keyboard. How can you type on glass? BlackBerry will crush this."
-- "$600 is absurd for a phone. Most phones are free with contract."
-- "Exclusive to Cingular? In the US only? This limits the market dramatically."
-
-Microsoft's CEO Steve Ballmer famously laughed at the iPhone on television: "$500? Fully subsidized? With a plan? That is the most expensive phone in the world!"
-
-On launch day, June 29, 2007, Apple's stock rose a modest **1.23%**. Respectable, but hardly earth-shattering for what would become the most successful product in consumer technology history.
-
-The 30-day cumulative return? **+4.71%**. Decent, but not revolutionary.
-
-<div class="sdx-embed-block">
-  <div class="sdx-embed-card" data-animate="fade-up">
-    <div class="sdx-embed-head">
-      <h4 class="sdx-embed-title">iPhone Launch</h4>
-      <span class="sdx-embed-kicker">Interactive window</span>
-    </div>
-    <div class="sdx-embed-body">
-      <iframe
-        class="sdx-embed-iframe"
-        src="{{ '/assets/act_3/chapter_1/iphone_launch_plotly_detailed.html' | relative_url }}"
-        title="iPod Launch innovation footprint explorer"
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
-</div>
-
-Why didn't the market immediately recognize what the iPhone would become? The answer reveals something important about innovation: **the iPhone we know today is not the iPhone that launched in 2007.**
-
-The original iPhone had no App Store. No third-party apps. No copy-paste. No GPS navigation. It was, essentially, a very pretty phone that could browse the web and play music. Revolutionary? Perhaps. But the _transformative_ part, the App Store, the ecosystem, the platform, didn't exist yet.
-
-The market's moderate response wasn't wrong, exactly. It was pricing what it could see, not what would come. The iPhone's true footprint would take years to fully materialize.
-
----
-
 ### The M1 Chip: When Platform Shifts Get Noticed
 
 Not all Apple innovations follow the slow-burn pattern. The M1 chip announcement in November 2020 tells a different story, one of almost immediate recognition.
@@ -2391,41 +2350,6 @@ This invisibility creates a fascinating market dynamic. **How do investors price
 
 ---
 
-### CUDA Launch (June 23, 2007): The Most Important Innovation Nobody Noticed
-
-In June 2007, NVIDIA announced something that sounded deeply technical: CUDA, the "Compute Unified Device Architecture." In essence, CUDA let programmers write general-purpose code that would run on graphics cards, not just the specialized rendering instructions that GPUs were designed for.
-
-At the time, this seemed like a niche feature. Graphics cards were for gaming. Who would want to run regular programs on them?
-
-On announcement day, NVIDIA's stock fell **-2.64%**. The market shrugged.
-
-The 30-day return was a modest **+2.61%**, essentially noise.
-
-<div class="sdx-embed-block">
-  <div class="sdx-embed-card" data-animate="fade-up">
-    <div class="sdx-embed-head">
-      <h4 class="sdx-embed-title">CUDA Launch</h4>
-      <span class="sdx-embed-kicker">Interactive window</span>
-    </div>
-    <div class="sdx-embed-body">
-      <iframe
-        class="sdx-embed-iframe"
-        src="assets/act_3/chapter_2/cuda_launch_plotly_dark.html"
-        title="CUDA launch innovation footprint explorer"
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
-</div>
-
-What nobody understood in 2007, what _couldn't_ be understood, was that CUDA would become the foundation of modern artificial intelligence. Neural networks, it turned out, were perfectly suited for GPU computing. The same parallel processing that rendered video game graphics could train deep learning models thousands of times faster than traditional processors.
-
-But that realization wouldn't come for years. AlexNet, the deep learning breakthrough that ignited the AI revolution, used CUDA to train its neural network, in 2012, five years after CUDA's launch. The full implications of what NVIDIA had built in 2007 didn't become clear until more than a decade later.
-
-CUDA is the ultimate **slow-burn story**. The innovation footprint was invisible for years, not because the market was stupid, but because the application that would make CUDA revolutionary didn't exist yet.
-
----
-
 ### Tesla V100 Launch (May 10, 2017): The Market Gets It
 
 Fast forward ten years. By 2017, deep learning had exploded. Every tech giant was racing to build AI capabilities. The demand for GPU computing had gone from academic curiosity to industrial necessity.
@@ -2456,38 +2380,7 @@ The market's response was immediate and unmistakable:
 
 This is what we call an **"Instant Footprint"**, immediate, sustained, unmistakable recognition. The market understood that NVIDIA had created the essential hardware for the AI revolution. No slow burn, no gradual awakening. The footprint was there on day one.
 
-Why the difference between CUDA (ignored) and V100 (celebrated)? Context. In 2007, deep learning didn't exist as a commercial force. In 2017, it was the hottest technology in the world, and demand for AI computing was exploding. The market could see the V100's value because it could see the demand.
-
----
-
-### DGX-1 Launch (April 5, 2016): When GPUs Become a Product
-
-By 2016, deep learning had escaped the lab, but building the hardware stack was still a craft project. If you were a researcher or a startup, you needed GPUs, drivers, CUDA libraries, frameworks, and a lot of time making everything work together.
-
-DGX-1 was NVIDIA's attempt to productize the whole thing. Not a single chip, but a deep learning system in a box, built for one job, train neural networks fast.
-
-The market reaction was understated on day one:
-
-**Event day return: -0.14%**  
-**30-day return: +18.27%**
-
-  <div class="sdx-embed-block">
-    <div class="sdx-embed-card" data-animate="fade-up">
-      <div class="sdx-embed-head">
-        <h4 class="sdx-embed-title">DGX-1 Launch</h4>
-        <span class="sdx-embed-kicker">Interactive window</span>
-      </div>
-      <div class="sdx-embed-body">
-        <iframe
-          class="sdx-embed-iframe"
-          src="{{ '/assets/act_3/chapter_2/dgx_1_launch_plotly_detailed.html' | relative_url }}"
-          title="DGX-1 launch innovation footprint explorer"
-          loading="lazy"
-        ></iframe>
-      </div>
-    </div>
-  </div>
-This is a different kind of footprint. Not a loud spike, but a quiet pivot, NVIDIA signaling that it was not just selling gaming parts anymore, it was building an AI platform.
+Why the difference between NVIDIA's earlier platform bets and the V100's instant recognition? Context. In 2017, deep learning was the hottest technology in the world, and demand for AI computing was exploding. The market could see the V100's value because it could see the demand.
 
 ---
 
@@ -2634,66 +2527,6 @@ CUDA in 2007 was a solution looking for a problem. DGX-1 in 2016 was NVIDIA pack
 Tesla defies easy categorization. It's not just a car company, it's a phenomenon, a cultural touchstone, a perpetual drama playing out in real-time across social media, financial news, and Elon Musk's Twitter feed.
 
 This creates unique challenges for understanding market recognition. With Apple, we're analyzing how markets respond to technology. With NVIDIA, we're analyzing how markets respond to infrastructure demand. With Tesla, we're analyzing how markets respond to **narrative, spectacle, and the complex psychology of believing in the future.**
-
----
-
-### Autopilot Announcement (October 10, 2014): When Tesla Starts Selling Software
-
-Tesla's Autopilot announcement was not a new car, it was a new identity. The company was asking investors to see Tesla as more than an automaker, a sensor stack, a computer on wheels, and a software roadmap that could compound over time.
-
-The market was not impressed on day one:
-
-**Event day return: -7.82%**  
-**30-day return: +2.48%**
-
-  <div class="sdx-embed-block">
-    <div class="sdx-embed-card" data-animate="fade-up">
-      <div class="sdx-embed-head">
-        <h4 class="sdx-embed-title">Autopilot Announcement</h4>
-        <span class="sdx-embed-kicker">Interactive window</span>
-      </div>
-      <div class="sdx-embed-body">
-        <iframe
-          class="sdx-embed-iframe"
-          src="{{ '/assets/act_3/chapter_3/autopilot_announcement_plotly_detailed.html' | relative_url }}"
-          title="Autopilot announcement innovation footprint explorer"
-          loading="lazy"
-        ></iframe>
-      </div>
-    </div>
-  </div>
-
-That combination is classic Tesla. The headline triggers fear, regulation risk, liability, execution, but the idea lingers, and the stock drifts back as investors reprice the narrative.
-
----
-
-### Model 3 First Deliveries (July 28, 2017): Proof, and the Start of Production Hell
-
-The Model 3 was Tesla's make or break product. Deliveries meant the promise was real, but they also opened the harder question, can Tesla scale without breaking?
-
-The footprint was subtle:
-
-**Event day return: +0.18%**  
-**30-day return: +8.54%**
-
-  <div class="sdx-embed-block">
-    <div class="sdx-embed-card" data-animate="fade-up">
-      <div class="sdx-embed-head">
-        <h4 class="sdx-embed-title">Model 3 First Deliveries</h4>
-        <span class="sdx-embed-kicker">Interactive window</span>
-      </div>
-      <div class="sdx-embed-body">
-        <iframe
-          class="sdx-embed-iframe"
-          src="{{ '/assets/act_3/chapter_3/model_3_first_deliveries_plotly_detailed.html' | relative_url }}"
-          title="Model 3 first deliveries innovation footprint explorer"
-          loading="lazy"
-        ></iframe>
-      </div>
-    </div>
-  </div>
-
-This is a slow-burn pattern. The market did not celebrate the first cars, it waited to see whether the factory could keep up.
 
 ---
 
@@ -2922,57 +2755,6 @@ To measure that, we track a basket of the **25 largest, most liquid market-cap l
 
 ---
 
-### ASML First EUV Tools (August 29, 2006): The Chokepoint in Modern Chips
-
-EUV is one of those breakthroughs that does not look like a consumer moment, but becomes a bottleneck for the entire industry. If you want leading edge chips, you need EUV. That means a single supplier milestone can ripple into foundries, designers, and eventually every company that depends on faster compute.
-
-- Winner Ratio: **88%**
-- Sector average 30-day return: **+8.93%**
-
-It is a quiet kind of turning point, but the footprint is loud: the basket averages **+8.93%** over 30 days, and **88%** of names finish green.
-
-<div class="sdx-embed-block">
-  <div class="sdx-embed-card" data-animate="fade-up">
-    <div class="sdx-embed-head">
-      <h4 class="sdx-embed-title">ASML EUV: Sector-wide impact</h4>
-      <span class="sdx-embed-kicker">Interactive window</span>
-    </div>
-    <div class="sdx-embed-body">
-      <iframe
-        class="sdx-embed-iframe"
-        src="{{ '/assets/act_3/chapter_4/plotly_event_ASML_First_EUV_Tools_sector_average_and_event_day_30d.html' | relative_url }}"
-        title="ASML EUV sector-wide impact analysis"
-        loading="lazy"
-      ></iframe>
-      <div style="margin-top: 0.85rem;">
-        <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          Some innovation footprints don't belong to a single company. They belong to a stack.
-        </p>
-        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          Platform shifts don't reprice one ticker, they reprice a network: suppliers, customers, competitors, and complements. That's why this chapter tracks a basket of the 25 largest, most liquid leaders across semiconductors, cloud, platforms, and enterprise software.
-        </p>
-        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          The chart above shows how the full basket moved around the ASML First EUV Tools. Sometimes the lines rise together, like a broad re-rating. Other times they split sharply, revealing who the market views as a beneficiary and who looks exposed.
-        </p>
-        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          We summarize the footprint with two signals:
-        </p>
-        <p style="margin: 0.65rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          <strong>30-day average return:</strong> the basket's average return over the event window
-        </p>
-        <p style="margin: 0.35rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          <strong>Winner Ratio:</strong> the share of the 25 companies that end the window positive
-        </p>
-        <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          &#128161; <strong>Key insight:</strong> stack events create distributed, often asymmetric impacts. A high winner ratio signals broad transformation; a low winner ratio signals selective winners and losers.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
----
-
 ### Meta LLaMA Release (February 24, 2023): Open Source as a Shockwave
 
 LLaMA is a reminder that not every turning point is a product you can buy. Sometimes it is a capability that becomes broadly accessible. By pushing frontier-grade models into the open-source ecosystem, LLaMA changed developer expectations and accelerated demand for training, inference, and tooling across the stack.
@@ -3149,38 +2931,6 @@ Next, we leave the innovation stack and enter a domain where the rules are even 
 Healthcare innovations operate under different rules than anything in technology. A drug that shows promising results in trials might never help a single patient, until regulators say yes.
 
 This creates something unique in markets: **binary events with massive stakes.** An FDA approval transforms "might work" into "will work" in a single moment. Billions of dollars in value can appear, or vanish, overnight.
-
----
-
-### mRNA Vaccine Approval (December 11, 2020): A Historic Day
-
-December 11, 2020, was one of the most important days in medical history. The FDA granted emergency use authorization to Pfizer-BioNTech's Comirnaty vaccine, the first mRNA vaccine ever approved for human use.
-
-This wasn't just a new vaccine. It was validation of an entirely new platform technology. mRNA vaccines had been theoretical for decades. Suddenly, they were real, and proving themselves against a pandemic that had killed millions.
-
-How did the healthcare sector respond?
-
-Sector average 30-day return: **+2.48%**  
-Sector median 30-day return: **+0.48%**
-
-<div class="sdx-embed-block">
-  <div class="sdx-embed-card" data-animate="fade-up">
-    <div class="sdx-embed-head">
-      <h4 class="sdx-embed-title">First mRNA Vaccine (Comirnaty)</h4>
-      <span class="sdx-embed-kicker">Interactive window</span>
-    </div>
-    <div class="sdx-embed-body">
-      <iframe
-        class="sdx-embed-iframe"
-        src="{{ '/assets/act_3/chapter_5/plotly_event_First_mRNA_Vaccine_Comirnaty_sector_average_and_event_day_30d.html' | relative_url }}"
-        title="First mRNA Vaccine (Comirnaty) healthcare sector window"
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
-</div>
-
-The returns look modest, but context matters. This was during the chaotic post-election, mid-pandemic market. Vaccine optimism was already partially priced in. And the impact wasn't uniform: Pfizer saw different movement than surgical device makers.
 
 ---
 

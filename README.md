@@ -8,7 +8,7 @@
 Website for EPFL Applied Data Analysis (ADA), 2025. We study how public markets "recognize" innovation: immediately on day 0, slowly over weeks, or not at all.
 
 - Rendered data story: https://ydib11.github.io/Swissdata/
-- Main Repository: https://github.com/YDIB11/Swissdata](https://github.com/epfl-ada/ada-2025-project-swissdataexplorers2025)
+- Main Repository: https://github.com/epfl-ada/ada-2025-project-swissdataexplorers2025
 - About (team): https://ydib11.github.io/Swissdata/about/
 - References & sources: https://ydib11.github.io/Swissdata/references/
 

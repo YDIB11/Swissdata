@@ -753,12 +753,12 @@ When we step back and look at all eight Apple events together, a striking patter
 
     <div class="sdx-embed-card" data-animate="fade-up">
       <div class="sdx-embed-head">
-        <h4 class="sdx-embed-title">Plot Read: Appleâ€™s Slow Recognition</h4>
+        <h4 class="sdx-embed-title">Plot Read: Apple's Slow Recognition</h4>
         <span class="sdx-embed-kicker">Key takeaway</span>
       </div>
       <div class="sdx-embed-body">
         <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          When we step back and compare all eight Apple events together, a consistent pattern emerges. The chart overlays each innovation from iPod to Vision Pro across the same Â±30 trading-day window, showing how the market absorbed the news over time.
+          When we step back and compare all eight Apple events together, a consistent pattern emerges. The chart overlays each innovation from iPod to Vision Pro across the same &plusmn;30 trading-day window, showing how the market absorbed the news over time.
         </p>
         <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
           Day-0 reactions are all over the place: some dip, some barely move, a few jump. But the follow-through is the story. Over the next weeks, every curve trends upward and finishes the 30-day window positive.
@@ -787,7 +787,7 @@ When we step back and look at all eight Apple events together, a striking patter
         ></iframe>
         <div style="margin-top: 0.85rem;">
           <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-            This chart is the punchline of the Apple chapter. For each innovation, it puts two numbers side by side: the marketâ€™s reaction on day 0, and the outcome after 30 trading days.
+            This chart is the punchline of the Apple chapter. For each innovation, it puts two numbers side by side: the market's reaction on day 0, and the outcome after 30 trading days.
           </p>
           <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
             Start with the iPod. It dropped <strong>-4.63%</strong> on announcement day, yet finished <strong>+30.98%</strong> over 30 days. That is a swing of more than <strong>35 percentage points</strong> between the first reaction and the later verdict.
@@ -796,7 +796,7 @@ When we step back and look at all eight Apple events together, a striking patter
             Now look across all eight events. Day-0 returns are inconsistent: some positive, some negative, with no clear pattern. The 30-day returns are the opposite: every single event ends positive. That contrast is the whole message.
           </p>
           <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-            For Apple, event-day moves are a poor read on market recognition. In our sample, the relationship between day-0 and 30-day returns is essentially zero.The marketâ€™s first reaction is often just a headline response. The real signal shows up gradually, as the productâ€™s meaning becomes easier to price.
+            For Apple, event-day moves are a poor read on market recognition. In our sample, the relationship between day-0 and 30-day returns is essentially zero. The market's first reaction is often just a headline response. The real signal shows up gradually, as the product's meaning becomes easier to price.
           </p>
         </div>
       </div>
@@ -1569,7 +1569,7 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
       </div>
       <div style="margin-top: 0.85rem;">
         <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          Hereâ€™s the fun part: approvals donâ€™t just move the innovator. They reshuffle the whole competitive map.
+          Here's the fun part: approvals don't just move the innovator. They reshuffle the whole competitive map.
         </p>
         <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
           This Sankey ranks the <strong>top 3 companies by 30-day cumulative return</strong> after each of our <strong>10 healthcare events</strong>, split into two panels:
@@ -1581,7 +1581,7 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
           <strong>Bottom:</strong> Negative impact, who lost ground after each event
         </p>
         <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          &#128161; <strong>Key insight:</strong> approvals donâ€™t just reward the innovator. The positive panel shows flows spreading to adjacent players positioned for the same therapeutic shift. The negative panel captures competitive casualties: when a breakthrough drug launches, rivals and incumbents often lose ground.
+          &#128161; <strong>Key insight:</strong> approvals don't just reward the innovator. The positive panel shows flows spreading to adjacent players positioned for the same therapeutic shift. The negative panel captures competitive casualties: when a breakthrough drug launches, rivals and incumbents often lose ground.
         </p>
       </div>
     </div>
@@ -1596,11 +1596,11 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
 
 <section class="section sdx-section alt" id="archetypes">
   <div class="container">
-    <h2 class="title is-3">Act IV - The Three Archetypes of Market Recognition</h2>
+    <h2 class="title is-3">Act IV - The Four Archetypes of Market Recognition</h2>
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
-After analyzing 45 innovation events across five domains, clear patterns emerge. Markets don't recognize all innovations the same way. Instead, we found **three distinct archetypes** of market response:
+After analyzing 45 innovation events across five domains, clear patterns emerge. Markets don't recognize all innovations the same way. Instead, we found **Four distinct archetypes** of market response:
 
 ---
 
@@ -1773,22 +1773,22 @@ This figure brings the full story together. Imagine a map of market recognition:
 That simple setup creates four quadrants: four ways the market can process the exact same kind of "big announcement."
 
 - **Instant Winners (Q1):** positive immediately and still positive by day 30
-- **Slow Burns (Q2 ðŸ”¥):** negative on day 0, but positive by day 30
+- **Slow Burns (Q2 &#128293;):** negative on day 0, but positive by day 30
 - **False Starts (Q4):** positive on day 0, then fade below zero by day 30
 - **Double Losers (Q3):** negative on day 0 and still negative by day 30
 
-The dashed trend line and **RÂ² = 0.05** make the point bluntly: day-0 moves explain almost none of the 30-day outcomes. The real "recognition" signal shows up in the weeks after the announcement, not the hours after the headline.
+The dashed trend line and **R^2 = 0.05** make the point bluntly: day-0 moves explain almost none of the 30-day outcomes. The real "recognition" signal shows up in the weeks after the announcement, not the hours after the headline.
 
 The bar chart on the right quantifies how often each archetype appears across our 24 single-company events:
 
 | Archetype       | Share | Count |
 | --------------- | ----- | ----: |
 | Instant Winners | 46%   |    11 |
-| Slow Burns ðŸ”¥ | 38%   |     9 |
+| Slow Burns &#128293; | 38%   |     9 |
 | False Starts    | 8%    |     2 |
 | Double Losers   | 8%    |     2 |
 
-&#128161; <strong>Key insight:</strong> The most fascinating finding is the Slow Burn quadrant: <strong>38%</strong> of events start negative on day 0, but still finish the month positive. In fact, only <strong>8%</strong> of innovations are "true failures"â€”<strong>84%</strong> end up positive over 30 days. These are the moments patient investors could have captured while others panicked over the first print.
+&#128161; <strong>Key insight:</strong> The most fascinating finding is the Slow Burn quadrant: <strong>38%</strong> of events start negative on day 0, but still finish the month positive. In fact, only <strong>8%</strong> of innovations are "true failures" - <strong>84%</strong> end up positive over 30 days. These are the moments patient investors could have captured while others panicked over the first print.
 
 </div>
 
@@ -1803,7 +1803,7 @@ The bar chart on the right quantifies how often each archetype appears across ou
 
 Patterns are interesting. But can we turn them into something actionable? Can we **quantify** what makes an innovation truly transformative versus merely hyped?
 
-Based on our pattern analysis, we built an **Innovation Signature Score** frameworkâ€”a systematic way to measure how strongly the market recognized any given innovation.
+Based on our pattern analysis, we built an **Innovation Signature Score** framework - a systematic way to measure how strongly the market recognized any given innovation.
 
 ---
 
@@ -1830,7 +1830,7 @@ Before building the score, we needed to identify which signals actually matter. 
 
 **The striking finding:** Event Day Return and 30-Day Return have only **r = 0.22 correlation**. The market's immediate reaction has almost no predictive power for sustained performance. Event day is theater. The 30-day window is where recognition actually happens.
 
-But one relationship stood out: **successful innovations decrease volatility** (r = -0.25). True breakthroughs don't just move pricesâ€”they resolve uncertainty.
+But one relationship stood out: **successful innovations decrease volatility** (r = -0.25). True breakthroughs don't just move prices - they resolve uncertainty.
 
 ---
 
@@ -1839,7 +1839,7 @@ But one relationship stood out: **successful innovations decrease volatility** (
 <div class="sdx-embed-block">
   <div class="sdx-embed-card" data-animate="fade-up">
     <div class="sdx-embed-head">
-      <h4 class="sdx-embed-title">Footprint typesÂ donutÂ chart</h4>
+      <h4 class="sdx-embed-title">Footprint types donut chart</h4>
       <span class="sdx-embed-kicker">Interactive window</span>
     </div>
     <div class="sdx-embed-body">
@@ -1893,10 +1893,10 @@ One of our most counterintuitive discoveries: **successful innovations REDUCE po
 
 | Outcome             | Pre-Event Vol | Post-Event Vol | Change       |
 | ------------------- | ------------- | -------------- | ------------ |
-| Positive 30d Return | 2.38%         | 2.26%          | **âˆ’0.12%** |
+| Positive 30d Return | 2.38%         | 2.26%          | **-0.12%** |
 | Negative 30d Return | 2.74%         | 3.06%          | **+0.32%**   |
 
-**Interpretation:** True innovations resolve uncertainty. Before an announcement, the market doesn't know what to expect. After a successful innovation, price discovery occursâ€”investors converge on a valuation, and volatility decreases.
+**Interpretation:** True innovations resolve uncertainty. Before an announcement, the market doesn't know what to expect. After a successful innovation, price discovery occurs - investors converge on a valuation, and volatility decreases.
 
 ---
 
@@ -1910,15 +1910,15 @@ The 30-day cumulative return, capped to prevent outliers from dominating. Big re
 
 ### Component 2: Positive Return Bonus (20 points)
 
-If the 30-day return is positive, add 20 points. Direction matters more than magnitudeâ€”being positive signals success.
+If the 30-day return is positive, add 20 points. Direction matters more than magnitude - being positive signals success.
 
 ### Component 3: Momentum Sustained (15 points)
 
-If the 30-day return exceeds the event-day return, add 15 points. This captures the **Slow Burn** patternâ€”innovations that build momentum over time.
+If the 30-day return exceeds the event-day return, add 15 points. This captures the **Slow Burn** pattern - innovations that build momentum over time.
 
 ### Component 4: Volatility Stabilization (0-10 points)
 
-If post-event volatility is lower than pre-event volatility, add points. True innovations **resolve uncertainty**â€”the market figures out what something is worth.
+If post-event volatility is lower than pre-event volatility, add points. True innovations **resolve uncertainty** - the market figures out what something is worth.
 
 ### Component 5: Volume Conviction (0-10 points)
 
@@ -1930,10 +1930,10 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
 
 | Score  | Category                  | Interpretation                          |
 | ------ | ------------------------- | --------------------------------------- |
-| â‰¥60  | ðŸŒŸ **Transformative**   | Clear, sustained market recognition     |
-| 40-59  | âœ… **Strong Innovation** | Solid recognition with some uncertainty |
-| 20-39  | ðŸ”¶ **Moderate**         | Mixed signals, partial recognition      |
-| &lt;20 | âŒ **Weak/Negative**      | Market rejected or ignored              |
+| >=60  | &#127775; **Transformative**   | Clear, sustained market recognition     |
+| 40-59  | &#9989; **Strong Innovation** | Solid recognition with some uncertainty |
+| 20-39  | &#128310; **Moderate**         | Mixed signals, partial recognition      |
+| &lt;20 | &#10060; **Weak/Negative**      | Market rejected or ignored              |
 
 ---
 
@@ -1956,7 +1956,7 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
   </div>
 </div>
 
-### ðŸŒŸ Transformative (Score â‰¥60):
+### &#127775; Transformative (Score >=60):
 
 | Event                  | Company | Score | 30-Day Return |
 | ---------------------- | ------- | ----- | ------------- |
@@ -1968,7 +1968,7 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
 | RTX 2080 Ti Launch     | NVIDIA  | 61    | +15.65%       |
 | Tesla Bot Announcement | Tesla   | 60    | +15.11%       |
 
-**The key insight:** The iPod (-4.6% on day 0) scores as highly as the hyped Cybertruck reveal (+0.7% on day 0). Our framework captures both immediate blockbusters and slow-burn transformationsâ€”because it rewards **sustained momentum**, not initial hype.
+**The key insight:** The iPod (-4.6% on day 0) scores as highly as the hyped Cybertruck reveal (+0.7% on day 0). Our framework captures both immediate blockbusters and slow-burn transformations - because it rewards **sustained momentum**, not initial hype.
 
 </div>
 
@@ -1981,7 +1981,7 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
-A framework is only valuable if it works on data it wasn't trained on. We tested on **13 out-of-sample events**â€”different companies, different industries, different time periods.
+A framework is only valuable if it works on data it wasn't trained on. We tested on **13 out-of-sample events** - different companies, different industries, different time periods.
 
 ---
 
@@ -2018,15 +2018,15 @@ A framework is only valuable if it works on data it wasn't trained on. We tested
 
 | Event                 | Score | Category      | 30-Day Return |
 | --------------------- | ----- | ------------- | ------------- |
-| Moderna mRNA 94.5%    | 58    | âœ… Strong    | +13.5%        |
-| Google Gemini         | 57    | âœ… Strong    | +12.3%        |
-| GitHub Copilot GA     | 56    | âœ… Strong    | +11.3%        |
-| Microsoft OpenAI $10B | 55    | âœ… Strong    | +5.0%         |
-| Bitcoin ETF           | 45    | âœ… Strong    | +3.8%         |
-| AlphaFold 2           | 25    | ðŸ”¶ Moderate | -0.4%         |
-| Netflix Streaming     | 19    | âŒ Weak       | -0.9%         |
-| AlphaGo               | 6     | âŒ Weak       | -3.9%         |
-| Meta Llama 2          | -4    | âŒ Weak       | -4.5%         |
+| Moderna mRNA 94.5%    | 58    | &#9989; Strong    | +13.5%        |
+| Google Gemini         | 57    | &#9989; Strong    | +12.3%        |
+| GitHub Copilot GA     | 56    | &#9989; Strong    | +11.3%        |
+| Microsoft OpenAI $10B | 55    | &#9989; Strong    | +5.0%         |
+| Bitcoin ETF           | 45    | &#9989; Strong    | +3.8%         |
+| AlphaFold 2           | 25    | &#128310; Moderate | -0.4%         |
+| Netflix Streaming     | 19    | &#10060; Weak       | -0.9%         |
+| AlphaGo               | 6     | &#10060; Weak       | -3.9%         |
+| Meta Llama 2          | -4    | &#10060; Weak       | -4.5%         |
 
 ---
 
@@ -2034,7 +2034,7 @@ A framework is only valuable if it works on data it wasn't trained on. We tested
 
 | Group              | N   | Avg 30-Day Return           |
 | ------------------ | --- | --------------------------- |
-| High Score (â‰¥40) | 5   | **+9.2%**                   |
+| High Score (>=40) | 5   | **+9.2%**                   |
 | Low Score (&lt;40) | 8   | **-1.9%**                   |
 | **Separation**     |     | **+11.1 percentage points** |
 
@@ -2061,10 +2061,10 @@ A framework is only valuable if it works on data it wasn't trained on. We tested
   </div>
 </div>
 
-Plotting the Â±30 day cumulative return windows reveals how differently the market processes each innovation:
+Plotting the &plusmn;30 day cumulative return windows reveals how differently the market processes each innovation:
 
-- **High scorers** (Moderna, Copilot, Gemini) show steady upward trajectoriesâ€”conviction building over time
-- **Low scorers** (AlphaGo, Llama 2) flatline or drift negativeâ€”the market never found a reason to reprice
+- **High scorers** (Moderna, Copilot, Gemini) show steady upward trajectories - conviction building over time
+- **Low scorers** (AlphaGo, Llama 2) flatline or drift negative - the market never found a reason to reprice
 
 The average curve across all test events mirrors what we saw in training: a slight dip around event day (uncertainty), followed by gradual separation as winners pull away from losers.
 
@@ -2072,15 +2072,15 @@ The average curve across all test events mirrors what we saw in training: a slig
 
 ## Case Studies: What the Framework Reveals
 
-**âœ… Moderna mRNA (Score: 58)** â€” Efficacy data eliminated uncertainty. Volatility dropped. Momentum sustained. Framework correctly identified Strong Innovation.
+**&#9989; Moderna mRNA (Score: 58)**  -  Efficacy data eliminated uncertainty. Volatility dropped. Momentum sustained. Framework correctly identified Strong Innovation.
 
-**âœ… GitHub Copilot GA (Score: 56)** â€” When AI-assisted coding went mainstream in June 2022, our framework flagged it as Strong Innovation. The 30-day return (+11.3%) confirmed it. This wasn't hypeâ€”it was a real product shipping to real developers.
+**&#9989; GitHub Copilot GA (Score: 56)**  -  When AI-assisted coding went mainstream in June 2022, our framework flagged it as Strong Innovation. The 30-day return (+11.3%) confirmed it. This wasn't hype - it was a real product shipping to real developers.
 
-**âŒ AlphaGo (Score: 6)** â€” Arguably the most important AI milestone of the decade. But it was a _research demonstration_, not a product. No revenue, no commercial application. The market shrugged.
+**&#10060; AlphaGo (Score: 6)**  -  Arguably the most important AI milestone of the decade. But it was a _research demonstration_, not a product. No revenue, no commercial application. The market shrugged.
 
 > This validates our logic: the framework measures **market recognition**, not historical importance. Some innovations matter enormously for technology's arc while leaving no immediate stock footprint.
 
-**âŒ Netflix Streaming (Score: 19)** â€” We know now it was the beginning of the streaming revolution. In 2007? The market didn't care. The ultimate slow-burnâ€”too slow for even our 30-day window.
+**&#10060; Netflix Streaming (Score: 19)**  -  We know now it was the beginning of the streaming revolution. In 2007? The market didn't care. The ultimate slow-burn - too slow for even our 30-day window.
 
 <div class="flourish-embed flourish-gauge" data-src="visualisation/26749201"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26749201/thumbnail" width="100%" alt="gauge visualization" /></noscript></div>
 
@@ -2105,7 +2105,7 @@ The average curve across all test events mirrors what we saw in training: a slig
     </div>
   </div>
 
-We packaged everything into an interactive dashboard. Enter any ticker and dateâ€”the system fetches real data from Yahoo Finance and calculates the Innovation Score with full breakdown.
+We packaged everything into an interactive dashboard. Enter any ticker and date - the system fetches real data from Yahoo Finance and calculates the Innovation Score with full breakdown.
 
 The next time a major innovation is announced, you can run it through the framework and get an objective assessment of market recognition.
 
@@ -2125,11 +2125,11 @@ From 46 training events + 13 test events, we constructed and validated a quantit
 
 **The Three Archetypes:**
 
-- **Instant Winners** â€” Immediate and sustained recognition
-- **Slow Burns** â€” Initial doubt, then gradual acceptance
-- **False Starts** â€” Early hype, fading conviction
+- **Instant Winners**  -  Immediate and sustained recognition
+- **Slow Burns**  -  Initial doubt, then gradual acceptance
+- **False Starts**  -  Early hype, fading conviction
 
-Markets don't see the future perfectly. But they leave footprintsâ€”traces that a careful analyst can learn to read. We built a framework for reading them.
+Markets don't see the future perfectly. But they leave footprints - traces that a careful analyst can learn to read. We built a framework for reading them.
 
 </div>
   </div>

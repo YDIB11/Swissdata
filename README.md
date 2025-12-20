@@ -15,9 +15,13 @@ Website for EPFL Applied Data Analysis (ADA), 2025. We study how public markets 
 ## Team
 
 - Youssef Dib:Wrote and structured the website (Jekyll/GitHub Pages), edited for clarity for non-technical readers, and handled final integration + reproducibility checks.
+  
 - Rami Aschkar: Collected and cleaned the stock dataset (missing values, outliers) and prepared the final analysis tables.
+  
 - Kevin Abou Jaoude: Produced the main figures with consistent styling (annotations, comparable scales) and made the summary tables used in the write-up.
+  
 - Chloe Abou Halka: Built the innovation event list (dates + sources), checked dates against trading days, and maintained the references.
+  
 - Michel Bassil: Worked on the methods side (defined outcome measures and key parameters), and did quality checks on the results (sanity checks, edge cases), fixing issues during integration.
 
 ## What is inside this repo

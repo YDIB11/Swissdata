@@ -1738,7 +1738,7 @@ Some events create immediate excitement that fades away. Strong initial reaction
   </div>
 </div>
 
-**When it happens:** Mirages appear when **expectations exceed reality**, or when an event is more show than substance. Tesla events are particularly prone to mirages because they blend genuine innovation with theatrical presentation. The spectacle creates immediate attention, but sustained analysis reveals less than advertised.
+**When it happens:** Mirages (False Starts) appear when **expectations exceed reality**, or when an event is more show than substance. Tesla events are particularly prone to mirages because they blend genuine innovation with theatrical presentation. The spectacle creates immediate attention, but sustained analysis reveals less than advertised.
 
 ---
 
@@ -1781,12 +1781,12 @@ The dashed trend line and **R^2 = 0.05** make the point bluntly: day-0 moves exp
 
 The bar chart on the right quantifies how often each archetype appears across our 24 single-company events:
 
-| Archetype       | Share | Count |
-| --------------- | ----- | ----: |
-| Instant Winners | 46%   |    11 |
+| Archetype            | Share | Count |
+| -------------------- | ----- | ----: |
+| Instant Winners      | 46%   |    11 |
 | Slow Burns &#128293; | 38%   |     9 |
-| False Starts    | 8%    |     2 |
-| Double Losers   | 8%    |     2 |
+| False Starts         | 8%    |     2 |
+| Double Losers        | 8%    |     2 |
 
 &#128161; <strong>Key insight:</strong> The most fascinating finding is the Slow Burn quadrant: <strong>38%</strong> of events start negative on day 0, but still finish the month positive. In fact, only <strong>8%</strong> of innovations are "true failures" - <strong>84%</strong> end up positive over 30 days. These are the moments patient investors could have captured while others panicked over the first print.
 
@@ -1891,10 +1891,10 @@ The most fascinating finding lives in the Slow Burn bucket. Selling on a bad day
 
 One of our most counterintuitive discoveries: **successful innovations REDUCE post-event volatility.**
 
-| Outcome             | Pre-Event Vol | Post-Event Vol | Change       |
-| ------------------- | ------------- | -------------- | ------------ |
+| Outcome             | Pre-Event Vol | Post-Event Vol | Change     |
+| ------------------- | ------------- | -------------- | ---------- |
 | Positive 30d Return | 2.38%         | 2.26%          | **-0.12%** |
-| Negative 30d Return | 2.74%         | 3.06%          | **+0.32%**   |
+| Negative 30d Return | 2.74%         | 3.06%          | **+0.32%** |
 
 **Interpretation:** True innovations resolve uncertainty. Before an announcement, the market doesn't know what to expect. After a successful innovation, price discovery occurs - investors converge on a valuation, and volatility decreases.
 
@@ -1928,12 +1928,12 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
 
 ## Innovation Categories
 
-| Score  | Category                  | Interpretation                          |
-| ------ | ------------------------- | --------------------------------------- |
-| >=60  | &#127775; **Transformative**   | Clear, sustained market recognition     |
+| Score  | Category                      | Interpretation                          |
+| ------ | ----------------------------- | --------------------------------------- |
+| >=60   | &#127775; **Transformative**  | Clear, sustained market recognition     |
 | 40-59  | &#9989; **Strong Innovation** | Solid recognition with some uncertainty |
-| 20-39  | &#128310; **Moderate**         | Mixed signals, partial recognition      |
-| &lt;20 | &#10060; **Weak/Negative**      | Market rejected or ignored              |
+| 20-39  | &#128310; **Moderate**        | Mixed signals, partial recognition      |
+| &lt;20 | &#10060; **Weak/Negative**    | Market rejected or ignored              |
 
 ---
 
@@ -2016,17 +2016,17 @@ A framework is only valuable if it works on data it wasn't trained on. We tested
   </div>
 </div>
 
-| Event                 | Score | Category      | 30-Day Return |
-| --------------------- | ----- | ------------- | ------------- |
-| Moderna mRNA 94.5%    | 58    | &#9989; Strong    | +13.5%        |
-| Google Gemini         | 57    | &#9989; Strong    | +12.3%        |
-| GitHub Copilot GA     | 56    | &#9989; Strong    | +11.3%        |
-| Microsoft OpenAI $10B | 55    | &#9989; Strong    | +5.0%         |
-| Bitcoin ETF           | 45    | &#9989; Strong    | +3.8%         |
+| Event                 | Score | Category           | 30-Day Return |
+| --------------------- | ----- | ------------------ | ------------- |
+| Moderna mRNA 94.5%    | 58    | &#9989; Strong     | +13.5%        |
+| Google Gemini         | 57    | &#9989; Strong     | +12.3%        |
+| GitHub Copilot GA     | 56    | &#9989; Strong     | +11.3%        |
+| Microsoft OpenAI $10B | 55    | &#9989; Strong     | +5.0%         |
+| Bitcoin ETF           | 45    | &#9989; Strong     | +3.8%         |
 | AlphaFold 2           | 25    | &#128310; Moderate | -0.4%         |
-| Netflix Streaming     | 19    | &#10060; Weak       | -0.9%         |
-| AlphaGo               | 6     | &#10060; Weak       | -3.9%         |
-| Meta Llama 2          | -4    | &#10060; Weak       | -4.5%         |
+| Netflix Streaming     | 19    | &#10060; Weak      | -0.9%         |
+| AlphaGo               | 6     | &#10060; Weak      | -3.9%         |
+| Meta Llama 2          | -4    | &#10060; Weak      | -4.5%         |
 
 ---
 
@@ -2034,7 +2034,7 @@ A framework is only valuable if it works on data it wasn't trained on. We tested
 
 | Group              | N   | Avg 30-Day Return           |
 | ------------------ | --- | --------------------------- |
-| High Score (>=40) | 5   | **+9.2%**                   |
+| High Score (>=40)  | 5   | **+9.2%**                   |
 | Low Score (&lt;40) | 8   | **-1.9%**                   |
 | **Separation**     |     | **+11.1 percentage points** |
 
@@ -2072,15 +2072,15 @@ The average curve across all test events mirrors what we saw in training: a slig
 
 ## Case Studies: What the Framework Reveals
 
-**&#9989; Moderna mRNA (Score: 58)**  -  Efficacy data eliminated uncertainty. Volatility dropped. Momentum sustained. Framework correctly identified Strong Innovation.
+**&#9989; Moderna mRNA (Score: 58)** - Efficacy data eliminated uncertainty. Volatility dropped. Momentum sustained. Framework correctly identified Strong Innovation.
 
-**&#9989; GitHub Copilot GA (Score: 56)**  -  When AI-assisted coding went mainstream in June 2022, our framework flagged it as Strong Innovation. The 30-day return (+11.3%) confirmed it. This wasn't hype - it was a real product shipping to real developers.
+**&#9989; GitHub Copilot GA (Score: 56)** - When AI-assisted coding went mainstream in June 2022, our framework flagged it as Strong Innovation. The 30-day return (+11.3%) confirmed it. This wasn't hype - it was a real product shipping to real developers.
 
-**&#10060; AlphaGo (Score: 6)**  -  Arguably the most important AI milestone of the decade. But it was a _research demonstration_, not a product. No revenue, no commercial application. The market shrugged.
+**&#10060; AlphaGo (Score: 6)** - Arguably the most important AI milestone of the decade. But it was a _research demonstration_, not a product. No revenue, no commercial application. The market shrugged.
 
 > This validates our logic: the framework measures **market recognition**, not historical importance. Some innovations matter enormously for technology's arc while leaving no immediate stock footprint.
 
-**&#10060; Netflix Streaming (Score: 19)**  -  We know now it was the beginning of the streaming revolution. In 2007? The market didn't care. The ultimate slow-burn - too slow for even our 30-day window.
+**&#10060; Netflix Streaming (Score: 19)** - We know now it was the beginning of the streaming revolution. In 2007? The market didn't care. The ultimate slow-burn - too slow for even our 30-day window.
 
 <div class="flourish-embed flourish-gauge" data-src="visualisation/26749201"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26749201/thumbnail" width="100%" alt="gauge visualization" /></noscript></div>
 
@@ -2125,9 +2125,9 @@ From 46 training events + 13 test events, we constructed and validated a quantit
 
 **The Three Archetypes:**
 
-- **Instant Winners**  -  Immediate and sustained recognition
-- **Slow Burns**  -  Initial doubt, then gradual acceptance
-- **False Starts**  -  Early hype, fading conviction
+- **Instant Winners** - Immediate and sustained recognition
+- **Slow Burns** - Initial doubt, then gradual acceptance
+- **False Starts** - Early hype, fading conviction
 
 Markets don't see the future perfectly. But they leave footprints - traces that a careful analyst can learn to read. We built a framework for reading them.
 

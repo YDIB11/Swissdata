@@ -369,37 +369,22 @@ hr {
 
     <div class="sdx-panel content" markdown="1">
 
-### Innovation Stack Shockwaves, multi-company events (Chapter 4)
+### Innovation Stack Shockwaves, multi-company events
 
-| Event                         | Source                                                                                                                     |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Amazon S3 Launch              | [AWS Blog](https://aws.amazon.com/blogs/aws/amazon_s3/)                                                                    |
-| ASML First EUV Tools          | [ASML Backgrounder](https://medium.com/@ASMLcompany/a-backgrounder-on-extreme-ultraviolet-euv-lithography-a5fccb8e99f4)    |
-| iPhone Launch                 | [Apple Newsroom](https://www.apple.com/newsroom/2007/06/28iPhone-Premieres-This-Friday-Night-at-Apple-Retail-Stores/)      |
-| Google Chrome Beta Launch     | [Google Blog](https://googleblog.blogspot.com/2008/09/fresh-take-on-browser.html)                                          |
-| Microsoft Azure Launch        | [Forbes](https://www.forbes.com/sites/janakirammsv/2020/02/03/a-look-back-at-ten-years-of-microsoft-azure/)                |
-| iPhone 5S Touch ID            | [Apple Newsroom](https://www.apple.com/newsroom/2013/09/16iPhone-5s-iPhone-5c-Arrive-on-Friday-September-20/)              |
-| TensorFlow Open-Sourced       | [Wikipedia](https://en.wikipedia.org/wiki/TensorFlow)                                                                      |
-| Armv9 Architecture Introduced | [Arm Newsroom](https://www.arm.com/company/news/2021/03/arms-answer-to-the-future-of-ai-armv9-architecture)                 |
-| Meta LLaMA Release            | [Meta AI](https://ai.meta.com/blog/large-language-model-llama-meta-ai/)                                                    |
-| GPT-4 Release                 | [OpenAI](https://openai.com/index/gpt-4/)                                                                                  |
-| Microsoft Copilot Announcement | [Microsoft Blog](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot/)                           |
-| Apple Vision Pro Announcement | [Apple Newsroom](https://www.apple.com/newsroom/2023/06/introducing-apple-vision-pro/)                                     |
-
-</div>
-
-    <div class="sdx-panel content" markdown="1">
-
-### AI shockwaves, OpenAI, Google, Meta, Microsoft
-
-| Event                          | Source                                                                                           |
-| ------------------------------ | ------------------------------------------------------------------------------------------------ |
-| ChatGPT Launch                 | [OpenAI](https://openai.com/blog/chatgpt)                                                        |
-| GPT-4 Release                  | [OpenAI](https://openai.com/index/gpt-4/)                                                        |
-| GPT-4 Medical AI Release       | [OpenAI](https://openai.com/index/gpt-4/)                                                        |
-| Meta LLaMA Release             | [Meta AI](https://ai.meta.com/blog/large-language-model-llama-meta-ai/)                          |
-| Microsoft Copilot Announcement | [Microsoft Blog](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot/) |
-| Google Bard Launch             | [Google Blog](https://blog.google/technology/ai/try-bard/)                                       |
+| Event                          | Source                                                                                                                  |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| Amazon S3 Launch               | [AWS Blog](https://aws.amazon.com/blogs/aws/amazon_s3/)                                                                 |
+| ASML First EUV Tools           | [ASML Backgrounder](https://medium.com/@ASMLcompany/a-backgrounder-on-extreme-ultraviolet-euv-lithography-a5fccb8e99f4) |
+| iPhone Launch                  | [Apple Newsroom](https://www.apple.com/newsroom/2007/06/28iPhone-Premieres-This-Friday-Night-at-Apple-Retail-Stores/)   |
+| Google Chrome Beta Launch      | [Google Blog](https://googleblog.blogspot.com/2008/09/fresh-take-on-browser.html)                                       |
+| Microsoft Azure Launch         | [Forbes](https://www.forbes.com/sites/janakirammsv/2020/02/03/a-look-back-at-ten-years-of-microsoft-azure/)             |
+| iPhone 5S Touch ID             | [Apple Newsroom](https://www.apple.com/newsroom/2013/09/16iPhone-5s-iPhone-5c-Arrive-on-Friday-September-20/)           |
+| TensorFlow Open-Sourced        | [Wikipedia](https://en.wikipedia.org/wiki/TensorFlow)                                                                   |
+| Armv9 Architecture Introduced  | [Arm Newsroom](https://www.arm.com/company/news/2021/03/arms-answer-to-the-future-of-ai-armv9-architecture)             |
+| Meta LLaMA Release             | [Meta AI](https://ai.meta.com/blog/large-language-model-llama-meta-ai/)                                                 |
+| GPT-4 Release                  | [OpenAI](https://openai.com/index/gpt-4/)                                                                               |
+| Microsoft Copilot Announcement | [Microsoft Blog](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot/)                        |
+| Apple Vision Pro Announcement  | [Apple Newsroom](https://www.apple.com/newsroom/2023/06/introducing-apple-vision-pro/)                                  |
 
 </div>
 
@@ -470,7 +455,7 @@ Canva Elements, by Flixx Studio, by jittawit21, by monsitj, by pixelshot, by Avi
 | UnitedHealth Group Incorporated     | [Logo](https://upload.wikimedia.org/wikipedia/de/thumb/4/4e/United-health-group.svg/1200px-United-health-group.svg.png)                                        |
 | AstraZeneca PLC                     | [Logo](https://cdt.sensors.cam.ac.uk/sites/default/files/media/astrazeneca-logo-png-astrazeneca-logo-astra-zeneca-4902.png)                                    |
 | Novartis AG                         | [Logo](https://www.novartis.com/sites/novartis_com/files/2021-10/novartis-logo-transparent.png)                                                                |
-| Merck and Company, Inc.             | [Logo](https://upload.wikimedia.org/wikipedia/commons/b/b7/Merck_Logo.png)                                                                                     |
+| Merck and Company, Inc.             | [Logo](https://companieslogo.com/img/orig/MRK_BIG.D-0929a7b4.png?t=1722952496t=1722952496png)                                                                  |
 | Novo Nordisk A/S                    | [Logo](https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Novo_Nordisk_-_Logo.svg/1200px-Novo_Nordisk_-_Logo.svg.png)                                        |
 | Thermo Fisher Scientific Inc        | [Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Thermo_Fisher_Scientific_logo.svg/1200px-Thermo_Fisher_Scientific_logo.svg.png)               |
 | Abbott Laboratories                 | [Logo](https://companieslogo.com/img/orig/ABT_BIG.D-da982f7c.png?t=1720244490)                                                                                 |

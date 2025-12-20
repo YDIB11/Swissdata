@@ -1,12 +1,8 @@
----
+﻿---
 layout: page
 title: "SwissDataExplorers"
 subtitle: "Innovation Footprints in Tech Stock Markets"
 ---
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 
 <script>
   window.MathJax = {
@@ -15,1498 +11,6 @@ subtitle: "Innovation Footprints in Tech Stock Markets"
   };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-<style>
-:root {
-  --bg: #050814;
-  --panel: #0d1024;
-  --panel-alt: #0f1530;
-  --border: rgba(255, 255, 255, 0.08);
-  --accent-2: #ffc46a;
-  --muted: #9fb0ff;
-  --text: #e8edff;
-}
-
-html {
-  background: var(--bg);
-}
-
-body {
-  background: radial-gradient(circle at 20% 20%, #0f1a3d 0, transparent 30%),
-              radial-gradient(circle at 80% 10%, #0c3650 0, transparent 24%),
-              radial-gradient(circle at 40% 70%, #1b1645 0, transparent 24%),
-              #050814;
-  color: var(--text);
-  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
-}
-
-/* Bulma sets titles to dark gray by default; override for our dark theme. */
-.content {
-  color: var(--text);
-}
-
-.content .title,
-.content .subtitle,
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6 {
-  color: #f7f9ff;
-}
-
-.title,
-.subtitle {
-  color: #f7f9ff;
-}
-
-strong {
-  color: var(--muted);
-}
-
-a {
-  color: var(--muted);
-}
-
-a:hover {
-  color: #d9e2ff;
-}
-
-@keyframes slowDrift {
-  0% { transform: translate3d(0,0,0) scale(1); opacity: 0.35; }
-  50% { transform: translate3d(12px, -10px, 0) scale(1.05); opacity: 0.45; }
-  100% { transform: translate3d(0,0,0) scale(1); opacity: 0.35; }
-}
-
-@keyframes heroKenBurns {
-  0% { transform: translate3d(0,0,0) scale(1.04); }
-  100% { transform: translate3d(-1%, -1%, 0) scale(1.08); }
-}
-
-@keyframes heroFloat {
-  0% { transform: translate3d(0,0,0); }
-  50% { transform: translate3d(0, -6px, 0); }
-  100% { transform: translate3d(0,0,0); }
-}
-
-.navbar {
-  background: rgba(5, 8, 20, 0.78) !important;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  padding: 0.35rem 0;
-}
-
-@supports not ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))) {
-  .navbar {
-    background: rgba(5, 8, 20, 0.95) !important;
-  }
-}
-
-.footer {
-  display: none !important;
-}
-
-.navbar .navbar-brand .navbar-item {
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #f7f9ff !important;
-}
-
-.navbar a.navbar-item,
-.navbar .navbar-item,
-.navbar .navbar-link {
-  color: var(--muted) !important;
-  background: transparent !important;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  position: relative;
-  transition: color 0.2s ease, transform 0.2s ease;
-  padding: 0.75rem 0.95rem;
-}
-
-/* Chapters modal */
-.sdx-modal .modal-card {
-  width: min(780px, calc(100vw - 2rem));
-  background: radial-gradient(circle at 18% 22%, rgba(159, 176, 255, 0.14) 0, transparent 45%),
-              radial-gradient(circle at 88% 10%, rgba(255, 196, 106, 0.10) 0, transparent 40%),
-              linear-gradient(180deg, rgba(13, 16, 36, 0.96) 0%, rgba(7, 10, 26, 0.96) 100%);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.62);
-  overflow: hidden;
-}
-
-.sdx-modal .modal-card-head,
-.sdx-modal .modal-card-foot {
-  background: rgba(10, 12, 28, 0.8);
-  border-color: rgba(255, 255, 255, 0.08);
-}
-
-.sdx-modal .modal-card-title {
-  color: #f7f9ff;
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.sdx-modal .modal-card-body {
-  background: transparent;
-}
-
-.sdx-modal-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-@media (max-width: 768px) {
-  .sdx-modal-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.sdx-modal-box {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  background: rgba(13, 16, 36, 0.55);
-  padding: 0.9rem 1rem;
-}
-
-.sdx-modal-links {
-  display: grid;
-  gap: 0.5rem;
-  margin-top: 0.65rem;
-}
-
-.sdx-chapter-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  padding: 0.65rem 0.75rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
-  color: var(--text) !important;
-  text-decoration: none !important;
-  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
-}
-
-.sdx-chapter-link:hover {
-  background: rgba(159, 176, 255, 0.10);
-  border-color: rgba(159, 176, 255, 0.24);
-  transform: translateY(-1px);
-}
-
-.sdx-chapter-link .sdx-kicker {
-  color: var(--muted);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  font-size: 0.72rem;
-}
-
-.sdx-chapter-link .sdx-label {
-  color: #f7f9ff;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
-.sdx-modal-hint {
-  color: rgba(232, 237, 255, 0.78);
-  margin-top: 0.75rem;
-  font-size: 0.95rem;
-}
-
-.navbar .navbar-item::after,
-.navbar .navbar-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0.4rem;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(120deg, var(--muted), #d9e2ff);
-  border-radius: 999px;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.navbar .navbar-item:hover,
-.navbar .navbar-link:hover {
-  color: #f7f9ff !important;
-  transform: translateY(-1px);
-}
-
-.navbar .navbar-item:hover::after,
-.navbar .navbar-link:hover::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.navbar .navbar-item.is-active::after,
-.navbar .navbar-link.is-active::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Hide theme hero so we can use our own. */
-body > section.hero.is-primary {
-  display: none !important;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 2.5rem 0;
-}
-
-blockquote {
-  margin: 1.2rem 0;
-  padding: 1.05rem 1.2rem;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  border-left: 4px solid rgba(159, 176, 255, 0.7);
-  background: radial-gradient(circle at 10% 20%, rgba(159, 176, 255, 0.12), transparent 55%),
-              radial-gradient(circle at 90% 10%, rgba(255, 196, 106, 0.12), transparent 45%),
-              rgba(13, 16, 36, 0.74);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.32);
-  color: var(--text);
-}
-
-blockquote p {
-  margin: 0.6rem 0;
-}
-
-/* Bulma styles `.content blockquote` with a light background; override it explicitly. */
-.content blockquote {
-  margin: 1.2rem 0;
-  padding: 1.05rem 1.2rem;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  border-left: 4px solid rgba(159, 176, 255, 0.7);
-  background: radial-gradient(circle at 10% 20%, rgba(159, 176, 255, 0.12), transparent 55%),
-              radial-gradient(circle at 90% 10%, rgba(255, 196, 106, 0.12), transparent 45%),
-              rgba(13, 16, 36, 0.74);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.32);
-  color: var(--text);
-}
-
-.content blockquote strong,
-blockquote strong {
-  color: #f7f9ff;
-}
-
-.content table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  margin: 1rem 0;
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: rgba(13, 16, 36, 0.72);
-}
-
-.content table th,
-.content table td {
-  padding: 0.65rem 0.8rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
-  vertical-align: top;
-}
-
-.content table th:last-child,
-.content table td:last-child {
-  border-right: none;
-}
-
-.content table tr:last-child td {
-  border-bottom: none;
-}
-
-.content table th {
-  background: rgba(15, 21, 48, 0.75);
-  color: #f7f9ff;
-  font-weight: 700;
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-}
-
-.content table td {
-  color: var(--text);
-}
-
-.content table tr:nth-child(even) td {
-  background: rgba(13, 16, 36, 0.55);
-}
-
-.sdx-section {
-  padding: 3rem 0 2.5rem;
-}
-
-.sdx-section.alt {
-  background: rgba(13, 16, 36, 0.55);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 2.8rem;
-  margin: 2.25rem 0;
-}
-
-.sdx-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.4rem 0.85rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: rgba(13, 16, 36, 0.6);
-  font-weight: 600;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.sdx-hero-panel {
-  margin-top: -60px;
-  background:
-    radial-gradient(980px 420px at 10% 0%, rgba(159, 176, 255, 0.18), transparent 62%),
-    radial-gradient(900px 460px at 92% 10%, rgba(255, 196, 106, 0.12), transparent 58%),
-    linear-gradient(145deg, rgba(15, 21, 48, 0.92), rgba(13, 16, 36, 0.88));
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  padding: 2.5rem;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  position: relative;
-  overflow: hidden;
-}
-
-.sdx-hero-panel::before,
-.sdx-hero-panel::after {
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  filter: blur(50px);
-  opacity: 0.32;
-  pointer-events: none;
-}
-
-.sdx-hero-panel::before {
-  background: var(--muted);
-  top: -80px;
-  right: -80px;
-  animation: slowDrift 18s ease-in-out infinite;
-}
-
-.sdx-hero-panel::after {
-  background: var(--accent-2);
-  bottom: -80px;
-  left: -80px;
-  animation: slowDrift 22s ease-in-out infinite reverse;
-}
-
-.sdx-hero-grid {
-  display: grid;
-  gap: 1.8rem;
-  grid-template-columns: 1.1fr 0.9fr;
-  align-items: center;
-}
-
-.sdx-hero-title {
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  font-size: clamp(2.65rem, 4vw, 3.45rem);
-  line-height: 1.06;
-  color: #f7f9ff;
-  margin: 0.75rem 0;
-  max-width: 26ch;
-}
-
-.sdx-hero-body {
-  color: var(--text);
-  opacity: 0.94;
-  font-size: 1.1rem;
-  line-height: 1.55;
-  max-width: 58ch;
-}
-
-.sdx-hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 1.6rem;
-}
-
-.sdx-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  padding: 0.85rem 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  border: 1px solid transparent;
-  text-decoration: none;
-  cursor: pointer;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-}
-
-.sdx-btn:hover {
-  transform: translateY(-1px);
-}
-
-.sdx-btn:active {
-  transform: translateY(0);
-}
-
-.sdx-btn:focus-visible {
-  outline: 2px solid rgba(255, 196, 106, 0.9);
-  outline-offset: 3px;
-}
-
-.sdx-btn:visited,
-.sdx-btn:hover {
-  color: var(--text);
-}
-
-.sdx-btn-primary {
-  background: linear-gradient(120deg, var(--muted), #d9e2ff);
-  color: #041022;
-  box-shadow: 0 12px 30px rgba(159, 176, 255, 0.25);
-  border: none;
-}
-
-.sdx-btn-primary:visited,
-.sdx-btn-primary:hover {
-  color: #041022;
-}
-
-.sdx-btn-primary:hover {
-  box-shadow: 0 16px 42px rgba(159, 176, 255, 0.32);
-}
-
-.sdx-btn-ghost {
-  background: transparent;
-  border: 1px solid var(--border);
-  color: var(--text);
-}
-
-.sdx-btn-ghost:visited,
-.sdx-btn-ghost:hover {
-  color: var(--text);
-}
-
-.sdx-btn-ghost:hover {
-  background: rgba(217, 226, 255, 0.08);
-  border-color: rgba(217, 226, 255, 0.22);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .sdx-hero-panel::before,
-  .sdx-hero-panel::after,
-  .sdx-hero-media-img,
-  .sdx-hero-media-card {
-    animation: none !important;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .sdx-hero-media-img {
-    animation: heroKenBurns 18s ease-in-out infinite alternate;
-  }
-
-  .sdx-hero-media-card {
-    animation: heroFloat 7.5s ease-in-out infinite;
-  }
-}
-
-.sdx-back-to-top {
-  position: fixed;
-  right: 1.25rem;
-  bottom: 1.25rem;
-  z-index: 40;
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: rgba(13, 16, 36, 0.78);
-  color: var(--text);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
-  cursor: pointer;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(10px) scale(0.98);
-  transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
-}
-
-.sdx-back-to-top::after {
-  content: "Back to top";
-  position: absolute;
-  right: calc(100% + 0.75rem);
-  top: 50%;
-  transform: translateY(-50%) translateX(10px);
-  padding: 0.35rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(13, 16, 36, 0.9);
-  color: var(--text);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  font-size: 0.8rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  white-space: nowrap;
-}
-
-.sdx-back-to-top.is-visible {
-  opacity: 1;
-  pointer-events: auto;
-  transform: none;
-}
-
-.sdx-back-to-top:hover {
-  border-color: rgba(159, 176, 255, 0.45);
-  color: #f7f9ff;
-  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.55);
-  transform: translateY(-2px);
-}
-
-.sdx-back-to-top:hover::after,
-.sdx-back-to-top:focus-visible::after {
-  opacity: 1;
-  transform: translateY(-50%) translateX(0);
-}
-
-.sdx-back-to-top:focus-visible {
-  outline: 2px solid rgba(255, 196, 106, 0.9);
-  outline-offset: 3px;
-}
-
-.sdx-back-to-top svg {
-  width: 20px;
-  height: 20px;
-  transition: transform 0.2s ease;
-}
-
-.sdx-back-to-top:hover svg {
-  transform: translateY(-1px);
-}
-
-.sdx-hero-badge {
-  display: grid;
-  gap: 1rem;
-  padding: 1.4rem;
-  border-radius: 16px;
-  background: rgba(13, 16, 36, 0.72);
-  border: 1px solid var(--border);
-}
-
-.sdx-hero-badge h4 {
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin: 0;
-  color: #f7f9ff;
-}
-
-.sdx-hero-media {
-  position: relative;
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  min-height: 380px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
-  background: rgba(13, 16, 36, 0.72);
-}
-
-.sdx-hero-media-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transform: translate3d(0,0,0) scale(1.04);
-  will-change: transform;
-  filter: saturate(1.05) contrast(1.05);
-}
-
-.sdx-hero-media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(5, 8, 20, 0.22), rgba(5, 8, 20, 0.86) 66%);
-  z-index: 0;
-}
-
-.sdx-hero-media-overlay {
-  position: absolute;
-  inset: 0;
-  padding: 1.25rem;
-  display: flex;
-  align-items: flex-end;
-  z-index: 1;
-}
-
-.sdx-hero-media-card {
-  width: 100%;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  background: rgba(13, 16, 36, 0.78);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.32);
-  padding: 1.15rem 1.15rem 1.1rem;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.sdx-hero-media-card h4 {
-  margin: 0;
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: #f7f9ff;
-}
-
-.sdx-hero-media-card p {
-  margin: 0.55rem 0 0;
-  color: var(--text);
-}
-
-.sdx-hero-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.85rem;
-}
-
-.sdx-hero-media-card .sdx-note {
-  margin: 0.8rem 0 0;
-}
-
-.sdx-hero-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 0.75rem;
-}
-
-.sdx-mini-stat {
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  padding: 0.8rem 0.9rem;
-  background: rgba(15, 21, 48, 0.65);
-}
-
-.sdx-mini-stat .label {
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
-.sdx-mini-stat .value {
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-  font-size: 1.4rem;
-  color: #f7f9ff;
-}
-
-.sdx-panel,
-.sdx-card {
-  background: rgba(13, 16, 36, 0.72);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 1.5rem;
-  height: 100%;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.sdx-panel {
-  height: auto;
-}
-
-.sdx-panel + .sdx-panel {
-  margin-top: 1.25rem;
-}
-
-.sdx-panel:hover,
-.sdx-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(159, 176, 255, 0.45);
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.35);
-}
-
-.sdx-grid-cards {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.sdx-formula-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
-  margin-top: 1.1rem;
-}
-
-.sdx-formula-grid.sdx-formula-grid-core .sdx-formula-card:last-child {
-  grid-column: 1 / -1;
-}
-
-.sdx-step-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 1.25rem;
-}
-
-.sdx-step-card {
-  border-radius: 16px;
-  padding: 1.2rem 1.25rem;
-  background: linear-gradient(150deg, rgba(159, 176, 255, 0.07), rgba(255, 196, 106, 0.08));
-  border: 1px solid var(--border);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
-  position: relative;
-  overflow: hidden;
-}
-
-.sdx-step-card::after {
-  content: "";
-  position: absolute;
-  inset: -40% -20% auto auto;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: rgba(159, 176, 255, 0.08);
-  filter: blur(30px);
-  pointer-events: none;
-}
-
-.sdx-step-head {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-
-.sdx-step-num {
-  width: 34px;
-  height: 34px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(5, 8, 20, 0.55);
-  color: #f7f9ff;
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-  font-weight: 700;
-}
-
-.sdx-step-card .title {
-  margin: 0;
-}
-
-.sdx-step-card p {
-  margin: 0.65rem 0 0;
-  color: var(--muted);
-}
-
-.sdx-formula-card {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 16px;
-  padding: 1rem 1.1rem;
-  background: rgba(13, 16, 36, 0.78);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
-  position: relative;
-  overflow: hidden;
-}
-
-.sdx-formula-card::after {
-  content: "";
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  top: -35px;
-  right: -35px;
-  border-radius: 50%;
-  background: rgba(159, 176, 255, 0.12);
-  filter: blur(22px);
-}
-
-.sdx-formula-card h4 {
-  margin: 0;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--accent-2);
-}
-
-.sdx-formula-card .formula {
-  margin-top: 0.55rem;
-  padding: 0.65rem 0.8rem;
-  border-radius: 14px;
-  background: rgba(5, 8, 20, 0.55);
-  border: 1px solid var(--border);
-  color: #f7f9ff;
-  text-align: center;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-}
-
-.sdx-panel[id^="chapter-"] { padding: 2rem; }
-.sdx-panel[id^="chapter-"] + .sdx-panel[id^="chapter-"] { margin-top: 2.5rem; }
-
-.sdx-chapter-hero {
-  position: relative;
-  margin: 1.15rem 0 1.6rem;
-  height: 240px;
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: rgba(13, 16, 36, 0.55);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
-}
-
-.sdx-chapter-hero-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transform: scale(1.06);
-  opacity: 0.32;
-  filter: saturate(1.05) contrast(1.06);
-}
-
-.sdx-chapter-hero--top .sdx-chapter-hero-img {
-  object-position: center top;
-}
-
-.sdx-chapter-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 18% 20%, rgba(159, 176, 255, 0.22), transparent 55%),
-    radial-gradient(circle at 82% 10%, rgba(255, 196, 106, 0.18), transparent 55%),
-    linear-gradient(180deg, rgba(5, 8, 20, 0.25), rgba(5, 8, 20, 0.95) 82%);
-  pointer-events: none;
-}
-
-.sdx-chapter-hero-caption {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 0.25rem;
-  padding: 1rem 1.1rem;
-}
-
-.sdx-chapter-hero-kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-size: 0.72rem;
-  color: rgba(232, 237, 255, 0.82);
-}
-
-.sdx-chapter-hero-title {
-  margin: 0;
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  font-size: 1.15rem;
-  color: #f7f9ff;
-}
-
-@media (max-width: 980px) {
-  .sdx-chapter-hero {
-    height: 200px;
-  }
-}
-
-
-.sdx-formula-card .formula::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-.sdx-formula-card .formula mjx-container {
-  overflow: visible !important;
-}
-
-.sdx-formula-card p {
-  margin: 0.55rem 0 0;
-  font-size: 0.88rem;
-  color: var(--muted);
-}
-
-.sdx-list {
-  padding-left: 1.1rem;
-  margin: 0.6rem 0;
-}
-
-.sdx-list li {
-  padding: 0.12rem 0;
-}
-
-.sdx-case-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  align-items: stretch;
-  gap: 1rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .sdx-case-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.15rem;
-  }
-}
-
-@media (min-width: 980px) {
-  .sdx-case-grid {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 1.25rem;
-  }
-
-  .sdx-case-grid .sdx-case-card {
-    grid-column: span 2;
-  }
-
-  .sdx-case-grid .sdx-case-card-wide {
-    grid-column: span 3;
-  }
-}
-
-.sdx-case-grid + .sdx-panel {
-  margin-top: 1.25rem;
-}
-
-.sdx-case-card {
-  border-radius: 16px;
-  padding: 1.3rem 1.4rem;
-  background: linear-gradient(150deg, rgba(159, 176, 255, 0.08), rgba(255, 196, 106, 0.09));
-  border: 1px solid var(--border);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 0.75rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.sdx-case-card .title {
-  margin: 0;
-}
-
-.sdx-case-card p {
-  margin: 0;
-}
-
-.sdx-case-card .sdx-note {
-  margin-top: auto;
-  margin-bottom: 0.2rem;
-}
-
-.sdx-case-card-wide {
-  /* grid span set in media query above */
-}
-
-.sdx-case-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
-}
-
-.sdx-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.25rem 0.65rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 0.9rem;
-  background: rgba(13, 16, 36, 0.55);
-}
-
-.sdx-chart-block {
-  margin: 1.5rem 0 1.25rem;
-  padding: 1.6rem;
-  border-radius: 16px;
-  background: radial-gradient(circle at 10% 20%, rgba(159, 176, 255, 0.12), transparent 55%),
-              radial-gradient(circle at 90% 10%, rgba(255, 196, 106, 0.14), transparent 45%),
-              rgba(13, 16, 36, 0.7);
-  border: 1px solid var(--border);
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.sdx-embed-block {
-  margin: 1.75rem 0 1.75rem;
-}
-
-.sdx-embed-block.is-tight {
-  margin-bottom: 0.85rem;
-}
-
-.sdx-embed-stack {
-  display: grid;
-  gap: 1.35rem;
-}
-
-.sdx-embed-subbox {
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 14px;
-  padding: 0.55rem;
-  background: rgba(5, 8, 20, 0.18);
-}
-
-.sdx-embed-subbox iframe {
-  border-radius: 12px;
-}
-
-.sdx-embed-explain {
-  padding: 1.05rem 1.1rem;
-  background: radial-gradient(circle at 22% 18%, rgba(159, 176, 255, 0.10), transparent 62%),
-              rgba(5, 8, 20, 0.18);
-}
-
-.sdx-embed-explain p {
-  margin: 0;
-  max-width: 68ch;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  color: rgba(232, 237, 255, 0.9);
-  line-height: 1.55;
-}
-
-.sdx-embed-explain p + p {
-  margin-top: 0.75rem;
-}
-
-.sdx-embed-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.35rem;
-  align-items: stretch;
-}
-
-.sdx-embed-card {
-  border-radius: 18px;
-  border: 1px solid var(--border);
-  background: rgba(13, 16, 36, 0.68);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.sdx-embed-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(159, 176, 255, 0.32);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.36);
-}
-
-.sdx-embed-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.75rem;
-  padding: 0.75rem 0.9rem;
-  background: rgba(5, 8, 20, 0.12);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.sdx-embed-title {
-  margin: 0;
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  font-size: 1rem;
-  color: #f7f9ff;
-}
-
-.sdx-embed-kicker {
-  color: rgba(232, 237, 255, 0.8);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.72rem;
-  white-space: nowrap;
-}
-
-.sdx-embed-body {
-  padding: 0.55rem;
-  background: rgba(5, 8, 20, 0.28);
-}
-
-.sdx-embed-body iframe {
-  width: 100%;
-  height: 780px;
-  display: block;
-  border: 0;
-  overflow: hidden;
-  border-radius: 14px;
-  background: rgba(13, 16, 36, 0.55);
-}
-
-.sdx-embed-media {
-  border-radius: 14px;
-  overflow: hidden;
-  background: rgba(13, 16, 36, 0.55);
-}
-
-.sdx-embed-media .flourish-embed {
-  margin: 0 !important;
-}
-
-.sdx-embed-media iframe {
-  width: 100% !important;
-  border: 0;
-  display: block;
-}
-
-.sdx-formula-block {
-  background: rgba(13, 16, 36, 0.82);
-
-}
-
-.sdx-placeholder {
-  border-style: dashed;
-  border-color: rgba(159, 176, 255, 0.45);
-}
-
-.sdx-window-visual {
-  margin-top: 1.15rem;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  background: radial-gradient(circle at 20% 20%, rgba(159, 176, 255, 0.10), transparent 55%),
-              rgba(5, 8, 20, 0.35);
-  padding: 1.1rem 1.1rem 0.9rem;
-  overflow: hidden;
-}
-
-.sdx-window-svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.sdx-window-axis {
-  stroke: rgba(255, 255, 255, 0.24);
-  stroke-width: 4;
-  stroke-linecap: round;
-  stroke-dasharray: 1200;
-  stroke-dashoffset: 1200;
-}
-
-.sdx-window-tick {
-  stroke: rgba(255, 255, 255, 0.20);
-  stroke-width: 2;
-  opacity: 0.9;
-}
-
-.sdx-window-label {
-  fill: rgba(232, 237, 255, 0.92);
-  font-size: 14px;
-  font-weight: 600;
-  opacity: 0;
-}
-
-.sdx-window-label-muted {
-  fill: rgba(159, 176, 255, 0.95);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.sdx-window-pre,
-.sdx-window-post {
-  stroke-width: 1;
-  opacity: 0;
-  transform: scaleX(0);
-  transform-box: fill-box;
-}
-
-.sdx-window-pre {
-  fill: rgba(159, 176, 255, 0.16);
-  stroke: rgba(159, 176, 255, 0.42);
-  transform-origin: 100% 50%;
-}
-
-.sdx-window-post {
-  fill: rgba(78, 205, 196, 0.14);
-  stroke: rgba(78, 205, 196, 0.38);
-  transform-origin: 0% 50%;
-}
-
-.sdx-window-event {
-  stroke: rgba(255, 196, 106, 0.95);
-  stroke-width: 4;
-  stroke-linecap: round;
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  opacity: 0;
-}
-
-.sdx-window-glow {
-  fill: rgba(255, 196, 106, 0.85);
-  opacity: 0;
-}
-
-.sdx-window-glow-soft {
-  fill: rgba(255, 196, 106, 0.20);
-  filter: blur(10px);
-  opacity: 0;
-}
-
-.sdx-window-steps {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.9rem;
-  margin-top: 1.1rem;
-}
-
-.sdx-window-step {
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  background: rgba(13, 16, 36, 0.62);
-  padding: 1rem 1.05rem;
-  opacity: 0;
-  transform: translateY(10px);
-}
-
-.sdx-window-step h4 {
-  margin: 0;
-  font-family: "Space Grotesk", "Source Sans 3", sans-serif;
-  font-size: 0.95rem;
-  letter-spacing: 0.01em;
-}
-
-.sdx-window-step p {
-  margin: 0.55rem 0 0;
-  color: var(--text);
-  font-size: 0.95rem;
-}
-
-.sdx-window-step .sdx-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-bottom: 0.55rem;
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  font-weight: 700;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.sdx-window-step-pre .sdx-chip {
-  color: rgba(159, 176, 255, 0.95);
-  background: rgba(159, 176, 255, 0.10);
-}
-
-.sdx-window-step-event .sdx-chip {
-  color: rgba(255, 196, 106, 0.95);
-  background: rgba(255, 196, 106, 0.10);
-}
-
-.sdx-window-step-post .sdx-chip {
-  color: rgba(78, 205, 196, 0.9);
-  background: rgba(78, 205, 196, 0.09);
-}
-
-.sdx-window-block.animate-in .sdx-window-axis {
-  animation: sdxDrawAxis 1.2s ease forwards;
-}
-
-.sdx-window-block.animate-in .sdx-window-pre {
-  opacity: 1;
-  animation: sdxGrowBand 1s ease 0.75s forwards;
-}
-
-.sdx-window-block.animate-in .sdx-window-event {
-  opacity: 1;
-  animation: sdxDrawEvent 0.75s ease 1.55s forwards;
-}
-
-.sdx-window-block.animate-in .sdx-window-post {
-  opacity: 1;
-  animation: sdxGrowBand 1s ease 2s forwards;
-}
-
-.sdx-window-block.animate-in .sdx-window-glow,
-.sdx-window-block.animate-in .sdx-window-glow-soft {
-  opacity: 1;
-  animation: sdxPopGlow 0.8s ease 1.65s both;
-}
-
-.sdx-window-block.animate-in .sdx-window-label {
-  animation: sdxFadeIn 0.7s ease 2.55s forwards;
-}
-
-.sdx-window-block.animate-in .sdx-window-step:nth-child(1) {
-  animation: sdxPopStep 0.7s ease 2.9s forwards;
-}
-
-.sdx-window-block.animate-in .sdx-window-step:nth-child(2) {
-  animation: sdxPopStep 0.7s ease 3.15s forwards;
-}
-
-.sdx-window-block.animate-in .sdx-window-step:nth-child(3) {
-  animation: sdxPopStep 0.7s ease 3.4s forwards;
-}
-
-@keyframes sdxDrawAxis {
-  to { stroke-dashoffset: 0; }
-}
-
-@keyframes sdxGrowBand {
-  to { transform: scaleX(1); }
-}
-
-@keyframes sdxDrawEvent {
-  to { stroke-dashoffset: 0; }
-}
-
-@keyframes sdxPopGlow {
-  0% { transform: scale(0.85); }
-  55% { transform: scale(1.08); }
-  100% { transform: scale(1); }
-}
-
-@keyframes sdxFadeIn {
-  to { opacity: 1; }
-}
-
-@keyframes sdxPopStep {
-  to { opacity: 1; transform: none; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .sdx-window-axis,
-  .sdx-window-event {
-    stroke-dasharray: none;
-    stroke-dashoffset: 0;
-  }
-  .sdx-window-pre,
-  .sdx-window-post {
-    opacity: 1;
-    transform: none;
-  }
-  .sdx-window-label,
-  .sdx-window-step {
-    opacity: 1;
-    transform: none;
-    animation: none !important;
-  }
-}
-
-.sdx-dual-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 0.7fr) minmax(0, 0.3fr);
-  gap: 1.25rem;
-  margin-top: 1.2rem;
-  align-items: start;
-}
-
-.sdx-dual-panel .sdx-chart-block {
-  margin: 0;
-}
-
-.sdx-note {
-  color: var(--muted);
-  font-size: 0.9rem;
-  margin-top: 0.8rem;
-}
-
-/* Scroll-triggered reveal animations */
-[data-animate] {
-  opacity: 0;
-  transform: translateY(12px);
-  transition: opacity 0.35s ease, transform 0.35s ease;
-  will-change: opacity, transform;
-}
-
-[data-animate="scale"] {
-  transform: scale(0.97);
-}
-
-[data-animate].animate-in {
-  opacity: 1;
-  transform: none;
-}
-
-@media (max-width: 980px) {
-  .sdx-hero-grid,
-  .sdx-dual-panel {
-    grid-template-columns: 1fr;
-  }
-
-  .sdx-formula-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .sdx-step-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .sdx-case-grid {
-    justify-content: stretch;
-    margin-bottom: 1.25rem;
-  }
-
-  .sdx-case-grid .sdx-case-card {
-    max-width: none;
-  }
-
-  .sdx-hero-media {
-    min-height: 300px;
-  }
-
-  .sdx-section.alt {
-    padding: 1.9rem;
-    margin: 1.35rem 0;
-  }
-
-  .sdx-embed-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .sdx-window-steps {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
 
 <!-- HERO / INTRO -->
 <section class="section sdx-section" id="intro">
@@ -2249,12 +753,12 @@ When we step back and look at all eight Apple events together, a striking patter
 
     <div class="sdx-embed-card" data-animate="fade-up">
       <div class="sdx-embed-head">
-        <h4 class="sdx-embed-title">Plot Read: Apple’s Slow Recognition</h4>
+        <h4 class="sdx-embed-title">Plot Read: Appleâ€™s Slow Recognition</h4>
         <span class="sdx-embed-kicker">Key takeaway</span>
       </div>
       <div class="sdx-embed-body">
         <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          When we step back and compare all eight Apple events together, a consistent pattern emerges. The chart overlays each innovation from iPod to Vision Pro across the same ±30 trading-day window, showing how the market absorbed the news over time.
+          When we step back and compare all eight Apple events together, a consistent pattern emerges. The chart overlays each innovation from iPod to Vision Pro across the same Â±30 trading-day window, showing how the market absorbed the news over time.
         </p>
         <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
           Day-0 reactions are all over the place: some dip, some barely move, a few jump. But the follow-through is the story. Over the next weeks, every curve trends upward and finishes the 30-day window positive.
@@ -2283,7 +787,7 @@ When we step back and look at all eight Apple events together, a striking patter
         ></iframe>
         <div style="margin-top: 0.85rem;">
           <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-            This chart is the punchline of the Apple chapter. For each innovation, it puts two numbers side by side: the market’s reaction on day 0, and the outcome after 30 trading days.
+            This chart is the punchline of the Apple chapter. For each innovation, it puts two numbers side by side: the marketâ€™s reaction on day 0, and the outcome after 30 trading days.
           </p>
           <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
             Start with the iPod. It dropped <strong>-4.63%</strong> on announcement day, yet finished <strong>+30.98%</strong> over 30 days. That is a swing of more than <strong>35 percentage points</strong> between the first reaction and the later verdict.
@@ -2292,7 +796,7 @@ When we step back and look at all eight Apple events together, a striking patter
             Now look across all eight events. Day-0 returns are inconsistent: some positive, some negative, with no clear pattern. The 30-day returns are the opposite: every single event ends positive. That contrast is the whole message.
           </p>
           <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-            For Apple, event-day moves are a poor read on market recognition. In our sample, the relationship between day-0 and 30-day returns is essentially zero.The market’s first reaction is often just a headline response. The real signal shows up gradually, as the product’s meaning becomes easier to price.
+            For Apple, event-day moves are a poor read on market recognition. In our sample, the relationship between day-0 and 30-day returns is essentially zero.The marketâ€™s first reaction is often just a headline response. The real signal shows up gradually, as the productâ€™s meaning becomes easier to price.
           </p>
         </div>
       </div>
@@ -3065,7 +1569,7 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
       </div>
       <div style="margin-top: 0.85rem;">
         <p style="margin: 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          Here’s the fun part: approvals don’t just move the innovator. They reshuffle the whole competitive map.
+          Hereâ€™s the fun part: approvals donâ€™t just move the innovator. They reshuffle the whole competitive map.
         </p>
         <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
           This Sankey ranks the <strong>top 3 companies by 30-day cumulative return</strong> after each of our <strong>10 healthcare events</strong>, split into two panels:
@@ -3077,7 +1581,7 @@ The market recognized CRISPR's approval as transformative, not just for Vertex (
           <strong>Bottom:</strong> Negative impact, who lost ground after each event
         </p>
         <p style="margin: 0.85rem 0 0; color: rgba(232, 237, 255, 0.9); line-height: 1.55;">
-          &#128161; <strong>Key insight:</strong> approvals don’t just reward the innovator. The positive panel shows flows spreading to adjacent players positioned for the same therapeutic shift. The negative panel captures competitive casualties: when a breakthrough drug launches, rivals and incumbents often lose ground.
+          &#128161; <strong>Key insight:</strong> approvals donâ€™t just reward the innovator. The positive panel shows flows spreading to adjacent players positioned for the same therapeutic shift. The negative panel captures competitive casualties: when a breakthrough drug launches, rivals and incumbents often lose ground.
         </p>
       </div>
     </div>
@@ -3269,22 +1773,22 @@ This figure brings the full story together. Imagine a map of market recognition:
 That simple setup creates four quadrants: four ways the market can process the exact same kind of "big announcement."
 
 - **Instant Winners (Q1):** positive immediately and still positive by day 30
-- **Slow Burns (Q2 🔥):** negative on day 0, but positive by day 30
+- **Slow Burns (Q2 ðŸ”¥):** negative on day 0, but positive by day 30
 - **False Starts (Q4):** positive on day 0, then fade below zero by day 30
 - **Double Losers (Q3):** negative on day 0 and still negative by day 30
 
-The dashed trend line and **R² = 0.05** make the point bluntly: day-0 moves explain almost none of the 30-day outcomes. The real "recognition" signal shows up in the weeks after the announcement, not the hours after the headline.
+The dashed trend line and **RÂ² = 0.05** make the point bluntly: day-0 moves explain almost none of the 30-day outcomes. The real "recognition" signal shows up in the weeks after the announcement, not the hours after the headline.
 
 The bar chart on the right quantifies how often each archetype appears across our 24 single-company events:
 
 | Archetype       | Share | Count |
 | --------------- | ----- | ----: |
 | Instant Winners | 46%   |    11 |
-| Slow Burns 🔥   | 38%   |     9 |
+| Slow Burns ðŸ”¥ | 38%   |     9 |
 | False Starts    | 8%    |     2 |
 | Double Losers   | 8%    |     2 |
 
-&#128161; <strong>Key insight:</strong> The most fascinating finding is the Slow Burn quadrant: <strong>38%</strong> of events start negative on day 0, but still finish the month positive. In fact, only <strong>8%</strong> of innovations are "true failures"—<strong>84%</strong> end up positive over 30 days. These are the moments patient investors could have captured while others panicked over the first print.
+&#128161; <strong>Key insight:</strong> The most fascinating finding is the Slow Burn quadrant: <strong>38%</strong> of events start negative on day 0, but still finish the month positive. In fact, only <strong>8%</strong> of innovations are "true failures"â€”<strong>84%</strong> end up positive over 30 days. These are the moments patient investors could have captured while others panicked over the first print.
 
 </div>
 
@@ -3299,7 +1803,7 @@ The bar chart on the right quantifies how often each archetype appears across ou
 
 Patterns are interesting. But can we turn them into something actionable? Can we **quantify** what makes an innovation truly transformative versus merely hyped?
 
-Based on our pattern analysis, we built an **Innovation Signature Score** framework—a systematic way to measure how strongly the market recognized any given innovation.
+Based on our pattern analysis, we built an **Innovation Signature Score** frameworkâ€”a systematic way to measure how strongly the market recognized any given innovation.
 
 ---
 
@@ -3326,7 +1830,7 @@ Before building the score, we needed to identify which signals actually matter. 
 
 **The striking finding:** Event Day Return and 30-Day Return have only **r = 0.22 correlation**. The market's immediate reaction has almost no predictive power for sustained performance. Event day is theater. The 30-day window is where recognition actually happens.
 
-But one relationship stood out: **successful innovations decrease volatility** (r = -0.25). True breakthroughs don't just move prices—they resolve uncertainty.
+But one relationship stood out: **successful innovations decrease volatility** (r = -0.25). True breakthroughs don't just move pricesâ€”they resolve uncertainty.
 
 ---
 
@@ -3335,7 +1839,7 @@ But one relationship stood out: **successful innovations decrease volatility** (
 <div class="sdx-embed-block">
   <div class="sdx-embed-card" data-animate="fade-up">
     <div class="sdx-embed-head">
-      <h4 class="sdx-embed-title">Footprint types donut chart</h4>
+      <h4 class="sdx-embed-title">Footprint typesÂ donutÂ chart</h4>
       <span class="sdx-embed-kicker">Interactive window</span>
     </div>
     <div class="sdx-embed-body">
@@ -3387,12 +1891,12 @@ The most fascinating finding lives in the Slow Burn bucket. Selling on a bad day
 
 One of our most counterintuitive discoveries: **successful innovations REDUCE post-event volatility.**
 
-| Outcome             | Pre-Event Vol | Post-Event Vol | Change     |
-| ------------------- | ------------- | -------------- | ---------- |
-| Positive 30d Return | 2.38%         | 2.26%          | **−0.12%** |
-| Negative 30d Return | 2.74%         | 3.06%          | **+0.32%** |
+| Outcome             | Pre-Event Vol | Post-Event Vol | Change       |
+| ------------------- | ------------- | -------------- | ------------ |
+| Positive 30d Return | 2.38%         | 2.26%          | **âˆ’0.12%** |
+| Negative 30d Return | 2.74%         | 3.06%          | **+0.32%**   |
 
-**Interpretation:** True innovations resolve uncertainty. Before an announcement, the market doesn't know what to expect. After a successful innovation, price discovery occurs—investors converge on a valuation, and volatility decreases.
+**Interpretation:** True innovations resolve uncertainty. Before an announcement, the market doesn't know what to expect. After a successful innovation, price discovery occursâ€”investors converge on a valuation, and volatility decreases.
 
 ---
 
@@ -3406,15 +1910,15 @@ The 30-day cumulative return, capped to prevent outliers from dominating. Big re
 
 ### Component 2: Positive Return Bonus (20 points)
 
-If the 30-day return is positive, add 20 points. Direction matters more than magnitude—being positive signals success.
+If the 30-day return is positive, add 20 points. Direction matters more than magnitudeâ€”being positive signals success.
 
 ### Component 3: Momentum Sustained (15 points)
 
-If the 30-day return exceeds the event-day return, add 15 points. This captures the **Slow Burn** pattern—innovations that build momentum over time.
+If the 30-day return exceeds the event-day return, add 15 points. This captures the **Slow Burn** patternâ€”innovations that build momentum over time.
 
 ### Component 4: Volatility Stabilization (0-10 points)
 
-If post-event volatility is lower than pre-event volatility, add points. True innovations **resolve uncertainty**—the market figures out what something is worth.
+If post-event volatility is lower than pre-event volatility, add points. True innovations **resolve uncertainty**â€”the market figures out what something is worth.
 
 ### Component 5: Volume Conviction (0-10 points)
 
@@ -3424,12 +1928,12 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
 
 ## Innovation Categories
 
-| Score  | Category                 | Interpretation                          |
-| ------ | ------------------------ | --------------------------------------- |
-| ≥60    | 🌟 **Transformative**    | Clear, sustained market recognition     |
-| 40-59  | ✅ **Strong Innovation** | Solid recognition with some uncertainty |
-| 20-39  | 🔶 **Moderate**          | Mixed signals, partial recognition      |
-| &lt;20 | ❌ **Weak/Negative**     | Market rejected or ignored              |
+| Score  | Category                  | Interpretation                          |
+| ------ | ------------------------- | --------------------------------------- |
+| â‰¥60  | ðŸŒŸ **Transformative**   | Clear, sustained market recognition     |
+| 40-59  | âœ… **Strong Innovation** | Solid recognition with some uncertainty |
+| 20-39  | ðŸ”¶ **Moderate**         | Mixed signals, partial recognition      |
+| &lt;20 | âŒ **Weak/Negative**      | Market rejected or ignored              |
 
 ---
 
@@ -3452,7 +1956,7 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
   </div>
 </div>
 
-### 🌟 Transformative (Score ≥60):
+### ðŸŒŸ Transformative (Score â‰¥60):
 
 | Event                  | Company | Score | 30-Day Return |
 | ---------------------- | ------- | ----- | ------------- |
@@ -3464,7 +1968,7 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
 | RTX 2080 Ti Launch     | NVIDIA  | 61    | +15.65%       |
 | Tesla Bot Announcement | Tesla   | 60    | +15.11%       |
 
-**The key insight:** The iPod (-4.6% on day 0) scores as highly as the hyped Cybertruck reveal (+0.7% on day 0). Our framework captures both immediate blockbusters and slow-burn transformations—because it rewards **sustained momentum**, not initial hype.
+**The key insight:** The iPod (-4.6% on day 0) scores as highly as the hyped Cybertruck reveal (+0.7% on day 0). Our framework captures both immediate blockbusters and slow-burn transformationsâ€”because it rewards **sustained momentum**, not initial hype.
 
 </div>
 
@@ -3477,7 +1981,7 @@ If trading volume increased by more than 20%, add 10 points. Sustained attention
 
     <div class="sdx-panel" data-animate="fade-up" markdown="1">
 
-A framework is only valuable if it works on data it wasn't trained on. We tested on **13 out-of-sample events**—different companies, different industries, different time periods.
+A framework is only valuable if it works on data it wasn't trained on. We tested on **13 out-of-sample events**â€”different companies, different industries, different time periods.
 
 ---
 
@@ -3512,17 +2016,17 @@ A framework is only valuable if it works on data it wasn't trained on. We tested
   </div>
 </div>
 
-| Event                 | Score | Category    | 30-Day Return |
-| --------------------- | ----- | ----------- | ------------- |
-| Moderna mRNA 94.5%    | 58    | ✅ Strong   | +13.5%        |
-| Google Gemini         | 57    | ✅ Strong   | +12.3%        |
-| GitHub Copilot GA     | 56    | ✅ Strong   | +11.3%        |
-| Microsoft OpenAI $10B | 55    | ✅ Strong   | +5.0%         |
-| Bitcoin ETF           | 45    | ✅ Strong   | +3.8%         |
-| AlphaFold 2           | 25    | 🔶 Moderate | -0.4%         |
-| Netflix Streaming     | 19    | ❌ Weak     | -0.9%         |
-| AlphaGo               | 6     | ❌ Weak     | -3.9%         |
-| Meta Llama 2          | -4    | ❌ Weak     | -4.5%         |
+| Event                 | Score | Category      | 30-Day Return |
+| --------------------- | ----- | ------------- | ------------- |
+| Moderna mRNA 94.5%    | 58    | âœ… Strong    | +13.5%        |
+| Google Gemini         | 57    | âœ… Strong    | +12.3%        |
+| GitHub Copilot GA     | 56    | âœ… Strong    | +11.3%        |
+| Microsoft OpenAI $10B | 55    | âœ… Strong    | +5.0%         |
+| Bitcoin ETF           | 45    | âœ… Strong    | +3.8%         |
+| AlphaFold 2           | 25    | ðŸ”¶ Moderate | -0.4%         |
+| Netflix Streaming     | 19    | âŒ Weak       | -0.9%         |
+| AlphaGo               | 6     | âŒ Weak       | -3.9%         |
+| Meta Llama 2          | -4    | âŒ Weak       | -4.5%         |
 
 ---
 
@@ -3530,7 +2034,7 @@ A framework is only valuable if it works on data it wasn't trained on. We tested
 
 | Group              | N   | Avg 30-Day Return           |
 | ------------------ | --- | --------------------------- |
-| High Score (≥40)   | 5   | **+9.2%**                   |
+| High Score (â‰¥40) | 5   | **+9.2%**                   |
 | Low Score (&lt;40) | 8   | **-1.9%**                   |
 | **Separation**     |     | **+11.1 percentage points** |
 
@@ -3557,10 +2061,10 @@ A framework is only valuable if it works on data it wasn't trained on. We tested
   </div>
 </div>
 
-Plotting the ±30 day cumulative return windows reveals how differently the market processes each innovation:
+Plotting the Â±30 day cumulative return windows reveals how differently the market processes each innovation:
 
-- **High scorers** (Moderna, Copilot, Gemini) show steady upward trajectories—conviction building over time
-- **Low scorers** (AlphaGo, Llama 2) flatline or drift negative—the market never found a reason to reprice
+- **High scorers** (Moderna, Copilot, Gemini) show steady upward trajectoriesâ€”conviction building over time
+- **Low scorers** (AlphaGo, Llama 2) flatline or drift negativeâ€”the market never found a reason to reprice
 
 The average curve across all test events mirrors what we saw in training: a slight dip around event day (uncertainty), followed by gradual separation as winners pull away from losers.
 
@@ -3568,15 +2072,15 @@ The average curve across all test events mirrors what we saw in training: a slig
 
 ## Case Studies: What the Framework Reveals
 
-**✅ Moderna mRNA (Score: 58)** — Efficacy data eliminated uncertainty. Volatility dropped. Momentum sustained. Framework correctly identified Strong Innovation.
+**âœ… Moderna mRNA (Score: 58)** â€” Efficacy data eliminated uncertainty. Volatility dropped. Momentum sustained. Framework correctly identified Strong Innovation.
 
-**✅ GitHub Copilot GA (Score: 56)** — When AI-assisted coding went mainstream in June 2022, our framework flagged it as Strong Innovation. The 30-day return (+11.3%) confirmed it. This wasn't hype—it was a real product shipping to real developers.
+**âœ… GitHub Copilot GA (Score: 56)** â€” When AI-assisted coding went mainstream in June 2022, our framework flagged it as Strong Innovation. The 30-day return (+11.3%) confirmed it. This wasn't hypeâ€”it was a real product shipping to real developers.
 
-**❌ AlphaGo (Score: 6)** — Arguably the most important AI milestone of the decade. But it was a _research demonstration_, not a product. No revenue, no commercial application. The market shrugged.
+**âŒ AlphaGo (Score: 6)** â€” Arguably the most important AI milestone of the decade. But it was a _research demonstration_, not a product. No revenue, no commercial application. The market shrugged.
 
 > This validates our logic: the framework measures **market recognition**, not historical importance. Some innovations matter enormously for technology's arc while leaving no immediate stock footprint.
 
-**❌ Netflix Streaming (Score: 19)** — We know now it was the beginning of the streaming revolution. In 2007? The market didn't care. The ultimate slow-burn—too slow for even our 30-day window.
+**âŒ Netflix Streaming (Score: 19)** â€” We know now it was the beginning of the streaming revolution. In 2007? The market didn't care. The ultimate slow-burnâ€”too slow for even our 30-day window.
 
 <div class="flourish-embed flourish-gauge" data-src="visualisation/26749201"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26749201/thumbnail" width="100%" alt="gauge visualization" /></noscript></div>
 
@@ -3601,7 +2105,7 @@ The average curve across all test events mirrors what we saw in training: a slig
     </div>
   </div>
 
-We packaged everything into an interactive dashboard. Enter any ticker and date—the system fetches real data from Yahoo Finance and calculates the Innovation Score with full breakdown.
+We packaged everything into an interactive dashboard. Enter any ticker and dateâ€”the system fetches real data from Yahoo Finance and calculates the Innovation Score with full breakdown.
 
 The next time a major innovation is announced, you can run it through the framework and get an objective assessment of market recognition.
 
@@ -3621,11 +2125,11 @@ From 46 training events + 13 test events, we constructed and validated a quantit
 
 **The Three Archetypes:**
 
-- **Instant Winners** — Immediate and sustained recognition
-- **Slow Burns** — Initial doubt, then gradual acceptance
-- **False Starts** — Early hype, fading conviction
+- **Instant Winners** â€” Immediate and sustained recognition
+- **Slow Burns** â€” Initial doubt, then gradual acceptance
+- **False Starts** â€” Early hype, fading conviction
 
-Markets don't see the future perfectly. But they leave footprints—traces that a careful analyst can learn to read. We built a framework for reading them.
+Markets don't see the future perfectly. But they leave footprintsâ€”traces that a careful analyst can learn to read. We built a framework for reading them.
 
 </div>
   </div>
@@ -3761,7 +2265,6 @@ Markets are not oracles. They do not see the future clearly. But they leave foot
             <a class="sdx-chapter-link" href="#chapter-tesla"><span><span class="sdx-kicker">Chapter 3</span><br><span class="sdx-label">Tesla</span></span><span class="sdx-kicker">#chapter-tesla</span></a>
             <a class="sdx-chapter-link" href="#chapter-ai"><span><span class="sdx-kicker">Chapter 4</span><br><span class="sdx-label">Innovation Stack</span></span><span class="sdx-kicker">#chapter-ai</span></a>
             <a class="sdx-chapter-link" href="#chapter-biotech"><span><span class="sdx-kicker">Chapter 5</span><br><span class="sdx-label">Biotech and Health</span></span><span class="sdx-kicker">#chapter-biotech</span></a>
-            <a class="sdx-chapter-link" href="#ai-era"><span><span class="sdx-kicker">Appendix</span><br><span class="sdx-label">Interactive Appendix</span></span><span class="sdx-kicker">#ai-era</span></a>
           </div>
           <p class="sdx-modal-hint">
             Tip: click a section, the modal closes and the page scrolls there.

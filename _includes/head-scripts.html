@@ -1,4 +1,39 @@
 <!-- head scripts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ '/assets/css/sdx.css' | relative_url }}">
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const animated = document.querySelectorAll("[data-animate]");
+    if (!animated.length) return;
+
+    const prefersReducedMotion =
+      window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+      animated.forEach((el) => el.classList.add("animate-in"));
+      return;
+    }
+
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.01, rootMargin: "0px 0px 12% 0px" }
+    );
+
+    animated.forEach((el) => obs.observe(el));
+  });
+</script>
+
 <style>
   /* SDX: unify navbar hover/active behavior across pages */
   .navbar {

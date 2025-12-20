@@ -58,7 +58,6 @@ permalink: /about/
     <div class="sdx-panel sdx-team-panel" id="team" data-animate="fade-up">
       <h2 class="title is-4">Meet the team</h2>
       <p style="margin: 0.35rem 0 0; color: rgba(159, 176, 255, 0.95);">
-        Photos are placeholders for now.
       </p>
 
       <div class="sdx-team-grid">

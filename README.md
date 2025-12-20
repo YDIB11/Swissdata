@@ -33,5 +33,3 @@ Website for EPFL Applied Data Analysis (ADA), 2025. We study how public markets 
 bundle install
 bundle exec jekyll serve
 ```
-
-Then open: `http://127.0.0.1:4000/Swissdata/`

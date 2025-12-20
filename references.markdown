@@ -369,6 +369,27 @@ hr {
 
     <div class="sdx-panel content" markdown="1">
 
+### Innovation Stack Shockwaves, multi-company events (Chapter 4)
+
+| Event                         | Source                                                                                                                     |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Amazon S3 Launch              | [AWS Blog](https://aws.amazon.com/blogs/aws/amazon_s3/)                                                                    |
+| ASML First EUV Tools          | [ASML Backgrounder](https://medium.com/@ASMLcompany/a-backgrounder-on-extreme-ultraviolet-euv-lithography-a5fccb8e99f4)    |
+| iPhone Launch                 | [Apple Newsroom](https://www.apple.com/newsroom/2007/06/28iPhone-Premieres-This-Friday-Night-at-Apple-Retail-Stores/)      |
+| Google Chrome Beta Launch     | [Google Blog](https://googleblog.blogspot.com/2008/09/fresh-take-on-browser.html)                                          |
+| Microsoft Azure Launch        | [Forbes](https://www.forbes.com/sites/janakirammsv/2020/02/03/a-look-back-at-ten-years-of-microsoft-azure/)                |
+| iPhone 5S Touch ID            | [Apple Newsroom](https://www.apple.com/newsroom/2013/09/16iPhone-5s-iPhone-5c-Arrive-on-Friday-September-20/)              |
+| TensorFlow Open-Sourced       | [Wikipedia](https://en.wikipedia.org/wiki/TensorFlow)                                                                      |
+| Armv9 Architecture Introduced | [Arm Newsroom](https://www.arm.com/company/news/2021/03/arms-answer-to-the-future-of-ai-armv9-architecture)                 |
+| Meta LLaMA Release            | [Meta AI](https://ai.meta.com/blog/large-language-model-llama-meta-ai/)                                                    |
+| GPT-4 Release                 | [OpenAI](https://openai.com/index/gpt-4/)                                                                                  |
+| Microsoft Copilot Announcement | [Microsoft Blog](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot/)                           |
+| Apple Vision Pro Announcement | [Apple Newsroom](https://www.apple.com/newsroom/2023/06/introducing-apple-vision-pro/)                                     |
+
+</div>
+
+    <div class="sdx-panel content" markdown="1">
+
 ### AI shockwaves, OpenAI, Google, Meta, Microsoft
 
 | Event                          | Source                                                                                           |

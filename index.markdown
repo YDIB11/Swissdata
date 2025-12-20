@@ -178,7 +178,7 @@ Each event in this table represents a moment when _someone_ believed they were w
         <p class="sdx-note"><strong>Question:</strong> are investors pricing engineering, or belief?</p>
       </div>
       <div class="sdx-case-card sdx-case-card-wide" data-animate="fade-up">
-        <h3 class="title is-5">4. Innovation Stack Shockwaves (e.g, Amazon, Google, Meta)</h3>
+        <h3 class="title is-5">4. Innovation Stack Shockwaves (e.g., Amazon, Google, Meta)</h3>
         <p>
           A platform shift rarely moves one ticker, it replaces the whole stack: chips, cloud, platforms, and software. We track a basket of 25 leaders to see whether the market moves together or splits into winners and losers.
         </p>
@@ -325,7 +325,7 @@ We anchored this lens around **twelve turning point innovations** that moved mul
 | **Google Chrome Beta Launch**      | Sep 2, 2008  | The modern web runtime arrives             | GOOGL, MSFT, AAPL, META |
 | **Microsoft Azure Launch**         | Feb 1, 2010  | Cloud becomes enterprise default           | MSFT, AMZN, GOOGL, ORCL |
 | **iPhone 5S Touch ID**             | Sep 20, 2013 | Biometrics becomes default UX              | AAPL, QCOM, TSM, AVGO   |
-| **TensorFlow Open Sourced**        | Nov 9, 2015  | AI tooling becomes a platform              | GOOGL, NVDA, AMD, MSFT  |
+| **TensorFlow Open-Sourced**        | Nov 9, 2015  | AI tooling becomes a platform              | GOOGL, NVDA, AMD, MSFT  |
 | **Armv9 Architecture Introduced**  | Mar 30, 2021 | Next gen CPU era, security plus efficiency | ARM, AAPL, QCOM, TSM    |
 | **Meta LLaMA Release**             | Feb 24, 2023 | Open source LLM shockwave                  | META, NVDA, AMD, GOOGL  |
 | **GPT-4 Release**                  | Mar 14, 2023 | Capability leap accelerates AI adoption    | MSFT, NVDA, GOOGL, META |
@@ -1227,8 +1227,8 @@ This reflects Tesla's unique position in markets: it's priced on **belief in the
 </div>
 </div>
 
-    <div class="sdx-panel" id="chapter-ai" data-animate="fade-up">
-      <h2 class="title is-4">Chapter 4 - Innovation Stack: When Everything Moves Together</h2>
+    <div class="sdx-panel" id="chapter-stack" data-animate="fade-up">
+      <h2 class="title is-4">Chapter 4 - Innovation Stack Shockwaves: When Everything Moves Together</h2>
       <div class="sdx-chapter-hero" aria-hidden="true">
         <img
           class="sdx-chapter-hero-img"
@@ -2263,7 +2263,7 @@ Markets are not oracles. They do not see the future clearly. But they leave foot
             <a class="sdx-chapter-link" href="#chapter-apple"><span><span class="sdx-kicker">Chapter 1</span><br><span class="sdx-label">Apple</span></span><span class="sdx-kicker">#chapter-apple</span></a>
             <a class="sdx-chapter-link" href="#chapter-nvidia"><span><span class="sdx-kicker">Chapter 2</span><br><span class="sdx-label">NVIDIA</span></span><span class="sdx-kicker">#chapter-nvidia</span></a>
             <a class="sdx-chapter-link" href="#chapter-tesla"><span><span class="sdx-kicker">Chapter 3</span><br><span class="sdx-label">Tesla</span></span><span class="sdx-kicker">#chapter-tesla</span></a>
-            <a class="sdx-chapter-link" href="#chapter-ai"><span><span class="sdx-kicker">Chapter 4</span><br><span class="sdx-label">Innovation Stack</span></span><span class="sdx-kicker">#chapter-ai</span></a>
+            <a class="sdx-chapter-link" href="#chapter-stack"><span><span class="sdx-kicker">Chapter 4</span><br><span class="sdx-label">Innovation Stack</span></span><span class="sdx-kicker">#chapter-stack</span></a>
             <a class="sdx-chapter-link" href="#chapter-biotech"><span><span class="sdx-kicker">Chapter 5</span><br><span class="sdx-label">Biotech and Health</span></span><span class="sdx-kicker">#chapter-biotech</span></a>
           </div>
           <p class="sdx-modal-hint">

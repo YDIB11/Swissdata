@@ -335,7 +335,8 @@ blockquote strong {
   color: #f7f9ff;
 }
 
-.content table {
+.content table,
+.sdx-panel table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -347,7 +348,9 @@ blockquote strong {
 }
 
 .content table th,
-.content table td {
+.content table td,
+.sdx-panel table th,
+.sdx-panel table td {
   padding: 0.65rem 0.8rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   border-right: 1px solid rgba(255, 255, 255, 0.08);
@@ -355,15 +358,19 @@ blockquote strong {
 }
 
 .content table th:last-child,
-.content table td:last-child {
+.content table td:last-child,
+.sdx-panel table th:last-child,
+.sdx-panel table td:last-child {
   border-right: none;
 }
 
-.content table tr:last-child td {
+.content table tr:last-child td,
+.sdx-panel table tr:last-child td {
   border-bottom: none;
 }
 
-.content table th {
+.content table th,
+.sdx-panel table th {
   background: rgba(15, 21, 48, 0.75);
   color: var(--accent-2);
   font-weight: 700;
@@ -371,15 +378,19 @@ blockquote strong {
 }
 
 .content table thead th,
-.content table thead td {
+.content table thead td,
+.sdx-panel table thead th,
+.sdx-panel table thead td {
   color: var(--accent-2);
 }
 
-.content table td {
+.content table td,
+.sdx-panel table td {
   color: var(--text);
 }
 
-.content table tr:nth-child(even) td {
+.content table tr:nth-child(even) td,
+.sdx-panel table tr:nth-child(even) td {
   background: rgba(13, 16, 36, 0.55);
 }
 

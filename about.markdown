@@ -66,7 +66,6 @@ permalink: /about/
           <img class="sdx-team-avatar" src="{{ '/assets/team_pics/youssefdib.jpeg' | relative_url }}" alt="Portrait of Youssef Dib" loading="lazy" decoding="async" />
           <div class="sdx-team-meta">
             <h3 class="sdx-team-name">Youssef Dib</h3>
-            <p class="sdx-team-role">SwissDataExplorers2025</p>
           </div>
         </div>
 
@@ -74,7 +73,6 @@ permalink: /about/
           <img class="sdx-team-avatar" src="{{ '/assets/team_pics/ramiaschkar.jpg' | relative_url }}" alt="Portrait of Rami Aschkar" loading="lazy" decoding="async" />
           <div class="sdx-team-meta">
             <h3 class="sdx-team-name">Rami Aschkar</h3>
-            <p class="sdx-team-role">SwissDataExplorers2025</p>
           </div>
         </div>
 
@@ -82,7 +80,6 @@ permalink: /about/
           <img class="sdx-team-avatar" src="{{ '/assets/team_pics/kevinabj.jpeg' | relative_url }}" alt="Portrait of Kevin Abou Jaoude" loading="lazy" decoding="async" />
           <div class="sdx-team-meta">
             <h3 class="sdx-team-name">Kevin Abou Jaoude</h3>
-            <p class="sdx-team-role">SwissDataExplorers2025</p>
           </div>
         </div>
 
@@ -90,7 +87,6 @@ permalink: /about/
           <img class="sdx-team-avatar" src="{{ '/assets/team_pics/chloeabouhalka.jpeg' | relative_url }}" alt="Portrait of Chloe Abou Halka" loading="lazy" decoding="async" />
           <div class="sdx-team-meta">
             <h3 class="sdx-team-name">Chloe Abou Halka</h3>
-            <p class="sdx-team-role">SwissDataExplorers2025</p>
           </div>
         </div>
 
@@ -98,7 +94,6 @@ permalink: /about/
           <img class="sdx-team-avatar" src="{{ '/assets/team_pics/michelbassil.jpeg' | relative_url }}" alt="Portrait of Michel Bassil" loading="lazy" decoding="async" />
           <div class="sdx-team-meta">
             <h3 class="sdx-team-name">Michel Bassil</h3>
-            <p class="sdx-team-role">SwissDataExplorers2025</p>
           </div>
         </div>
       </div>

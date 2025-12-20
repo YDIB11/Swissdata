@@ -114,14 +114,6 @@ permalink: /about/
           <li><strong>Official company newsrooms</strong> to validate dates and align the narrative with real announcements</li>
         </ul>
 
-        <h3 class="title is-5">Method (high level)</h3>
-        <ul class="sdx-list">
-          <li>Define an innovation event date (Day 0)</li>
-          <li>Measure returns in a fixed window (typically &plusmn;30 trading days)</li>
-          <li>Compare Day 0 reaction to 30-day follow-through</li>
-          <li>For stack-level chapters, track a basket and compute breadth (Winner Ratio) vs concentration (dispersion)</li>
-        </ul>
-
         <p>
           The whole site is built to make one idea tangible: markets do not react to innovation in a single universal way.
           They react based on visibility, timing, uncertainty, and whether a binary gate exists (like regulatory approval).
